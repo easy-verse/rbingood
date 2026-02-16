@@ -551,6 +551,11 @@
 
     // Init i18n
     I18N.init();
+
+    // Reset all horizontal scroll containers to start position
+    document.querySelectorAll('.phone-mockups, .phone-screenshots, .photo-scroll').forEach(function(el) {
+        el.scrollLeft = 0;
+    });
     </script>
 </body>
 
