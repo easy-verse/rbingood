@@ -71,10 +71,16 @@
 }
 
 /* Reset */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -245,6 +251,40 @@ p {
 }
 
 /* Nav Waitlist */
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    margin-left: 8px;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: var(--radius-pill);
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: 0.2s;
+    letter-spacing: 0.03em;
+}
+
+.lang-btn:hover {
+    color: var(--text-main);
+}
+
+.lang-btn.active {
+    background: #fff;
+    color: var(--text-main);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 .nav-waitlist {
     display: flex;
     align-items: center;
@@ -1721,8 +1761,62 @@ details p {
 
 /* Responsive */
 @media (max-width: 768px) {
+    /* Navigation */
+    .nav-pill {
+        gap: 8px;
+        padding: 8px 12px;
+        max-width: calc(100vw - 24px);
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-logo {
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
+    .lang-switcher {
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
+
+    .nav-waitlist {
+        margin-left: 4px;
+        padding-left: 8px;
+        gap: 8px;
+        flex-shrink: 0;
+    }
+
+    .btn-nav {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+    /* Layout */
+    .container {
+        padding: 0 16px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Hero */
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .hero-simple {
+        padding-top: 100px;
+        padding-bottom: 40px;
     }
 
     .hero-grid {
@@ -1733,6 +1827,21 @@ details p {
         justify-content: flex-start;
     }
 
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-outline {
+        text-align: center;
+    }
+
+    /* Grids */
     .b2b-grid {
         grid-template-columns: 1fr;
     }
@@ -1774,13 +1883,37 @@ details p {
         grid-template-columns: 1fr;
     }
 
+    /* Typography */
     .problem-claims,
     .problem-claims p,
     .problem-claim-muted {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .process-row {
         grid-auto-columns: minmax(200px, 75vw);
+    }
+
+    /* Sections */
+    .section {
+        padding: 35px 0;
+    }
+
+    .section-simple {
+        padding: 30px 0;
+    }
+
+    .section-head {
+        margin-bottom: 24px;
+    }
+
+    /* Addon block */
+    .addon-block {
+        padding: 16px;
+    }
+
+    .addon-tag {
+        font-size: 0.8rem;
+        padding: 6px 12px;
     }
 }

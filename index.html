@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rbingood</title>
+    <title>rbingood | pilot 2026</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,11 +13,16 @@
     <div class="nav-wrapper">
         <nav class="nav-pill">
             <a href="#hero" class="nav-logo">rbingood</a>
-            <a href="#participants" class="nav-link">участникам</a>
-            <a href="#business" class="nav-link">бизнесу</a>
-            <a href="#cities" class="nav-link">городам</a>
+            <a href="#participants" class="nav-link" data-i18n="nav.participants">participants</a>
+            <a href="#business" class="nav-link" data-i18n="nav.business">business</a>
+            <a href="#cities" class="nav-link" data-i18n="nav.cities">cities</a>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="pt">PT</button>
+            </div>
             <div class="nav-waitlist">
-                <a href="mailto:hello@rbingood.com?subject=rbingood%20waitlist&body=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%B8%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%82%D1%8C%D1%81%D1%8F." class="btn-nav">в лист ожидания</a>
+                <a data-mailto="mailto.waitlist_subject,mailto.waitlist_body" class="btn-nav" data-i18n="nav.waitlist">join waitlist</a>
             </div>
         </nav>
     </div>
@@ -27,12 +32,11 @@
         <div class="container hero-grid">
             <div class="hero-content reveal" style="--delay: 0s;">
                 <p class="section-label">rbingood</p>
-                <h1>rbingood — оплачиваемые уборки с реальным результатом</h1>
-                <p class="hero-subtitle">Вознаграждение участникам*. ESG-отчёты спонсорам (готовы к CSRD). Чистота городам. Мы уже
-                    готовы это делать.</p>
+                <h1 data-i18n="hero.title">rbingood — paid cleanups with real results</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Rewards for participants*. ESG reports for sponsors (CSRD-ready). Cleanliness for cities. We're ready to do this.</p>
                 <div class="hero-actions">
-                    <a class="btn-primary" href="#participants">хочу участвовать</a>
-                    <a class="btn-outline" href="#business">хочу спонсировать</a>
+                    <a class="btn-primary" href="#participants" data-i18n="hero.btn_participate">I want to participate</a>
+                    <a class="btn-outline" href="#business" data-i18n="hero.btn_sponsor">I want to sponsor</a>
                 </div>
             </div>
             <div class="hero-visual reveal" style="--delay: 0.15s;">
@@ -47,68 +51,67 @@
     <section class="section section-simple" id="problem">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Проблема</p>
-                <h2>Много усилий. Мало результата. Нет прозрачности.</h2>
+                <p class="section-label" data-i18n="problem.label">Problem</p>
+                <h2 data-i18n="problem.title">A lot of effort. Little result. No transparency.</h2>
             </div>
             <div class="problem-grid reveal" style="--delay: 0.1s;">
                 <div class="problem-stats">
-                    <h3>Глобально</h3>
+                    <h3 data-i18n="problem.global">Global</h3>
                     <ul class="stat-list">
                         <li>
                             <strong>2.01B</strong>
-                            <span>тонн муниципального мусора в год</span>
+                            <span data-i18n="problem.stat1">tons of municipal waste per year</span>
                             <a href="https://datatopics.worldbank.org/what-a-waste/trends_in_solid_waste_management.html"
-                                target="_blank" class="stat-link">источник World Bank</a>
+                                target="_blank" class="stat-link" data-i18n="problem.src1">source World Bank</a>
                         </li>
                         <li>
                             <strong>33%</strong>
-                            <span>мусора утилизируется небезопасно</span>
+                            <span data-i18n="problem.stat2">of waste is disposed of unsafely</span>
                             <a href="https://datatopics.worldbank.org/what-a-waste/trends_in_solid_waste_management.html"
-                                target="_blank" class="stat-link">источник World Bank</a>
+                                target="_blank" class="stat-link" data-i18n="problem.src2">source World Bank</a>
                         </li>
                         <li>
                             <strong>13.5%</strong>
-                            <span>перерабатывается, 5.5% компостируется</span>
+                            <span data-i18n="problem.stat3">is recycled, 5.5% is composted</span>
                             <a href="https://datatopics.worldbank.org/what-a-waste/trends_in_solid_waste_management.html"
-                                target="_blank" class="stat-link">источник World Bank</a>
+                                target="_blank" class="stat-link" data-i18n="problem.src3">source World Bank</a>
                         </li>
                     </ul>
                 </div>
                 <div class="problem-stats">
-                    <h3>Португалия</h3>
+                    <h3 data-i18n="problem.portugal">Portugal</h3>
                     <ul class="stat-list">
                         <li>
                             <strong>39.5%</strong>
-                            <span>переработка пластика (среднее по EU 42.1%)</span>
+                            <span data-i18n="problem.stat4">plastic recycling (EU avg 42.1%)</span>
                             <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251022-1"
-                                target="_blank" class="stat-link">источник Eurostat</a>
+                                target="_blank" class="stat-link" data-i18n="problem.src4">source Eurostat</a>
                         </li>
                         <li>
                             <strong>60.2%</strong>
-                            <span>упаковки переработано, цель — 65%</span>
-                            <a href="https://www.pontoverde.pt/" target="_blank" class="stat-link">источник Ponto Verde</a>
+                            <span data-i18n="problem.stat5">of packaging recycled, target — 65%</span>
+                            <a href="https://www.pontoverde.pt/" target="_blank" class="stat-link" data-i18n="problem.src5">source Ponto Verde</a>
                         </li>
                         <li>
                             <strong>~54%</strong>
-                            <span>домашних отходов отправляется на полигоны</span>
+                            <span data-i18n="problem.stat6">of household waste goes to landfills</span>
                             <a href="https://theportugalpost.com/posts/unsorted-landfill-waste-could-land-portugal-with-huge-eu-finesand-raise-your-bin-fees"
-                                target="_blank" class="stat-link">источник Portugal Post</a>
+                                target="_blank" class="stat-link" data-i18n="problem.src6">source Portugal Post</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="problem-copy reveal" style="--delay: 0.2s;">
                 <div class="problem-claims">
-                    <p class="problem-claim-strong">Города загрязняются быстрее, чем их успевают убирать.</p>
-                    <p>Волонтёрские уборки выгорают без <span class="pill">оплаты</span>.</p>
-                    <p><span class="pill">12к компаний EU</span> нуждаются в верифицированных ESG-данных.</p>
-                    <p class="problem-claim-strong">Муниципалитетам сложно покрывать все зоны.</p>
-                    <p class="problem-claim-muted">В Португалии тысячи парков и пляжей остаются вне регулярной уборки.
-                    </p>
+                    <p class="problem-claim-strong" data-i18n="problem.claim1">Cities get polluted faster than they can be cleaned.</p>
+                    <p data-i18n-html="problem.claim2_html">Volunteer cleanups burn out without <span class="pill">payment</span>.</p>
+                    <p data-i18n-html="problem.claim3_html"><span class="pill">12k EU companies</span> need verified ESG data.</p>
+                    <p class="problem-claim-strong" data-i18n="problem.claim4">Municipalities struggle to cover all areas.</p>
+                    <p class="problem-claim-muted" data-i18n="problem.claim5">In Portugal, thousands of parks and beaches remain outside regular cleaning.</p>
                 </div>
             </div>
             <div class="section-image section-image--wide reveal" style="--delay: 0.25s;">
-                <img src="assets/main/2.jpg" alt="Контраст до и после уборки" loading="lazy">
+                <img src="assets/main/2.jpg" alt="Before and after cleanup" loading="lazy">
             </div>
         </div>
     </section>
@@ -117,23 +120,23 @@
     <section class="section section-simple" id="solution">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Решение</p>
-                <h2>Как работает rbingood</h2>
+                <p class="section-label" data-i18n="solution.label">Solution</p>
+                <h2 data-i18n="solution.title">How rbingood works</h2>
             </div>
             <ol class="process-list process-row reveal" style="--delay: 0.1s;">
-                <li><strong>Точка на карте</strong> — любой может отметить место, которое нужно почистить.</li>
-                <li><strong>Спонсор</strong> финансирует уборку.</li>
-                <li><strong>Участники</strong> регистрируются и приходят.</li>
-                <li><strong>Уборка</strong> длится ~2 часа.</li>
-                <li><strong>Результат</strong> фиксируется (фото + GPS).</li>
-                <li><strong>Участники</strong> получают вознаграждение*, <strong>спонсор</strong> — ESG-пакет (PDF/Excel/GPS/CO2 для CSRD).</li>
+                <li data-i18n-html="solution.step1_html"><strong>Pin on the map</strong> — anyone can mark a spot that needs cleaning.</li>
+                <li data-i18n-html="solution.step2_html"><strong>Sponsor</strong> funds the cleanup.</li>
+                <li data-i18n-html="solution.step3_html"><strong>Participants</strong> sign up and come.</li>
+                <li data-i18n-html="solution.step4_html"><strong>Cleanup</strong> lasts ~2 hours.</li>
+                <li data-i18n-html="solution.step5_html"><strong>Result</strong> is recorded (photos + GPS).</li>
+                <li data-i18n-html="solution.step6_html"><strong>Participants</strong> receive a reward*, <strong>sponsor</strong> gets an ESG pack (PDF/Excel/GPS/CO2 for CSRD).</li>
             </ol>
-            <p class="emphasis reveal" style="--delay: 0.2s;">rbingood — не акция. Это повторяемый процесс.</p>
+            <p class="emphasis reveal" style="--delay: 0.2s;" data-i18n="solution.emphasis">rbingood is not a one-off event. It's a repeatable process.</p>
             <div class="phone-mockups reveal" style="--delay: 0.25s;">
-                <img src="assets/main/3.1.png" alt="Экран приложения — карта событий" loading="lazy">
-                <img src="assets/main/3.2.png" alt="Экран приложения — чек-ин" loading="lazy">
-                <img src="assets/main/3.3.png" alt="Экран приложения — отчёт" loading="lazy">
-                <img src="assets/main/3.4.png" alt="Экран приложения — GPS" loading="lazy">
+                <img src="assets/main/3.1.png" alt="App screen — event map" loading="lazy">
+                <img src="assets/main/3.2.png" alt="App screen — check-in" loading="lazy">
+                <img src="assets/main/3.3.png" alt="App screen — report" loading="lazy">
+                <img src="assets/main/3.4.png" alt="App screen — GPS" loading="lazy">
             </div>
         </div>
     </section>
@@ -142,29 +145,28 @@
     <section class="section section-simple" id="proof">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Доказательства</p>
-                <h2>Это не идея. Это уже работает.</h2>
+                <p class="section-label" data-i18n="proof.label">Proof</p>
+                <h2 data-i18n="proof.title">This is not an idea. It already works.</h2>
             </div>
             <div class="metrics-grid reveal" style="--delay: 0.1s;">
                 <div class="metric-card">
                     <h3>17</h3>
-                    <p>событий</p>
+                    <p data-i18n="proof.m1">events</p>
                 </div>
                 <div class="metric-card">
                     <h3>322</h3>
-                    <p>участника сообщества</p>
+                    <p data-i18n="proof.m2">community members</p>
                 </div>
                 <div class="metric-card">
-                    <h3>2,100+ кг</h3>
-                    <p>мусора</p>
+                    <h3>2,100+ kg</h3>
+                    <p data-i18n="proof.m3">of waste</p>
                 </div>
                 <div class="metric-card">
                     <h3>6</h3>
-                    <p>событий со спонсором</p>
+                    <p data-i18n="proof.m4">sponsored events</p>
                 </div>
             </div>
-            <p class="emphasis reveal" style="--delay: 0.2s;">Постоянный спонсор: <strong>Praia Irmão</strong> — 6 событий
-                за 8 месяцев.</p>
+            <p class="emphasis reveal" style="--delay: 0.2s;" data-i18n-html="proof.emphasis_html">Recurring sponsor: <strong>Praia Irmão</strong> — 6 events in 8 months.</p>
             <div class="map-embed reveal" style="--delay: 0.25s;">
                 <iframe src="https://www.google.com/maps/d/embed?mid=1iY-bKsOI5RD-7vtXVtX_gqE4_akka2Y&ehbc=2E312F&ll=38.65,-9.22&z=11" width="100%" height="420" style="border:0; border-radius:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -175,34 +177,34 @@
     <section class="section section-simple" id="participants">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Для участников</p>
-                <h2>Участвуй и зарабатывай</h2>
+                <p class="section-label" data-i18n="participants.label">For participants</p>
+                <h2 data-i18n="participants.title">Participate and earn</h2>
             </div>
             <div class="value-grid reveal" style="--delay: 0.1s;">
                 <div class="value-item">
-                    <h3>Вознаграждение*</h3>
-                    <p>Выплата в течение 3-5 рабочих дней за финансируемую уборку.</p>
+                    <h3 data-i18n="participants.v1_title">Reward*</h3>
+                    <p data-i18n="participants.v1_desc">Payment within 3-5 business days for sponsored cleanups.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Гибкий график</h3>
-                    <p>Выбираешь сам.</p>
+                    <h3 data-i18n="participants.v2_title">Flexible schedule</h3>
+                    <p data-i18n="participants.v2_desc">You choose.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Рядом с домом</h3>
-                    <p>Уборки в твоём районе.</p>
+                    <h3 data-i18n="participants.v3_title">Close to home</h3>
+                    <p data-i18n="participants.v3_desc">Cleanups in your area.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Сообщество</h3>
-                    <p>Знакомства с единомышленниками.</p>
+                    <h3 data-i18n="participants.v4_title">Community</h3>
+                    <p data-i18n="participants.v4_desc">Meet like-minded people.</p>
                 </div>
             </div>
-            <p class="emphasis reveal" style="--delay: 0.2s;">Ты убираешь — мы платим и показываем результат.</p>
-            <p class="footnote reveal" style="--delay: 0.22s;">* Например, €10 за 2 часа уборки при наличии спонсора. Сумма может варьироваться.</p>
+            <p class="emphasis reveal" style="--delay: 0.2s;" data-i18n="participants.emphasis">You clean — we pay and show the result.</p>
+            <p class="footnote reveal" style="--delay: 0.22s;" data-i18n="participants.footnote">* For example, €10 for 2 hours of cleanup when sponsored. The amount may vary.</p>
             <div class="section-actions reveal" style="--delay: 0.25s;">
-                <a class="btn-primary" href="mailto:hello@rbingood.com?subject=rbingood%20waitlist%20%E2%80%94%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA&body=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%B8%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20rbingood%20%D0%BA%D0%B0%D0%BA%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA.">записаться в лист ожидания</a>
+                <a class="btn-primary" data-mailto="mailto.participant_subject,mailto.participant_body" data-i18n="participants.btn">join the waitlist</a>
             </div>
             <div class="section-image section-image--wide reveal" style="--delay: 0.3s;">
-                <img src="assets/main/4.jpeg" alt="Участники в процессе уборки" loading="lazy">
+                <img src="assets/main/4.jpeg" alt="Participants during cleanup" loading="lazy">
             </div>
         </div>
     </section>
@@ -211,18 +213,18 @@
     <section class="section section-simple" id="cleanup">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Процесс</p>
-                <h2>2 часа. Просто. По процессу.</h2>
+                <p class="section-label" data-i18n="cleanup.label">Process</p>
+                <h2 data-i18n="cleanup.title">2 hours. Simple. Structured.</h2>
             </div>
             <ol class="timeline-list process-row reveal" style="--delay: 0.1s;">
-                <li><strong>Инструктаж</strong> (10 мин) — что делать, как сортировать.</li>
-                <li><strong>Инвентарь</strong> — перчатки, мешки, захваты.</li>
-                <li><strong>Командная уборка</strong> (1.5 ч) — убираем вместе.</li>
-                <li><strong>Подсчёт</strong> — взвешивание, фото до/после.</li>
-                <li><strong>Общение</strong> — напитки, знакомства.</li>
+                <li data-i18n-html="cleanup.step1_html"><strong>Briefing</strong> (10 min) — what to do, how to sort.</li>
+                <li data-i18n-html="cleanup.step2_html"><strong>Equipment</strong> — gloves, bags, grabbers.</li>
+                <li data-i18n-html="cleanup.step3_html"><strong>Team cleanup</strong> (1.5 h) — we clean together.</li>
+                <li data-i18n-html="cleanup.step4_html"><strong>Counting</strong> — weighing, before/after photos.</li>
+                <li data-i18n-html="cleanup.step5_html"><strong>Socializing</strong> — drinks, networking.</li>
             </ol>
             <div class="section-image reveal" style="--delay: 0.2s;">
-                <img src="assets/main/8.jpg" alt="Сортировка мусора и взвешивание" loading="lazy">
+                <img src="assets/main/8.jpg" alt="Waste sorting and weighing" loading="lazy">
             </div>
         </div>
     </section>
@@ -231,50 +233,50 @@
     <section class="section section-simple" id="business">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Для бизнеса</p>
-                <h2>Спонсируйте с результатом</h2>
+                <p class="section-label" data-i18n="business.label">For business</p>
+                <h2 data-i18n="business.title">Sponsor with results</h2>
             </div>
             <div class="value-grid reveal" style="--delay: 0.1s;">
                 <div class="value-item">
-                    <h3>ESG-данные</h3>
-                    <p>Фото + GPS для отчётов.</p>
+                    <h3 data-i18n="business.v1_title">ESG data</h3>
+                    <p data-i18n="business.v1_desc">Photos + GPS for reports.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Вовлечение</h3>
-                    <p>Тимбилдинг с пользой.</p>
+                    <h3 data-i18n="business.v2_title">Engagement</h3>
+                    <p data-i18n="business.v2_desc">Team building with purpose.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Брендинг</h3>
-                    <p>Ваш логотип на событии.</p>
+                    <h3 data-i18n="business.v3_title">Branding</h3>
+                    <p data-i18n="business.v3_desc">Your logo at the event.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Быстрый запуск</h3>
-                    <p>В течение 1 недели.</p>
+                    <h3 data-i18n="business.v4_title">Quick launch</h3>
+                    <p data-i18n="business.v4_desc">Within 1 week.</p>
                 </div>
             </div>
-            <p class="price-note reveal" style="--delay: 0.2s;"><strong>От €350 за уборку (от 5 участников).</strong></p>
-            <p class="emphasis reveal" style="--delay: 0.25s;">Одна уборка — реальные данные для отчётности.</p>
+            <p class="price-note reveal" style="--delay: 0.2s;" data-i18n-html="business.price_html"><strong>From €350 per cleanup (from 5 participants).</strong></p>
+            <p class="emphasis reveal" style="--delay: 0.25s;" data-i18n="business.emphasis">One cleanup — real data for reporting.</p>
             <div class="section-actions reveal" style="--delay: 0.3s;">
-                <a class="btn-primary" href="mailto:hello@rbingood.com?subject=rbingood%20%E2%80%94%20%D1%81%D0%BF%D0%BE%D0%BD%D1%81%D0%BE%D1%80%D1%81%D1%82%D0%B2%D0%BE&body=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BE%20%D1%81%D0%BF%D0%BE%D0%BD%D1%81%D0%BE%D1%80%D1%81%D1%82%D0%B2%D0%B5%20rbingood.">стать спонсором</a>
+                <a class="btn-primary" data-mailto="mailto.sponsor_subject,mailto.sponsor_body" data-i18n="business.btn">become a sponsor</a>
             </div>
             <div class="addon-block reveal" style="--delay: 0.32s;">
-                <h3>Дополнительные форматы</h3>
-                <p class="text-lead">Выберите интересующие опции — они автоматически добавятся в письмо.</p>
+                <h3 data-i18n="business.addons_title">Additional formats</h3>
+                <p class="text-lead" data-i18n="business.addons_desc">Select the options you're interested in — they will be automatically added to the email.</p>
                 <div class="addon-list">
-                    <button type="button" class="addon-tag" data-addon="Масштабирование">Масштабирование</button>
-                    <button type="button" class="addon-tag" data-addon="Корпоративный ивент">Корпоративный ивент</button>
-                    <button type="button" class="addon-tag" data-addon="Кейтеринг">Кейтеринг</button>
-                    <button type="button" class="addon-tag" data-addon="Мерч">Мерч</button>
-                    <button type="button" class="addon-tag" data-addon="Расширенный PR">Расширенный PR</button>
-                    <button type="button" class="addon-tag" data-addon="Индивидуальная отчётность">Индивидуальная отчётность</button>
-                    <button type="button" class="addon-tag" data-addon="Мастер-класс">Мастер-класс</button>
+                    <button type="button" class="addon-tag" data-addon-i18n="business.addon1" data-addon="Scaling">Scaling</button>
+                    <button type="button" class="addon-tag" data-addon-i18n="business.addon2" data-addon="Corporate event">Corporate event</button>
+                    <button type="button" class="addon-tag" data-addon-i18n="business.addon3" data-addon="Catering">Catering</button>
+                    <button type="button" class="addon-tag" data-addon-i18n="business.addon4" data-addon="Merch">Merch</button>
+                    <button type="button" class="addon-tag" data-addon-i18n="business.addon5" data-addon="Extended PR">Extended PR</button>
+                    <button type="button" class="addon-tag" data-addon-i18n="business.addon6" data-addon="Custom reporting">Custom reporting</button>
+                    <button type="button" class="addon-tag" data-addon-i18n="business.addon7" data-addon="Workshop">Workshop</button>
                 </div>
                 <div class="section-actions" style="margin-top: 16px; justify-content: center;">
-                    <a class="btn-primary" id="addons-mailto" href="mailto:hello@rbingood.com?subject=rbingood%20%E2%80%94%20%D1%81%D0%BF%D0%BE%D0%BD%D1%81%D0%BE%D1%80%D1%81%D1%82%D0%B2%D0%BE%20%2B%20%D0%B4%D0%BE%D0%BF.%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B&body=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%9C%D1%8B%20%D0%B1%D1%8B%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%B8%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%81%D0%BF%D0%BE%D0%BD%D1%81%D0%BE%D1%80%D1%81%D1%82%D0%B2%D0%BE%20rbingood.">написать нам</a>
+                    <a class="btn-primary" id="addons-mailto" href="mailto:hello@rbingood.com" data-i18n="business.addons_btn">contact us</a>
                 </div>
             </div>
             <div class="section-image section-image--wide reveal" style="--delay: 0.35s;">
-                <img src="assets/main/5.jpg" alt="Брендированная уборка — логотип спонсора" loading="lazy">
+                <img src="assets/main/5.jpg" alt="Branded cleanup — sponsor logo" loading="lazy">
             </div>
         </div>
     </section>
@@ -283,32 +285,32 @@
     <section class="section section-simple" id="local-business">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Локальный бизнес</p>
-                <h2>Станьте героем своего района</h2>
+                <p class="section-label" data-i18n="localbiz.label">Local business</p>
+                <h2 data-i18n="localbiz.title">Become the hero of your neighborhood</h2>
             </div>
             <div class="value-grid reveal" style="--delay: 0.1s;">
                 <div class="value-item">
-                    <h3>Поток клиентов</h3>
-                    <p>Участники заходят к вам после уборки.</p>
+                    <h3 data-i18n="localbiz.v1_title">Customer traffic</h3>
+                    <p data-i18n="localbiz.v1_desc">Participants visit you after cleanup.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Статус «Добрый сосед»</h3>
-                    <p>Табличка “Спонсировано вашим кафе”.</p>
+                    <h3 data-i18n="localbiz.v2_title">"Good Neighbor" status</h3>
+                    <p data-i18n="localbiz.v2_desc">Plaque: "Sponsored by your café".</p>
                 </div>
                 <div class="value-item">
-                    <h3>Без бюджета</h3>
-                    <p>Бартер (вода, напитки, снеки).</p>
+                    <h3 data-i18n="localbiz.v3_title">Zero budget</h3>
+                    <p data-i18n="localbiz.v3_desc">Barter (water, drinks, snacks).</p>
                 </div>
                 <div class="value-item">
-                    <h3>Лояльность</h3>
-                    <p>Превращение соседей в постоянных гостей.</p>
+                    <h3 data-i18n="localbiz.v4_title">Loyalty</h3>
+                    <p data-i18n="localbiz.v4_desc">Turn neighbors into regular guests.</p>
                 </div>
             </div>
             <div class="section-actions reveal" style="--delay: 0.2s;">
-                <a class="btn-primary" href="mailto:hello@rbingood.com?subject=rbingood%20%E2%80%94%20%D0%B1%D0%B0%D1%80%D1%82%D0%B5%D1%80&body=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%20%D0%B1%D0%B0%D1%80%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%BC%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%BC%20rbingood.">стать бартерным партнёром</a>
+                <a class="btn-primary" data-mailto="mailto.barter_subject,mailto.barter_body" data-i18n="localbiz.btn">become a barter partner</a>
             </div>
             <div class="section-image section-image--wide reveal" style="--delay: 0.25s;">
-                <img src="assets/main/6.jpg" alt="Партнёр — локальный бизнес" loading="lazy">
+                <img src="assets/main/6.jpg" alt="Partner — local business" loading="lazy">
             </div>
         </div>
     </section>
@@ -317,42 +319,42 @@
     <section class="section section-simple" id="cities">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Города и фестивали</p>
-                <h2>Для городов и фестивалей</h2>
+                <p class="section-label" data-i18n="cities.label">Cities and festivals</p>
+                <h2 data-i18n="cities.title">For cities and festivals</h2>
             </div>
             <div class="value-grid reveal" style="--delay: 0.1s;">
                 <div class="value-item">
-                    <h3>Чистка зон</h3>
-                    <p>Вне регулярных маршрутов.</p>
+                    <h3 data-i18n="cities.v1_title">Zone cleaning</h3>
+                    <p data-i18n="cities.v1_desc">Beyond regular routes.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Вовлечённые жители</h3>
-                    <p>И локальные сообщества.</p>
+                    <h3 data-i18n="cities.v2_title">Engaged residents</h3>
+                    <p data-i18n="cities.v2_desc">And local communities.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Геймификация</h3>
-                    <p>Геймификация формата «мусор = валюта». Совместно с организаторами прорабатываем механику, при которой участники фестиваля вовлекаются в сбор и переработку.</p>
+                    <h3 data-i18n="cities.v3_title">Gamification</h3>
+                    <p data-i18n="cities.v3_desc">"Trash = currency" gamification. Together with organizers, we develop mechanics where festival participants engage in collection and recycling.</p>
                 </div>
                 <div class="value-item">
-                    <h3>Данные для отчётов</h3>
-                    <p>Верифицированный результат.</p>
+                    <h3 data-i18n="cities.v4_title">Report data</h3>
+                    <p data-i18n="cities.v4_desc">Verified impact.</p>
                 </div>
             </div>
             <div class="case-block case-block--highlight reveal" style="--delay: 0.2s;">
-                <p class="case-badge">Реализованный кейс</p>
-                <h3>DHB Festival — Praia Irmão, September 2025, Costa da Caparica</h3>
-                <p>3,000+ посетителей, 1,700 окурков за 3 дня. Механика: 20 окурков = напиток.</p>
-                <p>2 дня мастер-классов: показывали процесс переработки — из пластиковой крошки на месте создавали сувениры для посетителей фестиваля.</p>
+                <p class="case-badge" data-i18n="cities.case_badge">Completed case</p>
+                <h3 data-i18n="cities.case_title">DHB Festival — Praia Irmão, September 2025, Costa da Caparica</h3>
+                <p data-i18n="cities.case_desc1">3,000+ visitors, 1,700 cigarette butts in 3 days. Mechanic: 20 butts = a drink.</p>
+                <p data-i18n="cities.case_desc2">2 days of workshops: showed the recycling process — created souvenirs from plastic granules on-site for festival visitors.</p>
             </div>
             <div class="section-actions reveal" style="--delay: 0.25s;">
-                <a class="btn-primary" href="mailto:hello@rbingood.com?subject=rbingood%20%E2%80%94%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%BC&body=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%20rbingood%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%2F%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F.">обсудить партнёрство</a>
+                <a class="btn-primary" data-mailto="mailto.city_subject,mailto.city_body" data-i18n="cities.btn">discuss partnership</a>
             </div>
             <div class="phone-screenshots reveal" style="--delay: 0.3s;">
-                <img src="assets/main/7.1.PNG" alt="DHB Festival — скриншот 1" loading="lazy">
-                <img src="assets/main/7.2.PNG" alt="DHB Festival — скриншот 2" loading="lazy">
-                <img src="assets/main/7.3.PNG" alt="DHB Festival — скриншот 3" loading="lazy">
-                <img src="assets/main/7.5.PNG" alt="DHB Festival — скриншот 4" loading="lazy">
-                <img src="assets/main/7.6.PNG" alt="DHB Festival — скриншот 5" loading="lazy">
+                <img src="assets/main/7.1.PNG" alt="DHB Festival — screenshot 1" loading="lazy">
+                <img src="assets/main/7.2.PNG" alt="DHB Festival — screenshot 2" loading="lazy">
+                <img src="assets/main/7.3.PNG" alt="DHB Festival — screenshot 3" loading="lazy">
+                <img src="assets/main/7.5.PNG" alt="DHB Festival — screenshot 4" loading="lazy">
+                <img src="assets/main/7.6.PNG" alt="DHB Festival — screenshot 5" loading="lazy">
             </div>
         </div>
     </section>
@@ -361,50 +363,50 @@
     <section class="section section-simple" id="faq">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">FAQ</p>
-                <h2>Вопросы?</h2>
+                <p class="section-label" data-i18n="faq.label">FAQ</p>
+                <h2 data-i18n="faq.title">Questions?</h2>
             </div>
             <div class="faq-grid reveal" style="--delay: 0.1s;">
                 <div class="faq-column">
-                    <h3>Для участников</h3>
+                    <h3 data-i18n="faq.col1_title">For participants</h3>
                     <details>
-                        <summary>Платят ли участникам?</summary>
-                        <p>Да. Вознаграждение за каждую финансируемую уборку*. Выплата через 3-5 рабочих дней на карту или MB Way.</p>
+                        <summary data-i18n="faq.q1">Do participants get paid?</summary>
+                        <p data-i18n="faq.a1">Yes. A reward for each sponsored cleanup*. Payment within 3-5 business days to your card or MB Way.</p>
                     </details>
                     <details>
-                        <summary>Это безопасно?</summary>
-                        <p>Да. На каждой уборке есть координатор, инструктаж перед началом, профессиональный инвентарь.</p>
+                        <summary data-i18n="faq.q2">Is it safe?</summary>
+                        <p data-i18n="faq.a2">Yes. Each cleanup has a coordinator, pre-start briefing, and professional equipment.</p>
                     </details>
                     <details>
-                        <summary>Нужен ли опыт?</summary>
-                        <p>Нет. 90% участников приходят впервые. Всё объясняем на месте.</p>
+                        <summary data-i18n="faq.q3">Is experience needed?</summary>
+                        <p data-i18n="faq.a3">No. 90% of participants come for the first time. We explain everything on-site.</p>
                     </details>
                     <details>
-                        <summary>Могу ли я как физическое лицо стать спонсором?</summary>
-                        <p>Да. Вы можете быть спонсором проекта или отдельной чистки.</p>
+                        <summary data-i18n="faq.q4">Can I sponsor as an individual?</summary>
+                        <p data-i18n="faq.a4">Yes. You can sponsor the project or a specific cleanup.</p>
                     </details>
                 </div>
                 <div class="faq-column">
-                    <h3>Для бизнеса</h3>
+                    <h3 data-i18n="faq.col2_title">For business</h3>
                     <details>
-                        <summary>Как быстро можно организовать уборку?</summary>
-                        <p>От 3 дней. Один звонок — и мы берём организацию на себя.</p>
+                        <summary data-i18n="faq.q5">How fast can a cleanup be organized?</summary>
+                        <p data-i18n="faq.a5">From 3 days. One call — and we handle the organization.</p>
                     </details>
                     <details>
-                        <summary>Какие данные получает спонсор?</summary>
-                        <p>Фото до/после с GPS-метками. По запросу — ESG-пакет данных для годового отчёта.</p>
+                        <summary data-i18n="faq.q6">What data does the sponsor receive?</summary>
+                        <p data-i18n="faq.a6">Before/after photos with GPS tags. On request — ESG data pack for annual report.</p>
                     </details>
                     <details>
-                        <summary>Можете ли вы организовать тимбилдинг с нашими сотрудниками?</summary>
-                        <p>Да. Организация под ключ, напишите нам, чтобы получить детали.</p>
+                        <summary data-i18n="faq.q7">Can you organize team building with our employees?</summary>
+                        <p data-i18n="faq.a7">Yes. Turnkey organization, contact us for details.</p>
                     </details>
                     <details>
-                        <summary>Соответствует CSRD?</summary>
-                        <p>Да. GPS/вес/фото = готово к аудиту ESRS S3.</p>
+                        <summary data-i18n="faq.q8">CSRD compliant?</summary>
+                        <p data-i18n="faq.a8">Yes. GPS/weight/photos = audit-ready ESRS S3.</p>
                     </details>
                 </div>
             </div>
-            <p class="contact-line reveal" style="--delay: 0.2s;">Ещё вопросы? → <a href="mailto:hello@rbingood.com">hello@rbingood.com</a></p>
+            <p class="contact-line reveal" style="--delay: 0.2s;" data-i18n-html="faq.contact_html">More questions? → <a href="mailto:hello@rbingood.com">hello@rbingood.com</a></p>
         </div>
     </section>
 
@@ -412,26 +414,26 @@
     <section class="section section-simple" id="team">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Команда</p>
-                <h2>Кто стоит за rbingood</h2>
+                <p class="section-label" data-i18n="team.label">Team</p>
+                <h2 data-i18n="team.title">Who's behind rbingood</h2>
             </div>
 
-            <!-- Соосновательs -->
+            <!-- Co-founders -->
             <div class="team-cofounders reveal" style="--delay: 0.1s;">
                 <div class="team-card">
                     <div class="team-photo">
-                        <img src="assets/main/Ksenia Em.jpeg" alt="Ксения Эм" loading="lazy">
+                        <img src="assets/main/Ksenia Em.jpeg" alt="Ksenia Em" loading="lazy">
                     </div>
-                    <h3>Ксения Эм</h3>
-                    <p class="team-role">Сооснователь</p>
+                    <h3>Ksenia Em</h3>
+                    <p class="team-role" data-i18n="team.role_cofounder">Co-founder</p>
                     <a class="team-link" href="https://www.linkedin.com/in/kseniya-em/" target="_blank" rel="noopener">LinkedIn</a>
                 </div>
                 <div class="team-card">
                     <div class="team-photo">
-                        <img src="assets/main/Kate Mikholap.jpeg" alt="Катя Михолап" loading="lazy">
+                        <img src="assets/main/Kate Mikholap.jpeg" alt="Kate Mikholap" loading="lazy">
                     </div>
-                    <h3>Катя Михолап</h3>
-                    <p class="team-role">Сооснователь</p>
+                    <h3>Kate Mikholap</h3>
+                    <p class="team-role" data-i18n="team.role_cofounder">Co-founder</p>
                     <a class="team-link" href="https://www.linkedin.com/in/kate-mikholap/" target="_blank" rel="noopener">LinkedIn</a>
                 </div>
             </div>
@@ -440,19 +442,19 @@
             <div class="team-partner reveal" style="--delay: 0.2s;">
                 <div class="team-card team-card--horizontal">
                     <div class="team-photo">
-                        <img src="assets/main/Ilgiz Mann.png" alt="Ильгиз Манн" loading="lazy">
+                        <img src="assets/main/Ilgiz Mann.png" alt="Ilgiz Mann" loading="lazy">
                     </div>
                     <div class="team-info">
-                        <h3>Ильгиз Манн</h3>
-                        <p class="team-role">Партнёр</p>
-                        <p class="team-desc">Мастер-классы, лекции, производство изделий из вторсырья.</p>
+                        <h3>Ilgiz Mann</h3>
+                        <p class="team-role" data-i18n="team.role_partner">Partner</p>
+                        <p class="team-desc" data-i18n="team.ilgiz_desc">Workshops, lectures, production of recycled products.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Partners -->
             <div class="partners-block reveal" style="--delay: 0.3s;">
-                <p class="partners-label">Партнёры и поддержка</p>
+                <p class="partners-label" data-i18n="team.partners_label">Partners and support</p>
                 <div class="partners-list">
                     <a class="partner-tag" href="https://www.praia-irmao.com/" target="_blank" rel="noopener">Praia Irmão</a>
                     <a class="partner-tag" href="https://www.instagram.com/deephousebible/" target="_blank" rel="noopener">DHB Festival</a>
@@ -467,38 +469,38 @@
     <section class="section section-simple" id="event-photos">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label">Фотографии с ивентов</p>
+                <p class="section-label" data-i18n="photos.label">Photos from events</p>
             </div>
             <div class="photo-scroll reveal" style="--delay: 0.1s;">
-                <img src="assets/main/10.jpg" alt="rbingood — ивент" loading="lazy">
-                <img src="assets/main/10.01.jpg" alt="rbingood — ивент 1" loading="lazy">
-                <img src="assets/main/10.02.jpg" alt="rbingood — ивент 2" loading="lazy">
-                <img src="assets/main/10.03.jpeg" alt="rbingood — ивент 3" loading="lazy">
-                <img src="assets/main/10.04.jpeg" alt="rbingood — ивент 4" loading="lazy">
-                <img src="assets/main/10.05.jpeg" alt="rbingood — ивент 5" loading="lazy">
-                <img src="assets/main/10.06.jpeg" alt="rbingood — ивент 6" loading="lazy">
-                <img src="assets/main/10.07.jpeg" alt="rbingood — ивент 7" loading="lazy">
-                <img src="assets/main/10.08.jpeg" alt="rbingood — ивент 8" loading="lazy">
-                <img src="assets/main/10.09.jpeg" alt="rbingood — ивент 9" loading="lazy">
-                <img src="assets/main/10.10.jpeg" alt="rbingood — ивент 10" loading="lazy">
-                <img src="assets/main/10.11.jpeg" alt="rbingood — ивент 11" loading="lazy">
-                <img src="assets/main/10.12.jpeg" alt="rbingood — ивент 12" loading="lazy">
-                <img src="assets/main/10.13.jpeg" alt="rbingood — ивент 13" loading="lazy">
-                <img src="assets/main/10.14.jpeg" alt="rbingood — ивент 14" loading="lazy">
-                <img src="assets/main/10.15.jpeg" alt="rbingood — ивент 15" loading="lazy">
-                <img src="assets/main/10.16.jpeg" alt="rbingood — ивент 16" loading="lazy">
-                <img src="assets/main/10.17.jpeg" alt="rbingood — ивент 17" loading="lazy">
-                <img src="assets/main/10.18.jpeg" alt="rbingood — ивент 18" loading="lazy">
+                <img src="assets/main/10.jpg" alt="rbingood event" loading="lazy">
+                <img src="assets/main/10.01.jpg" alt="rbingood event 1" loading="lazy">
+                <img src="assets/main/10.02.jpg" alt="rbingood event 2" loading="lazy">
+                <img src="assets/main/10.03.jpeg" alt="rbingood event 3" loading="lazy">
+                <img src="assets/main/10.04.jpeg" alt="rbingood event 4" loading="lazy">
+                <img src="assets/main/10.05.jpeg" alt="rbingood event 5" loading="lazy">
+                <img src="assets/main/10.06.jpeg" alt="rbingood event 6" loading="lazy">
+                <img src="assets/main/10.07.jpeg" alt="rbingood event 7" loading="lazy">
+                <img src="assets/main/10.08.jpeg" alt="rbingood event 8" loading="lazy">
+                <img src="assets/main/10.09.jpeg" alt="rbingood event 9" loading="lazy">
+                <img src="assets/main/10.10.jpeg" alt="rbingood event 10" loading="lazy">
+                <img src="assets/main/10.11.jpeg" alt="rbingood event 11" loading="lazy">
+                <img src="assets/main/10.12.jpeg" alt="rbingood event 12" loading="lazy">
+                <img src="assets/main/10.13.jpeg" alt="rbingood event 13" loading="lazy">
+                <img src="assets/main/10.14.jpeg" alt="rbingood event 14" loading="lazy">
+                <img src="assets/main/10.15.jpeg" alt="rbingood event 15" loading="lazy">
+                <img src="assets/main/10.16.jpeg" alt="rbingood event 16" loading="lazy">
+                <img src="assets/main/10.17.jpeg" alt="rbingood event 17" loading="lazy">
+                <img src="assets/main/10.18.jpeg" alt="rbingood event 18" loading="lazy">
             </div>
         </div>
     </section>
 
     <footer class="section section-simple footer-simple" id="contact">
         <div class="container text-center">
-            <p class="footer-title">rbingood — оплачиваемые уборки с реальным результатом</p>
-            <p class="footer-subtitle">Напишите нам или присоединяйтесь к сообществу.</p>
+            <p class="footer-title" data-i18n="footer.title">rbingood — paid cleanups with real results</p>
+            <p class="footer-subtitle" data-i18n="footer.subtitle">Write to us or join the community.</p>
             <div class="contact-links">
-                <a class="btn-primary" href="mailto:hello@rbingood.com?subject=rbingood%20waitlist&body=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%B8%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20rbingood.">написать нам</a>
+                <a class="btn-primary" data-mailto="mailto.waitlist_subject,mailto.waitlist_body" data-i18n="footer.btn">contact us</a>
             </div>
             <div class="social-links">
                 <a class="social-link" href="https://t.me/+L36Qqw9TZMwzMDQy" target="_blank" rel="noopener">Telegram (RU)</a>
@@ -506,40 +508,49 @@
                 <a class="social-link" href="https://www.linkedin.com/in/kseniya-em/" target="_blank" rel="noopener">LinkedIn — Kseniya</a>
                 <a class="social-link" href="https://www.linkedin.com/in/kate-mikholap/" target="_blank" rel="noopener">LinkedIn — Kate</a>
             </div>
-            <p class="footer-meta">© 2026 rbingood. Лиссабон.</p>
+            <p class="footer-meta" data-i18n="footer.meta">© 2026 rbingood. Lisbon.</p>
         </div>
     </footer>
+
+    <script src="i18n.js"></script>
     <script>
-    (function() {
-        var tags = document.querySelectorAll('.addon-tag[data-addon]');
+    // Addons mailto logic
+    function updateAddonsMailto() {
+        var tags = document.querySelectorAll('.addon-tag[data-addon-i18n]');
         var mailtoBtn = document.getElementById('addons-mailto');
-
-        function updateMailto() {
-            var selected = [];
-            tags.forEach(function(tag) {
-                if (tag.classList.contains('selected')) {
-                    selected.push(tag.getAttribute('data-addon'));
-                }
-            });
-
-            var subject = 'rbingood — спонсорство + доп. форматы';
-            var body;
-            if (selected.length > 0) {
-                body = 'Добрый день! Мы бы хотели обсудить спонсорство с доп форматами: ' + selected.join(', ') + '.';
-            } else {
-                body = 'Добрый день! Мы бы хотели обсудить спонсорство rbingood.';
-            }
-
-            mailtoBtn.href = 'mailto:hello@rbingood.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        }
-
+        var selected = [];
         tags.forEach(function(tag) {
-            tag.addEventListener('click', function() {
-                tag.classList.toggle('selected');
-                updateMailto();
-            });
+            if (tag.classList.contains('selected')) {
+                selected.push(tag.getAttribute('data-addon'));
+            }
         });
-    })();
+        var subject = I18N.t('mailto.addons_subject');
+        var body;
+        if (selected.length > 0) {
+            body = I18N.t('mailto.addons_body_with') + selected.join(', ') + '.';
+        } else {
+            body = I18N.t('mailto.addons_body_without');
+        }
+        mailtoBtn.href = 'mailto:hello@rbingood.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    }
+
+    // Addon tag click handlers
+    document.querySelectorAll('.addon-tag[data-addon-i18n]').forEach(function(tag) {
+        tag.addEventListener('click', function() {
+            tag.classList.toggle('selected');
+            updateAddonsMailto();
+        });
+    });
+
+    // Language switcher
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            I18N.apply(btn.getAttribute('data-lang'));
+        });
+    });
+
+    // Init i18n
+    I18N.init();
     </script>
 </body>
 
