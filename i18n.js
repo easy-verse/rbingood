@@ -176,6 +176,10 @@ var I18N = {
       "footer.subtitle": "Write to us or join the community.",
       "footer.btn": "contact us",
       "footer.meta": "\u00a9 2026 rbingood. Lisbon.",
+      "footer.legal": "Legal Notice",
+      "footer.privacy": "Privacy Policy",
+      "footer.legal_href": "assets/info/legal-notice-EN.txt",
+      "footer.privacy_href": "assets/info/privacy-policy-EN.txt",
 
       // Mailto
       "mailto.waitlist_subject": "rbingood waitlist",
@@ -353,6 +357,10 @@ var I18N = {
       "footer.subtitle": "\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u043d\u0430\u043c \u0438\u043b\u0438 \u043f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u044f\u0439\u0442\u0435\u0441\u044c \u043a \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0443.",
       "footer.btn": "\u043d\u0430\u043f\u0438\u0441\u0430\u0442\u044c \u043d\u0430\u043c",
       "footer.meta": "\u00a9 2026 rbingood. \u041b\u0438\u0441\u0441\u0430\u0431\u043e\u043d.",
+      "footer.legal": "\u041f\u0440\u0430\u0432\u043e\u0432\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f",
+      "footer.privacy": "\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430 \u043a\u043e\u043d\u0444\u0438\u0434\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0438",
+      "footer.legal_href": "assets/info/legal-notice-RU.txt",
+      "footer.privacy_href": "assets/info/privacy-policy-RU.txt",
 
       "mailto.waitlist_subject": "rbingood waitlist",
       "mailto.waitlist_body": "\u041f\u0440\u0438\u0432\u0435\u0442! \u0425\u043e\u0447\u0443 \u043f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u044c\u0441\u044f \u043a rbingood.",
@@ -529,6 +537,10 @@ var I18N = {
       "footer.subtitle": "Escreva-nos ou junte-se \u00e0 comunidade.",
       "footer.btn": "contacte-nos",
       "footer.meta": "\u00a9 2026 rbingood. Lisboa.",
+      "footer.legal": "Aviso Legal",
+      "footer.privacy": "Pol\u00edtica de Privacidade",
+      "footer.legal_href": "assets/info/legal-notice-PT.txt",
+      "footer.privacy_href": "assets/info/privacy-policy-PT.txt",
 
       "mailto.waitlist_subject": "rbingood lista de espera",
       "mailto.waitlist_body": "Ol\u00e1! Quero juntar-me ao rbingood.",
@@ -583,6 +595,12 @@ var I18N = {
       var text = I18N.t(key);
       el.textContent = text;
       el.setAttribute('data-addon', text);
+    });
+
+    // Update links with language-dependent href
+    document.querySelectorAll('[data-i18n-href]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-href');
+      el.href = I18N.t(key);
     });
 
     // Update addons mailto
