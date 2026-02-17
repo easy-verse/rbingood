@@ -885,10 +885,14 @@ p {
     margin-top: 4px;
 }
 
-.team-partner {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
+.partners-section {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.partners-section .team-card--horizontal {
+    margin: 24px auto 32px;
+    max-width: 500px;
 }
 
 .team-card--horizontal {
@@ -909,9 +913,8 @@ p {
     flex-shrink: 0;
 }
 
-.partners-block {
-    margin-top: 48px;
-    text-align: center;
+.partners-section .partners-list {
+    margin-top: 8px;
 }
 
 .partners-label {
