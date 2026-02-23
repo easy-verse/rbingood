@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чистим пляж от последствий ураганов — rbingood</title>
+    <meta name="description" content="Уборка пляжа Praia do Castelo, суббота 28 февраля 15:00–17:30. Зарегистрируйтесь бесплатно.">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* ── Event page ──────────────────────────────────── */
+
+        .event-hero-wrap {
+            padding-top: 140px;
+            padding-bottom: 28px;
+        }
+        .event-badge {
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 999px;
+            background: rgba(46,204,113,0.12);
+            border: 1px solid rgba(46,204,113,0.3);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #1a9e50;
+            margin-bottom: 20px;
+        }
+        .event-hero-title {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #0f0f0f;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+        .event-hero-sub {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 560px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+        .event-meta-row {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+        .event-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .event-meta-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+        }
+        .event-meta-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0f0f0f;
+        }
+        .event-meta-value a {
+            color: #0f0f0f;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            transition: border-color 0.2s;
+        }
+        .event-meta-value a:hover {
+            border-color: #2ECC71;
+            color: #1a9e50;
+        }
+
+        /* Layout */
+        .event-layout {
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* Info blocks */
+        .event-info-block {
+            background: #fff;
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 20px;
+        }
+        .event-info-block h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #0f0f0f;
+        }
+
+        /* Schedule */
+        .schedule-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0;
+        }
+        .schedule-item {
+            display: grid;
+            grid-template-columns: 90px 1fr;
+            gap: 16px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border-subtle);
+            align-items: start;
+        }
+        .schedule-item:last-child { border-bottom: none; }
+        .schedule-time {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #2ECC71;
+            white-space: nowrap;
+            padding-top: 1px;
+        }
+        .schedule-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Checklist */
+        .event-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 10px;
+        }
+        .event-checklist li {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .event-checklist li::before {
+            content: "—";
+            color: #2ECC71;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* Photo */
+        .event-photo {
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 16/8;
+            margin-bottom: 20px;
+        }
+        .event-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Photo grid */
+        .event-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .event-gallery img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        /* ── Registration card ───────────────────────────── */
+        .reg-card {
+            background: #fff;
+            border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            padding: 36px;
+            position: sticky;
+            top: 100px;
+            margin-bottom: 20px;
+        }
+        .reg-card-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #0f0f0f;
+            margin-bottom: 6px;
+        }
+        .reg-card-sub {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* RSVP counter */
+        .rsvp-counter {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            background: #f5f6f7;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .rsvp-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #2ECC71;
+            flex-shrink: 0;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .rsvp-count {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #0f0f0f;
+        }
+        .rsvp-count span {
+            color: #2ECC71;
+        }
+
+        /* Google Sign-In */
+        .google-signin-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 13px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(0,0,0,0.15);
+            background: #fff;
+            font-size: 0.95rem;
+            font-weight: 600;
+            font-family: inherit;
+            color: #0f0f0f;
+            cursor: pointer;
+            transition: box-shadow 0.2s, border-color 0.2s;
+            margin-bottom: 14px;
+        }
+        .google-signin-btn:hover {
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            border-color: rgba(0,0,0,0.25);
+        }
+        .google-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        /* Auth divider */
+        .auth-divider {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+        .auth-divider-line { flex: 1; height: 1px; background: var(--border-subtle); }
+        .auth-divider-text { font-size: 0.78rem; color: var(--text-muted); }
+
+        /* Form */
+        .reg-form { display: grid; gap: 12px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .form-field { display: flex; flex-direction: column; gap: 4px; }
+        .form-field label { font-size: 0.78rem; font-weight: 600; color: #0f0f0f; }
+        .form-field input {
+            padding: 11px 14px;
+            border-radius: 10px;
+            border: 1px solid rgba(0,0,0,0.12);
+            font-size: 0.9rem;
+            font-family: inherit;
+            color: #0f0f0f;
+            background: #fafafa;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-field input:focus {
+            border-color: #2ECC71;
+            box-shadow: 0 0 0 3px rgba(46,204,113,0.1);
+            background: #fff;
+        }
+        .form-field input::placeholder { color: #bbb; }
+
+        /* +1 toggle */
+        .plus-one-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+            background: #fafafa;
+            cursor: pointer;
+            transition: border-color 0.2s, background 0.2s;
+            user-select: none;
+        }
+        .plus-one-row:hover { border-color: rgba(0,0,0,0.2); }
+        .plus-one-row input[type="checkbox"] { display: none; }
+        .plus-one-checkbox {
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            border: 2px solid rgba(0,0,0,0.2);
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .plus-one-row.checked .plus-one-checkbox {
+            background: #2ECC71;
+            border-color: #2ECC71;
+        }
+        .plus-one-check-icon { display: none; color: #fff; font-size: 0.7rem; font-weight: 700; }
+        .plus-one-row.checked .plus-one-check-icon { display: block; }
+        .plus-one-label { font-size: 0.88rem; color: var(--text-muted); }
+
+        .reg-submit {
+            background: #0f0f0f;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            padding: 14px 24px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            font-family: inherit;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .reg-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .reg-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
+        .form-note { font-size: 0.75rem; color: var(--text-muted); text-align: center; line-height: 1.5; }
+
+        /* Cancel RSVP */
+        .cancel-rsvp {
+            background: none;
+            border: none;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            padding: 6px;
+            font-family: inherit;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .cancel-rsvp:hover { color: #c0392b; }
+
+        /* Community links inside reg card */
+        .reg-community-links {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+        .reg-community-btn {
+            flex: 1;
+            text-align: center;
+            padding: 9px 14px;
+            border-radius: 10px;
+            border: 1.5px solid rgba(0,0,0,0.1);
+            background: #fafafa;
+            color: #0f0f0f;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.15s, border-color 0.15s;
+        }
+        .reg-community-btn:hover { background: #f0f0f0; border-color: rgba(0,0,0,0.18); }
+
+        /* Post-registration actions */
+        .rsvp-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+        .plus-one-btn {
+            padding: 8px 20px;
+            border-radius: 999px;
+            border: 1.5px solid #2ECC71;
+            background: transparent;
+            color: #1a9e50;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .plus-one-btn:hover { background: rgba(46,204,113,0.12); }
+        .plus-one-btn.active { background: #2ECC71; color: #fff; }
+        .plus-one-btn.active:hover { background: #27ae60; }
+
+        /* States */
+        .form-success { display: none; text-align: center; padding: 16px 0; }
+        .form-success.visible { display: block; }
+        .form-success-icon {
+            width: 48px; height: 48px; border-radius: 50%;
+            background: rgba(46,204,113,0.12); border: 2px solid #2ECC71;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 14px; font-size: 1.3rem;
+        }
+        .form-success h3 { font-size: 1.1rem; color: #0f0f0f; margin-bottom: 6px; }
+        .form-success p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+        .form-error-msg {
+            display: none; padding: 10px 14px; border-radius: 10px;
+            background: rgba(229,85,85,0.06); border: 1px solid rgba(229,85,85,0.2);
+            font-size: 0.82rem; color: #c0392b; line-height: 1.5;
+        }
+        .form-error-msg.visible { display: block; }
+
+        /* ── Chat section ────────────────────────────────── */
+        .chat-section {
+            background: #fff;
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .chat-header {
+            padding: 18px 24px;
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .chat-header-dot {
+            width: 8px; height: 8px; border-radius: 50%; background: #2ECC71;
+        }
+        .chat-header-title {
+            font-size: 0.95rem; font-weight: 700; color: #0f0f0f;
+        }
+        .chat-header-count {
+            font-size: 0.78rem; color: var(--text-muted); margin-left: auto;
+        }
+        .chat-messages {
+            padding: 20px 24px;
+            min-height: 200px;
+            max-height: 320px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .chat-msg { display: flex; gap: 10px; align-items: flex-start; }
+        .chat-avatar {
+            width: 32px; height: 32px; border-radius: 50%;
+            background: #f0f0f0; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
+        }
+        .chat-bubble-wrap { display: flex; flex-direction: column; gap: 3px; }
+        .chat-name { font-size: 0.72rem; font-weight: 600; color: var(--text-muted); }
+        .chat-show-original-btn {
+            display: block;
+            margin-top: 4px;
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .chat-show-original-btn:hover { color: #0f0f0f; }
+        .chat-bubble {
+            background: #f5f6f7; border-radius: 12px; border-top-left-radius: 4px;
+            padding: 9px 13px; font-size: 0.88rem; color: #0f0f0f; line-height: 1.5;
+            max-width: 280px;
+        }
+        .chat-locked {
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; padding: 32px 24px; gap: 10px; text-align: center;
+        }
+        .chat-locked-icon {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: #f5f6f7; display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; margin-bottom: 4px;
+        }
+        .chat-locked p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; margin: 0; }
+        .chat-input-row {
+            padding: 14px 24px;
+            border-top: 1px solid var(--border-subtle);
+            display: flex; gap: 10px;
+        }
+        .chat-input {
+            flex: 1; padding: 10px 14px; border-radius: 10px;
+            border: 1px solid rgba(0,0,0,0.12); font-size: 0.88rem;
+            font-family: inherit; outline: none; background: #fafafa;
+            transition: border-color 0.2s;
+        }
+        .chat-input:focus { border-color: #2ECC71; background: #fff; }
+        .chat-input:disabled { opacity: 0.5; cursor: not-allowed; }
+        .chat-send {
+            padding: 10px 18px; border-radius: 10px; border: none;
+            background: #0f0f0f; color: #fff; font-size: 0.85rem;
+            font-weight: 600; font-family: inherit; cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .chat-send:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        /* ── Community buttons ───────────────────────────── */
+        .community-section {
+            background: #f5f6f7;
+            border-radius: 20px;
+            padding: 28px 32px;
+            margin-top: 32px;
+        }
+        .community-section h3 {
+            font-size: 1rem; font-weight: 700; color: #0f0f0f; margin-bottom: 6px;
+        }
+        .community-section p {
+            font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.5;
+        }
+        .community-lang-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .community-lang-label {
+            grid-column: 1 / -1;
+            font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.1em; color: var(--text-muted);
+        }
+        .community-btn {
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            padding: 11px 16px; border-radius: 12px; border: 1px solid var(--border-subtle);
+            font-size: 0.88rem; font-weight: 600; color: #0f0f0f;
+            text-decoration: none; background: #fff;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .community-btn:hover { border-color: #0f0f0f; background: #f9f9f9; }
+
+        /* ── Donate card ─────────────────────────────────── */
+        .donate-card {
+            background: #FDD835; border-radius: 20px; padding: 32px;
+        }
+        .donate-card h3 { font-size: 1.3rem; font-weight: 800; color: #0f0f0f; margin-bottom: 8px; }
+        .donate-card p { font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 20px; }
+        .donate-amounts { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+        .donate-amount-btn {
+            padding: 8px 18px; border-radius: 999px; border: 2px solid rgba(0,0,0,0.15);
+            background: transparent; font-size: 0.9rem; font-weight: 700;
+            font-family: inherit; cursor: pointer; color: #0f0f0f; transition: all 0.2s;
+        }
+        .donate-amount-btn:hover, .donate-amount-btn.selected {
+            background: #0f0f0f; border-color: #0f0f0f; color: #fff;
+        }
+        .donate-submit {
+            display: block; width: 100%; padding: 14px 24px; border-radius: 14px;
+            border: none; background: #0f0f0f; color: #fff; font-size: 1rem;
+            font-weight: 700; font-family: inherit; cursor: pointer; text-align: center;
+            text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .donate-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+        .donate-note { font-size: 0.78rem; color: #555; text-align: center; margin-top: 10px; }
+
+        /* ── Metrics ─────────────────────────────────────── */
+        .metrics-bar {
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            gap: 1px; background: var(--border-subtle);
+            border-radius: 20px; overflow: hidden; margin-top: 48px;
+        }
+        .metrics-bar-item { background: #fff; padding: 28px 24px; text-align: center; }
+        .metrics-bar-num { font-size: 2.2rem; font-weight: 800; color: #0f0f0f; line-height: 1; margin-bottom: 6px; }
+        .metrics-bar-label { font-size: 0.85rem; color: var(--text-muted); }
+
+        /* ── Cookie banner ───────────────────────────────── */
+        .cookie-banner {
+            position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
+            background: #0f0f0f; color: #fff;
+            padding: 16px 24px;
+            display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+            font-size: 0.83rem; line-height: 1.5;
+            transform: translateY(100%); transition: transform 0.3s ease;
+        }
+        .cookie-banner.visible { transform: translateY(0); }
+        .cookie-banner p { flex: 1; margin: 0; min-width: 220px; color: rgba(255,255,255,0.8); }
+        .cookie-banner a { color: #2ECC71; text-decoration: underline; }
+        .cookie-actions { display: flex; gap: 8px; flex-shrink: 0; }
+        .cookie-btn {
+            padding: 8px 18px; border-radius: 999px; font-size: 0.82rem;
+            font-weight: 700; font-family: inherit; cursor: pointer; border: none; transition: opacity 0.15s;
+        }
+        .cookie-btn:hover { opacity: 0.85; }
+        .cookie-btn-accept { background: #2ECC71; color: #fff; }
+        .cookie-btn-decline { background: rgba(255,255,255,0.12); color: #fff; }
+
+        /* ── Language switcher ───────────────────────────── */
+        .lang-switcher { display: flex; gap: 2px; align-items: center; margin-right: 4px; }
+        .lang-btn {
+            padding: 4px 9px; border-radius: 999px; border: 1.5px solid transparent;
+            background: transparent; font-size: 0.75rem; font-weight: 700;
+            cursor: pointer; color: var(--text-muted); font-family: inherit; transition: all 0.15s;
+        }
+        .lang-btn:hover { color: #0f0f0f; }
+        .lang-btn.active { border-color: rgba(0,0,0,0.15); color: #0f0f0f; background: #fff; }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .event-hero-title { font-size: 2rem; }
+            .event-layout { grid-template-columns: 1fr; }
+            .reg-card { position: static; }
+            .form-row { grid-template-columns: 1fr; }
+            .metrics-bar { grid-template-columns: repeat(2, 1fr); }
+            .event-gallery { grid-template-columns: repeat(2, 1fr); }
+            .community-lang-group { grid-template-columns: 1fr; }
+            .schedule-item { grid-template-columns: 80px 1fr; gap: 10px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ── Nav ──────────────────────────────────────────── -->
+    <div class="nav-wrapper">
+        <nav class="nav-pill">
+            <a href="index.html" class="nav-logo">rbingood</a>
+            <a href="#about" class="nav-link" data-i18n="nav.about">О событии</a>
+            <a href="#register" class="nav-link" data-i18n="nav.register">Регистрация</a>
+            <a href="#donate" class="nav-link" data-i18n="nav.donate">Донат</a>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="pt">PT</button>
+            </div>
+            <div class="nav-waitlist">
+                <a href="#register" class="btn-nav" data-i18n="nav.btn">Зарегистрироваться</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ── Hero ─────────────────────────────────────────── -->
+    <section class="section section-simple event-hero-wrap" id="hero">
+        <div class="container">
+            <div class="event-badge" data-i18n="hero.badge">Ближайший ивент</div>
+            <h1 class="event-hero-title reveal" style="--delay:0s;" data-i18n="hero.title">Чистим пляж от<br>последствий ураганов</h1>
+            <p class="event-hero-sub reveal" style="--delay:0.05s;" data-i18n="hero.sub">Собираемся, убираем вместе, видим реальный результат. Инвентарь включён. Вход свободный.</p>
+
+            <div class="event-meta-row reveal" style="--delay:0.1s;">
+                <div class="event-meta-item">
+                    <span class="event-meta-label" data-i18n="meta.date.label">Дата</span>
+                    <span class="event-meta-value" data-i18n="meta.date.value">Суббота, 28 февраля 2026</span>
+                </div>
+                <div class="event-meta-item">
+                    <span class="event-meta-label" data-i18n="meta.time.label">Время</span>
+                    <span class="event-meta-value">15:00–17:30</span>
+                </div>
+                <div class="event-meta-item">
+                    <span class="event-meta-label" data-i18n="meta.location.label">Место</span>
+                    <span class="event-meta-value">
+                        <a href="https://maps.app.goo.gl/2wb9hdJBU7PfzHeDA" target="_blank" rel="noopener">Praia do Castelo</a>
+                    </span>
+                </div>
+                <div class="event-meta-item">
+                    <span class="event-meta-label" data-i18n="meta.sponsor.label">Спонсор</span>
+                    <span class="event-meta-value"><a href="https://www.instagram.com/praia_irmao" target="_blank" rel="noopener">IRMAO</a></span>
+                </div>
+        </div>
+    </section>
+
+    <!-- ── Main content ──────────────────────────────────── -->
+    <section class="section section-simple" id="about">
+        <div class="container">
+            <div class="event-layout">
+
+                <!-- Left: info -->
+                <div class="event-left">
+
+                    <div class="event-photo reveal" style="--delay: 0s;">
+                        <img src="assets/main/11.jpg" alt="Уборка пляжа после урагана" loading="lazy">
+                    </div>
+
+                    <div class="event-info-block reveal" style="--delay: 0.1s;">
+                        <h3 data-i18n="schedule.title">Что вас ждёт</h3>
+                        <ul class="schedule-list">
+                            <li class="schedule-item">
+                                <span class="schedule-time">15:00–15:10</span>
+                                <span class="schedule-desc" data-i18n="schedule.1">Поздороваемся, проведём вводную часть — что, почему и как чистим</span>
+                            </li>
+                            <li class="schedule-item">
+                                <span class="schedule-time">15:10–15:25</span>
+                                <span class="schedule-desc" data-i18n="schedule.2">Поделимся на группы, выдадим перчатки и пакеты для сбора отходов</span>
+                            </li>
+                            <li class="schedule-item">
+                                <span class="schedule-time">15:25–16:45</span>
+                                <span class="schedule-desc" data-i18n="schedule.3">Начнём собирать и закончим</span>
+                            </li>
+                            <li class="schedule-item">
+                                <span class="schedule-time">16:45–17:00</span>
+                                <span class="schedule-desc" data-i18n="schedule.4">Расфасуем по пакетам, отнесём в баки раздельного мусора</span>
+                            </li>
+                            <li class="schedule-item">
+                                <span class="schedule-time">17:00–17:30</span>
+                                <span class="schedule-desc" data-i18n="schedule.5">Помоем руки, перекусим вкусной пиццей от IRMAO, проводим закат на океане</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="event-info-block reveal" style="--delay: 0.15s;">
+                        <h3 data-i18n="bring.title">Что взять с собой</h3>
+                        <ul class="event-checklist">
+                            <li data-i18n="bring.1">Удобная одежда</li>
+                            <li data-i18n="bring.2">Закрытая обувь</li>
+                            <li data-i18n="bring.3">Солнцезащитный крем</li>
+                            <li data-i18n="bring.4">Всё остальное — мы обеспечим</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Right column -->
+                <div class="event-right" id="register">
+
+                    <!-- Registration card -->
+                    <div class="reg-card reveal" style="--delay: 0s;">
+                        <p class="reg-card-title" data-i18n="reg.title">Зарегистрироваться</p>
+                        <p class="reg-card-sub" data-i18n="reg.sub">Укажите имя и email — пришлём детали и напомним за день до.</p>
+
+                        <div class="rsvp-counter">
+                            <span class="rsvp-dot"></span>
+                            <span class="rsvp-count" id="rsvpText"><span id="rsvpNum">2</span><span id="rsvpSuffix" data-i18n="reg.counter"> человек идут</span></span>
+                        </div>
+
+                        <!-- Success state -->
+                        <div class="form-success" id="formSuccess">
+                            <div class="form-success-icon">✓</div>
+                            <h3 data-i18n="success.title">Вы зарегистрированы</h3>
+                            <p data-i18n="success.text">Ждём вас 28 февраля в 15:00 у Praia do Castelo.</p>
+                            <div class="rsvp-actions">
+                                <button type="button" class="plus-one-btn" id="plusOneBtn" data-i18n="success.plusone">Приду +1</button>
+                                <button type="button" class="cancel-rsvp" id="cancelRsvpBtn" data-i18n="success.cancel">Отменить участие</button>
+                            </div>
+                            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:16px;" data-i18n="success.community">Детали обсуждаем в чате ниже или в сообществе</p>
+                            <div class="reg-community-links" style="margin-top:8px;">
+                                <a href="https://t.me/+L36Qqw9TZMwzMDQy" target="_blank" rel="noopener" class="reg-community-btn">Telegram (RU)</a>
+                                <a href="https://chat.whatsapp.com/LpqXHh5mIYF2QfIm7WZrLL" target="_blank" rel="noopener" class="reg-community-btn">WhatsApp (EN)</a>
+                            </div>
+                        </div>
+
+                        <!-- Form -->
+                        <div id="formWrap">
+                            <button type="button" class="google-signin-btn" id="googleSignInBtn">
+                                <svg class="google-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                                </svg>
+                                <span data-i18n="reg.google">Войти через Google</span>
+                            </button>
+
+                            <div class="auth-divider">
+                                <div class="auth-divider-line"></div>
+                                <span class="auth-divider-text" data-i18n="reg.divider">или через email</span>
+                                <div class="auth-divider-line"></div>
+                            </div>
+
+                            <form class="reg-form" id="regForm" novalidate>
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="firstName" data-i18n="reg.firstName">Имя</label>
+                                        <input type="text" id="firstName" name="firstName" placeholder="Анна" data-i18n-placeholder="reg.firstName.placeholder" required autocomplete="given-name">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="lastName" data-i18n="reg.lastName">Фамилия</label>
+                                        <input type="text" id="lastName" name="lastName" placeholder="Иванова" data-i18n-placeholder="reg.lastName.placeholder" autocomplete="family-name">
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="anna@example.com" required autocomplete="email">
+                                </div>
+
+                                <div class="form-error-msg" id="formError">
+                                    Не удалось отправить. Напишите нам: <a href="mailto:hello@rbingood.com" style="color:#c0392b;">hello@rbingood.com</a>
+                                </div>
+
+                                <button type="submit" class="reg-submit" id="regSubmit" data-i18n="reg.submit">Зарегистрироваться</button>
+                                <p class="form-note" data-i18n="reg.note">Бесплатно. Без спама. Только информация об ивенте.</p>
+                            </form>
+                            <div class="reg-community-links">
+                                <a href="https://t.me/+L36Qqw9TZMwzMDQy" target="_blank" rel="noopener" class="reg-community-btn">Telegram (RU)</a>
+                                <a href="https://chat.whatsapp.com/LpqXHh5mIYF2QfIm7WZrLL" target="_blank" rel="noopener" class="reg-community-btn">WhatsApp (EN)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Donate -->
+                    <div class="donate-card reveal" id="donate" style="--delay: 0.1s;">
+                        <h3 data-i18n="donate.title">Поддержать донатом</h3>
+                        <p data-i18n="donate.text">Не можете прийти лично? Любая сумма покрывает реальные расходы — необходимый инвентарь для крупной уборки после шторма. Всё, что останется, пойдёт на следующие чистки.</p>
+                        <div class="donate-amounts">
+                            <button type="button" class="donate-amount-btn selected" data-amount="1">€1</button>
+                            <button type="button" class="donate-amount-btn" data-amount="5">€5</button>
+                            <button type="button" class="donate-amount-btn" data-amount="10">€10</button>
+                            <button type="button" class="donate-amount-btn" data-amount="25">€25</button>
+                        </div>
+                        <a class="donate-submit" id="donateLink" href="https://buy.stripe.com/bJefZibdHbec2F4bog3ks00" target="_blank" rel="noopener" data-i18n="donate.btn">Сделать донат</a>
+                        <p class="donate-note" data-i18n="donate.note">Оплата картой — Visa, Mastercard, Apple Pay</p>
+                    </div>
+
+                    <!-- Chat -->
+                    <div class="chat-section reveal" style="--delay: 0.1s;">
+                        <div class="chat-header">
+                            <span class="chat-header-dot"></span>
+                            <span class="chat-header-title" data-i18n="chat.title">Чат участников</span>
+                            <span class="chat-header-count" id="chatCount" data-i18n="chat.count">322 в сообществе</span>
+                        </div>
+
+                        <div class="chat-messages" id="chatMessages">
+                            <!-- Locked state (shown before auth) -->
+                            <div class="chat-locked" id="chatLocked">
+                                <div class="chat-locked-icon">&#128274;</div>
+                                <p data-i18n="chat.locked">Зарегистрируйтесь, чтобы видеть чат и обсуждать детали ивента с другими участниками</p>
+                            </div>
+                            <!-- Messages shown after registration -->
+                            <div id="chatMsgsInner" style="display:none; flex-direction:column; gap:16px;">
+                                <div class="chat-msg">
+                                    <div class="chat-avatar">KE</div>
+                                    <div class="chat-bubble-wrap">
+                                        <span class="chat-name">Ksenia Em</span>
+                                        <div class="chat-bubble">Привет всем! Встречаемся у входа на пляж в 15:00. Ориентир — синий флаг rbingood</div>
+                                    </div>
+                                </div>
+                                <div class="chat-msg">
+                                    <div class="chat-avatar">MV</div>
+                                    <div class="chat-bubble-wrap">
+                                        <span class="chat-name">Mikhail V.</span>
+                                        <div class="chat-bubble">Буду с другом, взял дополнительные перчатки</div>
+                                    </div>
+                                </div>
+                                <div class="chat-msg">
+                                    <div class="chat-avatar">AS</div>
+                                    <div class="chat-bubble-wrap">
+                                        <span class="chat-name">Anna S.</span>
+                                        <div class="chat-bubble">Добираться удобно на автобусе 153 от Sesimbra центра</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-input-row">
+                            <input class="chat-input" id="chatInput" type="text" placeholder="Зарегистрируйтесь, чтобы написать..." data-i18n-placeholder="chat.placeholder.locked" disabled>
+                            <button class="chat-send" id="chatSend" data-i18n="chat.send" disabled>Отправить</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Metrics -->
+            <div class="metrics-bar reveal" style="--delay: 0.2s;">
+                <div class="metrics-bar-item">
+                    <div class="metrics-bar-num">17</div>
+                    <div class="metrics-bar-label" data-i18n="metrics.events">ивентов проведено</div>
+                </div>
+                <div class="metrics-bar-item">
+                    <div class="metrics-bar-num">2 100+ кг</div>
+                    <div class="metrics-bar-label" data-i18n="metrics.trash">мусора собрано</div>
+                </div>
+                <div class="metrics-bar-item">
+                    <div class="metrics-bar-num">322</div>
+                    <div class="metrics-bar-label" data-i18n="metrics.members">участника сообщества</div>
+                </div>
+                <div class="metrics-bar-item">
+                    <div class="metrics-bar-num">6</div>
+                    <div class="metrics-bar-label" data-i18n="metrics.sponsors">спонсоров</div>
+                </div>
+            </div>
+
+            <!-- Photo gallery -->
+            <div class="reveal" style="--delay: 0.1s; margin-top: 32px;">
+                <p class="section-label" style="margin-bottom: 16px;" data-i18n="gallery.label">Фото с прошлых чисток</p>
+                <div class="photo-scroll">
+                    <img src="assets/main/10.01.jpg" alt="rbingood event" loading="lazy">
+                    <img src="assets/main/10.02.jpg" alt="rbingood event" loading="lazy">
+                    <img src="assets/main/10.03.jpeg" alt="rbingood event" loading="lazy">
+                    <img src="assets/main/10.04.jpeg" alt="rbingood event" loading="lazy">
+                    <img src="assets/main/10.05.jpeg" alt="rbingood event" loading="lazy">
+                    <img src="assets/main/10.06.jpeg" alt="rbingood event" loading="lazy">
+                    <img src="assets/main/10.07.jpeg" alt="rbingood event" loading="lazy">
+                    <img src="assets/main/10.08.jpeg" alt="rbingood event" loading="lazy">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Footer ─────────────────────────────────────────── -->
+    <footer class="section section-simple footer-simple">
+        <div class="container text-center">
+            <p class="footer-title">rbingood — verified eco-cleanups</p>
+            <div class="social-links">
+                <a class="social-link" href="index.html" data-i18n="footer.main">Главный сайт</a>
+                <a class="social-link" href="sponsor.html" data-i18n="footer.business">Для бизнеса</a>
+                <a class="social-link" href="https://t.me/+L36Qqw9TZMwzMDQy" target="_blank" rel="noopener">Telegram (RU)</a>
+                <a class="social-link" href="https://chat.whatsapp.com/LpqXHh5mIYF2QfIm7WZrLL" target="_blank" rel="noopener">WhatsApp (EN)</a>
+            </div>
+            <p class="footer-meta">© 2026 rbingood. Lisbon, Portugal.</p>
+            <p class="footer-legal"><a href="mailto:hello@rbingood.com">hello@rbingood.com</a></p>
+            <p class="footer-legal-links">
+                <a class="legal-link" href="assets/info/legal-notice-EN.txt" target="_blank">Legal Notice</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a class="legal-link" href="assets/info/privacy-policy-EN.txt" target="_blank">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- ── Cookie banner ────────────────────────────────── -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p id="cookieText">Мы используем cookies и собираем email для отправки информации об ивенте. Продолжая, вы соглашаетесь с нашей <a href="assets/info/privacy-policy-EN.txt" target="_blank">Privacy Policy</a>.</p>
+        <div class="cookie-actions">
+            <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Принять</button>
+            <button class="cookie-btn cookie-btn-decline" id="cookieDecline">Отклонить</button>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js';
+        import { getAuth, GoogleAuthProvider, signInWithPopup, signInAnonymously, updateProfile, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js';
+        import { getFirestore, collection, addDoc, doc, setDoc, query, orderBy, limit, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js';
+
+        // ── Firebase config ───────────────────────────────────
+        const app = initializeApp({
+            apiKey: "AIzaSyAC6XPGqD6H8EcwIo8hsHJIkZZu9XPzFr8",
+            authDomain: "rbingood-15d95.firebaseapp.com",
+            projectId: "rbingood-15d95",
+            storageBucket: "rbingood-15d95.firebasestorage.app",
+            messagingSenderId: "759442552483",
+            appId: "1:759442552483:web:8729282d783853948df116"
+        });
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // ── Config ────────────────────────────────────────────
+        const API_URL = 'https://YOUR_BACKEND_URL/api/user/register';
+        const REG_KEY = 'rbingood_registered_28feb';
+        const RSVP_KEY = 'rbingood_rsvp_28feb';
+        const CHAT_COL = 'chat_28feb2026';
+        const BASE_COUNT = 2;
+
+        // ── Translations ──────────────────────────────────────
+        const translations = {
+            ru: {
+                'nav.about':'О событии','nav.register':'Регистрация','nav.donate':'Донат','nav.btn':'Зарегистрироваться',
+                'hero.badge':'Ближайший ивент','hero.title':'Чистим пляж от<br>последствий ураганов',
+                'hero.sub':'Собираемся, убираем вместе, видим реальный результат. Инвентарь включён.',
+                'meta.date.label':'Дата','meta.date.value':'Суббота, 28 февраля 2026',
+                'meta.time.label':'Время','meta.location.label':'Место','meta.sponsor.label':'Спонсор',
+                'schedule.title':'Что вас ждёт',
+                'schedule.1':'Поздороваемся, проведём вводную часть — что, почему и как чистим',
+                'schedule.2':'Поделимся на группы, выдадим перчатки и пакеты для сбора отходов',
+                'schedule.3':'Начнём собирать и закончим',
+                'schedule.4':'Расфасуем по пакетам, отнесём в баки раздельного мусора',
+                'schedule.5':'Помоем руки, перекусим вкусной пиццей от IRMAO, проводим закат на океане',
+                'bring.title':'Что взять с собой','bring.1':'Удобная одежда','bring.2':'Закрытая обувь',
+                'bring.3':'Солнцезащитный крем','bring.4':'Всё остальное — мы обеспечим',
+                'reg.title':'Зарегистрироваться','reg.sub':'Укажите имя и email — пришлём детали и напомним за день до.',
+                'reg.counter':' человек идут','reg.google':'Войти через Google','reg.divider':'или через email',
+                'reg.firstName':'Имя','reg.firstName.placeholder':'Анна','reg.lastName':'Фамилия','reg.lastName.placeholder':'Иванова',
+                'reg.submit':'Зарегистрироваться','reg.note':'Бесплатно. Без спама. Только информация об ивенте.',
+                'success.title':'Вы зарегистрированы','success.text':'Ждём вас 28 февраля в 15:00 у Praia do Castelo.',
+                'success.plusone':'Приду +1','success.cancel':'Отменить участие',
+                'success.community':'Детали обсуждаем в чате ниже или в сообществе',
+                'donate.title':'Поддержать донатом',
+                'donate.text':'Не можете прийти лично? Любая сумма покрывает реальные расходы — необходимый инвентарь для крупной уборки после шторма. Всё, что останется, пойдёт на следующие чистки.',
+                'donate.btn':'Сделать донат','donate.note':'Оплата картой — Visa, Mastercard, Apple Pay',
+                'chat.title':'Чат участников','chat.count':'322 в сообществе',
+                'chat.locked':'Зарегистрируйтесь, чтобы видеть чат и обсуждать детали ивента с другими участниками',
+                'chat.placeholder.locked':'Зарегистрируйтесь, чтобы написать...','chat.placeholder.open':'Написать в чат...',
+                'chat.placeholder.google':'Войдите через Google, чтобы написать',
+                'chat.send':'Отправить','chat.empty':'Напишите первым — поздоровайтесь с участниками',
+                'metrics.events':'ивентов проведено','metrics.trash':'мусора собрано',
+                'metrics.members':'участника сообщества','metrics.sponsors':'спонсоров',
+                'gallery.label':'Фото с прошлых чисток','footer.main':'Главный сайт','footer.business':'Для бизнеса',
+                'show.original':'показать оригинал','hide.translation':'скрыть перевод',
+                'cookie.text':'Мы используем cookies для авторизации, чата (Firebase/Google) и корректной работы сайта. Продолжая, вы соглашаетесь с нашей',
+                'cookie.accept':'Принять','cookie.decline':'Отклонить',
+            },
+            en: {
+                'nav.about':'About','nav.register':'Register','nav.donate':'Donate','nav.btn':'Register',
+                'hero.badge':'Upcoming event','hero.title':'Cleaning the beach<br>after the storms',
+                'hero.sub':'We gather, clean together, see real results. Equipment included.',
+                'meta.date.label':'Date','meta.date.value':'Saturday, February 28 2026',
+                'meta.time.label':'Time','meta.location.label':'Location','meta.sponsor.label':'Sponsor',
+                'schedule.title':'What to expect',
+                'schedule.1':'Welcome and intro — what, why and how we clean',
+                'schedule.2':'Split into groups, hand out gloves and waste bags',
+                'schedule.3':'Start cleaning and finish up',
+                'schedule.4':'Sort waste into bags, take to the recycling bins',
+                'schedule.5':'Wash hands, have IRMAO pizza, watch the ocean sunset',
+                'bring.title':'What to bring','bring.1':'Comfortable clothes','bring.2':'Closed-toe shoes',
+                'bring.3':'Sunscreen','bring.4':'Everything else — we provide',
+                'reg.title':'Register','reg.sub':'Enter your name and email — we\'ll send details and a reminder the day before.',
+                'reg.counter':' people going','reg.google':'Sign in with Google','reg.divider':'or via email',
+                'reg.firstName':'First name','reg.firstName.placeholder':'Anna','reg.lastName':'Last name','reg.lastName.placeholder':'Smith',
+                'reg.submit':'Register','reg.note':'Free. No spam. Event info only.',
+                'success.title':'You\'re registered','success.text':'See you on February 28 at 15:00 at Praia do Castelo.',
+                'success.plusone':'Coming +1','success.cancel':'Cancel RSVP',
+                'success.community':'Discuss details in the chat below or in the community',
+                'donate.title':'Support with a donation',
+                'donate.text':'Can\'t come in person? Any amount covers real costs — essential equipment for a post-storm cleanup. Whatever remains goes to future cleanups.',
+                'donate.btn':'Donate','donate.note':'Pay by card — Visa, Mastercard, Apple Pay',
+                'chat.title':'Participant chat','chat.count':'322 in the community',
+                'chat.locked':'Register to see the chat and discuss event details with other participants',
+                'chat.placeholder.locked':'Register to write...','chat.placeholder.open':'Write in chat...',
+                'chat.placeholder.google':'Sign in with Google to write',
+                'chat.send':'Send','chat.empty':'Be the first to write — say hello to participants',
+                'metrics.events':'events held','metrics.trash':'trash collected',
+                'metrics.members':'community members','metrics.sponsors':'sponsors',
+                'gallery.label':'Photos from past cleanups','footer.main':'Main site','footer.business':'For business',
+                'show.original':'show original','hide.translation':'hide translation',
+                'cookie.text':'We use cookies for authentication, chat (Firebase/Google) and to keep the site working. By continuing, you agree to our',
+                'cookie.accept':'Accept','cookie.decline':'Decline',
+            },
+            pt: {
+                'nav.about':'Sobre','nav.register':'Inscrição','nav.donate':'Doação','nav.btn':'Inscrever-se',
+                'hero.badge':'Próximo evento','hero.title':'Limpamos a praia<br>após as tempestades',
+                'hero.sub':'Reunimo-nos, limpamos juntos, vemos resultados reais. Material incluído.',
+                'meta.date.label':'Data','meta.date.value':'Sábado, 28 de fevereiro de 2026',
+                'meta.time.label':'Hora','meta.location.label':'Local','meta.sponsor.label':'Patrocinador',
+                'schedule.title':'O que vai acontecer',
+                'schedule.1':'Boas-vindas e introdução — o quê, porquê e como limpamos',
+                'schedule.2':'Dividimo-nos em grupos, distribuímos luvas e sacos de resíduos',
+                'schedule.3':'Começamos a recolher e terminamos',
+                'schedule.4':'Separamos os resíduos por sacos, levamos para os ecopontos',
+                'schedule.5':'Lavamos as mãos, comemos a pizza da IRMAO, vemos o pôr do sol no oceano',
+                'bring.title':'O que trazer','bring.1':'Roupa confortável','bring.2':'Calçado fechado',
+                'bring.3':'Protetor solar','bring.4':'Todo o resto — nós fornecemos',
+                'reg.title':'Inscrever-se','reg.sub':'Indique o seu nome e email — enviamos os detalhes e um lembrete no dia anterior.',
+                'reg.counter':' pessoas confirmadas','reg.google':'Entrar com Google','reg.divider':'ou por email',
+                'reg.firstName':'Nome','reg.firstName.placeholder':'Ana','reg.lastName':'Apelido','reg.lastName.placeholder':'Silva',
+                'reg.submit':'Inscrever-se','reg.note':'Gratuito. Sem spam. Só informações sobre o evento.',
+                'success.title':'Está inscrito','success.text':'Esperamo-lo no dia 28 de fevereiro às 15:00 na Praia do Castelo.',
+                'success.plusone':'Venho +1','success.cancel':'Cancelar inscrição',
+                'success.community':'Discuta os detalhes no chat abaixo ou na comunidade',
+                'donate.title':'Apoie com uma doação',
+                'donate.text':'Não pode vir pessoalmente? Qualquer quantia cobre custos reais — material essencial para uma grande limpeza pós-tempestade. O que restar vai para futuras limpezas.',
+                'donate.btn':'Fazer doação','donate.note':'Pagamento com cartão — Visa, Mastercard, Apple Pay',
+                'chat.title':'Chat dos participantes','chat.count':'322 na comunidade',
+                'chat.locked':'Inscreva-se para ver o chat e discutir os detalhes do evento com outros participantes',
+                'chat.placeholder.locked':'Inscreva-se para escrever...','chat.placeholder.open':'Escrever no chat...',
+                'chat.placeholder.google':'Entre com Google para escrever',
+                'chat.send':'Enviar','chat.empty':'Seja o primeiro a escrever — diga olá aos participantes',
+                'metrics.events':'eventos realizados','metrics.trash':'lixo recolhido',
+                'metrics.members':'membros da comunidade','metrics.sponsors':'patrocinadores',
+                'gallery.label':'Fotos de limpezas anteriores','footer.main':'Site principal','footer.business':'Para empresas',
+                'show.original':'mostrar original','hide.translation':'ocultar tradução',
+                'cookie.text':'Utilizamos cookies para autenticação, chat (Firebase/Google) e funcionamento correto do site. Ao continuar, aceita a nossa',
+                'cookie.accept':'Aceitar','cookie.decline':'Recusar',
+            }
+        };
+
+        let currentLang = localStorage.getItem('rbingood_lang') || (() => {
+            const bl = (navigator.language || 'ru').slice(0, 2);
+            return ['ru','en','pt'].includes(bl) ? bl : 'ru';
+        })();
+        let userLang = currentLang;
+
+        function applyLang(lang) {
+            const t = translations[lang] || translations.ru;
+            currentLang = lang;
+            userLang = lang;
+            localStorage.setItem('rbingood_lang', lang);
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key] !== undefined) el.innerHTML = t[key];
+            });
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (t[key] !== undefined) el.placeholder = t[key];
+            });
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+            });
+            // Update cookie banner text
+            const cookieText = document.getElementById('cookieText');
+            const cookieAccept = document.getElementById('cookieAccept');
+            const cookieDecline = document.getElementById('cookieDecline');
+            if (cookieText) cookieText.innerHTML = `${t['cookie.text']} <a href="assets/info/privacy-policy-EN.txt" target="_blank">Privacy Policy</a>.`;
+            if (cookieAccept) cookieAccept.textContent = t['cookie.accept'];
+            if (cookieDecline) cookieDecline.textContent = t['cookie.decline'];
+        }
+
+        // ── DOM refs ──────────────────────────────────────────
+        const rsvpNum = document.getElementById('rsvpNum');
+        const formWrap = document.getElementById('formWrap');
+        const successEl = document.getElementById('formSuccess');
+        const errorEl = document.getElementById('formError');
+        const submitBtn = document.getElementById('regSubmit');
+        const cancelBtn = document.getElementById('cancelRsvpBtn');
+        const plusOneBtn = document.getElementById('plusOneBtn');
+        const chatLocked = document.getElementById('chatLocked');
+        const chatMsgsInner = document.getElementById('chatMsgsInner');
+        const chatInput = document.getElementById('chatInput');
+        const chatSend = document.getElementById('chatSend');
+
+        let rsvpState = localStorage.getItem(RSVP_KEY) || 'none';
+        let unsubChat = null;
+        const translationCache = new Map();
+
+        // ── Translation (MyMemory free API) ───────────────────
+        async function translate(text, from, to) {
+            const key = `${text}|${from}|${to}`;
+            if (translationCache.has(key)) return translationCache.get(key);
+            try {
+                const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`);
+                const data = await res.json();
+                const result = data.responseData?.translatedText;
+                if (!result || result.toLowerCase() === text.toLowerCase()) return null;
+                translationCache.set(key, result);
+                return result;
+            } catch { return null; }
+        }
+
+        async function translateAndUpdate(el, text, msgLang) {
+            if (!msgLang || msgLang === userLang) return;
+            const translated = await translate(text, msgLang, userLang);
+            if (!translated) return;
+            const bubble = el.querySelector('.chat-bubble');
+            if (!bubble) return;
+
+            const textNode = document.createElement('span');
+            textNode.textContent = translated;
+
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'chat-show-original-btn';
+            toggleBtn.textContent = translations[currentLang]['show.original'];
+            let showingOriginal = false;
+            toggleBtn.addEventListener('click', () => {
+                showingOriginal = !showingOriginal;
+                textNode.textContent = showingOriginal ? text : translated;
+                toggleBtn.textContent = showingOriginal ? translations[currentLang]['hide.translation'] : translations[currentLang]['show.original'];
+            });
+
+            bubble.textContent = '';
+            bubble.appendChild(textNode);
+            bubble.appendChild(toggleBtn);
+        }
+
+        // ── RSVP counter ──────────────────────────────────────
+        function updateRsvpDisplay() {
+            const extra = rsvpState === 'going' ? 1 : rsvpState === 'plus1' ? 2 : 0;
+            rsvpNum.textContent = BASE_COUNT + extra;
+        }
+        updateRsvpDisplay();
+
+        // ── Show success / unlock chat ─────────────────────────
+        function showSuccess(withFirebase) {
+            formWrap.style.display = 'none';
+            successEl.classList.add('visible');
+            plusOneBtn.classList.toggle('active', rsvpState === 'plus1');
+            chatLocked.style.display = 'none';
+            chatMsgsInner.style.display = 'flex';
+            if (withFirebase) {
+                chatMsgsInner.innerHTML = '';
+                chatInput.disabled = false;
+                chatInput.placeholder = translations[currentLang]['chat.placeholder.open'];
+                chatInput.setAttribute('data-i18n-placeholder', 'chat.placeholder.open');
+                chatSend.disabled = false;
+                listenToChat();
+            } else {
+                chatInput.disabled = true;
+                chatInput.placeholder = translations[currentLang]['chat.placeholder.google'];
+                chatInput.setAttribute('data-i18n-placeholder', 'chat.placeholder.google');
+                chatSend.disabled = true;
+            }
+        }
+
+        // ── Firestore real-time chat ───────────────────────────
+        function listenToChat() {
+            if (unsubChat) unsubChat();
+            const q = query(collection(db, CHAT_COL), orderBy('timestamp', 'asc'), limit(50));
+            unsubChat = onSnapshot(q, (snap) => {
+                chatMsgsInner.innerHTML = '';
+                if (snap.empty) {
+                    chatMsgsInner.innerHTML = `<p style="color:var(--text-muted);font-size:0.875rem;text-align:center;padding:16px 0;">${translations[currentLang]['chat.empty']}</p>`;
+                    return;
+                }
+                snap.forEach(doc => {
+                    const m = doc.data();
+                    const initials = (m.displayName || 'U').split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2);
+                    const el = document.createElement('div');
+                    el.className = 'chat-msg';
+                    el.innerHTML = `
+                        <div class="chat-avatar">${initials}</div>
+                        <div class="chat-bubble-wrap">
+                            <span class="chat-name">${esc(m.displayName || 'Участник')}</span>
+                            <div class="chat-bubble">${esc(m.text)}</div>
+                        </div>`;
+                    chatMsgsInner.appendChild(el);
+                    // Async translate if message language differs from user's
+                    translateAndUpdate(el, m.text, m.lang);
+                });
+                chatMsgsInner.scrollTop = chatMsgsInner.scrollHeight;
+            }, err => console.error('Firestore:', err));
+        }
+
+        async function sendMsg() {
+            const user = auth.currentUser;
+            const text = chatInput.value.trim();
+            if (!user || !text) return;
+            chatInput.value = '';
+            try {
+                await addDoc(collection(db, CHAT_COL), {
+                    uid: user.uid,
+                    displayName: user.displayName || user.email,
+                    text,
+                    lang: userLang,
+                    timestamp: serverTimestamp()
+                });
+            } catch (err) { console.error('Send:', err); }
+        }
+
+        function esc(str) {
+            return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        chatSend.addEventListener('click', sendMsg);
+        chatInput.addEventListener('keydown', e => {
+            if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMsg(); }
+        });
+
+        // ── Google Sign-In ────────────────────────────────────
+        const provider = new GoogleAuthProvider();
+        provider.setCustomParameters({ prompt: 'select_account' });
+
+        document.getElementById('googleSignInBtn').addEventListener('click', async () => {
+            try {
+                await signInWithPopup(auth, provider);
+                // onAuthStateChanged handles the rest
+            } catch (err) {
+                if (err.code === 'auth/unauthorized-domain') {
+                    alert('Домен не авторизован. Добавьте его в Firebase Console → Authentication → Authorized domains');
+                } else if (err.code !== 'auth/popup-closed-by-user') {
+                    console.error('Google Sign-In:', err);
+                }
+            }
+        });
+
+        // ── Auth state (single source of truth) ───────────────
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                if (rsvpState === 'none') rsvpState = 'going';
+                localStorage.setItem(REG_KEY, '1');
+                localStorage.setItem(RSVP_KEY, rsvpState);
+                updateRsvpDisplay();
+                showSuccess(true);
+            } else if (localStorage.getItem(REG_KEY) === '1') {
+                rsvpState = localStorage.getItem(RSVP_KEY) || 'going';
+                updateRsvpDisplay();
+                showSuccess(false);
+            }
+        });
+
+        // ── +1 toggle (post-registration) ─────────────────────
+        plusOneBtn.addEventListener('click', () => {
+            rsvpState = rsvpState === 'plus1' ? 'going' : 'plus1';
+            localStorage.setItem(RSVP_KEY, rsvpState);
+            updateRsvpDisplay();
+            plusOneBtn.classList.toggle('active', rsvpState === 'plus1');
+            // Sync to Firestore if user is logged in
+            const user = auth.currentUser;
+            if (user) {
+                setDoc(doc(db, 'registrations', user.uid), { plusOne: rsvpState === 'plus1' }, { merge: true }).catch(console.error);
+            }
+        });
+
+        // ── Email form ────────────────────────────────────────
+        document.getElementById('regForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const firstName = document.getElementById('firstName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            if (!firstName || !email) return;
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Отправляем...';
+            errorEl.classList.remove('visible');
+
+            // Set rsvp state before signIn so onAuthStateChanged picks it up
+            rsvpState = 'going';
+            localStorage.setItem(REG_KEY, '1');
+            localStorage.setItem(RSVP_KEY, rsvpState);
+            updateRsvpDisplay();
+
+            try {
+                // Anonymous Firebase session — gives access to chat
+                const cred = await signInAnonymously(auth);
+                const displayName = [firstName, lastName].filter(Boolean).join(' ');
+
+                // Save name + save user data to Firestore (non-blocking)
+                updateProfile(cred.user, { displayName }).catch(console.error);
+                setDoc(doc(db, 'registrations', cred.user.uid), {
+                    firstName,
+                    lastName,
+                    email,
+                    plusOne: false,
+                    registeredAt: serverTimestamp()
+                }).catch(console.error);
+
+                // Also send to backend API if available
+                fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ firstName, lastName, email })
+                }).catch(() => {});
+
+                // onAuthStateChanged fires and calls showSuccess(true)
+            } catch (err) {
+                console.error('Registration error:', err);
+                // Fallback: show success without Firebase chat
+                showSuccess(false);
+            }
+        });
+
+        // ── Cancel RSVP ───────────────────────────────────────
+        cancelBtn.addEventListener('click', async () => {
+            if (auth.currentUser) await signOut(auth);
+            if (unsubChat) { unsubChat(); unsubChat = null; }
+            localStorage.removeItem(REG_KEY);
+            localStorage.removeItem(RSVP_KEY);
+            rsvpState = 'none';
+            updateRsvpDisplay();
+            successEl.classList.remove('visible');
+            formWrap.style.display = 'block';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Зарегистрироваться';
+            chatLocked.style.display = 'flex';
+            chatMsgsInner.style.display = 'none';
+            chatInput.disabled = true;
+            chatInput.placeholder = 'Зарегистрируйтесь, чтобы написать...';
+            chatSend.disabled = true;
+        });
+
+        // ── Cookie banner ─────────────────────────────────────
+        const cookieBanner = document.getElementById('cookieBanner');
+        if (!localStorage.getItem('rbingood_cookie_consent')) {
+            setTimeout(() => cookieBanner.classList.add('visible'), 800);
+        }
+        document.getElementById('cookieAccept').addEventListener('click', () => {
+            localStorage.setItem('rbingood_cookie_consent', 'accepted');
+            cookieBanner.classList.remove('visible');
+        });
+        document.getElementById('cookieDecline').addEventListener('click', () => {
+            localStorage.setItem('rbingood_cookie_consent', 'declined');
+            cookieBanner.classList.remove('visible');
+        });
+
+        // ── Language switcher ─────────────────────────────────
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang')));
+        });
+        applyLang(currentLang);
+
+        // ── Scroll reveal ─────────────────────────────────────
+        const reveals = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.style.transitionDelay = e.target.style.getPropertyValue('--delay') || '0s';
+                        e.target.classList.add('visible');
+                        obs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach(r => obs.observe(r));
+        } else {
+            reveals.forEach(r => r.classList.add('visible'));
+        }
+
+        // ── Donate amounts ────────────────────────────────────
+        document.querySelectorAll('.donate-amount-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.donate-amount-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+            });
+        });
+    </script>
+
+</body>
+</html>
