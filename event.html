@@ -342,7 +342,10 @@
             color: #0f0f0f;
         }
 
-        .form-field input {
+        .form-field input[type="text"],
+        .form-field input[type="email"] {
+            box-sizing: border-box;
+            width: 100%;
             padding: 11px 14px;
             border-radius: 10px;
             border: 1px solid rgba(0, 0, 0, 0.12);
@@ -354,13 +357,15 @@
             transition: border-color 0.2s, box-shadow 0.2s;
         }
 
-        .form-field input:focus {
+        .form-field input[type="text"]:focus,
+        .form-field input[type="email"]:focus {
             border-color: #2ECC71;
             box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
             background: #fff;
         }
 
-        .form-field input::placeholder {
+        .form-field input[type="text"]::placeholder,
+        .form-field input[type="email"]::placeholder {
             color: #bbb;
         }
 
@@ -1264,12 +1269,10 @@
                                         <input type="checkbox" id="legalCheckbox" required
                                             style="margin-top: 3px; cursor: pointer;">
                                         <span id="legalCheckboxText">
-                                            Я согласен(на) с <a
-                                                href="assets/info/terms-and-conditions-RU.txt"
+                                            Я согласен(на) с <a href="assets/info/terms-and-conditions-RU.txt"
                                                 target="_blank"
                                                 style="color: #0f0f0f; text-decoration: underline;">Пользовательским
-                                                соглашением</a> и <a href="assets/info/privacy-RU.txt"
-                                                target="_blank"
+                                                соглашением</a> и <a href="assets/info/privacy-RU.txt" target="_blank"
                                                 style="color: #0f0f0f; text-decoration: underline;">Политикой
                                                 конфиденциальности</a>. Я подтверждаю, что мне исполнилось 18 лет, и я
                                             принимаю на себя полную ответственность за свое здоровье и безопасность (а
@@ -1421,7 +1424,7 @@
     <footer class="section section-simple footer-simple">
         <div class="container text-center">
             <p class="footer-title">rbingood — verified eco-cleanups</p>
-            <div class="social-links" style="margin-bottom: 24px;">
+            <div class="social-links" style="margin-bottom: 8px;">
                 <a class="social-link" href="index.html" data-i18n="footer.main">Главный сайт</a>
                 <a class="social-link" href="sponsor.html" data-i18n="footer.business">Для бизнеса</a>
                 <a class="social-link" href="https://t.me/+L36Qqw9TZMwzMDQy" target="_blank" rel="noopener">Telegram
@@ -1429,16 +1432,21 @@
                 <a class="social-link" href="https://chat.whatsapp.com/LpqXHh5mIYF2QfIm7WZrLL" target="_blank"
                     rel="noopener">WhatsApp (EN)</a>
             </div>
+            <p class="footer-meta" style="margin-bottom: 16px;">© 2026 rbingood. Lisbon, Portugal.</p>
+            <p class="footer-legal" style="margin-bottom: 24px;">
+                © 2026 Ekaterina Mikholap&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                    href="mailto:hello@rbingood.com">hello@rbingood.com</a>
+            </p>
             <p class="footer-legal-links"
                 style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; font-size: 0.82rem; margin-bottom: 16px;">
-                <a class="legal-link" id="link-legal" href="assets/info/legal-notice-RU.txt"
-                    target="_blank">Legal Notice</a>
+                <a class="legal-link" id="link-legal" href="assets/info/legal-notice-RU.txt" target="_blank">Legal
+                    Notice</a>
                 <span style="color: rgba(0,0,0,0.2);">|</span>
-                <a class="legal-link" id="link-privacy" href="assets/info/privacy-RU.txt"
-                    target="_blank">Privacy Policy</a>
+                <a class="legal-link" id="link-privacy" href="assets/info/privacy-RU.txt" target="_blank">Privacy
+                    Policy</a>
                 <span style="color: rgba(0,0,0,0.2);">|</span>
-                <a class="legal-link" id="link-cookie" href="assets/info/cookie-policy-RU.txt"
-                    target="_blank">Cookie Policy</a>
+                <a class="legal-link" id="link-cookie" href="assets/info/cookie-policy-RU.txt" target="_blank">Cookie
+                    Policy</a>
                 <span style="color: rgba(0,0,0,0.2);">|</span>
                 <a class="legal-link" id="link-terms" href="assets/info/terms-and-conditions-RU.txt"
                     target="_blank">Terms & Conditions</a>
@@ -1449,9 +1457,6 @@
                     🔗 Livro de Reclamações Eletrónico
                 </a>
             </p>
-            <p class="footer-legal" style="margin-bottom: 6px;"><a
-                    href="mailto:hello@rbingood.com">hello@rbingood.com</a></p>
-            <p class="footer-meta">© 2026 rbingood. Lisbon, Portugal.</p>
         </div>
     </footer>
 
@@ -1525,7 +1530,7 @@
                 'metrics.members': 'участника сообщества', 'metrics.sponsors': 'спонсоров',
                 'gallery.label': 'Фото с прошлых чисток', 'footer.main': 'Главный сайт', 'footer.business': 'Для бизнеса',
                 'show.original': 'показать оригинал', 'hide.translation': 'скрыть перевод',
-                'cookie.text': 'Мы используем cookies для авторизации, чата (Firebase/Google) и корректной работы сайта. Продолжая, вы соглашаетесь с нашей',
+                'cookie.text': 'Продолжая использовать сайт, вы подтверждаете ознакомление с нашей <a href="assets/info/privacy-RU.txt" id="cookie-link-privacy" target="_blank">Политикой конфиденциальности</a> и <a href="assets/info/cookie-policy-RU.txt" id="cookie-link-cookies" target="_blank">Политикой cookies</a>.',
                 'cookie.btn': 'Ознакомлен',
                 'legal.notice': 'Legal Notice',
                 'legal.privacy': 'Privacy Policy',
@@ -1567,7 +1572,7 @@
                 'metrics.members': 'community members', 'metrics.sponsors': 'sponsors',
                 'gallery.label': 'Photos from past cleanups', 'footer.main': 'Main site', 'footer.business': 'For business',
                 'show.original': 'show original', 'hide.translation': 'hide translation',
-                'cookie.text': 'We use cookies for authentication, chat (Firebase/Google) and to keep the site working. By continuing, you agree to our',
+                'cookie.text': 'By continuing to use the site, you acknowledge that you have read our <a href="assets/info/privacy-EN.txt" id="cookie-link-privacy" target="_blank">Privacy Policy</a> and <a href="assets/info/cookie-policy-EN.txt" id="cookie-link-cookies" target="_blank">Cookie Policy</a>.',
                 'cookie.btn': 'Understood',
                 'legal.notice': 'Legal Notice',
                 'legal.privacy': 'Privacy Policy',
