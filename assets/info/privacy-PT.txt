@@ -1,0 +1,218 @@
+═══════════════════════════════════════════════════════
+                AVISO DE PRIVACIDADE
+═══════════════════════════════════════════════════════
+
+Última Atualização: 23 de fevereiro de 2026
+
+──────────────────────────────────────────────────────
+
+1. INTRODUÇÃO
+
+Este Aviso de Privacidade explica como Ekaterina Mikholap ("nós" ou "nosso")
+trata as informações quando visita o nosso site, utiliza os nossos
+serviços ou entra em contacto connosco.
+
+Responsável pelo Tratamento: Ekaterina Mikholap
+NIF: PT 318589125
+Email: hello@rbingood.com
+
+Comissão Nacional de Proteção de Dados (CNPD): https://www.cnpd.pt
+
+──────────────────────────────────────────────────────
+
+2. QUE DADOS RECOLHEMOS
+
+Processamos os seus dados pessoais nas seguintes situações:
+
+a) Contacto por Email ou Redes Sociais
+Quando nos contacta por email (hello@rbingood.com), LinkedIn ou
+Instagram, podemos processar:
+• O seu nome
+• O seu endereço de email
+• O conteúdo da sua mensagem
+
+b) Chat do Evento
+Os nossos eventos incluem um chat partilhado visível a todos os
+participantes. Quando utiliza o chat do evento, processamos:
+• O seu nome ou nome de utilizador
+• O conteúdo das suas mensagens
+
+Nota: As mensagens no chat do evento são VISÍVEIS A TODOS OS
+PARTICIPANTES DO EVENTO. Não partilhe informações pessoais
+sensíveis no chat.
+
+Base Legal: Interesse legítimo (RGPD Art. 6(1)(f)) — permitir a comunicação entre os participantes do evento.
+
+c) Comunicações por Email (Informações sobre Eventos)
+Quando se subscreve para receber informações sobre os nossos
+eventos, processamos:
+• O seu endereço de email
+• O seu nome (se fornecido)
+
+Base Legal: O seu consentimento (RGPD Art. 6(1)(a)). Pode cancelar
+a subscrição a qualquer momento utilizando o link em cada email ou
+contactando hello@rbingood.com.
+
+d) Donativos via Stripe
+Quando faz um donativo, o seu pagamento é processado pela Stripe
+Payments Europe, Ltd. Processamos:
+• O seu nome
+• O seu endereço de email
+• Montante e data do donativo
+
+NÃO recolhemos nem armazenamos o número do seu cartão de crédito,
+CVV ou dados completos de pagamento. Estes dados são tratados
+exclusivamente pela Stripe de acordo com os padrões PCI DSS.
+Consulte a Política de Privacidade da Stripe: https://stripe.com/privacy
+
+Base Legal: O seu consentimento (RGPD Art. 6(1)(a)) para o processamento do donativo, e obrigações legais para registos financeiros (RGPD Art. 6(1)(c)).
+
+e) Fotografias e Vídeos
+Exibimos fotografias e vídeos dos nossos eventos comunitários de
+limpeza neste website.
+
+O que fotografamos/gravamos:
+• Planos gerais das atividades de limpeza (vista geral)
+• Fotos/vídeos de grupo dos participantes do evento
+• Resultados do trabalho de limpeza ambiental
+• Foco nas atividades, não em retratos individuais
+
+Base Legal:
+• Interesse legítimo (RGPD Art. 6(1)(f)) — documentar as nossas
+  atividades comunitárias públicas
+• As fotos/vídeos são tiradas em eventos públicos com conhecimento
+  dos participantes
+
+Os seus direitos relativos às fotos/vídeos:
+• Pode solicitar a remoção da sua imagem a qualquer momento
+• Removeremos a foto/vídeo em 7 dias após o seu pedido
+• Contacte-nos: hello@rbingood.com
+
+Armazenamento: As fotos e vídeos são armazenadas de forma segura e
+usadas apenas para documentar as nossas atividades ambientais.
+
+──────────────────────────────────────────────────────
+
+3. COMO USAMOS OS SEUS DADOS
+
+Finalidade                          | Base Legal
+------------------------------------|---------------------------
+Responder a consultas               | Interesse legítimo
+Comunicação no chat do evento       | Interesse legítimo
+Enviar informações sobre eventos    | Consentimento
+Processar donativos                 | Consentimento
+Registos financeiros                | Obrigação legal
+Documentar eventos de limpeza       | Interesse legítimo
+
+──────────────────────────────────────────────────────
+
+4. CONSERVAÇÃO DE DADOS
+
+Tipo de Dados            | Período de Conservação
+-------------------------|----------------------------------
+Consultas por email      | 30 dias após resolução
+Mensagens do chat        | Duração do evento + 30 dias
+Subscritores de email    | Até cancelar a subscrição
+Registos de donativos    | 10 anos (lei fiscal portuguesa)
+Fotos/vídeos             | Até pedido de remoção
+
+──────────────────────────────────────────────────────
+
+5. PARTILHA DE DADOS
+
+Partilhamos os seus dados apenas com:
+
+• Stripe Payments Europe, Ltd. — para processamento de donativos
+  (nome, email, dados de pagamento)
+• Firebase (Google) — para autenticação e chat do evento
+
+NÃO vendemos nem partilhamos os seus dados para fins de marketing.
+
+Exceção: Podemos divulgar dados se legalmente exigido pelas
+autoridades portuguesas ou da UE.
+
+Transferências Internacionais de Dados: Alguns dos nossos prestadores de serviços (Stripe, Firebase/Google) podem processar dados fora do Espaço Económico Europeu (EEE). Estas transferências são protegidas pelas Cláusulas Contratuais-Tipo (CCT) aprovadas pela Comissão Europeia, garantindo um nível adequado de proteção de dados de acordo com o Capítulo V do RGPD.
+
+──────────────────────────────────────────────────────
+
+6. COOKIES
+
+Para informações sobre os cookies utilizados no nosso site, consulte
+a nossa Política de Cookies: [link para a página da política de cookies]
+
+──────────────────────────────────────────────────────
+
+7. OS SEUS DIREITOS (RGPD)
+
+Tem o direito de:
+✓ Acesso aos seus dados (solicitar uma cópia)
+✓ Retificação (corrigir dados incorretos)
+✓ Apagamento ("direito ao esquecimento")
+✓ Limitação do tratamento
+✓ Portabilidade dos dados
+✓ Oposição ao tratamento
+✓ Retirar consentimento a qualquer momento
+
+Para exercer os seus direitos:
+Contacte-nos em hello@rbingood.com
+
+Para apresentar uma reclamação:
+Comissão Nacional de Proteção de Dados (CNPD): https://www.cnpd.pt
+
+──────────────────────────────────────────────────────
+
+8. SERVIÇOS DE TERCEIROS
+
+O nosso site utiliza ou contém links para os seguintes serviços:
+
+• Stripe — Pagamentos de donativos (https://stripe.com/privacy)
+• Firebase (Google) — Autenticação e chat do evento
+  (https://firebase.google.com/support/privacy)
+• WhatsApp, Telegram — Comunicação e grupos
+• LinkedIn, Instagram — Links para redes sociais
+
+Estes serviços têm as suas próprias políticas de privacidade.
+Não somos responsáveis pelas suas práticas de dados.
+
+──────────────────────────────────────────────────────
+
+9. PRIVACIDADE DE MENORES
+
+Não recolhemos intencionalmente dados pessoais de crianças com
+menos de 16 anos. Se tiver conhecimento de que uma criança nos
+forneceu dados pessoais sem o consentimento dos pais, por favor
+contacte-nos.
+
+──────────────────────────────────────────────────────
+
+10. SEGURANÇA
+
+Tomamos medidas razoáveis para proteger os seus dados:
+• Comunicação encriptada (TLS/SSL)
+• Armazenamento seguro de dados
+• Controles de acesso
+• Dados de pagamento tratados pela Stripe, certificada PCI DSS
+
+──────────────────────────────────────────────────────
+
+11. ALTERAÇÕES A ESTE AVISO
+
+Podemos atualizar este Aviso de Privacidade periodicamente. As
+alterações serão publicadas nesta página com uma nova data de
+"Última Atualização".
+
+──────────────────────────────────────────────────────
+
+12. CONTACTE-NOS
+
+Para questões sobre este Aviso de Privacidade ou os seus dados:
+
+Email: hello@rbingood.com
+Responsável: Ekaterina Mikholap
+Morada: RUA R DOUTOR ANTONIO RIBEIRO DOS SANTOS 11, Lisbon, Portugal
+
+──────────────────────────────────────────────────────
+
+Este Aviso de Privacidade está em conformidade com o Regulamento
+Geral sobre a Proteção de Dados (RGPD) da UE e as leis portuguesas
+de proteção de dados.

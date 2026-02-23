@@ -1,26 +1,76 @@
 ═══════════════════════════════════════════════════════
-                LEGAL NOTICE
+                      LEGAL NOTICE
 ═══════════════════════════════════════════════════════
 
-Name: Ilgiz Mann
+Name: Ekaterina Mikholap
 
-Status: Self-employed (Trabalhador Independente)
+Status: Self-Employed Individual / Trabalhador Independente
 
-NIF (tax number): PT 316222178
+NIF (Tax ID): PT 318589125
 
-Professional activity: Educational services and training
-CAE: 85593 - Educational activity
+Professional Activity: Organization of events
+CAE: 82300 - Organization of exhibitions, conventions and similar events
 
-Correspondence address:
-Av Gonçalo Velho Cabral N 300 6 4E
-2750-364 Cascais
-Portugal
+Business Address:
+RUA R DOUTOR ANTONIO RIBEIRO DOS SANTOS 11, Lisbon, Portugal
 
-Contacts:
+Contact:
 Email: hello@rbingood.com
 
-Data protection:
-Data controller: Ilgiz Mann
-Portuguese regulator (CNPD): https://www.cnpd.pt
+Data Protection:
+Data Controller: Ekaterina Mikholap
+Portuguese Data Protection Authority (CNPD): https://www.cnpd.pt
 
 ──────────────────────────────────────────────────────
+
+PAYMENT PROCESSING
+
+This website accepts donations processed by:
+
+Stripe Payments Europe, Limited
+1 Grand Canal Street Lower, Grand Canal Dock, Dublin, D02 H210, Ireland
+https://stripe.com
+
+Stripe is a PCI DSS Level 1 certified payment processor. We do not
+store credit card or bank account details on our servers.
+
+──────────────────────────────────────────────────────
+
+INTELLECTUAL PROPERTY
+
+All content on this website (text, images, logos, videos) is the
+property of Ekaterina Mikholap / rbingood unless otherwise stated.
+Reproduction without written permission is prohibited.
+
+──────────────────────────────────────────────────────
+
+LIABILITY
+
+We make every effort to ensure the accuracy of information on this
+website. However, we cannot guarantee that all information is
+complete, accurate, or up to date. We are not liable for damages
+arising from the use of this website.
+
+External links lead to third-party websites over which we have no
+control. We are not responsible for the content or privacy practices
+of linked sites.
+
+──────────────────────────────────────────────────────
+
+DISPUTE RESOLUTION
+
+In the event of a consumer dispute, consumers may resort to the
+European Online Dispute Resolution (ODR) Platform:
+http://ec.europa.eu/consumers/odr/
+
+──────────────────────────────────────────────────────
+
+ELECTRONIC COMPLAINTS BOOK
+
+You may submit a complaint via the Portuguese Electronic Complaints
+Book (Livro de Reclamações Eletrónico):
+https://www.livroreclamacoes.pt
+
+──────────────────────────────────────────────────────
+
+Last updated: February 23, 2026

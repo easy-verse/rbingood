@@ -1,26 +1,76 @@
 ═══════════════════════════════════════════════════════
-                AVISO LEGAL
+                     NOTA LEGAL
 ═══════════════════════════════════════════════════════
 
-Nome: Ilgiz Mann
+Nome: Ekaterina Mikholap
 
 Estatuto: Trabalhador Independente
 
-NIF (número de identificação fiscal): PT 316222178
+NIF: PT 318589125
 
-Atividade profissional: Serviços educativos e formação
-CAE: 85593 - Atividade educativa
+Atividade Profissional: ORGANIZAÇÃO DE FEIRAS, CONGRESSOS E SIMILARES
+CAE: 82300 - ORGANIZAÇÃO DE FEIRAS, CONGRESSOS E SIMILARES
 
-Morada para correspondência:
-Av Gonçalo Velho Cabral N 300 6 4E
-2750-364 Cascais
-Portugal
+Morada Profissional:
+RUA R DOUTOR ANTONIO RIBEIRO DOS SANTOS 11, Lisbon, Portugal
 
-Contactos:
+Contacto:
 Email: hello@rbingood.com
 
-Proteção de dados:
-Responsável pelo tratamento de dados: Ilgiz Mann
-Regulador português (CNPD): https://www.cnpd.pt
+Proteção de Dados:
+Responsável pelo Tratamento: Ekaterina Mikholap
+Autoridade de Proteção de Dados (CNPD): https://www.cnpd.pt
 
 ──────────────────────────────────────────────────────
+
+PROCESSAMENTO DE PAGAMENTOS
+
+Este website aceita donativos processados pela:
+
+Stripe Payments Europe, Limited
+1 Grand Canal Street Lower, Grand Canal Dock, Dublin, D02 H210, Irlanda
+https://stripe.com
+
+A Stripe é um processador de pagamentos certificado PCI DSS Nível 1.
+Não armazenamos dados de cartão de crédito ou conta bancária nos
+nossos servidores.
+
+──────────────────────────────────────────────────────
+
+PROPRIEDADE INTELECTUAL
+
+Todo o conteúdo deste website (textos, imagens, logótipos, vídeos)
+é propriedade de Ekaterina Mikholap / rbingood, salvo indicação em contrário.
+A reprodução sem autorização escrita é proibida.
+
+──────────────────────────────────────────────────────
+
+RESPONSABILIDADE
+
+Fazemos todos os esforços para garantir a exatidão das informações
+neste website. No entanto, não podemos garantir que todas as
+informações sejam completas, exatas ou atualizadas. Não somos
+responsáveis por danos decorrentes da utilização deste website.
+
+Links externos conduzem a sites de terceiros sobre os quais não
+temos controlo. Não somos responsáveis pelo conteúdo ou práticas
+de privacidade de sites ligados.
+
+──────────────────────────────────────────────────────
+
+RESOLUÇÃO DE LITÍGIOS
+
+Em caso de litígio de consumo, o consumidor pode recorrer à
+Plataforma Europeia de Resolução de Litígios em Linha (ODR):
+http://ec.europa.eu/consumers/odr/
+
+──────────────────────────────────────────────────────
+
+LIVRO DE RECLAMAÇÕES ELETRÓNICO
+
+Pode apresentar uma reclamação através do Livro de Reclamações
+Eletrónico: https://www.livroreclamacoes.pt
+
+──────────────────────────────────────────────────────
+
+Última atualização: 23 de fevereiro de 2026

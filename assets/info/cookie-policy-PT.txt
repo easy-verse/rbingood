@@ -1,0 +1,111 @@
+═══════════════════════════════════════════════════════
+               POLÍTICA DE COOKIES
+═══════════════════════════════════════════════════════
+
+Última Atualização: 23 de fevereiro de 2026
+
+──────────────────────────────────────────────────────
+
+1. O QUE SÃO COOKIES?
+
+Cookies são pequenos ficheiros de texto armazenados no seu
+dispositivo quando visita um website. Ajudam o site a funcionar
+corretamente e a melhorar a sua experiência.
+
+──────────────────────────────────────────────────────
+
+2. COMO USAMOS COOKIES
+
+Utilizamos um número mínimo de cookies, apenas os necessários para
+o funcionamento do website. Não utilizamos cookies de publicidade
+ou marketing.
+
+──────────────────────────────────────────────────────
+
+3. COOKIES QUE UTILIZAMOS
+
+COOKIES ESTRITAMENTE NECESSÁRIOS
+Estes cookies são essenciais para o funcionamento do website.
+Não podem ser desativados.
+
+• Cookie de sessão
+  Finalidade: Mantém a sua sessão ativa e permite o chat do evento
+  Duração: Sessão (eliminado ao fechar o navegador)
+  Fornecedor: rbingood.com
+
+COOKIES DE AUTENTICAÇÃO E CHAT (FIREBASE/GOOGLE)
+Utilizamos o Firebase (Google) para autenticação de utilizadores e
+o chat do evento. O Firebase pode definir cookies para garantir uma
+autenticação segura.
+
+• Firebase Auth
+  Finalidade: Autenticação do utilizador e gestão de sessão
+  Duração: Até terminar sessão
+  Fornecedor: Google/Firebase
+
+Para mais informações: https://firebase.google.com/support/privacy
+
+COOKIES DE TERCEIROS (PROCESSAMENTO DE PAGAMENTOS)
+Quando faz um donativo, a Stripe pode definir cookies para processar
+o pagamento de forma segura e prevenir fraude.
+
+• __stripe_mid
+  Finalidade: Prevenção de fraude e processamento de pagamentos
+  Duração: 1 ano
+  Fornecedor: Stripe
+
+• __stripe_sid
+  Finalidade: Prevenção de fraude (sessão)
+  Duração: 30 minutos
+  Fornecedor: Stripe
+
+Para mais informações, consulte a Política de Cookies da Stripe:
+https://stripe.com/cookie-settings
+
+──────────────────────────────────────────────────────
+
+4. COOKIES QUE NÃO UTILIZAMOS
+
+• Cookies de análise (Google Analytics, etc.)
+• Cookies de marketing ou publicidade
+• Cookies de rastreamento de redes sociais
+• Cookies de perfilagem de terceiros
+
+──────────────────────────────────────────────────────
+
+5. GERIR COOKIES
+
+Pode gerir cookies através das definições do seu navegador:
+
+• Chrome: Definições > Privacidade e Segurança > Cookies
+• Firefox: Definições > Privacidade e Segurança > Cookies
+• Safari: Preferências > Privacidade > Cookies
+• Edge: Definições > Privacidade > Cookies
+
+Nota: Desativar cookies estritamente necessários pode impedir o
+funcionamento correto do website (ex.: o chat do evento pode não
+funcionar).
+
+──────────────────────────────────────────────────────
+
+6. ALTERAÇÕES A ESTA POLÍTICA
+
+Podemos atualizar esta Política de Cookies periodicamente. As
+alterações serão publicadas nesta página com uma nova data de
+"Última Atualização".
+
+──────────────────────────────────────────────────────
+
+7. CONTACTE-NOS
+
+Para questões sobre a nossa utilização de cookies:
+
+Email: hello@rbingood.com
+Responsável: Ekaterina Mikholap
+Morada: RUA R DOUTOR ANTONIO RIBEIRO DOS SANTOS 11, Lisbon, Portugal
+
+──────────────────────────────────────────────────────
+
+Esta Política de Cookies está em conformidade com a Diretiva
+ePrivacy da UE e o Regulamento Geral sobre a Proteção de
+Dados (RGPD).

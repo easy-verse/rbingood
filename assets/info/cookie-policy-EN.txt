@@ -1,0 +1,107 @@
+═══════════════════════════════════════════════════════
+                    COOKIE POLICY
+═══════════════════════════════════════════════════════
+
+Last Updated: February 23, 2026
+
+──────────────────────────────────────────────────────
+
+1. WHAT ARE COOKIES?
+
+Cookies are small text files stored on your device when you visit
+a website. They help the website function properly and improve
+your experience.
+
+──────────────────────────────────────────────────────
+
+2. HOW WE USE COOKIES
+
+We use a minimal number of cookies, only those necessary for the
+website to function. We do not use advertising or marketing cookies.
+
+──────────────────────────────────────────────────────
+
+3. COOKIES WE USE
+
+STRICTLY NECESSARY COOKIES
+These cookies are essential for the website to work. They cannot
+be disabled.
+
+• Session cookie
+  Purpose: Keeps you logged in during your visit and enables
+  the event chat
+  Duration: Session (deleted when you close the browser)
+  Provider: rbingood.com
+
+AUTHENTICATION AND CHAT COOKIES (FIREBASE/GOOGLE)
+We use Firebase (Google) for user authentication and the event chat.
+Firebase may set cookies to ensure secure authentication.
+
+• Firebase Auth
+  Purpose: User authentication and session management
+  Duration: Until logout
+  Provider: Google/Firebase
+
+For details, see: https://firebase.google.com/support/privacy
+
+THIRD-PARTY COOKIES (PAYMENT PROCESSING)
+When you make a donation, Stripe may set cookies to process the
+payment securely and prevent fraud.
+
+• __stripe_mid
+  Purpose: Fraud prevention and payment processing
+  Duration: 1 year
+  Provider: Stripe
+
+• __stripe_sid
+  Purpose: Fraud prevention (session)
+  Duration: 30 minutes
+  Provider: Stripe
+
+For details, see Stripe's Cookie Policy:
+https://stripe.com/cookie-settings
+
+──────────────────────────────────────────────────────
+
+4. COOKIES WE DO NOT USE
+
+• Analytics cookies (Google Analytics, etc.)
+• Marketing or advertising cookies
+• Social media tracking cookies
+• Third-party profiling cookies
+
+──────────────────────────────────────────────────────
+
+5. MANAGING COOKIES
+
+You can manage cookies through your browser settings:
+
+• Chrome: Settings > Privacy and Security > Cookies
+• Firefox: Settings > Privacy & Security > Cookies
+• Safari: Preferences > Privacy > Cookies
+• Edge: Settings > Privacy > Cookies
+
+Note: Disabling strictly necessary cookies may prevent the website
+from functioning properly (e.g., event chat may not work).
+
+──────────────────────────────────────────────────────
+
+6. CHANGES TO THIS POLICY
+
+We may update this Cookie Policy from time to time. Changes will be
+posted on this page with a new "Last Updated" date.
+
+──────────────────────────────────────────────────────
+
+7. CONTACT US
+
+For questions about our use of cookies:
+
+Email: hello@rbingood.com
+Data Controller: Ekaterina Mikholap
+Address: RUA R DOUTOR ANTONIO RIBEIRO DOS SANTOS 11, Lisbon, Portugal
+
+──────────────────────────────────────────────────────
+
+This Cookie Policy complies with the EU ePrivacy Directive and the
+EU General Data Protection Regulation (GDPR).
