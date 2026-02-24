@@ -7,7 +7,7 @@ var I18N = {
       "nav.participants": "participants",
       "nav.business": "business",
       "nav.cities": "cities",
-      "nav.waitlist": "join waitlist",
+      "nav.waitlist": "I want to participate",
 
       // Hero
       "hero.title": "rbingood — a platform where anyone sponsors or joins eco-initiatives and sees the results right away",
@@ -18,6 +18,14 @@ var I18N = {
       // Problem
       "problem.label": "Problem",
       "problem.title": "A lot of effort. Little result. No transparency.",
+      "problem.global": "Global",
+      "problem.stat1": "tons of municipal waste per year",
+      "problem.src1": "source World Bank",
+      "problem.stat2": "of waste is disposed of unsafely",
+      "problem.src2": "source World Bank",
+      "problem.stat3": "is recycled, 5.5% is composted",
+      "problem.src3": "source World Bank",
+      "problem.portugal": "Portugal",
       "problem.portugal_label": "In Portugal",
       "problem.stat4": "plastic recycling (EU avg 42.1%)",
       "problem.stat5": "of packaging recycled, target — 65%",
@@ -37,6 +45,11 @@ var I18N = {
       "problem.consequences_title": "What happens if you do nothing?",
       "problem.consequences_desc": "CSRD non-compliance fines. Failed audit. Reputational losses. Loss of talent who choose 'green' employers.",
       "problem.consequences_cta": "You need verified actions, not intentions. And you need them before the deadline.",
+      "problem.claim1": "Cities get polluted faster than they can be cleaned.",
+      "problem.claim2_html": "Volunteer cleanups burn out without <span class=\"pill\">payment</span>.",
+      "problem.claim3_html": "<span class=\"pill\">12k EU companies</span> need verified ESG data.",
+      "problem.claim4": "Municipalities struggle to cover all areas.",
+      "problem.claim5": "In Portugal, thousands of parks and beaches remain outside regular cleaning.",
 
       // Solution
       "solution.label": "Solution",
@@ -71,7 +84,7 @@ var I18N = {
       "participants.v4_desc": "Meet like-minded people.",
       "participants.emphasis": "You clean — we pay and show the result.",
       "participants.footnote": "* For example, \u20ac10 for 2 hours of cleanup when sponsored. The amount may vary.",
-      "participants.btn": "join the waitlist",
+      "participants.btn": "I want to participate",
 
       // Cleanup
       "cleanup.label": "Process",
@@ -178,8 +191,12 @@ var I18N = {
       "footer.meta": "\u00a9 2026 rbingood. Lisbon.",
       "footer.legal": "Legal Notice",
       "footer.privacy": "Privacy Policy",
+      "footer.cookie": "Cookie Policy",
+      "footer.terms": "Terms & Conditions",
       "footer.legal_href": "assets/info/legal-notice-EN.txt",
-      "footer.privacy_href": "assets/info/privacy-policy-EN.txt",
+      "footer.privacy_href": "assets/info/privacy-EN.txt",
+      "footer.cookie_href": "assets/info/cookie-policy-EN.txt",
+      "footer.terms_href": "assets/info/terms-and-conditions-EN.txt",
 
       // Mailto
       "mailto.waitlist_subject": "rbingood waitlist",
@@ -201,7 +218,7 @@ var I18N = {
       "nav.participants": "\u0443\u0447\u0430\u0441\u0442\u043d\u0438\u043a\u0430\u043c",
       "nav.business": "\u0431\u0438\u0437\u043d\u0435\u0441\u0443",
       "nav.cities": "\u0433\u043e\u0440\u043e\u0434\u0430\u043c",
-      "nav.waitlist": "\u0432 \u043b\u0438\u0441\u0442 \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u044f",
+      "nav.waitlist": "\u0445\u043e\u0447\u0443 \u0443\u0447\u0430\u0441\u0442\u0432\u043e\u0432\u0430\u0442\u044c",
 
       "hero.title": "rbingood \u2014 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430, \u0433\u0434\u0435 \u043b\u044e\u0431\u043e\u0439 \u0441\u043f\u043e\u043d\u0441\u0438\u0440\u0443\u0435\u0442 \u0438\u043b\u0438 \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u0435\u0442 \u0432 \u044d\u043a\u043e-\u0438\u043d\u0438\u0446\u0438\u0430\u0442\u0438\u0432\u0430\u0445 \u0438 \u0441\u0440\u0430\u0437\u0443 \u0432\u0438\u0434\u0438\u0442 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442",
       "hero.subtitle": "\u0421\u043f\u043e\u043d\u0441\u043e\u0440\u044b, \u0432\u043e\u043b\u043e\u043d\u0442\u0451\u0440\u044b, \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0442\u043e\u0440\u044b \u2014 \u0432\u043c\u0435\u0441\u0442\u0435 \u0447\u0438\u0441\u0442\u044f\u0442 \u0433\u043e\u0440\u043e\u0434\u0430, \u043f\u043b\u044f\u0436\u0438 \u0438 \u043b\u0435\u0441\u0430.",
@@ -210,6 +227,14 @@ var I18N = {
 
       "problem.label": "\u041f\u0440\u043e\u0431\u043b\u0435\u043c\u0430",
       "problem.title": "\u041c\u043d\u043e\u0433\u043e \u0443\u0441\u0438\u043b\u0438\u0439. \u041c\u0430\u043b\u043e \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0430. \u041d\u0435\u0442 \u043f\u0440\u043e\u0437\u0440\u0430\u0447\u043d\u043e\u0441\u0442\u0438.",
+      "problem.global": "\u0412 \u043c\u0438\u0440\u0435",
+      "problem.stat1": "\u0442\u043e\u043d\u043d \u043a\u043e\u043c\u043c\u0443\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u043e\u0442\u0445\u043e\u0434\u043e\u0432 \u0432 \u0433\u043e\u0434",
+      "problem.src1": "\u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a World Bank",
+      "problem.stat2": "\u043e\u0442\u0445\u043e\u0434\u043e\u0432 \u0443\u0442\u0438\u043b\u0438\u0437\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u043d\u0435\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e",
+      "problem.src2": "\u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a World Bank",
+      "problem.stat3": "\u043f\u0435\u0440\u0435\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f, 5.5% \u043a\u043e\u043c\u043f\u043e\u0441\u0442\u0438\u0440\u0443\u0435\u0442\u0441\u044f",
+      "problem.src3": "\u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a World Bank",
+      "problem.portugal": "\u041f\u043e\u0440\u0442\u0443\u0433\u0430\u043b\u0438\u044f",
       "problem.portugal_label": "\u0412 \u041f\u043e\u0440\u0442\u0443\u0433\u0430\u043b\u0438\u0438",
       "problem.stat4": "\u043f\u0435\u0440\u0435\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u043f\u043b\u0430\u0441\u0442\u0438\u043a\u0430 (\u0441\u0440\u0435\u0434\u043d\u0435\u0435 \u043f\u043e EU 42.1%)",
       "problem.stat5": "\u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0438 \u043f\u0435\u0440\u0435\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043e, \u0446\u0435\u043b\u044c \u2014 65%",
@@ -229,6 +254,11 @@ var I18N = {
       "problem.consequences_title": "\u0427\u0442\u043e \u0431\u0443\u0434\u0435\u0442, \u0435\u0441\u043b\u0438 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u0434\u0435\u043b\u0430\u0442\u044c?",
       "problem.consequences_desc": "\u0428\u0442\u0440\u0430\u0444\u044b \u0437\u0430 \u043d\u0435\u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0435 CSRD. \u041f\u0440\u043e\u0432\u0430\u043b \u0430\u0443\u0434\u0438\u0442\u0430. \u0420\u0435\u043f\u0443\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u043f\u043e\u0442\u0435\u0440\u0438. \u041f\u043e\u0442\u0435\u0440\u044f \u0442\u0430\u043b\u0430\u043d\u0442\u043e\u0432, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0432\u044b\u0431\u0438\u0440\u0430\u044e\u0442 \u00ab\u0437\u0435\u043b\u0451\u043d\u044b\u0445\u00bb \u0440\u0430\u0431\u043e\u0442\u043e\u0434\u0430\u0442\u0435\u043b\u0435\u0439.",
       "problem.consequences_cta": "\u0412\u0430\u043c \u043d\u0443\u0436\u043d\u044b \u0432\u0435\u0440\u0438\u0444\u0438\u0446\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f, \u0430 \u043d\u0435 \u043d\u0430\u043c\u0435\u0440\u0435\u043d\u0438\u044f. \u0418 \u043d\u0443\u0436\u043d\u044b \u043e\u043d\u0438 \u0434\u043e \u0434\u0435\u0434\u043b\u0430\u0439\u043d\u0430.",
+      "problem.claim1": "\u0413\u043e\u0440\u043e\u0434\u0430 \u0437\u0430\u0433\u0440\u044f\u0437\u043d\u044f\u044e\u0442\u0441\u044f \u0431\u044b\u0441\u0442\u0440\u0435\u0435, \u0447\u0435\u043c \u0438\u0445 \u0443\u0441\u043f\u0435\u0432\u0430\u044e\u0442 \u0443\u0431\u0438\u0440\u0430\u0442\u044c.",
+      "problem.claim2_html": "\u0412\u043e\u043b\u043e\u043d\u0442\u0451\u0440\u0441\u043a\u0438\u0435 \u0443\u0431\u043e\u0440\u043a\u0438 \u0432\u044b\u0433\u043e\u0440\u0430\u044e\u0442 \u0431\u0435\u0437 <span class=\"pill\">\u043e\u043f\u043b\u0430\u0442\u044b</span>.",
+      "problem.claim3_html": "<span class=\"pill\">12 000 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0439 \u0415\u0421</span> \u043d\u0443\u0436\u043d\u044b \u0432\u0435\u0440\u0438\u0444\u0438\u0446\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 ESG-\u0434\u0430\u043d\u043d\u044b\u0435.",
+      "problem.claim4": "\u041c\u0443\u043d\u0438\u0446\u0438\u043f\u0430\u043b\u0438\u0442\u0435\u0442\u044b \u043d\u0435 \u0441\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u0441\u043e \u0432\u0441\u0435\u043c\u0438 \u0437\u043e\u043d\u0430\u043c\u0438.",
+      "problem.claim5": "\u0412 \u041f\u043e\u0440\u0442\u0443\u0433\u0430\u043b\u0438\u0438 \u0442\u044b\u0441\u044f\u0447\u0438 \u043f\u0430\u0440\u043a\u043e\u0432 \u0438 \u043f\u043b\u044f\u0436\u0435\u0439 \u043e\u0441\u0442\u0430\u044e\u0442\u0441\u044f \u0437\u0430 \u043f\u0440\u0435\u0434\u0435\u043b\u0430\u043c\u0438 \u0440\u0435\u0433\u0443\u043b\u044f\u0440\u043d\u043e\u0439 \u0443\u0431\u043e\u0440\u043a\u0438.",
 
       "solution.label": "\u0420\u0435\u0448\u0435\u043d\u0438\u0435",
       "solution.title": "\u041a\u0430\u043a \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 rbingood",
@@ -260,7 +290,7 @@ var I18N = {
       "participants.v4_desc": "\u0417\u043d\u0430\u043a\u043e\u043c\u0441\u0442\u0432\u0430 \u0441 \u0435\u0434\u0438\u043d\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u0438\u043a\u0430\u043c\u0438.",
       "participants.emphasis": "\u0422\u044b \u0443\u0431\u0438\u0440\u0430\u0435\u0448\u044c \u2014 \u043c\u044b \u043f\u043b\u0430\u0442\u0438\u043c \u0438 \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u043c \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442.",
       "participants.footnote": "* \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u20ac10 \u0437\u0430 2 \u0447\u0430\u0441\u0430 \u0443\u0431\u043e\u0440\u043a\u0438 \u043f\u0440\u0438 \u043d\u0430\u043b\u0438\u0447\u0438\u0438 \u0441\u043f\u043e\u043d\u0441\u043e\u0440\u0430. \u0421\u0443\u043c\u043c\u0430 \u043c\u043e\u0436\u0435\u0442 \u0432\u0430\u0440\u044c\u0438\u0440\u043e\u0432\u0430\u0442\u044c\u0441\u044f.",
-      "participants.btn": "\u0437\u0430\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f \u0432 \u043b\u0438\u0441\u0442 \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u044f",
+      "participants.btn": "\u0445\u043e\u0447\u0443 \u0443\u0447\u0430\u0441\u0442\u0432\u043e\u0432\u0430\u0442\u044c",
 
       "cleanup.label": "\u041f\u0440\u043e\u0446\u0435\u0441\u0441",
       "cleanup.title": "2 \u0447\u0430\u0441\u0430. \u041f\u0440\u043e\u0441\u0442\u043e. \u041f\u043e \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0443.",
@@ -357,10 +387,14 @@ var I18N = {
       "footer.subtitle": "\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u043d\u0430\u043c \u0438\u043b\u0438 \u043f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u044f\u0439\u0442\u0435\u0441\u044c \u043a \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0443.",
       "footer.btn": "\u043d\u0430\u043f\u0438\u0441\u0430\u0442\u044c \u043d\u0430\u043c",
       "footer.meta": "\u00a9 2026 rbingood. \u041b\u0438\u0441\u0441\u0430\u0431\u043e\u043d.",
-      "footer.legal": "\u041f\u0440\u0430\u0432\u043e\u0432\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f",
-      "footer.privacy": "\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430 \u043a\u043e\u043d\u0444\u0438\u0434\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0438",
+      "footer.legal": "Legal Notice",
+      "footer.privacy": "Privacy Policy",
+      "footer.cookie": "Cookie Policy",
+      "footer.terms": "Terms & Conditions",
       "footer.legal_href": "assets/info/legal-notice-RU.txt",
-      "footer.privacy_href": "assets/info/privacy-policy-RU.txt",
+      "footer.privacy_href": "assets/info/privacy-RU.txt",
+      "footer.cookie_href": "assets/info/cookie-policy-RU.txt",
+      "footer.terms_href": "assets/info/terms-and-conditions-RU.txt",
 
       "mailto.waitlist_subject": "rbingood waitlist",
       "mailto.waitlist_body": "\u041f\u0440\u0438\u0432\u0435\u0442! \u0425\u043e\u0447\u0443 \u043f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u044c\u0441\u044f \u043a rbingood.",
@@ -381,7 +415,7 @@ var I18N = {
       "nav.participants": "participantes",
       "nav.business": "empresas",
       "nav.cities": "cidades",
-      "nav.waitlist": "lista de espera",
+      "nav.waitlist": "quero participar",
 
       "hero.title": "rbingood \u2014 uma plataforma onde qualquer pessoa patrocina ou participa em iniciativas eco e vê os resultados imediatamente",
       "hero.subtitle": "Patrocinadores, volunt\u00e1rios, organizadores \u2014 juntos a limpar cidades, praias e florestas.",
@@ -390,6 +424,14 @@ var I18N = {
 
       "problem.label": "Problema",
       "problem.title": "Muito esfor\u00e7o. Poucos resultados. Sem transpar\u00eancia.",
+      "problem.global": "Global",
+      "problem.stat1": "toneladas de res\u00edduos municipais por ano",
+      "problem.src1": "fonte World Bank",
+      "problem.stat2": "dos res\u00edduos \u00e9 eliminado de forma insegura",
+      "problem.src2": "fonte World Bank",
+      "problem.stat3": "\u00e9 reciclado, 5,5% \u00e9 compostado",
+      "problem.src3": "fonte World Bank",
+      "problem.portugal": "Portugal",
       "problem.portugal_label": "Em Portugal",
       "problem.stat4": "reciclagem de pl\u00e1stico (m\u00e9dia UE 42.1%)",
       "problem.stat5": "de embalagens recicladas, meta \u2014 65%",
@@ -409,6 +451,11 @@ var I18N = {
       "problem.consequences_title": "O que acontece se n\u00e3o fizer nada?",
       "problem.consequences_desc": "Multas por incumprimento CSRD. Auditoria falhada. Perdas de reputa\u00e7\u00e3o. Perda de talentos que escolhem empregadores 'verdes'.",
       "problem.consequences_cta": "Precisa de a\u00e7\u00f5es verificadas, n\u00e3o de inten\u00e7\u00f5es. E precisa delas antes do prazo.",
+      "problem.claim1": "As cidades poluem-se mais r\u00e1pido do que podem ser limpas.",
+      "problem.claim2_html": "As limpezas volunt\u00e1rias esgotam-se sem <span class=\"pill\">pagamento</span>.",
+      "problem.claim3_html": "<span class=\"pill\">12 mil empresas da UE</span> precisam de dados ESG verificados.",
+      "problem.claim4": "Os munic\u00edpios n\u00e3o conseguem cobrir todas as \u00e1reas.",
+      "problem.claim5": "Em Portugal, milhares de parques e praias ficam fora da limpeza regular.",
 
       "solution.label": "Solu\u00e7\u00e3o",
       "solution.title": "Como funciona o rbingood",
@@ -440,7 +487,7 @@ var I18N = {
       "participants.v4_desc": "Conhece pessoas com os mesmos valores.",
       "participants.emphasis": "Tu limpas \u2014 n\u00f3s pagamos e mostramos o resultado.",
       "participants.footnote": "* Por exemplo, \u20ac10 por 2 horas de limpeza quando patrocinado. O valor pode variar.",
-      "participants.btn": "entrar na lista de espera",
+      "participants.btn": "quero participar",
 
       "cleanup.label": "Processo",
       "cleanup.title": "2 horas. Simples. Estruturado.",
@@ -537,10 +584,14 @@ var I18N = {
       "footer.subtitle": "Escreva-nos ou junte-se \u00e0 comunidade.",
       "footer.btn": "contacte-nos",
       "footer.meta": "\u00a9 2026 rbingood. Lisboa.",
-      "footer.legal": "Aviso Legal",
-      "footer.privacy": "Pol\u00edtica de Privacidade",
+      "footer.legal": "Legal Notice",
+      "footer.privacy": "Privacy Policy",
+      "footer.cookie": "Cookie Policy",
+      "footer.terms": "Terms & Conditions",
       "footer.legal_href": "assets/info/legal-notice-PT.txt",
-      "footer.privacy_href": "assets/info/privacy-policy-PT.txt",
+      "footer.privacy_href": "assets/info/privacy-PT.txt",
+      "footer.cookie_href": "assets/info/cookie-policy-PT.txt",
+      "footer.terms_href": "assets/info/terms-and-conditions-PT.txt",
 
       "mailto.waitlist_subject": "rbingood lista de espera",
       "mailto.waitlist_body": "Ol\u00e1! Quero juntar-me ao rbingood.",
@@ -558,39 +609,39 @@ var I18N = {
     }
   },
 
-  t: function(key) {
+  t: function (key) {
     return this.translations[this.current][key] || this.translations['en'][key] || key;
   },
 
-  buildMailto: function(subjectKey, bodyKey) {
+  buildMailto: function (subjectKey, bodyKey) {
     return 'mailto:hello@rbingood.com?subject=' + encodeURIComponent(this.t(subjectKey)) + '&body=' + encodeURIComponent(this.t(bodyKey));
   },
 
-  apply: function(lang) {
+  apply: function (lang) {
     this.current = lang;
     document.documentElement.lang = lang;
     localStorage.setItem('rbingood-lang', lang);
 
     // Update all data-i18n elements (textContent)
-    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
       el.textContent = I18N.t(key);
     });
 
     // Update all data-i18n-html elements (innerHTML)
-    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-html');
       el.innerHTML = I18N.t(key);
     });
 
     // Update mailto links
-    document.querySelectorAll('[data-mailto]').forEach(function(el) {
+    document.querySelectorAll('[data-mailto]').forEach(function (el) {
       var parts = el.getAttribute('data-mailto').split(',');
       el.href = I18N.buildMailto(parts[0], parts[1]);
     });
 
     // Update addon tags
-    document.querySelectorAll('.addon-tag[data-addon-i18n]').forEach(function(el) {
+    document.querySelectorAll('.addon-tag[data-addon-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-addon-i18n');
       var text = I18N.t(key);
       el.textContent = text;
@@ -598,7 +649,7 @@ var I18N = {
     });
 
     // Update links with language-dependent href
-    document.querySelectorAll('[data-i18n-href]').forEach(function(el) {
+    document.querySelectorAll('[data-i18n-href]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-href');
       el.href = I18N.t(key);
     });
@@ -609,12 +660,12 @@ var I18N = {
     }
 
     // Update active lang switcher
-    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    document.querySelectorAll('.lang-btn').forEach(function (btn) {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
   },
 
-  init: function() {
+  init: function () {
     var saved = localStorage.getItem('rbingood-lang');
     var lang = saved || 'en';
     this.apply(lang);
