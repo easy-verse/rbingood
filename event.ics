@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//rbingood//Beach Cleanup//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20260228T150000Z
+DTEND:20260228T180000Z
+SUMMARY:rbingood — beach cleanup
+LOCATION:Praia do Castelo\, Portugal
+DESCRIPTION:Join us for a beach cleanup after the storms!\nMore info: https://rbingood.com/event.html
+URL:https://rbingood.com/event.html
+END:VEVENT
+END:VCALENDAR

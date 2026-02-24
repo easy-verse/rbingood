@@ -1214,6 +1214,13 @@
                                 <a href="https://chat.whatsapp.com/LpqXHh5mIYF2QfIm7WZrLL" target="_blank"
                                     rel="noopener" class="reg-community-btn">WhatsApp (EN)</a>
                             </div>
+                            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:20px;" data-i18n="success.cal.label">Добавить в календарь</p>
+                            <div class="reg-community-links" style="margin-top:8px;">
+                                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=rbingood+%E2%80%94+beach+cleanup&dates=20260228T150000Z%2F20260228T180000Z&details=https%3A%2F%2Frbingood.com%2Fevent.html&location=Praia+do+Castelo%2C+Portugal"
+                                    target="_blank" rel="noopener" class="reg-community-btn">Google Calendar</a>
+                                <a href="/event.ics" download="rbingood-28feb2026.ics"
+                                    class="reg-community-btn">Apple / Outlook</a>
+                            </div>
                         </div>
 
                         <!-- Form -->
@@ -1307,7 +1314,7 @@
                             необходимый инвентарь для крупной уборки после шторма. Всё, что останется, пойдёт на
                             следующие чистки.</p>
                         <div class="donate-amounts">
-                            <button type="button" class="donate-amount-btn selected" data-amount="1">€1</button>
+                            <button type="button" class="donate-amount-btn selected" data-amount="2">€2</button>
                             <button type="button" class="donate-amount-btn" data-amount="5">€5</button>
                             <button type="button" class="donate-amount-btn" data-amount="10">€10</button>
                             <button type="button" class="donate-amount-btn" data-amount="25">€25</button>
@@ -1388,7 +1395,7 @@
                     <div class="metrics-bar-label" data-i18n="metrics.events">ивентов проведено</div>
                 </div>
                 <div class="metrics-bar-item">
-                    <div class="metrics-bar-num">2 100+ kg</div>
+                    <div class="metrics-bar-num">2 100+ кг</div>
                     <div class="metrics-bar-label" data-i18n="metrics.trash">мусора собрано</div>
                 </div>
                 <div class="metrics-bar-item">
@@ -1474,7 +1481,7 @@
     <script type="module">
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js';
         import { getAuth, GoogleAuthProvider, signInWithPopup, signInAnonymously, updateProfile, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js';
-        import { getFirestore, collection, addDoc, doc, setDoc, query, orderBy, limit, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js';
+        import { getFirestore, collection, addDoc, doc, setDoc, query, orderBy, limit, onSnapshot, serverTimestamp, increment } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js';
 
         // ── Firebase config ───────────────────────────────────
         const app = initializeApp({
@@ -1493,7 +1500,8 @@
         const REG_KEY = 'rbingood_registered_28feb';
         const RSVP_KEY = 'rbingood_rsvp_28feb';
         const CHAT_COL = 'chat_28feb2026';
-        const BASE_COUNT = 2;
+        const BASE_COUNT = 16;
+        const STATS_DOC = doc(db, 'stats', 'event_28feb2026');
 
         // ── Translations ──────────────────────────────────────
         const translations = {
@@ -1518,6 +1526,7 @@
                 'success.title': 'Вы зарегистрированы', 'success.text': 'Ждём вас 28 февраля в 15:00 у Praia do Castelo.',
                 'success.plusone': 'Приду +1', 'success.cancel': 'Отменить участие',
                 'success.community': 'Детали обсуждаем в чате ниже или в сообществе',
+                'success.cal.label': 'Добавить в календарь',
                 'donate.title': 'Поддержать донатом',
                 'donate.text': 'Не можете прийти лично? Любая сумма покрывает реальные расходы — необходимый инвентарь для крупной уборки после шторма. Всё, что останется, пойдёт на следующие чистки.',
                 'donate.btn': 'Сделать донат', 'donate.note': 'Оплата картой — Visa, Mastercard, Apple Pay',
@@ -1560,6 +1569,7 @@
                 'success.title': 'You\'re registered', 'success.text': 'See you on February 28 at 15:00 at Praia do Castelo.',
                 'success.plusone': 'Coming +1', 'success.cancel': 'Cancel RSVP',
                 'success.community': 'Discuss details in the chat below or in the community',
+                'success.cal.label': 'Add to calendar',
                 'donate.title': 'Support with a donation',
                 'donate.text': 'Can\'t come in person? Any amount covers real costs — essential equipment for a post-storm cleanup. Whatever remains goes to future cleanups.',
                 'donate.btn': 'Donate', 'donate.note': 'Pay by card — Visa, Mastercard, Apple Pay',
@@ -1602,6 +1612,7 @@
                 'success.title': 'Está inscrito', 'success.text': 'Esperamo-lo no dia 28 de fevereiro às 15:00 na Praia do Castelo.',
                 'success.plusone': 'Venho +1', 'success.cancel': 'Cancelar inscrição',
                 'success.community': 'Discuta os detalhes no chat abaixo ou na comunidade',
+                'success.cal.label': 'Adicionar ao calendário',
                 'donate.title': 'Apoie com uma doação',
                 'donate.text': 'Não pode vir pessoalmente? Qualquer quantia cobre custos reais — material essencial para uma grande limpeza pós-tempestade. O que restar vai para futuras limpezas.',
                 'donate.btn': 'Fazer doação', 'donate.note': 'Pagamento com cartão — Visa, Mastercard, Apple Pay',
@@ -1746,12 +1757,12 @@
             bubble.appendChild(toggleBtn);
         }
 
-        // ── RSVP counter ──────────────────────────────────────
-        function updateRsvpDisplay() {
-            const extra = rsvpState === 'going' ? 1 : rsvpState === 'plus1' ? 2 : 0;
-            rsvpNum.textContent = BASE_COUNT + extra;
-        }
-        updateRsvpDisplay();
+        // ── RSVP counter (real-time from Firestore) ───────────
+        onSnapshot(STATS_DOC, (snap) => {
+            const data = snap.data();
+            rsvpNum.textContent = data?.participants ?? BASE_COUNT;
+        });
+        function updateRsvpDisplay() {} // no-op, kept for safety
 
         // ── Show success / unlock chat ─────────────────────────
         function showSuccess(withFirebase) {
@@ -1856,7 +1867,10 @@
         // ── Auth state (single source of truth) ───────────────
         onAuthStateChanged(auth, (user) => {
             if (user) {
-                if (rsvpState === 'none') rsvpState = 'going';
+                if (rsvpState === 'none') {
+                    rsvpState = 'going';
+                    setDoc(STATS_DOC, { participants: increment(1) }, { merge: true }).catch(console.error);
+                }
                 localStorage.setItem(REG_KEY, '1');
                 localStorage.setItem(RSVP_KEY, rsvpState);
                 updateRsvpDisplay();
@@ -1870,14 +1884,15 @@
 
         // ── +1 toggle (post-registration) ─────────────────────
         plusOneBtn.addEventListener('click', () => {
-            rsvpState = rsvpState === 'plus1' ? 'going' : 'plus1';
+            const wasPlusOne = rsvpState === 'plus1';
+            rsvpState = wasPlusOne ? 'going' : 'plus1';
             localStorage.setItem(RSVP_KEY, rsvpState);
             updateRsvpDisplay();
             plusOneBtn.classList.toggle('active', rsvpState === 'plus1');
-            // Sync to Firestore if user is logged in
             const user = auth.currentUser;
             if (user) {
-                setDoc(doc(db, 'registrations', user.uid), { plusOne: rsvpState === 'plus1' }, { merge: true }).catch(console.error);
+                setDoc(doc(db, 'registrations', user.uid), { plusOne: !wasPlusOne }, { merge: true }).catch(console.error);
+                setDoc(STATS_DOC, { participants: increment(wasPlusOne ? -1 : 1) }, { merge: true }).catch(console.error);
             }
         });
 
@@ -1928,6 +1943,7 @@
                     plusOne: false,
                     registeredAt: serverTimestamp()
                 }).catch(console.error);
+                setDoc(STATS_DOC, { participants: increment(1) }, { merge: true }).catch(console.error);
 
                 // Also send to backend API if available
                 fetch(API_URL, {
@@ -1946,7 +1962,12 @@
 
         // ── Cancel RSVP ───────────────────────────────────────
         cancelBtn.addEventListener('click', async () => {
-            if (auth.currentUser) await signOut(auth);
+            const prevState = rsvpState;
+            if (auth.currentUser) {
+                const delta = prevState === 'plus1' ? -2 : -1;
+                setDoc(STATS_DOC, { participants: increment(delta) }, { merge: true }).catch(console.error);
+                await signOut(auth);
+            }
             if (unsubChat) { unsubChat(); unsubChat = null; }
             localStorage.removeItem(REG_KEY);
             localStorage.removeItem(RSVP_KEY);
