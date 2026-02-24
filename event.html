@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGJT75SSX8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-GGJT75SSX8');
+    </script>
     <title>Чистим пляж от последствий ураганов — rbingood</title>
     <meta name="description"
         content="Уборка пляжа Praia do Castelo, суббота 28 февраля 15:00–17:30. Зарегистрируйтесь бесплатно.">
@@ -1214,12 +1221,13 @@
                                 <a href="https://chat.whatsapp.com/LpqXHh5mIYF2QfIm7WZrLL" target="_blank"
                                     rel="noopener" class="reg-community-btn">WhatsApp (EN)</a>
                             </div>
-                            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:20px;" data-i18n="success.cal.label">Добавить в календарь</p>
+                            <p style="font-size:0.82rem; color:var(--text-muted); margin-top:20px;"
+                                data-i18n="success.cal.label">Добавить в календарь</p>
                             <div class="reg-community-links" style="margin-top:8px;">
                                 <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=rbingood+%E2%80%94+beach+cleanup&dates=20260228T150000Z%2F20260228T180000Z&details=https%3A%2F%2Frbingood.com%2Fevent.html&location=Praia+do+Castelo%2C+Portugal"
                                     target="_blank" rel="noopener" class="reg-community-btn">Google Calendar</a>
-                                <a href="/event.ics" download="rbingood-28feb2026.ics"
-                                    class="reg-community-btn">Apple / Outlook</a>
+                                <a href="/event.ics" download="rbingood-28feb2026.ics" class="reg-community-btn">Apple /
+                                    Outlook</a>
                             </div>
                         </div>
 
@@ -1395,7 +1403,7 @@
                     <div class="metrics-bar-label" data-i18n="metrics.events">ивентов проведено</div>
                 </div>
                 <div class="metrics-bar-item">
-                    <div class="metrics-bar-num">2 100+ кг</div>
+                    <div class="metrics-bar-num">2 100+ kg</div>
                     <div class="metrics-bar-label" data-i18n="metrics.trash">мусора собрано</div>
                 </div>
                 <div class="metrics-bar-item">
@@ -1762,7 +1770,7 @@
             const data = snap.data();
             rsvpNum.textContent = data?.participants ?? BASE_COUNT;
         });
-        function updateRsvpDisplay() {} // no-op, kept for safety
+        function updateRsvpDisplay() { } // no-op, kept for safety
 
         // ── Show success / unlock chat ─────────────────────────
         function showSuccess(withFirebase) {
