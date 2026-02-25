@@ -9,6 +9,7 @@
     <meta name="robots" content="noindex">
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <script src="sponsor-i18n.js" defer></script>
 
     <style>
         /* ── Nav scroll + lang switcher ─────────────── */
@@ -168,29 +169,39 @@
             background: #5B6BF9;
             color: #fff;
         }
+        /* Mobile scroll-trigger: light up cards when in viewport */
+        @media (hover: none) {
+            .role-card--biz.in-view { border-color: #2ECC71; background: rgba(46,204,113,0.04); }
+            .role-card--biz.in-view .btn-primary { background: #2ECC71; color: #0f0f0f; }
+            .role-card--ind.in-view { border-color: #5B6BF9; background: rgba(91,107,249,0.04); }
+            .role-card--ind.in-view .btn-outline { background: #5B6BF9; color: #fff; border-color: #5B6BF9; }
+        }
 
-        /* Vertical stat list */
+        /* Horizontal mini stat strip */
         .stat-list-v {
             list-style: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            flex-direction: row;
         }
         .stat-list-v li {
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(0,0,0,0.08);
+            flex: 1;
+            padding: 10px 8px;
+            border-right: 1px solid rgba(0,0,0,0.08);
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 3px;
         }
-        .stat-list-v li:last-child { border-bottom: none; }
+        .stat-list-v li:last-child { border-right: none; }
         .stat-num {
-            font-size: 2.4rem;
+            font-size: 1.45rem;
             font-weight: 800;
             color: #0f0f0f;
             line-height: 1;
         }
-        .stat-label { font-size: 1rem; color: #333; }
-        .stat-src { font-size: 0.8rem; color: var(--text-muted); }
+        .stat-label { font-size: 0.7rem; color: #333; line-height: 1.3; }
+        .stat-src { font-size: 0.62rem; color: var(--text-muted); line-height: 1.2; }
         .stat-src a { color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; }
         .stat-src a:hover { color: #0f0f0f; }
 
@@ -339,10 +350,10 @@
         }
         .step-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
         .step-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
-        .step-card--highlight { background: #0f0f0f; }
-        .step-card--highlight .step-num { color: rgba(255,255,255,0.4); }
-        .step-card--highlight h3 { color: #fff; }
-        .step-card--highlight p { color: rgba(255,255,255,0.6); }
+        .step-card--highlight { background: #fff; border: 2px solid #2ECC71; }
+        .step-card--highlight .step-num { color: rgba(0,0,0,0.35); }
+        .step-card--highlight h3 { color: #0f0f0f; }
+        .step-card--highlight p { color: var(--text-muted); }
 
         /* Pricing */
         .pricing-grid {
@@ -359,9 +370,10 @@
             position: relative;
         }
         .pricing-card--popular {
-            background: #0f0f0f;
+            background: #fff;
             border-color: #0f0f0f;
-            color: #fff;
+            border-width: 2px;
+            color: #0f0f0f;
         }
         .popular-badge {
             position: absolute;
@@ -386,21 +398,21 @@
             color: var(--text-muted);
             margin-bottom: 16px;
         }
-        .pricing-card--popular .pricing-name { color: rgba(255,255,255,0.4); }
+        .pricing-card--popular .pricing-name { color: var(--text-muted); }
         .pricing-price {
             font-size: 2.5rem;
             font-weight: 800;
             color: #0f0f0f;
             line-height: 1;
         }
-        .pricing-card--popular .pricing-price { color: #fff; }
+        .pricing-card--popular .pricing-price { color: #0f0f0f; }
         .pricing-period {
             font-size: 0.85rem;
             color: var(--text-muted);
             margin-bottom: 24px;
             margin-top: 4px;
         }
-        .pricing-card--popular .pricing-period { color: rgba(255,255,255,0.4); }
+        .pricing-card--popular .pricing-period { color: var(--text-muted); }
         .pricing-list {
             list-style: none;
             padding: 0;
@@ -410,7 +422,7 @@
             border-top: 1px solid rgba(0,0,0,0.07);
             padding-top: 20px;
         }
-        .pricing-card--popular .pricing-list { border-color: rgba(255,255,255,0.1); }
+        .pricing-card--popular .pricing-list { border-color: rgba(0,0,0,0.07); }
         .pricing-list li {
             display: flex;
             gap: 10px;
@@ -419,8 +431,16 @@
             line-height: 1.5;
             color: var(--text-muted);
         }
-        .pricing-card--popular .pricing-list li { color: rgba(255,255,255,0.7); }
+        .pricing-card--popular .pricing-list li { color: var(--text-muted); }
         .pricing-list li::before { content: "✓"; font-weight: 700; color: #2ECC71; flex-shrink: 0; }
+        .pricing-addon {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            padding: 10px 0;
+            margin-top: -16px;
+            margin-bottom: 20px;
+            border-top: 1px dashed rgba(0,0,0,0.12);
+        }
         .pricing-roi {
             font-size: 0.85rem;
             font-weight: 600;
@@ -984,6 +1004,30 @@
             .role-card .btn-primary,
             .role-card .btn-outline { min-width: unset; width: 100%; text-align: center; }
         }
+
+        /* Back to top */
+        #back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 20px;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #0f0f0f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 900;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: opacity 0.3s, transform 0.3s, background 0.2s;
+            pointer-events: none;
+        }
+        #back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+        #back-to-top:hover { background: #2ECC71; color: #0f0f0f; }
     </style>
 </head>
 
@@ -1000,7 +1044,6 @@
                 <a href="#pricing" class="nav-link" data-i18n="nav.packages">Пакеты</a>
                 <a href="#proof" class="nav-link" data-i18n="nav.cases">Кейсы</a>
                 <a href="#individual" class="nav-link nav-link--dark" data-i18n="nav.donate">Донат</a>
-                <a href="#cta" class="btn-nav" data-i18n="nav.cta">Закрыть CSRD →</a>
             </div>
             <div class="lang-switcher">
                 <button class="lang-btn active" data-lang="ru">RU</button>
@@ -1063,7 +1106,7 @@
                 <!-- Правая: выбор роли -->
                 <div class="prob-roles">
                     <div class="role-card role-card--biz">
-                        <p class="role-desc" data-i18n-html="problem.role.biz.text"><strong style="color:#0f0f0f;">Я бизнес</strong> — хочу отчёты на реальных, верифицированных данных</p>
+                        <p class="role-desc" data-i18n-html="problem.role.biz.text"><strong style="color:#0f0f0f;">Я бизнес</strong> — хочу отчёты на реальных, верифицированных данных и вовлечь команду в живые экопроекты</p>
                         <a class="btn-primary" href="#b2b-problem" data-i18n="problem.role.biz.btn">Бизнес (от €350)</a>
                     </div>
                     <div class="role-card role-card--ind">
@@ -1148,15 +1191,14 @@
                         <li data-i18n="hr.li6">Фото/видео контент включён</li>
                         <li data-i18n="hr.li7">До 10 участников на тимбилдинг</li>
                     </ul>
-                    <div class="roi-tag" data-i18n-html="hr.roi">70% Gen Z выбирают «зелёных» работодателей — <a href="https://www.edelman.com/trust/trust-barometer" target="_blank" rel="noopener" style="color:inherit">Edelman, 2025</a></div>
+                    <div class="roi-tag" data-i18n-html="hr.roi">70% Gen Z выбирают «зелёных» работодателей — <a href="https://www.deloitte.com/content/dam/assets-shared/docs/campaigns/2025/2025-genz-millennial-survey.pdf" target="_blank" rel="noopener" style="color:inherit">Deloitte, 2025</a></div>
                     <a class="btn-outline" href="mailto:hello@rbingood.com?subject=Discuss teambuilding" style="display: block; text-align: center; margin-top: 16px;" data-i18n="hr.btn">Обсудить тимбилдинг</a>
                 </div>
             </div>
 
             <!-- Addons block -->
             <div class="addon-block reveal" style="--delay: 0.2s; margin-top: 40px;">
-                <h3 data-i18n="addon.title">Дополнительные форматы</h3>
-                <p class="text-lead" data-i18n="addon.lead">Выберите интересующие опции — они автоматически добавятся в письмо.</p>
+                <h3 data-i18n="addon.title">Что ещё интересует?</h3>
                 <div class="addon-list">
                     <button type="button" class="addon-tag" data-addon="Больше ивентов" data-i18n="addon.more">Больше ивентов</button>
                     <button type="button" class="addon-tag" data-addon="Индивидуальная отчётность" data-i18n="addon.report">Инд. отчётность</button>
@@ -1164,9 +1206,55 @@
                     <button type="button" class="addon-tag" data-addon="Мерч" data-i18n="addon.merch">Мерч</button>
                     <button type="button" class="addon-tag" data-addon="Расширенный PR" data-i18n="addon.pr">Расширенный PR</button>
                     <button type="button" class="addon-tag" data-addon="Мастер-класс" data-i18n="addon.master">Мастер-класс</button>
+                    <button type="button" class="addon-tag" data-addon="Бартер — Стать партнёром района" data-i18n="addon.barter">Бартер</button>
+                </div>
+                <div style="margin-top: 12px;">
+                    <input type="text" id="addon-custom-input" placeholder="Свой вариант..." style="width:100%;padding:10px 14px;border-radius:10px;border:1px solid var(--border-subtle);font-size:0.9rem;font-family:inherit;outline:none;background:#fff;">
                 </div>
                 <div class="section-actions" style="margin-top: 16px; justify-content: center;">
                     <a class="btn-primary" id="addons-mailto-sp" href="mailto:hello@rbingood.com" data-i18n="addon.btn">Написать нам</a>
+                </div>
+            </div>
+
+            <!-- CTA with founders -->
+            <div class="founders-block founders-block--light reveal" style="--delay: 0.3s; margin-top: 40px;">
+                <div>
+                    <div class="team-cofounders" style="margin-bottom: 24px; margin-top: 0;">
+                        <div class="team-card">
+                            <div class="team-photo">
+                                <img src="assets/main/Ksenia Em.jpeg" alt="Ksenia Em" loading="lazy">
+                            </div>
+                            <h3>Ksenia Em</h3>
+                            <p class="team-role">Co-founder</p>
+                            <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
+                                <a class="team-link" href="https://www.linkedin.com/in/kseniya-em/" target="_blank" rel="noopener">LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-photo">
+                                <img src="assets/main/Kate Mikholap.jpeg" alt="Kate Mikholap" loading="lazy">
+                            </div>
+                            <h3>Kate Mikholap</h3>
+                            <p class="team-role">Co-founder</p>
+                            <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
+                                <a class="team-link" href="https://www.linkedin.com/in/kate-mikholap/" target="_blank" rel="noopener">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote class="founders-quote" data-i18n="cta.quote">«Мы, Ксения и Катя, лично гарантируем качество каждого ивента. rbingood — это наша репутация. Если что-то пойдёт не так — вернём деньги без вопросов.»</blockquote>
+                    <div class="founders-names">— Ksenia Em &amp; Kate Mikholap, Co-founders</div>
+                </div>
+                <div class="founders-cta">
+                    <h2 data-i18n="cta.title">Начните сегодня — ответим за 1 час</h2>
+                    <p data-i18n="cta.sub">Не откладывайте ESG на декабрь. Сделайте первый шаг сейчас.</p>
+                    <div class="cta-two-btns">
+                        <a class="btn-primary" href="mailto:hello@rbingood.com?subject=Close CSRD — rbingood package" data-i18n="cta.btn1">Закрыть CSRD за €350</a>
+                        <a class="btn-outline" href="event.html" data-i18n="cta.btn2">Сделать донат / участвовать в ивенте</a>
+                    </div>
+                    <div class="founders-contact">
+                        <span data-i18n="cta.or">или напишите нам:</span><br>
+                        <a href="mailto:hello@rbingood.com">hello@rbingood.com</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1177,7 +1265,7 @@
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
                 <p class="section-label" data-i18n="process.label">Процесс</p>
-                <h2 data-i18n="process.title">4 шага до ESG-отчёта</h2>
+                <h2 data-i18n="process.title">4 шага до старта</h2>
             </div>
 
             <div class="steps-timeline reveal" style="--delay: 0.1s;">
@@ -1222,10 +1310,10 @@
                     <div class="pricing-period" data-i18n="pkg1.period">разовый ивент</div>
                     <ul class="pricing-list">
                         <li data-i18n="pkg1.li1">До 6 участников</li>
-                        <li data-i18n="pkg1.li2">ESG Data Pack (доп. оплата €150)</li>
                         <li data-i18n="pkg1.li3">Фото до/после</li>
                         <li data-i18n="pkg1.li4">Договор и инвойс</li>
                     </ul>
+                    <div class="pricing-addon" data-i18n="pkg1.addon">+ ESG Data Pack — €150</div>
                     <div class="pricing-roi" data-i18n="pkg1.roi">Быстрый старт без риска</div>
                     <a class="btn-outline" href="mailto:hello@rbingood.com?subject=Pilot event from €350" style="display: block; text-align: center;" data-i18n="pkg1.btn">Организовать звонок</a>
                 </div>
@@ -1275,7 +1363,7 @@
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
                 <p class="section-label" data-i18n="proof.label">Кейсы</p>
-                <h2 data-i18n="proof.title">Это не идея. Это уже работает.</h2>
+                <h2 data-i18n="proof.title">Мы уже работаем.</h2>
             </div>
 
             <!-- Overall stats block -->
@@ -1318,6 +1406,7 @@
             <div class="case-split reveal" style="--delay: 0.15s;">
                 <div class="case-split-left">
                     <p class="case-split-name">Praia Irmão</p>
+                    <img src="assets/main/logo_irmao.svg" alt="Praia Irmão" style="height:32px; margin-bottom:16px; display:block; opacity:0.85; object-fit:contain; max-width:100%;">
                     <div class="case-split-metrics">
                         <div class="case-split-metric">
                             <strong>710 кг</strong>
@@ -1332,7 +1421,6 @@
                             <span data-i18n="proof.praia.m3.label">партнёрство</span>
                         </div>
                     </div>
-                    <p class="case-split-desc" data-i18n="proof.praia.quote">«Лучшая ESG-инициатива года. Продлили контракт на 2026.»</p>
                 </div>
                 <div class="case-split-right">
                     <div class="photo-scroll">
@@ -1351,6 +1439,7 @@
             <div class="case-split reveal" style="--delay: 0.2s;">
                 <div class="case-split-left">
                     <p class="case-split-name">DHB Festival</p>
+                    <img src="assets/main/LOGO_DHB_PORTUGAL.png" alt="DHB Festival" style="height:32px; margin-bottom:16px; display:block; opacity:0.85; object-fit:contain; max-width:100%;">
                     <div class="case-split-metrics">
                         <div class="case-split-metric">
                             <strong>3 000+</strong>
@@ -1385,7 +1474,7 @@
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
                 <p class="section-label" data-i18n="mech.label">Механика</p>
-                <h2 data-i18n="mech.title">Как работает rbingood</h2>
+                <h2 data-i18n="mech.title">Как мы проводим ивенты</h2>
             </div>
 
             <div class="mechanic-grid reveal" style="--delay: 0.1s;">
@@ -1430,11 +1519,42 @@
         </div>
     </section>
 
+    <!-- ══ ROADMAP / ПЛАН НА 2026 ════════════════════════ -->
+    <section class="section section-simple" id="roadmap">
+        <div class="container">
+            <div class="section-head reveal" style="--delay: 0s;">
+                <p class="section-label" data-i18n="roadmap.label">План на 2026</p>
+                <h2 data-i18n="roadmap.title">2026: App + Расширение</h2>
+            </div>
+
+            <div class="roadmap-grid reveal" style="--delay: 0.1s;">
+                <div class="roadmap-item roadmap-item--active">
+                    <div class="roadmap-q">Q1–Q2 2026</div>
+                    <div class="roadmap-city">Lisbon</div>
+                    <div class="roadmap-status" data-i18n="roadmap.r1.status">Активно</div>
+                    <p style="font-size:0.82rem; margin-top:10px; color:rgba(255,255,255,0.6); line-height:1.5;" data-i18n="roadmap.r1.text">Увеличение количества ивентов, пляжи и парки, спонсорские пакеты запущены.</p>
+                </div>
+                <div class="roadmap-item roadmap-item--app">
+                    <div class="roadmap-q">Q2–Q3 2026</div>
+                    <div class="roadmap-city">Mobile App</div>
+                    <div class="roadmap-status" data-i18n="roadmap.r2.status">Релиз</div>
+                    <p style="font-size:0.82rem; margin-top:10px; color:rgba(255,255,255,0.7); line-height:1.5;" data-i18n="roadmap.r2.text">Выплаты участникам*, карта событий, ESG-дашборд для спонсоров.</p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-q">Q3–Q4 2026</div>
+                    <div class="roadmap-city" data-i18n="roadmap.r3.city">Фестивали</div>
+                    <div class="roadmap-status" data-i18n="roadmap.r3.status">Расширение</div>
+                    <p style="font-size:0.82rem; margin-top:10px; color:var(--text-muted); line-height:1.5;" data-i18n="roadmap.r3.text">Партнёрство с крупными фестивалями. Геймификация формата «мусор = валюта».</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ══ FOR INDIVIDUALS ════════════════════════════════ -->
     <section class="section section-simple" id="individual">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label" data-i18n="ind.label">Для людей</p>
+                <p class="section-label" data-i18n="ind.label">Для неравнодушных людей</p>
                 <h2 data-i18n="ind.title">Каждый вклад важен</h2>
             </div>
             <p class="emphasis reveal" style="--delay: 0.05s;" data-i18n="ind.emphasis">Вам не нужно быть корпорацией, чтобы быть полезным.</p>
@@ -1471,80 +1591,6 @@
                         <a class="btn-primary" href="event.html" style="text-decoration:none;" data-i18n="comm.event">Ближайший ивент</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ══ ROADMAP ═══════════════════════════════════════ -->
-    <section class="section section-simple" id="roadmap">
-        <div class="container">
-            <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label" data-i18n="roadmap.label">Роадмап</p>
-                <h2 data-i18n="roadmap.title">2026: App + Расширение</h2>
-            </div>
-            <p class="emphasis reveal" style="--delay: 0.05s;" data-i18n="roadmap.emphasis">Мы не стоим на месте. Присоединяйтесь сейчас, чтобы расти с нами.</p>
-
-            <div class="roadmap-grid reveal" style="--delay: 0.1s;">
-                <div class="roadmap-item roadmap-item--active">
-                    <div class="roadmap-q">Q1–Q2 2026</div>
-                    <div class="roadmap-city">Lisbon</div>
-                    <div class="roadmap-status" data-i18n="roadmap.r1.status">Активно</div>
-                    <p style="font-size:0.82rem; margin-top:10px; color:rgba(255,255,255,0.6); line-height:1.5;" data-i18n="roadmap.r1.text">Увеличение количества ивентов, пляжи и парки, спонсорские пакеты запущены.</p>
-                </div>
-                <div class="roadmap-item roadmap-item--app">
-                    <div class="roadmap-q">Q2–Q3 2026</div>
-                    <div class="roadmap-city">Mobile App</div>
-                    <div class="roadmap-status" data-i18n="roadmap.r2.status">Релиз</div>
-                    <p style="font-size:0.82rem; margin-top:10px; color:rgba(255,255,255,0.7); line-height:1.5;" data-i18n="roadmap.r2.text">Выплаты участникам*, карта событий, ESG-дашборд для спонсоров.</p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-q">Q3–Q4 2026</div>
-                    <div class="roadmap-city" data-i18n="roadmap.r3.city">Фестивали</div>
-                    <div class="roadmap-status" data-i18n="roadmap.r3.status">Расширение</div>
-                    <p style="font-size:0.82rem; margin-top:10px; color:var(--text-muted); line-height:1.5;" data-i18n="roadmap.r3.text">Партнёрство с крупными фестивалями. Геймификация формата «мусор = валюта».</p>
-                </div>
-            </div>
-
-            <p class="emphasis reveal" style="--delay: 0.15s;" data-i18n="roadmap.bottom">rbingood — это не акция. Это повторяемый процесс.</p>
-            <div class="phone-mockups reveal" style="--delay: 0.2s;">
-                <img src="assets/main/3.1.png" alt="App screen — event map" loading="lazy">
-                <img src="assets/main/3.2.png" alt="App screen — check-in" loading="lazy">
-                <img src="assets/main/3.3.png" alt="App screen — report" loading="lazy">
-                <img src="assets/main/3.4.png" alt="App screen — GPS" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- ══ BARTER / LOCAL BUSINESS ═══════════════════════ -->
-    <section class="section section-simple" id="local-business">
-        <div class="container">
-            <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label" data-i18n="barter.label">Локальный бизнес</p>
-                <h2 data-i18n="barter.title">Стань героем своего района</h2>
-            </div>
-
-            <div class="barter-block reveal" style="--delay: 0.1s;">
-                <h3 data-i18n="barter.subtitle">Бартер — без бюджета</h3>
-                <p data-i18n="barter.text">Если вы — кафе, ресторан или магазин рядом с зоной уборки, вы можете поддержать ивент. Вода, еда, скидки участникам — мы сделаем вас частью события.</p>
-                <div class="barter-grid">
-                    <div class="barter-item">
-                        <h4 data-i18n="barter.b1.title">Трафик клиентов</h4>
-                        <p data-i18n="barter.b1.text">Участники заходят к вам после уборки.</p>
-                    </div>
-                    <div class="barter-item">
-                        <h4 data-i18n="barter.b2.title">Статус «Добрый сосед»</h4>
-                        <p data-i18n="barter.b2.text">Табличка "Спонсировано вашим кафе".</p>
-                    </div>
-                    <div class="barter-item">
-                        <h4 data-i18n="barter.b3.title">Без бюджета</h4>
-                        <p data-i18n="barter.b3.text">Бартер (вода, напитки, снеки).</p>
-                    </div>
-                    <div class="barter-item">
-                        <h4 data-i18n="barter.b4.title">Лояльность</h4>
-                        <p data-i18n="barter.b4.text">Превратите соседей в постоянных гостей.</p>
-                    </div>
-                </div>
-                <a class="btn-primary" href="mailto:hello@rbingood.com?subject=Barter partnership rbingood" style="display:inline-block;" data-i18n="barter.btn">Стать бартер-партнёром</a>
             </div>
         </div>
     </section>
@@ -1597,53 +1643,6 @@
                         <summary data-i18n="faq.q9">Как присоединиться?</summary>
                         <p data-i18n="faq.a9">Самый быстрый способ — через Telegram или WhatsApp. Выберите удобную дату в календаре, нажмите «Confirm» — и вы в списке.</p>
                     </details>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ══ FINAL CTA ═══════════════════════════════════════ -->
-    <section class="section section-simple" id="cta">
-        <div class="container">
-            <div class="team-cofounders reveal" style="--delay: 0s;">
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="assets/main/Ksenia Em.jpeg" alt="Ksenia Em" loading="lazy">
-                    </div>
-                    <h3>Ksenia Em</h3>
-                    <p class="team-role">Co-founder</p>
-                    <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
-                        <a class="team-link" href="https://www.linkedin.com/in/kseniya-em/" target="_blank" rel="noopener">LinkedIn</a>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="assets/main/Kate Mikholap.jpeg" alt="Kate Mikholap" loading="lazy">
-                    </div>
-                    <h3>Kate Mikholap</h3>
-                    <p class="team-role">Co-founder</p>
-                    <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
-                        <a class="team-link" href="https://www.linkedin.com/in/kate-mikholap/" target="_blank" rel="noopener">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="founders-block founders-block--light reveal" style="--delay: 0.1s;">
-                <div>
-                    <blockquote class="founders-quote" data-i18n="cta.quote">«Мы, Ксения и Катя, лично гарантируем качество каждого ивента. rbingood — это наша репутация. Если что-то пойдёт не так — вернём деньги без вопросов.»</blockquote>
-                    <div class="founders-names">— Ksenia Em &amp; Kate Mikholap, Co-founders</div>
-                </div>
-                <div class="founders-cta">
-                    <h2 data-i18n="cta.title">Начните сегодня — ответим за 1 час</h2>
-                    <p data-i18n="cta.sub">Не откладывайте ESG на декабрь. Сделайте первый шаг сейчас.</p>
-                    <div class="cta-two-btns">
-                        <a class="btn-primary" href="mailto:hello@rbingood.com?subject=Close CSRD — rbingood package" data-i18n="cta.btn1">Закрыть CSRD за €350</a>
-                        <a class="btn-outline" href="event.html" data-i18n="cta.btn2">Сделать донат / участвовать в ивенте</a>
-                    </div>
-                    <div class="founders-contact">
-                        <span data-i18n="cta.or">или напишите нам:</span><br>
-                        <a href="mailto:hello@rbingood.com">hello@rbingood.com</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1706,6 +1705,10 @@
         </div>
     </footer>
 
+    <button id="back-to-top" aria-label="Наверх" title="Наверх">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 14V4M9 4L4 9M9 4L14 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
     <script>
     // Progress bar
     // Donate amount buttons
@@ -1742,6 +1745,44 @@
 
     // Reset horizontal scroll containers to start
     document.querySelectorAll('.phone-mockups, .photo-scroll').forEach(el => { el.scrollLeft = 0; });
+
+    // Addon tags: multi-select toggle
+    document.querySelectorAll('.addon-tag').forEach(tag => {
+        tag.addEventListener('click', () => tag.classList.toggle('selected'));
+    });
+    // Build mailto with selected addons + custom input
+    const addonsMailto = document.getElementById('addons-mailto-sp');
+    if (addonsMailto) {
+        addonsMailto.addEventListener('click', (e) => {
+            e.preventDefault();
+            const selected = [...document.querySelectorAll('.addon-tag.selected')]
+                .map(t => t.getAttribute('data-addon'));
+            const custom = (document.getElementById('addon-custom-input')?.value || '').trim();
+            if (custom) selected.push(custom);
+            const body = selected.length
+                ? 'Интересует: ' + selected.join(', ')
+                : '';
+            const subject = 'rbingood — дополнительные опции';
+            window.location.href = 'mailto:hello@rbingood.com'
+                + '?subject=' + encodeURIComponent(subject)
+                + (body ? '&body=' + encodeURIComponent(body) : '');
+        });
+    }
+
+    // Back to top
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Role cards: light up buttons when scrolled into view (touch/no-hover devices)
+    if (window.matchMedia('(hover: none)').matches && 'IntersectionObserver' in window) {
+        const roleObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => e.target.classList.toggle('in-view', e.isIntersecting));
+        }, { threshold: 0.4 });
+        document.querySelectorAll('.role-card').forEach(c => roleObs.observe(c));
+    }
     </script>
 
 </body>
