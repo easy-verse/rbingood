@@ -1018,8 +1018,8 @@ p {
 }
 
 .partner-tag:hover {
-    background: rgba(46, 204, 113, 0.08);
-    border-color: var(--c-strategy);
+    background: rgba(253, 216, 53, 0.12);
+    border-color: #FDD835;
 }
 
 @media (max-width: 768px) {
@@ -1891,31 +1891,14 @@ details p {
     }
 
     .nav-pill {
-        gap: 8px;
-        padding: 8px 12px;
+        gap: 12px;
+        padding: 8px 16px;
         max-width: calc(100vw - 24px);
-        flex-wrap: nowrap;
-    }
-
-    a.nav-link {
-        display: none !important;
     }
 
     .nav-logo {
         font-size: 1.1rem;
         flex-shrink: 0;
-    }
-
-    .lang-switcher {
-        margin-left: auto;
-        flex-shrink: 0;
-        gap: 1px;
-        padding: 2px;
-    }
-
-    .lang-btn {
-        padding: 4px 8px;
-        font-size: 0.7rem;
     }
 
     .nav-waitlist {

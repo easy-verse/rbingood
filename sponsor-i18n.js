@@ -6,7 +6,7 @@ const SPONSOR_I18N = {
       business: 'Для бизнеса',
       packages:  'Пакеты',
       cases:     'Кейсы',
-      donate:    'Донат',
+      donate:    'Поддержать уборку',
       cta:       'Закрыть CSRD \u2192'
     },
     hero: {
@@ -14,28 +14,32 @@ const SPONSOR_I18N = {
       subtitle: 'Спонсоры, волонтёры, организаторы \u2014 вместе чистят города, пляжи и леса.'
     },
     problem: {
-      title:   'Города загрязняются быстрее, чем их успевают убирать.',
-      sub:     'Много усилий. Мало результата. Нет прозрачности.',
+      title:    'Города загрязняются быстрее, чем их успевают убирать.',
+      subtitle: 'Многие экологические инициативы не превращаются в данные',
+      subExtra: 'Без доказательств инициативы не попадают в отчёты и коммуникацию.',
       portugal: 'Португалия',
       stat1: {
-        label: 'переработка пластика',
-        src:   'среднее по EU \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php/Recycling_-_secondary_material_production_statistics" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
+        label: 'переработка ниже среднего ЕС — нужен дополнительный импакт',
+        src:   'среднее по EU \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251022-1" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
       },
       stat2: {
-        label: 'упаковки переработано',
+        label: 'упаковка перерабатывается, но действия компаний редко фиксируются',
         src:   'цель \u2014 65% \u00b7 <a href="https://www.pontoverde.pt/" target="_blank" rel="noopener" style="color:inherit">Ponto Verde</a>'
       },
       stat3: {
-        label: 'домашних отходов на полигоны'
+        label: 'отходов остаётся на полигонах \u2014 важны действия вне периметра бизнеса',
+        src:   '<a href="https://theportugalpost.com/posts/unsorted-landfill-waste-could-land-portugal-with-huge-eu-finesand-raise-your-bin-fees" target="_blank" rel="noopener" style="color:inherit">The Portugal Post</a>'
       },
       role: {
         biz: {
-          text: '<strong style="color:#0f0f0f;">Я бизнес</strong> \u2014 хочу отчёты на реальных, верифицированных данных и вовлечь команду в живые экопроекты',
-          btn:  'Бизнес (от €350)'
+          text: 'Я бизнес \u2014 нужны доказуемые экологические действия',
+          sub:  'Для отчётности, аудита и вовлечения команды.',
+          btn:  'Для бизнеса'
         },
         ind: {
-          text: '<strong style="color:#0f0f0f;">Мне не всё равно</strong> \u2014 хочу быть причастным, даже когда не могу участвовать лично',
-          btn:  'Физ. лицо (от €1)'
+          text: 'Хочу поддержать реальные экологические действия',
+          sub:  'Даже если не могу участвовать лично.',
+          btn:  'Поддержать'
         }
       }
     },
@@ -43,53 +47,54 @@ const SPONSOR_I18N = {
       label: 'Для бизнеса',
       title: 'Бизнесу грозит штраф 5% оборота за CSRD',
       stat1: {
-        desc: 'от годового оборота \u2014 максимальный штраф за несоответствие CSRD (директива ЕС 2024/1760)',
-        src:  'Источник: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024L1760" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">EU CSRD Directive 2024/1760</a>'
+        desc: 'ESG без доказательств больше не принимается',
+        src:  'CSRD расширяет требования к ESG-отчётности на десятки тысяч компаний в Европе. Даже компании вне прямого scope уже получают запросы на ESG-данные от клиентов, банков и партнёров.'
       },
       stat2: {
-        desc: 'компаний в ЕС должны отчитаться по ESRS S3 уже в 2026 году'
+        desc: 'До ~50\u00a0000 компаний в Европе будут раскрывать sustainability-данные по мере расширения CSRD.',
+        src:  '<a href="https://www.europarl.europa.eu/news/en/press-room/20221107IPR49611/sustainable-economy-parliament-adopts-new-reporting-rules-for-multinationals" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission \u2014 CSRD</a>'
       },
-      quote: '\u00ab61% людей не верят ESG-отчётам без доказательств.\u00bb',
-      cta:   'Вам нужны верифицированные действия, а не намерения.<br>И нужны они до дедлайна.'
+      quote: 'Новые EU Green Claims правила требуют подтверждать экологические заявления доказательствами.<br><br>Около половины экологических заявлений в ЕС признаны неподтверждёнными.',
+      quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
+      cta:   'Если действие нельзя подтвердить \u2014 оно не учитывается в отчётности, аудитах.<br>Доказательства нельзя собрать задним числом.',
+      disclaimer: 'rbingood превращает реальные действия в audit-ready ESG evidence: GPS, фото, вес и raw data (ESRS E5\u00a0/\u00a0S3).'
     },
     solution: {
       label:    'Решение',
-      title:    'Единый партнёр для ESG и HR',
-      emphasis: 'Два сценария \u2014 одно решение'
+      title:    'rbingood \u2014 инфраструктура верифицированных ESG-действий и meaningful HR-активностей',
+      emphasis: 'Два сценария \u2014 один принцип: событие \u2192 доказательства \u2192 Data Pack / контент'
     },
     smb: {
-      title:    'Отчётность ESG',
+      title:    'Отчётность, которую можно использовать \u2014 не объяснять',
       subtitle: 'Для Sustainability-менеджеров и CFO',
-      li1: 'CSRD-ready Data Pack (ESRS S3)',
-      li2: 'Отчёт в течение 2 недель после ивента',
-      li3: 'Инвестиционная привлекательность',
-      li4: 'Официальный договор и инвойс',
-      li5: 'До 6 человек \u2014 тестовое мероприятие',
-      li6: 'Ваш реальный вклад уже сейчас',
-      li7: 'Дифференциация от конкурентов',
-      roi: 'Большинство компаний говорят про ценности \u2192 ты показываешь',
-      btn: 'Обсудить вашу отчётность'
+      li1: 'Audit-ready evidence: GPS + timestamp, фото \u00abдо/после\u00bb, вес',
+      li2: 'Social proof с деньгами: выплаты участникам с подтверждением (Stripe)',
+      li3: 'ESRS-aligned пакет: E5 (Actions) + S3 (Communities), структура \u00abwith reference\u00bb к GRI 306-2',
+      li4: 'Raw data / CSV: то, что реально передают аудитору/консультантам',
+      li5: 'Срок: отчёт и исходные данные \u2014 до 2 недель после события',
+      li6: 'Документы: договор и инвойс',
+      roi: 'Не CSR-истории. Доказательства, которые выдерживают вопросы аудитора.',
+      btn: 'Получить пример Data Pack'
     },
     hr: {
-      title:    'Вовлечение \u2014 Тимбилдинг с пользой',
+      title:    'Тимбилдинг, который сотрудники считают настоящим',
       subtitle: 'Для HR и фаундеров',
-      li1: 'Тимбилдинг лучше, чем пицца',
-      li2: 'HR-метрики \u2014 вовлечённость / часы / количество',
-      li3: 'Организуем всё под ключ',
-      li4: 'Ценности команды \u2014 employer brand без усилий HR',
-      li5: 'Ваш логотип на событии',
-      li6: 'Фото/видео контент включён',
-      li7: 'До 10 участников на тимбилдинг',
-      roi: '70% Gen Z выбирают \u00abзелёных\u00bb работодателей \u2014 <a href="https://www.deloitte.com/content/dam/assets-shared/docs/campaigns/2025/2025-genz-millennial-survey.pdf" target="_blank" rel="noopener" style="color:inherit">Deloitte, 2025</a>',
-      btn: 'Обсудить тимбилдинг'
+      li1: 'Meaningful активность \u00abпод ключ\u00bb (без нагрузки на HR)',
+      li2: 'Измеримый результат: люди / часы / вес / \u00abдо-после\u00bb',
+      li3: 'PR-контент: фото/видео для LinkedIn и внутренних каналов',
+      li4: 'Итоговый отчёт через 2 недели',
+      roi: '70% Gen Z и миллениалов считают экологическую устойчивость важной при выборе работодателя \u2014 <a href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/" target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a>',
+      btn: 'Забронировать корпоративную уборку'
     },
     addon: {
-      title:    'Что ещё интересует?',
-      btn:      'Написать нам',
-      more:     'Больше ивентов',
+      title:    'У вас другой запрос?',
+      title:    'Дополнения к событию',
+      subtitle: 'Нужно усилить эффект? Добавьте опции.',
+      btn:      'Получить предложение',
+      more:     'Добавить своё:',
       report:   'Инд. отчётность',
       catering: 'Кейтеринг',
-      merch:    'Мерч',
+      merch:    'Брендинг мероприятия',
       pr:       'Расширенный PR',
       master:   'Мастер-класс',
       barter:   'Бартер'
@@ -97,50 +102,50 @@ const SPONSOR_I18N = {
     process: {
       label: 'Процесс',
       title: '4 шага до старта',
-      s1: { num: 'Шаг 01', title: 'Звонок',          text: 'Обсуждение формата, локации, формата отчётности и количества участников.' },
-      s2: { num: 'Шаг 02', title: 'Договор и оплата', text: 'Подписываем договор, выставляем инвойс. Оплата до ивента \u2014 карта или банковский перевод.' },
-      s3: { num: 'Шаг 03', title: 'Мероприятие',      text: 'Инструктаж команды, уборка с GPS-трекингом, взвешивание мешков, фото до/после.' },
-      s4: { num: 'Шаг 04', title: 'Отчёт',            text: 'PDF + Excel в течение 2 недель. CSRD-ready. Готово к аудиту.' }
+      s1: { num: 'Шаг 1 (15 минут)', title: 'Созваниваемся',         text: 'Выбираем формат: ESG (данные) или HR (тимбилдинг). Согласуем локацию, дату, число участников.' },
+      s2: { num: 'Шаг 2 (1\u20132 дня)', title: 'Договор и подготовка', text: 'Готовим договор/инвойс. Присылаем чек-лист участникам и план события.' },
+      s3: { num: 'Шаг 3 (2 часа)', title: 'Проводим событие',         text: 'Инструктаж, инвентарь, модерация. Фиксируем GPS + фото \u00abдо/после\u00bb + вес.' },
+      s4: { num: 'Шаг 4 (до 2 недель)', title: 'Отдаём результаты',   text: 'Вы получаете: PDF отчёт + CSV (ESG Data Pack) + папку доказательств (фото/логи).' }
     },
     pricing: {
       label: 'Пакеты',
-      title: 'Выберите свой пакет'
+      title: 'Выберите спонсорский пакет поддержки эко ивентов'
     },
     pkg1: {
-      name:   'Тестовый ивент',
+      name:   'Pilot',
       price:  'от €350',
-      period: 'разовый ивент',
+      period: '1 событие',
+      for:    'Для: быстрый старт + доказательства для внутреннего отчёта',
       li1: 'До 6 участников',
-      li3: 'Фото до/после',
+      li2: 'Lite Report (1-страничный summary)',
+      li3: 'GPS + фото \u00abдо/после\u00bb + вес',
       li4: 'Договор и инвойс',
-      addon: '+ ESG Data Pack \u2014 €150',
-      roi: 'Быстрый старт без риска',
-      btn: 'Организовать звонок'
+      addon: 'Full ESG Data Pack (PDF + CSV) \u2014 €150',
+      roi: 'Быстрый старт: проверить формат без риска',
+      btn: 'Получить пример отчёта'
     },
     pkg2: {
       badge:  'Популярный выбор',
-      period: '4 ивента в год (квартально)',
-      li1: 'До 10 участников на ивент',
-      li2: 'ESG Data Pack включён',
-      li3: 'Ваш логотип на событии',
+      period: '4 события в год',
+      for:    'Для: регулярные данные для отчётности и партнёров',
+      li1: 'До 10 участников на событие',
+      li2: 'Full ESG Data Pack включён (PDF + CSV)',
+      li3: 'Логотип/брендинг на событии',
       li4: 'Фото/видео контент',
       li5: 'Приоритетная поддержка',
-      li6: 'Договор и инвойс',
-      li7: 'Custom audit trail / white label data room',
-      roi: 'Системный ESG-партнёр',
-      btn: 'Организовать звонок'
+      roi: 'Регулярные доказательства в течение года',
+      btn: 'Запросить предложение'
     },
     pkg3: {
-      name:   'Индивидуальные решения',
-      price:  'Обсуждаемо',
-      period: 'Обсуждаемое количество участников',
-      li1: 'От 10 участников',
-      li2: 'Полный ESG Data Pack',
-      li3: 'Брендирование мероприятий',
-      li4: 'Extended PR + СМИ',
-      li5: 'White label data room',
-      li6: 'Полная страховка',
-      roi: 'Максимальный PR-эффект',
+      name:   'Enterprise',
+      price:  'Custom',
+      period: 'Кастомное количество событий',
+      for:    'Для: аудит-требования, большие команды, кастомные поля',
+      li1: 'Полный ESG Data Pack + кастомные поля',
+      li2: 'Расширенный контент и PR',
+      li3: 'Доп. протокол фиксации доказательств (по требованиям клиента)',
+      li4: 'Брендинг/логистика/страхование (если нужно)',
+      roi: 'Решение под ваши аудит-требования',
       btn: 'Обсудить условия'
     },
     proof: {
@@ -150,16 +155,19 @@ const SPONSOR_I18N = {
         name: 'Все ивенты',
         m1: { label: 'ивентов проведено' },
         m2: { label: 'мусора собрано' },
-        m3: { label: 'участника сообщества' },
-        m4: { label: 'спонсированных ивентов' }
+        m3: { label: 'участников сообщества' },
+        m4: { label: 'спонсированных ивентов' },
+        m5: { label: 'фестиваль' }
       },
       praia: {
+        badge: 'Спонсорские ивенты',
         m1: { label: 'мусора убрано' },
-        m2: { label: 'ивентов подряд' },
+        m2: { label: 'ивентов' },
         m3: { label: 'партнёрство' },
         quote: '\u00abЛучшая ESG-инициатива года. Продлили контракт на 2026.\u00bb'
       },
       dhb: {
+        badge: 'Фестиваль',
         m1: { label: 'посетителей' },
         m2: { label: 'окурков собрано' },
         m3: { label: 'мастер-классов' },
@@ -169,42 +177,43 @@ const SPONSOR_I18N = {
     mech: {
       label: 'Механика',
       title: 'Как мы проводим ивенты',
-      m1: { title: 'Инструктаж',      text: 'Безопасность и сортировка \u2014 10\u201315 минут. Коротко, по делу, перед стартом.' },
-      m2: { title: 'Выдача инвентаря', text: 'Перчатки, мешки, захваты. Всё необходимое \u2014 от нас.' },
-      m3: { title: 'Командная уборка', text: 'До 2 часов активной работы. Каждый участник знает свою зону.' },
-      m4: { title: 'Результат',        text: 'Финальная сортировка, взвешивание, фото до/после, GPS-трекинг.' },
-      m5: { title: 'Утилизация',       text: 'Мусор уходит в правильные контейнеры \u2014 пластик, стекло, общие отходы.' },
-      m6: { title: 'Общение',          text: 'После уборки \u2014 напитки и знакомства. Самая живая часть.' },
-      m7: { title: 'Завершение',       text: 'Участники получают вознаграждение*, спонсор \u2014 отчёт с данными.' },
-      footnote: '* Если уборка спонсируемая \u2014 участники получают от €10 или напитки и снеки от партнёров.'
+      m1: { title: 'Проводим инструктаж',            text: 'Инструктаж по безопасности, сортировке и данным, которые собираем. 10\u201315 минут перед стартом.' },
+      m2: { title: 'Готовим участников и инвентарь', text: 'Выдаём всё необходимое: перчатки, мешки, захваты. Полностью от нас.' },
+      m3: { title: 'Активная уборка',                text: 'Команда работает по зонам, мы модерируем процесс. До 2 часов в формате спринта.' },
+      m4: { title: 'Фиксируем доказательства',       text: 'Фото до/после, GPS, сортировка и взвешивание по фракциям \u2014 основа Data Pack.' },
+      m5: { title: 'Контролируем утилизацию',        text: 'Отходы отправляются в правильные потоки переработки \u2014 пластик, стекло, смешанные.' },
+      m6: { title: 'Создаём вовлечение команды',     text: 'Нетворкинг, коммуникация или HR-эффект события.' },
+      m7: { title: 'Результат.',                     text: 'Бизнес получает отчёт с данными. Участники получают вознаграждение*' },
+      closing: 'Каждый шаг фиксируется \u2014 поэтому результат можно использовать в отчётности и коммуникации.',
+      footnote: '* Если уборка спонсируемая \u2014 участники получают разовое вознаграждение или напитки и снеки от партнёров.'
     },
     ind: {
       label:    'Для неравнодушных людей',
       title:    'Каждый вклад важен',
-      emphasis: 'Вам не нужно быть корпорацией, чтобы быть полезным.'
+      emphasis: 'Любой может отметить загрязнение, участвовать в событии или поддержать уборку.'
     },
     donate: {
-      type:    'Донат',
-      title:   'Поддержать донатом',
-      text:    'Не можете прийти лично? Любая сумма покрывает реальные расходы \u2014 инвентарь, логистику, утилизацию. 100% прозрачность расходов.',
-      disclaimer: 'Нажимая \u00abСделать донат\u00bb, вы соглашаетесь с нашим <a href="assets/info/terms-and-conditions-RU.txt" target="_blank" style="color:#0f0f0f;text-decoration:underline;">Пользовательским соглашением</a> и тем, что донат является безвозвратным.',
-      btn:  'Сделать донат',
+      type:    'Поддержать',
+      title:   'Ты можешь внести персональный вклад',
+      text:    'Финансируйте реальные действия и получайте прозрачный результат.',
+      transparency: 'Отчёт публикуется после события.',
+      disclaimer: 'Нажимая \u00abПоддержать\u00bb, вы соглашаетесь с нашим <a href="assets/info/terms-and-conditions-RU.txt" target="_blank" style="color:#0f0f0f;text-decoration:underline;">Пользовательским соглашением</a> и тем, что платёж является безвозвратным.',
+      btn:  'Поддержать',
       note: 'Оплата картой \u2014 Visa, Mastercard, Apple Pay'
     },
     comm: {
-      type:  'Вступить в сообщество',
-      price: 'Бесплатно',
-      text:  'Приходите на уборку в Лиссабоне. Нетворкинг, реальный результат, живые люди.<br><strong>400+ активных участников.</strong>',
+      type:  'Хочешь посетить мероприятие?',
+      price: 'Присоединиться к событию',
+      text:  'Участвуйте в уборках, знакомьтесь с людьми и видьте результат.<br><strong>400+ активных участников.</strong>',
       event: 'Ближайший ивент'
     },
     roadmap: {
       label:    'План на 2026',
       title:    '2026: App + Расширение',
-      emphasis: 'Мы не стоим на месте. Присоединяйтесь сейчас, чтобы расти с нами.',
-      r1: { status: 'Активно',    text: 'Увеличение количества ивентов, пляжи и парки, спонсорские пакеты запущены.' },
-      r2: { status: 'Релиз',      text: 'Выплаты участникам*, карта событий, ESG-дашборд для спонсоров.' },
-      r3: { city: 'Фестивали', status: 'Расширение', text: 'Партнёрство с крупными фестивалями. Геймификация формата \u00abмусор = валюта\u00bb.' },
-      bottom: 'rbingood \u2014 это не акция. Это повторяемый процесс.'
+      subtitle: 'Мы строим инфраструктуру доказуемых экологических действий.',
+      r1: { city: 'Expansion', status: 'Больше событий',             text: 'Больше событий \u2192 больше данных. Расширяем локации, партнёров и регулярность.' },
+      r2: { city: 'Platform',  status: 'Платформа действий',          text: 'Загрязнения можно отметить, профинансировать и убрать \u2014 с прозрачным результатом.' },
+      r3: { city: 'Scale',     status: 'Интеграция в крупные события', text: 'Фестивали, бренды и партнёрства увеличивают объём доказуемого импакта.' }
     },
     barter: {
       label:    'Локальный бизнес',
@@ -218,36 +227,39 @@ const SPONSOR_I18N = {
       btn: 'Стать бартер-партнёром'
     },
     faq: {
-      label: 'FAQ',
-      title: 'Частые вопросы',
-      biz:    { label: 'Бизнес / ESG' },
-      people: { label: 'Люди / Логистика' },
-      q1: 'Что именно входит в ESG Data Pack?',
-      a1: 'PDF и Excel файлы: GPS-координаты места уборки, общий вес собранного мусора с разбивкой по фракциям (пластик, стекло, смешанный), фото-отчёт «до/после», расчёт предотвращённого выброса CO₂ и количество участников.',
-      q2: 'Как это помогает с CSRD?',
-      a2: 'Мы предоставляем полный Data Pack в течение 2 недель после ивента. Это позволяет быстро закрыть показатели по стандарту ESRS S3 перед подачей годовой отчётности.',
-      q3: 'Можно ли брендировать ивент?',
-      a3: 'Да. Логотип на мешках, жилетах, фото/видео контент с вашим брендингом. Опция доступна за дополнительную плату (+€150 к Тестовому ивенту) или включена в пакеты Standard и выше.',
-      q4: 'Сколько стоит тимбилдинг?',
-      a4: 'Базовая стоимость \u2014 €60 за человека (минимальный заказ \u2014 €350). Включает: подбор локации, инвентарь (захваты, перчатки), инструктор, вывоз мусора и базовый фото-контент.',
-      q5: 'Есть ли страховка?',
-      a5: 'Да. Полная страховка гражданской ответственности на время проведения ивента. Все участники проходят обязательный инструктаж по технике безопасности перед началом.',
-      q6: 'Что даёт донат €1?',
-      a6: 'Даже €1 важен. Вы получите персональный Отчёт-открытку на email: фото именно того участка, который был убран благодаря вам, с указанием веса мусора и GPS-координат.',
-      q7: 'Нужен ли опыт или инвентарь?',
-      a7: 'Нет. Мы предоставляем всё необходимое оборудование (захваты, перчатки, мешки) и проводим обучение на месте. Участвовать могут все желающие от 16 лет.',
-      q8: 'Что если плохая погода?',
-      a8: 'Мы следим за прогнозом. В случае сильного дождя или шторма предупреждаем участников за 24 часа и переносим ивент. В качестве альтернативы предлагаем уборку в парковой зоне.',
-      q9: 'Как присоединиться?',
-      a9: 'Самый быстрый способ \u2014 через Telegram или WhatsApp. Выберите удобную дату в календаре, нажмите \u00abConfirm\u00bb \u2014 и вы в списке.'
+      label:  'FAQ',
+      title:  'Частые вопросы',
+      biz:    { label: 'Ответы на вопросы, которые задают ESG, HR и финансовые команды.' },
+      people: { label: 'Вопросы об участии' },
+      q1:  'Что входит в ESG Data Pack?',
+      a1:  'ESG Data Pack включает:<ul><li>GPS-координаты событий</li><li>Фото \u00abдо/после\u00bb</li><li>Лог веса отходов</li><li>Метрики участия</li><li>Executive summary</li></ul>Данные передаются в формате PDF и CSV.',
+      q2:  'Что я получу после события?',
+      a2:  'Вы получаете:<ul><li>PDF executive summary</li><li>CSV Data Pack</li><li>Папку доказательств (GPS, фото, логи)</li><li>Медиа-контент (если выбран)</li></ul>',
+      q3:  'Можно ли использовать данные в отчётности?',
+      a3:  'Да. Данные структурированы для использования в отчётности устойчивости и могут быть переданы консультантам или аудитору как доказательная база действий.',
+      q4:  'Достаточно ли этого для CSRD?',
+      a4:  'ESG Data Pack \u2014 это доказательная база действий. Он используется как часть отчётности, но не заменяет полный ESG или CSRD отчёт.',
+      q5:  'Есть ли риск greenwashing?',
+      a5:  'rbingood не продаёт компенсации или углеродные кредиты. Мы фиксируем реальные действия и предоставляем проверяемые доказательства, которые можно использовать прозрачно.',
+      q6:  'Чем rbingood отличается от обычного тимбилдинга?',
+      a6:  'rbingood \u2014 это не просто событие. Каждое действие фиксируется и превращается в данные, которые можно использовать в отчётности и коммуникации.',
+      q9:  'Есть ли страховка и безопасность?',
+      a9:  'Мы проводим инструктаж, предоставляем инвентарь и соблюдаем базовые требования безопасности. Дополнительные требования можно согласовать.',
+      q10: 'Нужен ли опыт?',
+      a10: 'Нет. Мы проводим инструктаж перед началом.',
+      q11: 'Что если плохая погода?',
+      a11: 'Событие переносится или адаптируется.',
+      q12: 'Что даёт поддержка \u20ac2?',
+      a12: 'Поддержка покрывает реальные расходы события: инвентарь, логистику и утилизацию.',
+      q13: 'Как присоединиться?',
+      a13: 'Выберите ближайшее событие или подпишитесь на обновления.'
     },
     cta: {
-      quote: '\u00abМы, Ксения и Катя, лично гарантируем качество каждого ивента. rbingood \u2014 это наша репутация. Если что-то пойдёт не так \u2014 вернём деньги без вопросов.\u00bb',
-      title: 'Начните сегодня \u2014 ответим за 1 час',
-      sub:   'Не откладывайте ESG на декабрь. Сделайте первый шаг сейчас.',
-      btn1:  'Закрыть CSRD за €350',
-      btn2:  'Сделать донат / участвовать в ивенте',
-      or:    'или напишите нам:'
+      quote:     '\u00abМы лично отвечаем за качество каждого события и за то, чтобы вы получили доказательства: GPS, фото, вес и отчёт. rbingood \u2014 это наша репутация.\u00bb',
+      title:     'Начните сегодня \u2014 пришлём план и смету',
+      sub:       'Первый шаг \u2014 звонок 15 минут: цели, формат, сроки. Затем высылаем 1-страничный план и предварительную смету.',
+      btn1:      'Обсудить пример ESG Data Pack',
+      btn2:      'Забронировать корпоративную уборку'
     },
     partners: {
       label: 'Партнёры и поддержка',
@@ -264,7 +276,7 @@ const SPONSOR_I18N = {
       business: 'For Business',
       packages:  'Packages',
       cases:     'Cases',
-      donate:    'Donate',
+      donate:    'Support a Cleanup',
       cta:       'Close CSRD \u2192'
     },
     hero: {
@@ -273,27 +285,31 @@ const SPONSOR_I18N = {
     },
     problem: {
       title:    'Cities are getting polluted faster than they can be cleaned.',
-      sub:      'Lots of effort. Little result. No transparency.',
+      subtitle: 'Many environmental initiatives never turn into data',
+      subExtra: 'Without evidence, initiatives don\u2019t make it into reports or communications.',
       portugal: 'Portugal',
       stat1: {
-        label: 'plastic recycling rate',
-        src:   'EU average \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php/Recycling_-_secondary_material_production_statistics" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
+        label: 'recycling below the EU average \u2014 additional impact is needed',
+        src:   'EU average \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251022-1" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
       },
       stat2: {
-        label: 'packaging recycled',
+        label: 'packaging is recycled, but company actions are rarely documented',
         src:   'target \u2014 65% \u00b7 <a href="https://www.pontoverde.pt/" target="_blank" rel="noopener" style="color:inherit">Ponto Verde</a>'
       },
       stat3: {
-        label: 'household waste to landfills'
+        label: 'of waste ends up in landfills \u2014 actions beyond the business perimeter matter',
+        src:   '<a href="https://theportugalpost.com/posts/unsorted-landfill-waste-could-land-portugal-with-huge-eu-finesand-raise-your-bin-fees" target="_blank" rel="noopener" style="color:inherit">The Portugal Post</a>'
       },
       role: {
         biz: {
-          text: '<strong style="color:#0f0f0f;">I\'m a business</strong> \u2014 I need reports with real, verified data and want to get our team involved in live eco-projects',
-          btn:  'Business (from \u20ac350)'
+          text: 'I\u2019m a business \u2014 I need provable environmental actions',
+          sub:  'For reporting, audits and team engagement.',
+          btn:  'For business'
         },
         ind: {
-          text: '<strong style="color:#0f0f0f;">I care</strong> \u2014 I want to be involved, even when I can\'t attend in person',
-          btn:  'Individual (from \u20ac1)'
+          text: 'I want to support real environmental actions',
+          sub:  'Even if I can\u2019t participate in person.',
+          btn:  'Support'
         }
       }
     },
@@ -301,53 +317,53 @@ const SPONSOR_I18N = {
       label: 'For Business',
       title: 'Businesses face a 5% revenue fine for CSRD non-compliance',
       stat1: {
-        desc: 'of annual revenue \u2014 maximum fine for CSRD non-compliance (EU Directive 2024/1760)',
-        src:  'Source: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024L1760" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">EU CSRD Directive 2024/1760</a>'
+        desc: 'ESG without evidence is no longer accepted',
+        src:  'CSRD is expanding ESG reporting requirements to tens of thousands of companies across Europe. Even companies outside the direct scope already receive ESG data requests from clients, banks and partners.'
       },
       stat2: {
-        desc: 'companies in the EU must report under ESRS S3 already in 2026'
+        desc: 'Up to ~50\u00a0000 companies in Europe will disclose sustainability data as CSRD expands.',
+        src:  '<a href="https://www.europarl.europa.eu/news/en/press-room/20221107IPR49611/sustainable-economy-parliament-adopts-new-reporting-rules-for-multinationals" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission \u2014 CSRD</a>'
       },
-      quote: '\u201c61% of people don\u2019t trust ESG reports without evidence.\u201d',
-      cta:   'You need verified actions, not intentions.<br>And you need them before the deadline.'
+      quote: 'New EU Green Claims rules require environmental claims to be substantiated with evidence.<br><br>Around half of environmental claims in the EU have been found to be unsubstantiated.',
+      quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
+      cta:   'If an action can\u2019t be verified \u2014 it doesn\u2019t count in reporting or audits.<br>Evidence can\u2019t be collected retroactively.',
+      disclaimer: 'rbingood turns real actions into audit-ready ESG evidence: GPS, photos, weight and raw data (ESRS E5\u00a0/\u00a0S3).'
     },
     solution: {
       label:    'Solution',
-      title:    'A single partner for ESG and HR',
-      emphasis: 'Two scenarios \u2014 one solution'
+      title:    'rbingood \u2014 infrastructure for verified ESG actions and meaningful HR activities',
+      emphasis: 'Two scenarios \u2014 one principle: event \u2192 evidence \u2192 Data Pack / content'
     },
     smb: {
-      title:    'ESG Reporting',
+      title:    'Reporting you can use \u2014 not explain',
       subtitle: 'For Sustainability managers and CFOs',
-      li1: 'CSRD-ready Data Pack (ESRS S3)',
-      li2: 'Report within 2 weeks after the event',
-      li3: 'Investment attractiveness',
-      li4: 'Official contract and invoice',
-      li5: 'Up to 6 people \u2014 pilot event',
-      li6: 'Your real contribution right now',
-      li7: 'Differentiation from competitors',
-      roi: 'Most companies talk about values \u2192 you show them',
-      btn: 'Discuss your reporting'
+      li1: 'Audit-ready evidence: GPS + timestamp, before/after photos, weight',
+      li2: 'Social proof with money: participant payments with confirmation (Stripe)',
+      li3: 'ESRS-aligned package: E5 (Actions) + S3 (Communities), \u2018with reference\u2019 to GRI 306-2',
+      li4: 'Raw data / CSV: what you actually hand to an auditor or consultant',
+      li5: 'Timeline: report and source data within 2 weeks of the event',
+      li6: 'Documents: contract and invoice',
+      roi: 'Not CSR stories. Evidence that holds up under auditor scrutiny.',
+      btn: 'Get a sample Data Pack'
     },
     hr: {
-      title:    'Engagement \u2014 Teambuilding with impact',
+      title:    'Teambuilding employees consider real',
       subtitle: 'For HR and founders',
-      li1: 'Teambuilding better than pizza',
-      li2: 'HR metrics \u2014 engagement / hours / headcount',
-      li3: 'We organize everything end-to-end',
-      li4: 'Team values \u2014 employer brand without HR effort',
-      li5: 'Your logo at the event',
-      li6: 'Photo/video content included',
-      li7: 'Up to 10 participants for teambuilding',
-      roi: '70% of Gen Z choose \u2018green\u2019 employers \u2014 <a href="https://www.deloitte.com/content/dam/assets-shared/docs/campaigns/2025/2025-genz-millennial-survey.pdf" target="_blank" rel="noopener" style="color:inherit">Deloitte, 2025</a>',
-      btn: 'Discuss teambuilding'
+      li1: 'Meaningful activity end-to-end (no extra load on HR)',
+      li2: 'Measurable outcome: people / hours / weight / before-after',
+      li3: 'PR content: photos/video for LinkedIn and internal channels',
+      li4: 'Final report within 2 weeks',
+      roi: '70% of Gen Z and millennials consider environmental sustainability important when choosing an employer \u2014 <a href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/" target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a>',
+      btn: 'Book a corporate clean-up'
     },
     addon: {
-      title:    'What else interests you?',
-      btn:      'Write to us',
-      more:     'More events',
+      title:    'Event add-ons',
+      subtitle: 'Want to boost the impact? Add options.',
+      btn:      'Get a proposal',
+      more:     'Add your own:',
       report:   'Ind. reporting',
       catering: 'Catering',
-      merch:    'Merch',
+      merch:    'Event branding',
       pr:       'Extended PR',
       master:   'Masterclass',
       barter:   'Barter'
@@ -355,50 +371,50 @@ const SPONSOR_I18N = {
     process: {
       label: 'Process',
       title: '4 steps to get started',
-      s1: { num: 'Step 01', title: 'Call',               text: 'Discussion of format, location, reporting format and number of participants.' },
-      s2: { num: 'Step 02', title: 'Contract & payment',  text: 'We sign the contract, issue an invoice. Payment before the event \u2014 card or bank transfer.' },
-      s3: { num: 'Step 03', title: 'Event',               text: 'Team briefing, cleanup with GPS tracking, bag weighing, before/after photos.' },
-      s4: { num: 'Step 04', title: 'Report',              text: 'PDF + Excel within 2 weeks. CSRD-ready. Audit-ready.' }
+      s1: { num: 'Step 1 (15 min)', title: 'Jump on a call',          text: 'We choose the format: ESG (data) or HR (teambuilding). Agree on location, date and participant count.' },
+      s2: { num: 'Step 2 (1\u20132 days)', title: 'Contract & preparation', text: 'We draft the contract and invoice. We send participants a checklist and event plan.' },
+      s3: { num: 'Step 3 (2 hours)', title: 'We run the event',       text: 'Briefing, equipment, facilitation. We record GPS + before/after photos + weight.' },
+      s4: { num: 'Step 4 (within 2 weeks)', title: 'We deliver results', text: 'You receive: PDF report + CSV (ESG Data Pack) + evidence folder (photos/logs).' }
     },
     pricing: {
       label: 'Packages',
-      title: 'Choose your package'
+      title: 'Choose a sponsorship package for eco-events'
     },
     pkg1: {
-      name:   'Pilot Event',
+      name:   'Pilot',
       price:  'from \u20ac350',
-      period: 'one-time event',
+      period: '1 event',
+      for:    'For: quick start + evidence for internal reporting',
       li1: 'Up to 6 participants',
-      li3: 'Before/after photos',
+      li2: 'Lite Report (1-page summary)',
+      li3: 'GPS + before/after photos + weight',
       li4: 'Contract and invoice',
-      addon: '+ ESG Data Pack \u2014 \u20ac150',
-      roi: 'Quick start, no risk',
-      btn: 'Schedule a call'
+      addon: 'Full ESG Data Pack (PDF + CSV) \u2014 \u20ac150',
+      roi: 'Quick start: test the format without commitment',
+      btn: 'Get a sample report'
     },
     pkg2: {
       badge:  'Most popular',
-      period: '4 events per year (quarterly)',
+      period: '4 events per year',
+      for:    'For: regular data for reporting and partners',
       li1: 'Up to 10 participants per event',
-      li2: 'ESG Data Pack included',
-      li3: 'Your logo at the event',
+      li2: 'Full ESG Data Pack included (PDF + CSV)',
+      li3: 'Logo / branding at the event',
       li4: 'Photo/video content',
       li5: 'Priority support',
-      li6: 'Contract and invoice',
-      li7: 'Custom audit trail / white label data room',
-      roi: 'Systematic ESG partner',
-      btn: 'Schedule a call'
+      roi: 'Regular evidence throughout the year',
+      btn: 'Request a proposal'
     },
     pkg3: {
-      name:   'Custom solutions',
-      price:  'Negotiable',
-      period: 'Negotiable number of participants',
-      li1: 'From 10 participants',
-      li2: 'Full ESG Data Pack',
-      li3: 'Event branding',
-      li4: 'Extended PR + Media',
-      li5: 'White label data room',
-      li6: 'Full insurance',
-      roi: 'Maximum PR impact',
+      name:   'Enterprise',
+      price:  'Custom',
+      period: 'Custom number of events',
+      for:    'For: audit requirements, large teams, custom fields',
+      li1: 'Full ESG Data Pack + custom fields',
+      li2: 'Extended content and PR',
+      li3: 'Additional evidence capture protocol (per client requirements)',
+      li4: 'Branding / logistics / insurance (if needed)',
+      roi: 'A solution tailored to your audit requirements',
       btn: 'Discuss terms'
     },
     proof: {
@@ -409,15 +425,18 @@ const SPONSOR_I18N = {
         m1: { label: 'events completed' },
         m2: { label: 'kg of waste collected' },
         m3: { label: 'community members' },
-        m4: { label: 'sponsored events' }
+        m4: { label: 'sponsored events' },
+        m5: { label: 'festival' }
       },
       praia: {
+        badge: 'Sponsored Events',
         m1: { label: 'kg of waste removed' },
-        m2: { label: 'consecutive events' },
+        m2: { label: 'events' },
         m3: { label: 'partnership' },
         quote: '\u201cBest ESG initiative of the year. Extended the contract to 2026.\u201d'
       },
       dhb: {
+        badge: 'Festival',
         m1: { label: 'visitors' },
         m2: { label: 'cigarette butts collected' },
         m3: { label: 'days of workshops' },
@@ -427,42 +446,43 @@ const SPONSOR_I18N = {
     mech: {
       label: 'Mechanics',
       title: 'How we run events',
-      m1: { title: 'Briefing',             text: 'Safety and sorting \u2014 10\u201315 minutes. Short, focused, before the start.' },
-      m2: { title: 'Equipment distribution', text: 'Gloves, bags, grabbers. Everything you need \u2014 provided by us.' },
-      m3: { title: 'Team cleanup',          text: 'Up to 2 hours of active work. Each participant knows their zone.' },
-      m4: { title: 'Results',               text: 'Final sorting, weighing, before/after photos, GPS tracking.' },
-      m5: { title: 'Disposal',              text: 'Waste goes to the right containers \u2014 plastic, glass, general waste.' },
-      m6: { title: 'Socializing',           text: 'After cleanup \u2014 drinks and networking. The most lively part.' },
-      m7: { title: 'Wrap-up',              text: 'Participants receive rewards*, sponsor gets a data report.' },
-      footnote: '* If the cleanup is sponsored \u2014 participants receive from \u20ac10 or drinks and snacks from partners.'
+      m1: { title: 'We run the briefing',              text: 'Briefing on safety, sorting and the data we collect. 10\u201315 minutes before the start.' },
+      m2: { title: 'We prepare participants and kit',  text: 'We hand out everything needed: gloves, bags, grabbers. Fully provided by us.' },
+      m3: { title: 'Active cleanup',                   text: 'The team works by zones, we moderate the process. Up to 2 hours in sprint format.' },
+      m4: { title: 'We capture evidence',              text: 'Before/after photos, GPS, sorting and weighing by fraction \u2014 the basis of the Data Pack.' },
+      m5: { title: 'We oversee disposal',              text: 'Waste goes to the right recycling streams \u2014 plastic, glass, mixed.' },
+      m6: { title: 'We create team engagement',        text: 'Networking, communication or the HR effect of the event.' },
+      m7: { title: 'Result.',                          text: 'The business receives a report with data. Participants receive a reward*' },
+      closing: 'Every step is recorded \u2014 so the result can be used in reporting and communication.',
+      footnote: '* If the cleanup is sponsored \u2014 participants receive a one-time reward or drinks and snacks from partners.'
     },
     ind: {
       label:    'For the caring',
       title:    'Every contribution matters',
-      emphasis: 'You don\u2019t need to be a corporation to make a difference.'
+      emphasis: 'Anyone can flag pollution, join an event or support a cleanup.'
     },
     donate: {
-      type:    'Donate',
-      title:   'Support with a donation',
-      text:    'Can\u2019t attend in person? Any amount covers real expenses \u2014 equipment, logistics, disposal. 100% cost transparency.',
-      disclaimer: 'By clicking \u201cDonate\u201d, you agree to our <a href="assets/info/terms-and-conditions-EN.txt" target="_blank" style="color:#0f0f0f;text-decoration:underline;">Terms and Conditions</a> and acknowledge that donations are non-refundable.',
-      btn:  'Donate',
+      type:    'Support',
+      title:   'You can make a personal contribution',
+      text:    'Fund real actions and get a transparent result.',
+      transparency: 'Report published after every event.',
+      disclaimer: 'By clicking \u201cSupport\u201d, you agree to our <a href="assets/info/terms-and-conditions-EN.txt" target="_blank" style="color:#0f0f0f;text-decoration:underline;">Terms and Conditions</a> and acknowledge that payments are non-refundable.',
+      btn:  'Support',
       note: 'Pay by card \u2014 Visa, Mastercard, Apple Pay'
     },
     comm: {
-      type:  'Join the community',
-      price: 'Free',
-      text:  'Join a cleanup in Lisbon. Networking, real results, real people.<br><strong>400+ active members.</strong>',
+      type:  'Want to attend an event?',
+      price: 'Join an event',
+      text:  'Join cleanups, meet people and see the result.<br><strong>400+ active members.</strong>',
       event: 'Next event'
     },
     roadmap: {
       label:    '2026 Plan',
       title:    '2026: App + Expansion',
-      emphasis: 'We\u2019re not standing still. Join now to grow with us.',
-      r1: { status: 'Active',    text: 'Increasing number of events, beaches and parks, sponsorship packages launched.' },
-      r2: { status: 'Release',   text: 'Participant payouts*, event map, ESG dashboard for sponsors.' },
-      r3: { city: 'Festivals', status: 'Expansion', text: 'Partnership with major festivals. Gamification of the \u201cwaste = currency\u201d format.' },
-      bottom: 'rbingood is not a campaign. It\u2019s a repeatable process.'
+      subtitle: 'We are building infrastructure for provable environmental action.',
+      r1: { city: 'Expansion', status: 'More events',              text: 'More events \u2192 more data. Expanding locations, partners and frequency.' },
+      r2: { city: 'Platform',  status: 'Action platform',          text: 'Pollution can be flagged, funded and cleaned \u2014 with a transparent result.' },
+      r3: { city: 'Scale',     status: 'Integration at scale',     text: 'Festivals, brands and partnerships increase the volume of provable impact.' }
     },
     barter: {
       label:    'Local Business',
@@ -476,36 +496,39 @@ const SPONSOR_I18N = {
       btn: 'Become a barter partner'
     },
     faq: {
-      label: 'FAQ',
-      title: 'Frequently asked questions',
-      biz:    { label: 'Business / ESG' },
-      people: { label: 'People / Logistics' },
-      q1: 'What exactly is included in the ESG Data Pack?',
-      a1: 'PDF and Excel files: GPS coordinates of the cleanup location, total weight of collected waste by category (plastic, glass, mixed), before/after photo report, calculated CO\u2082 emission offset, and participant count.',
-      q2: 'How does this help with CSRD?',
-      a2: 'We provide a complete Data Pack within 2 weeks after the event. This allows you to quickly fulfill ESRS S3 requirements before submitting your annual report.',
-      q3: 'Can the event be branded?',
-      a3: 'Yes. Logo on bags, vests, photo/video content with your branding. Available for an additional fee (+\u20ac150 to the Pilot Event) or included in Standard packages and above.',
-      q4: 'How much does teambuilding cost?',
-      a4: 'Base price \u2014 \u20ac60 per person (minimum order \u2014 \u20ac350). Includes: venue selection, equipment (grabbers, gloves), instructor, waste disposal, and basic photo content.',
-      q5: 'Is there insurance?',
-      a5: 'Yes. Full public liability insurance for the duration of the event. All participants receive a mandatory safety briefing before the start.',
-      q6: 'What does a \u20ac1 donation do?',
-      a6: 'Even \u20ac1 matters. You\u2019ll receive a personal Report Card by email: a photo of the specific area cleaned thanks to you, with the weight of waste collected and GPS coordinates.',
-      q7: 'Do I need experience or equipment?',
-      a7: 'No. We provide all necessary equipment (grabbers, gloves, bags) and conduct an on-site briefing. Anyone 16+ can participate.',
-      q8: 'What if the weather is bad?',
-      a8: 'We monitor the forecast. In case of heavy rain or storm, we notify participants 24 hours in advance and reschedule the event. As an alternative, we offer cleanup in a park area.',
-      q9: 'How do I join?',
-      a9: 'The quickest way is via Telegram or WhatsApp. Choose a convenient date in the calendar, click \u201cConfirm\u201d \u2014 and you\u2019re on the list.'
+      label:  'FAQ',
+      title:  'Frequently asked questions',
+      biz:    { label: 'Questions from ESG, HR and finance teams.' },
+      people: { label: 'Questions about participation' },
+      q1:  'What is included in the ESG Data Pack?',
+      a1:  'The ESG Data Pack includes:<ul><li>GPS coordinates of events</li><li>Before/after photos</li><li>Waste weight log</li><li>Participation metrics</li><li>Executive summary</li></ul>Data is delivered in PDF and CSV format.',
+      q2:  'What will I receive after the event?',
+      a2:  'You receive:<ul><li>PDF executive summary</li><li>CSV Data Pack</li><li>Evidence folder (GPS, photos, logs)</li><li>Media content (if selected)</li></ul>',
+      q3:  'Can the data be used in reporting?',
+      a3:  'Yes. The data is structured for use in sustainability reporting and can be shared with consultants or auditors as an evidence base for actions taken.',
+      q4:  'Is this enough for CSRD?',
+      a4:  'The ESG Data Pack is an evidence base for actions. It is used as part of reporting, but does not replace a full ESG or CSRD report.',
+      q5:  'Is there a risk of greenwashing?',
+      a5:  'rbingood does not sell offsets or carbon credits. We document real actions and provide verifiable evidence that can be used transparently.',
+      q6:  'How is rbingood different from regular teambuilding?',
+      a6:  'rbingood is not just an event. Every action is recorded and turned into data that can be used in reporting and communication.',
+      q9:  'Is there insurance and safety coverage?',
+      a9:  'We run a safety briefing, provide equipment and follow standard safety requirements. Additional requirements can be agreed upon.',
+      q10: 'Do I need experience?',
+      a10: 'No. We run a briefing before the start.',
+      q11: 'What if the weather is bad?',
+      a11: 'The event is rescheduled or adapted.',
+      q12: 'What does \u20ac2 of support do?',
+      a12: 'Your support covers real event costs: equipment, logistics and waste disposal.',
+      q13: 'How do I join?',
+      a13: 'Choose the nearest event or subscribe for updates.'
     },
     cta: {
-      quote: '\u201cWe, Ksenia and Kate, personally guarantee the quality of every event. rbingood is our reputation. If anything goes wrong \u2014 we\u2019ll refund without question.\u201d',
-      title: 'Start today \u2014 we\u2019ll respond within 1 hour',
-      sub:   'Don\u2019t put off ESG until December. Take the first step now.',
-      btn1:  'Close CSRD for \u20ac350',
-      btn2:  'Donate / participate in an event',
-      or:    'or write to us:'
+      quote:     '\u201cWe personally take responsibility for the quality of every event and for ensuring you receive the evidence: GPS, photos, weight and a report. rbingood is our reputation.\u201d',
+      title:     'Start today \u2014 we\u2019ll send you a plan and quote',
+      sub:       'First step \u2014 15-minute call: goals, format, timeline. Then we send a 1-page plan and a preliminary quote.',
+      btn1:      'Discuss a sample ESG Data Pack',
+      btn2:      'Book a corporate clean-up'
     },
     partners: {
       label: 'Partners & Support',
@@ -522,7 +545,7 @@ const SPONSOR_I18N = {
       business: 'Para Empresas',
       packages:  'Pacotes',
       cases:     'Casos',
-      donate:    'Doa\u00e7\u00e3o',
+      donate:    'Apoiar uma limpeza',
       cta:       'Fechar CSRD \u2192'
     },
     hero: {
@@ -531,27 +554,31 @@ const SPONSOR_I18N = {
     },
     problem: {
       title:    'As cidades est\u00e3o a poluir-se mais depressa do que conseguem ser limpas.',
-      sub:      'Muito esfor\u00e7o. Poucos resultados. Sem transpar\u00eancia.',
+      subtitle: 'Muitas iniciativas ambientais nunca se transformam em dados',
+      subExtra: 'Sem provas, as iniciativas n\u00e3o chegam aos relat\u00f3rios nem \u00e0 comunica\u00e7\u00e3o.',
       portugal: 'Portugal',
       stat1: {
-        label: 'taxa de reciclagem de pl\u00e1stico',
-        src:   'm\u00e9dia EU \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php/Recycling_-_secondary_material_production_statistics" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
+        label: 'reciclagem abaixo da m\u00e9dia da UE \u2014 \u00e9 necess\u00e1rio impacto adicional',
+        src:   'm\u00e9dia EU \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251022-1" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
       },
       stat2: {
-        label: 'de embalagens recicladas',
+        label: 'a embalagem \u00e9 reciclada, mas as a\u00e7\u00f5es das empresas raramente s\u00e3o registadas',
         src:   'meta \u2014 65% \u00b7 <a href="https://www.pontoverde.pt/" target="_blank" rel="noopener" style="color:inherit">Ponto Verde</a>'
       },
       stat3: {
-        label: 'res\u00edduos dom\u00e9sticos em aterros'
+        label: 'dos res\u00edduos vai para aterros \u2014 as a\u00e7\u00f5es fora do per\u00edmetro do neg\u00f3cio s\u00e3o importantes',
+        src:   '<a href="https://theportugalpost.com/posts/unsorted-landfill-waste-could-land-portugal-with-huge-eu-finesand-raise-your-bin-fees" target="_blank" rel="noopener" style="color:inherit">The Portugal Post</a>'
       },
       role: {
         biz: {
-          text: '<strong style="color:#0f0f0f;">Sou empresa</strong> \u2014 quero relat\u00f3rios com dados reais e verificados e envolver a equipa em projetos ecol\u00f3gicos reais',
-          btn:  'Empresa (a partir de \u20ac350)'
+          text: 'Sou empresa \u2014 preciso de a\u00e7\u00f5es ambientais comprovat\u00edveis',
+          sub:  'Para relat\u00f3rios, auditorias e envolvimento da equipa.',
+          btn:  'Para empresas'
         },
         ind: {
-          text: '<strong style="color:#0f0f0f;">Eu me importo</strong> \u2014 quero estar envolvido, mesmo quando n\u00e3o posso participar pessoalmente',
-          btn:  'Particular (a partir de \u20ac1)'
+          text: 'Quero apoiar a\u00e7\u00f5es ambientais reais',
+          sub:  'Mesmo que n\u00e3o possa participar pessoalmente.',
+          btn:  'Apoiar'
         }
       }
     },
@@ -559,53 +586,53 @@ const SPONSOR_I18N = {
       label: 'Para Empresas',
       title: 'As empresas enfrentam multas de 5% do volume de neg\u00f3cios por incumprimento da CSRD',
       stat1: {
-        desc: 'do volume de neg\u00f3cios anual \u2014 multa m\u00e1xima por incumprimento da CSRD (Diretiva UE 2024/1760)',
-        src:  'Fonte: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024L1760" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">EU CSRD Directive 2024/1760</a>'
+        desc: 'ESG sem provas j\u00e1 n\u00e3o \u00e9 aceite',
+        src:  'A CSRD est\u00e1 a expandir os requisitos de relat\u00f3rio ESG para dezenas de milhares de empresas em toda a Europa. Mesmo empresas fora do \u00e2mbito direto j\u00e1 recebem pedidos de dados ESG de clientes, bancos e parceiros.'
       },
       stat2: {
-        desc: 'empresas na UE devem reportar ao abrigo da ESRS S3 j\u00e1 em 2026'
+        desc: 'At\u00e9 ~50\u00a0000 empresas na Europa v\u00e3o divulgar dados de sustentabilidade \u00e0 medida que a CSRD se expande.',
+        src:  '<a href="https://www.europarl.europa.eu/news/en/press-room/20221107IPR49611/sustainable-economy-parliament-adopts-new-reporting-rules-for-multinationals" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission \u2014 CSRD</a>'
       },
-      quote: '\u201c61% das pessoas n\u00e3o confiam em relat\u00f3rios ESG sem provas.\u201d',
-      cta:   'Precisa de a\u00e7\u00f5es verificadas, n\u00e3o de inten\u00e7\u00f5es.<br>E precisa delas antes do prazo.'
+      quote: 'As novas regras de Green Claims da UE exigem que as afirma\u00e7\u00f5es ambientais sejam comprovadas com evid\u00eancias.<br><br>Cerca de metade das afirma\u00e7\u00f5es ambientais na UE foram consideradas n\u00e3o comprovadas.',
+      quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
+      cta:   'Se uma a\u00e7\u00e3o n\u00e3o pode ser verificada \u2014 n\u00e3o conta nos relat\u00f3rios ou auditorias.<br>As provas n\u00e3o podem ser recolhidas retroativamente.',
+      disclaimer: 'O rbingood transforma a\u00e7\u00f5es reais em ESG evidence audit-ready: GPS, fotos, peso e raw data (ESRS E5\u00a0/\u00a0S3).'
     },
     solution: {
       label:    'Solu\u00e7\u00e3o',
-      title:    'Um parceiro \u00fanico para ESG e RH',
-      emphasis: 'Dois cen\u00e1rios \u2014 uma solu\u00e7\u00e3o'
+      title:    'rbingood \u2014 infraestrutura de a\u00e7\u00f5es ESG verificadas e atividades de RH meaningful',
+      emphasis: 'Dois cen\u00e1rios \u2014 um princ\u00edpio: evento \u2192 provas \u2192 Data Pack / conte\u00fado'
     },
     smb: {
-      title:    'Relat\u00f3rio ESG',
+      title:    'Relat\u00f3rio que se usa \u2014 n\u00e3o se explica',
       subtitle: 'Para gestores de Sustentabilidade e CFOs',
-      li1: 'Data Pack CSRD-ready (ESRS S3)',
-      li2: 'Relat\u00f3rio em 2 semanas ap\u00f3s o evento',
-      li3: 'Atratividade de investimento',
-      li4: 'Contrato oficial e fatura',
-      li5: 'At\u00e9 6 pessoas \u2014 evento piloto',
-      li6: 'A sua contribui\u00e7\u00e3o real agora',
-      li7: 'Diferencia\u00e7\u00e3o dos concorrentes',
-      roi: 'A maioria das empresas fala de valores \u2192 tu mostras',
-      btn: 'Discutir o seu relat\u00f3rio'
+      li1: 'Audit-ready evidence: GPS + timestamp, fotos antes/depois, peso',
+      li2: 'Social proof com dinheiro: pagamentos a participantes com confirmação (Stripe)',
+      li3: 'Pacote ESRS-aligned: E5 (Actions) + S3 (Communities), estrutura \u2018with reference\u2019 ao GRI 306-2',
+      li4: 'Raw data / CSV: o que realmente se entrega ao auditor/consultor',
+      li5: 'Prazo: relat\u00f3rio e dados-fonte at\u00e9 2 semanas ap\u00f3s o evento',
+      li6: 'Documentos: contrato e fatura',
+      roi: 'N\u00e3o s\u00e3o hist\u00f3rias de CSR. S\u00e3o provas que resistem \u00e0s perguntas do auditor.',
+      btn: 'Obter exemplo de Data Pack'
     },
     hr: {
-      title:    'Envolvimento \u2014 Team building com impacto',
+      title:    'Team building que os colaboradores consideram real',
       subtitle: 'Para RH e fundadores',
-      li1: 'Team building melhor do que pizza',
-      li2: 'M\u00e9tricas de RH \u2014 envolvimento / horas / participantes',
-      li3: 'Organizamos tudo do in\u00edcio ao fim',
-      li4: 'Valores da equipa \u2014 employer brand sem esfor\u00e7o de RH',
-      li5: 'O seu log\u00f3tipo no evento',
-      li6: 'Conte\u00fado foto/v\u00eddeo inclu\u00eddo',
-      li7: 'At\u00e9 10 participantes no team building',
-      roi: '70% da Gera\u00e7\u00e3o Z escolhe empregadores \u2018verdes\u2019 \u2014 <a href="https://www.deloitte.com/content/dam/assets-shared/docs/campaigns/2025/2025-genz-millennial-survey.pdf" target="_blank" rel="noopener" style="color:inherit">Deloitte, 2025</a>',
-      btn: 'Discutir team building'
+      li1: 'Atividade meaningful \u201cchave na m\u00e3o\u201d (sem sobrecarga para o RH)',
+      li2: 'Resultado mensur\u00e1vel: pessoas / horas / peso / antes-depois',
+      li3: 'Conte\u00fado de PR: fotos/v\u00eddeo para LinkedIn e canais internos',
+      li4: 'Relat\u00f3rio final em 2 semanas',
+      roi: '70% da Gera\u00e7\u00e3o Z e millenials consideram a sustentabilidade ambiental importante na escolha do empregador \u2014 <a href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/" target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a>',
+      btn: 'Reservar limpeza corporativa'
     },
     addon: {
-      title:    'O que mais lhe interessa?',
-      btn:      'Escreva-nos',
-      more:     'Mais eventos',
+      title:    'Complementos ao evento',
+      subtitle: 'Quer ampliar o impacto? Adicione opções.',
+      btn:      'Obter proposta',
+      more:     'Adicionar pr\u00f3prio:',
       report:   'Relat\u00f3rio ind.',
       catering: 'Catering',
-      merch:    'Merchandising',
+      merch:    'Branding do evento',
       pr:       'PR Alargado',
       master:   'Masterclass',
       barter:   'Barter'
@@ -613,50 +640,50 @@ const SPONSOR_I18N = {
     process: {
       label: 'Processo',
       title: '4 passos para come\u00e7ar',
-      s1: { num: 'Passo 01', title: 'Chamada',              text: 'Discuss\u00e3o do formato, localiza\u00e7\u00e3o, formato de relat\u00f3rio e n\u00famero de participantes.' },
-      s2: { num: 'Passo 02', title: 'Contrato e pagamento',  text: 'Assinamos o contrato, emitimos a fatura. Pagamento antes do evento \u2014 cart\u00e3o ou transfer\u00eancia banc\u00e1ria.' },
-      s3: { num: 'Passo 03', title: 'Evento',                text: 'Briefing da equipa, limpeza com rastreamento GPS, pesagem de sacos, fotos antes/depois.' },
-      s4: { num: 'Passo 04', title: 'Relat\u00f3rio',         text: 'PDF + Excel em 2 semanas. CSRD-ready. Pronto para auditoria.' }
+      s1: { num: 'Passo 1 (15 min)', title: 'Chamada inicial',             text: 'Escolhemos o formato: ESG (dados) ou RH (team building). Definimos local, data e n\u00famero de participantes.' },
+      s2: { num: 'Passo 2 (1\u20132 dias)', title: 'Contrato e prepara\u00e7\u00e3o', text: 'Preparamos contrato/fatura. Enviamos checklist aos participantes e plano do evento.' },
+      s3: { num: 'Passo 3 (2 horas)', title: 'Realizamos o evento',        text: 'Briefing, equipamento, modera\u00e7\u00e3o. Registamos GPS + fotos antes/depois + peso.' },
+      s4: { num: 'Passo 4 (at\u00e9 2 semanas)', title: 'Entregamos os resultados', text: 'Recebe: relat\u00f3rio PDF + CSV (ESG Data Pack) + pasta de evid\u00eancias (fotos/logs).' }
     },
     pricing: {
       label: 'Pacotes',
-      title: 'Escolha o seu pacote'
+      title: 'Escolha um pacote de patrocínio para eco eventos'
     },
     pkg1: {
-      name:   'Evento Piloto',
+      name:   'Pilot',
       price:  'a partir de \u20ac350',
-      period: 'evento \u00fanico',
+      period: '1 evento',
+      for:    'Para: arranque r\u00e1pido + evid\u00eancias para relat\u00f3rio interno',
       li1: 'At\u00e9 6 participantes',
-      li3: 'Fotos antes/depois',
+      li2: 'Lite Report (resumo de 1 p\u00e1gina)',
+      li3: 'GPS + fotos antes/depois + peso',
       li4: 'Contrato e fatura',
-      addon: '+ ESG Data Pack \u2014 \u20ac150',
-      roi: 'In\u00edcio r\u00e1pido sem risco',
-      btn: 'Marcar chamada'
+      addon: 'Full ESG Data Pack (PDF + CSV) \u2014 \u20ac150',
+      roi: 'Arranque r\u00e1pido: testar o formato sem compromisso',
+      btn: 'Obter relat\u00f3rio de exemplo'
     },
     pkg2: {
       badge:  'Escolha popular',
-      period: '4 eventos por ano (trimestral)',
+      period: '4 eventos por ano',
+      for:    'Para: dados regulares para relat\u00f3rios e parceiros',
       li1: 'At\u00e9 10 participantes por evento',
-      li2: 'ESG Data Pack inclu\u00eddo',
-      li3: 'O seu log\u00f3tipo no evento',
+      li2: 'Full ESG Data Pack inclu\u00eddo (PDF + CSV)',
+      li3: 'Log\u00f3tipo/branding no evento',
       li4: 'Conte\u00fado foto/v\u00eddeo',
       li5: 'Suporte priorit\u00e1rio',
-      li6: 'Contrato e fatura',
-      li7: 'Custom audit trail / white label data room',
-      roi: 'Parceiro ESG sistem\u00e1tico',
-      btn: 'Marcar chamada'
+      roi: 'Evid\u00eancias regulares ao longo do ano',
+      btn: 'Solicitar proposta'
     },
     pkg3: {
-      name:   'Solu\u00e7\u00f5es personalizadas',
-      price:  'Negoci\u00e1vel',
-      period: 'N\u00famero de participantes negoci\u00e1vel',
-      li1: 'A partir de 10 participantes',
-      li2: 'ESG Data Pack completo',
-      li3: 'Branding do evento',
-      li4: 'PR Alargado + Media',
-      li5: 'White label data room',
-      li6: 'Seguro completo',
-      roi: 'Impacto m\u00e1ximo de PR',
+      name:   'Enterprise',
+      price:  'Custom',
+      period: 'N\u00famero personalizado de eventos',
+      for:    'Para: requisitos de auditoria, equipas grandes, campos personalizados',
+      li1: 'Full ESG Data Pack + campos personalizados',
+      li2: 'Conte\u00fado alargado e PR',
+      li3: 'Protocolo adicional de registo de evid\u00eancias (conforme requisitos do cliente)',
+      li4: 'Branding/log\u00edstica/seguro (se necess\u00e1rio)',
+      roi: 'Solu\u00e7\u00e3o adaptada aos requisitos de auditoria',
       btn: 'Discutir condi\u00e7\u00f5es'
     },
     proof: {
@@ -667,15 +694,18 @@ const SPONSOR_I18N = {
         m1: { label: 'eventos realizados' },
         m2: { label: 'kg de res\u00edduos recolhidos' },
         m3: { label: 'membros da comunidade' },
-        m4: { label: 'eventos patrocinados' }
+        m4: { label: 'eventos patrocinados' },
+        m5: { label: 'festival' }
       },
       praia: {
+        badge: 'Eventos Patrocinados',
         m1: { label: 'kg de res\u00edduos removidos' },
-        m2: { label: 'eventos consecutivos' },
+        m2: { label: 'eventos' },
         m3: { label: 'parceria' },
         quote: '\u201cMelhor iniciativa ESG do ano. Renovaram o contrato para 2026.\u201d'
       },
       dhb: {
+        badge: 'Festival',
         m1: { label: 'visitantes' },
         m2: { label: 'beatas recolhidas' },
         m3: { label: 'dias de workshops' },
@@ -685,42 +715,43 @@ const SPONSOR_I18N = {
     mech: {
       label: 'Mec\u00e2nica',
       title: 'Como realizamos os eventos',
-      m1: { title: 'Briefing',                  text: 'Seguran\u00e7a e triagem \u2014 10\u201315 minutos. Curto, direto ao ponto, antes do in\u00edcio.' },
-      m2: { title: 'Distribui\u00e7\u00e3o de equipamento', text: 'Luvas, sacos, apanhadores. Tudo o necess\u00e1rio \u2014 por nossa conta.' },
-      m3: { title: 'Limpeza em equipa',          text: 'At\u00e9 2 horas de trabalho ativo. Cada participante conhece a sua zona.' },
-      m4: { title: 'Resultados',                 text: 'Triagem final, pesagem, fotos antes/depois, rastreamento GPS.' },
-      m5: { title: 'Elimina\u00e7\u00e3o',               text: 'Os res\u00edduos v\u00e3o para os contentores certos \u2014 pl\u00e1stico, vidro, res\u00edduos gerais.' },
-      m6: { title: 'Conv\u00edvio',                 text: 'Ap\u00f3s a limpeza \u2014 bebidas e networking. A parte mais animada.' },
-      m7: { title: 'Encerramento',               text: 'Os participantes recebem recompensas*, o patrocinador \u2014 um relat\u00f3rio com dados.' },
-      footnote: '* Se a limpeza for patrocinada \u2014 os participantes recebem a partir de \u20ac10 ou bebidas e snacks dos parceiros.'
+      m1: { title: 'Fazemos o briefing',                  text: 'Briefing sobre seguran\u00e7a, triagem e os dados que recolhemos. 10\u201315 minutos antes do in\u00edcio.' },
+      m2: { title: 'Preparamos participantes e material', text: 'Distribu\u00edmos tudo o necess\u00e1rio: luvas, sacos, apanhadores. Completamente por nossa conta.' },
+      m3: { title: 'Limpeza ativa',                      text: 'A equipa trabalha por zonas, n\u00f3s moderamos o processo. At\u00e9 2 horas em formato sprint.' },
+      m4: { title: 'Registamos as provas',               text: 'Fotos antes/depois, GPS, triagem e pesagem por fra\u00e7\u00e3o \u2014 a base do Data Pack.' },
+      m5: { title: 'Controlamos a elimina\u00e7\u00e3o',          text: 'Os res\u00edduos v\u00e3o para os fluxos de reciclagem certos \u2014 pl\u00e1stico, vidro, mistos.' },
+      m6: { title: 'Criamos envolvimento da equipa',     text: 'Networking, comunica\u00e7\u00e3o ou o efeito RH do evento.' },
+      m7: { title: 'Resultado.',                        text: 'A empresa recebe um relat\u00f3rio com dados. Os participantes recebem uma recompensa*' },
+      closing: 'Cada passo \u00e9 registado \u2014 por isso o resultado pode ser usado em relat\u00f3rios e comunica\u00e7\u00e3o.',
+      footnote: '* Se a limpeza for patrocinada \u2014 os participantes recebem uma recompensa pontual ou bebidas e snacks dos parceiros.'
     },
     ind: {
       label:    'Para quem se importa',
       title:    'Cada contribui\u00e7\u00e3o importa',
-      emphasis: 'N\u00e3o precisa de ser uma corpora\u00e7\u00e3o para fazer a diferen\u00e7a.'
+      emphasis: 'Qualquer pessoa pode assinalar polui\u00e7\u00e3o, participar num evento ou apoiar uma limpeza.'
     },
     donate: {
-      type:    'Doa\u00e7\u00e3o',
-      title:   'Apoiar com uma doa\u00e7\u00e3o',
-      text:    'N\u00e3o pode participar pessoalmente? Qualquer valor cobre despesas reais \u2014 equipamento, log\u00edstica, elimina\u00e7\u00e3o. 100% transpar\u00eancia de custos.',
-      disclaimer: 'Ao clicar em \u201cFazer doa\u00e7\u00e3o\u201d, concorda com os nossos <a href="assets/info/terms-and-conditions-EN.txt" target="_blank" style="color:#0f0f0f;text-decoration:underline;">Termos e Condi\u00e7\u00f5es</a> e reconhece que as doa\u00e7\u00f5es s\u00e3o n\u00e3o reembols\u00e1veis.',
-      btn:  'Fazer doa\u00e7\u00e3o',
+      type:    'Apoiar',
+      title:   'Podes fazer uma contribui\u00e7\u00e3o pessoal',
+      text:    'Financia a\u00e7\u00f5es reais e obt\u00e9m um resultado transparente.',
+      transparency: 'Relat\u00f3rio publicado ap\u00f3s cada evento.',
+      disclaimer: 'Ao clicar em \u201cApoiar\u201d, concorda com os nossos <a href="assets/info/terms-and-conditions-EN.txt" target="_blank" style="color:#0f0f0f;text-decoration:underline;">Termos e Condi\u00e7\u00f5es</a> e reconhece que os pagamentos s\u00e3o n\u00e3o reembols\u00e1veis.',
+      btn:  'Apoiar',
       note: 'Pagamento por cart\u00e3o \u2014 Visa, Mastercard, Apple Pay'
     },
     comm: {
-      type:  'Juntar-se \u00e0 comunidade',
-      price: 'Gr\u00e1tis',
-      text:  'Venha a uma limpeza em Lisboa. Networking, resultados reais, pessoas reais.<br><strong>400+ membros ativos.</strong>',
+      type:  'Queres participar num evento?',
+      price: 'Participar num evento',
+      text:  'Participe nas limpezas, conhe\u00e7a pessoas e veja o resultado.<br><strong>400+ membros ativos.</strong>',
       event: 'Pr\u00f3ximo evento'
     },
     roadmap: {
       label:    'Plano 2026',
       title:    '2026: App + Expans\u00e3o',
-      emphasis: 'N\u00e3o estamos parados. Junte-se agora para crescer connosco.',
-      r1: { status: 'Ativo',       text: 'Aumento do n\u00famero de eventos, praias e parques, pacotes de patroc\u00ednio lan\u00e7ados.' },
-      r2: { status: 'Lan\u00e7amento', text: 'Pagamentos a participantes*, mapa de eventos, painel ESG para patrocinadores.' },
-      r3: { city: 'Festivais', status: 'Expans\u00e3o', text: 'Parceria com festivais importantes. Gamifica\u00e7\u00e3o do formato \u201cres\u00edduo = moeda\u201d.' },
-      bottom: 'O rbingood n\u00e3o \u00e9 uma campanha. \u00c9 um processo repet\u00edvel.'
+      subtitle: 'Estamos a construir infraestrutura para a\u00e7\u00f5es ambientais comprovat\u00edveis.',
+      r1: { city: 'Expansion', status: 'Mais eventos',                  text: 'Mais eventos \u2192 mais dados. Expandimos locais, parceiros e regularidade.' },
+      r2: { city: 'Platform',  status: 'Plataforma de a\u00e7\u00e3o',          text: 'A polui\u00e7\u00e3o pode ser assinalada, financiada e removida \u2014 com resultado transparente.' },
+      r3: { city: 'Scale',     status: 'Integra\u00e7\u00e3o em grande escala',  text: 'Festivais, marcas e parcerias aumentam o volume de impacto comprovat\u00edvel.' }
     },
     barter: {
       label:    'Neg\u00f3cio Local',
@@ -734,36 +765,39 @@ const SPONSOR_I18N = {
       btn: 'Tornar-se parceiro barter'
     },
     faq: {
-      label: 'FAQ',
-      title: 'Perguntas frequentes',
-      biz:    { label: 'Empresa / ESG' },
-      people: { label: 'Pessoas / Log\u00edstica' },
-      q1: 'O que est\u00e1 inclu\u00eddo no ESG Data Pack?',
-      a1: 'Ficheiros PDF e Excel: coordenadas GPS do local de limpeza, peso total de res\u00edduos recolhidos por categoria (pl\u00e1stico, vidro, mistos), relat\u00f3rio fotogr\u00e1fico antes/depois, c\u00e1lculo de CO\u2082 evitado e contagem de participantes.',
-      q2: 'Como \u00e9 que isso ajuda com a CSRD?',
-      a2: 'Fornecemos um Data Pack completo dentro de 2 semanas ap\u00f3s o evento. Isso permite-lhe fechar rapidamente os indicadores ESRS S3 antes de submeter o relat\u00f3rio anual.',
-      q3: 'O evento pode ter branding?',
-      a3: 'Sim. Log\u00f3tipo nos sacos, coletes, conte\u00fado foto/v\u00eddeo com o seu branding. Dispon\u00edvel por custo adicional (+\u20ac150 ao Evento Piloto) ou inclu\u00eddo nos pacotes Standard e superiores.',
-      q4: 'Quanto custa o team building?',
-      a4: 'Pre\u00e7o base \u2014 \u20ac60 por pessoa (pedido m\u00ednimo \u2014 \u20ac350). Inclui: sele\u00e7\u00e3o de local, equipamento (apanhadores, luvas), instrutor, recolha de res\u00edduos e conte\u00fado fotogr\u00e1fico b\u00e1sico.',
-      q5: 'Existe seguro?',
-      a5: 'Sim. Seguro de responsabilidade civil completo durante o evento. Todos os participantes recebem um briefing de seguran\u00e7a obrigat\u00f3rio antes do in\u00edcio.',
-      q6: 'O que faz uma doa\u00e7\u00e3o de \u20ac1?',
-      a6: 'Mesmo \u20ac1 \u00e9 importante. Receber\u00e1 um Relat\u00f3rio Pessoal por email: uma foto da \u00e1rea espec\u00edfica que foi limpa gra\u00e7as a si, com o peso dos res\u00edduos recolhidos e as coordenadas GPS.',
-      q7: 'Preciso de experi\u00eancia ou equipamento?',
-      a7: 'N\u00e3o. Fornecemos todo o equipamento necess\u00e1rio (apanhadores, luvas, sacos) e fazemos uma forma\u00e7\u00e3o no local. Podem participar todos com 16+ anos.',
-      q8: 'E se o tempo estiver mau?',
-      a8: 'Monitorizamos a previs\u00e3o. Em caso de chuva forte ou tempestade, avisamos os participantes com 24 horas de anteced\u00eancia e reagendamos o evento. Como alternativa, oferecemos limpeza numa \u00e1rea de parque.',
-      q9: 'Como me inscrevo?',
-      a9: 'A forma mais r\u00e1pida \u00e9 via Telegram ou WhatsApp. Escolha uma data conveniente no calend\u00e1rio, clique em \u201cConfirmar\u201d \u2014 e est\u00e1 na lista.'
+      label:  'FAQ',
+      title:  'Perguntas frequentes',
+      biz:    { label: 'Perguntas das equipas de ESG, RH e financeiras.' },
+      people: { label: 'Perguntas sobre participa\u00e7\u00e3o' },
+      q1:  'O que est\u00e1 inclu\u00eddo no ESG Data Pack?',
+      a1:  'O ESG Data Pack inclui:<ul><li>Coordenadas GPS dos eventos</li><li>Fotos antes/depois</li><li>Registo de peso de res\u00edduos</li><li>M\u00e9tricas de participa\u00e7\u00e3o</li><li>Executive summary</li></ul>Os dados s\u00e3o entregues em formato PDF e CSV.',
+      q2:  'O que recebo ap\u00f3s o evento?',
+      a2:  'Recebe:<ul><li>PDF executive summary</li><li>CSV Data Pack</li><li>Pasta de evid\u00eancias (GPS, fotos, logs)</li><li>Conte\u00fado media (se selecionado)</li></ul>',
+      q3:  'Os dados podem ser usados em relat\u00f3rios?',
+      a3:  'Sim. Os dados est\u00e3o estruturados para uso em relat\u00f3rios de sustentabilidade e podem ser partilhados com consultores ou auditores como base de evid\u00eancias das a\u00e7\u00f5es.',
+      q4:  'Isto \u00e9 suficiente para a CSRD?',
+      a4:  'O ESG Data Pack \u00e9 uma base de evid\u00eancias de a\u00e7\u00f5es. \u00c9 utilizado como parte do reporte, mas n\u00e3o substitui um relat\u00f3rio ESG ou CSRD completo.',
+      q5:  'Existe risco de greenwashing?',
+      a5:  'O rbingood n\u00e3o vende compensa\u00e7\u00f5es nem cr\u00e9ditos de carbono. Documentamos a\u00e7\u00f5es reais e fornecemos evid\u00eancias verific\u00e1veis que podem ser utilizadas de forma transparente.',
+      q6:  'Em que difere o rbingood do team building habitual?',
+      a6:  'O rbingood n\u00e3o \u00e9 apenas um evento. Cada a\u00e7\u00e3o \u00e9 registada e transformada em dados que podem ser usados em relat\u00f3rios e comunica\u00e7\u00e3o.',
+      q9:  'Existe seguro e cobertura de seguran\u00e7a?',
+      a9:  'Fazemos um briefing de seguran\u00e7a, fornecemos equipamento e seguimos os requisitos b\u00e1sicos de seguran\u00e7a. Requisitos adicionais podem ser acordados.',
+      q10: 'Preciso de experi\u00eancia?',
+      a10: 'N\u00e3o. Fazemos um briefing antes do in\u00edcio.',
+      q11: 'E se o tempo estiver mau?',
+      a11: 'O evento \u00e9 reagendado ou adaptado.',
+      q12: 'O que faz \u20ac2 de apoio?',
+      a12: 'O seu apoio cobre os custos reais do evento: equipamento, log\u00edstica e elimina\u00e7\u00e3o de res\u00edduos.',
+      q13: 'Como me inscrevo?',
+      a13: 'Escolha o evento mais pr\u00f3ximo ou subscreva para receber atualiza\u00e7\u00f5es.'
     },
     cta: {
-      quote: '\u201cN\u00f3s, Ksenia e Kate, garantimos pessoalmente a qualidade de cada evento. O rbingood \u00e9 a nossa reputa\u00e7\u00e3o. Se algo correr mal \u2014 reembolsamos sem perguntas.\u201d',
-      title: 'Comece hoje \u2014 respondemos em 1 hora',
-      sub:   'N\u00e3o adie o ESG para dezembro. D\u00ea o primeiro passo agora.',
-      btn1:  'Fechar CSRD por \u20ac350',
-      btn2:  'Fazer doa\u00e7\u00e3o / participar num evento',
-      or:    'ou escreva-nos:'
+      quote:     '\u201cResponsabilizamo-nos pessoalmente pela qualidade de cada evento e por garantir que recebe as evid\u00eancias: GPS, fotos, peso e relat\u00f3rio. O rbingood \u00e9 a nossa reputa\u00e7\u00e3o.\u201d',
+      title:     'Comece hoje \u2014 enviamos plano e or\u00e7amento',
+      sub:       'Primeiro passo \u2014 chamada de 15 minutos: objetivos, formato, prazos. Depois enviamos um plano de 1 p\u00e1gina e or\u00e7amento preliminar.',
+      btn1:      'Discutir exemplo de ESG Data Pack',
+      btn2:      'Reservar limpeza corporativa'
     },
     partners: {
       label: 'Parceiros e Apoio',
