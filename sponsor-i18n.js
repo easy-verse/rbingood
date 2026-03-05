@@ -43,7 +43,7 @@ const SPONSOR_I18N = {
       quote: 'Новые EU Green Claims правила требуют подтверждать экологические заявления доказательствами.<br><br>Около половины экологических заявлений в ЕС признаны неподтверждёнными.',
       quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
       cta:   'Если действие нельзя подтвердить \u2014 оно не учитывается в отчётности, аудитах.<br>Доказательства нельзя собрать задним числом.',
-      disclaimer: 'rbingood превращает реальные действия в audit-ready ESG evidence: GPS, фото, вес и raw data (ESRS E5\u00a0/\u00a0S3).'
+      disclaimer: 'rbingood превращает реальные действия в audit-ready ESG evidence: GPS, фото, вес и raw data (ESRS E3\u00a0-\u00a04).'
     },
     solution: {
       label:    'Решение',
@@ -55,7 +55,7 @@ const SPONSOR_I18N = {
       subtitle: 'Для Sustainability-менеджеров и CFO',
       li1: 'Audit-ready evidence: GPS + timestamp, фото \u00abдо/после\u00bb, вес',
       li2: 'Social proof с деньгами: выплаты участникам с подтверждением (Stripe)',
-      li3: 'ESRS-aligned пакет: E5 (Actions) + S3 (Communities), структура \u00abwith reference\u00bb к GRI 306-2',
+      li3: 'ESRS-aligned пакет: ESRS S3-4, структура \u00abwith reference\u00bb к GRI 413-1',
       li4: 'Raw data / CSV: то, что реально передают аудитору/консультантам',
       li5: 'Срок: отчёт и исходные данные \u2014 до 2 недель после события',
       li6: 'Документы: договор и инвойс',
