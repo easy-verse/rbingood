@@ -10,36 +10,22 @@ const SPONSOR_I18N = {
       cta:       'Закрыть CSRD \u2192'
     },
     hero: {
-      title:    'rbingood \u2014 платформа, где любой спонсирует или участвует в эко-инициативах и сразу видит результат.',
-      subtitle: 'Спонсоры, волонтёры, организаторы \u2014 вместе чистят города, пляжи и леса.'
+      title:    'rbingood \u2014 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430, \u0433\u0434\u0435 \u043b\u044e\u0431\u043e\u0439 \u0441\u043f\u043e\u043d\u0441\u0438\u0440\u0443\u0435\u0442 \u0438\u043b\u0438 \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u0435\u0442 \u0432 \u044d\u043a\u043e-\u0438\u043d\u0438\u0446\u0438\u0430\u0442\u0438\u0432\u0430\u0445, \u043f\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u044f \u0440\u0435\u0430\u043b\u044c\u043d\u044b\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0432 \u0432\u0435\u0440\u0438\u0444\u0438\u0446\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435',
+      subtitle: '\u041c\u044b \u043f\u043e\u043c\u043e\u0433\u0430\u0435\u043c \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f\u043c \u0440\u0435\u0448\u0438\u0442\u044c \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0443 \u043e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u044f \u0438\u0437\u043c\u0435\u0440\u0438\u043c\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 \u043e\u0431 \u0443\u0441\u0442\u043e\u0439\u0447\u0438\u0432\u043e\u043c \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0438 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u0438 \u0440\u0435\u0430\u043b\u044c\u043d\u044b\u0445 \u044d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 (GPS. \u0424\u043e\u0442\u043e. \u0412\u0435\u0441)'
     },
     problem: {
-      title:    'Города загрязняются быстрее, чем их успевают убирать.',
       subtitle: 'Многие экологические инициативы не превращаются в данные',
       subExtra: 'Без доказательств инициативы не попадают в отчёты и коммуникацию.',
-      portugal: 'Португалия',
-      stat1: {
-        label: 'переработка ниже среднего ЕС — нужен дополнительный импакт',
-        src:   'среднее по EU \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251022-1" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
-      },
-      stat2: {
-        label: 'упаковка перерабатывается, но действия компаний редко фиксируются',
-        src:   'цель \u2014 65% \u00b7 <a href="https://www.pontoverde.pt/" target="_blank" rel="noopener" style="color:inherit">Ponto Verde</a>'
-      },
-      stat3: {
-        label: 'отходов остаётся на полигонах \u2014 важны действия вне периметра бизнеса',
-        src:   '<a href="https://theportugalpost.com/posts/unsorted-landfill-waste-could-land-portugal-with-huge-eu-finesand-raise-your-bin-fees" target="_blank" rel="noopener" style="color:inherit">The Portugal Post</a>'
-      },
       role: {
         biz: {
           text: 'Я бизнес \u2014 нужны доказуемые экологические действия',
-          sub:  'Для отчётности, аудита и вовлечения команды.',
-          btn:  'Для бизнеса'
+          sub:  'Для ESG отчётности, аудита и коммуникации.',
+          btn:  'Решение для ESG отчётности'
         },
-        ind: {
-          text: 'Хочу поддержать реальные экологические действия',
-          sub:  'Даже если не могу участвовать лично.',
-          btn:  'Поддержать'
+        hr: {
+          text: 'Вовлеките команду в реальное действие',
+          sub:  'Корпоративные уборки \u2014 ESG-актив, который виден и измерим.',
+          btn:  'Корпоративные уборки для команд'
         }
       }
     },
@@ -113,7 +99,7 @@ const SPONSOR_I18N = {
     },
     pkg1: {
       name:   'Pilot',
-      price:  'от €350',
+      price:  'от €500',
       period: '1 событие',
       for:    'Для: быстрый старт + доказательства для внутреннего отчёта',
       li1: 'До 6 участников',
@@ -122,10 +108,11 @@ const SPONSOR_I18N = {
       li4: 'Договор и инвойс',
       addon: 'Full ESG Data Pack (PDF + CSV) \u2014 €150',
       roi: 'Быстрый старт: проверить формат без риска',
-      btn: 'Получить пример отчёта'
+      btn: 'Получить пример ESG Data Pack'
     },
     pkg2: {
       badge:  'Популярный выбор',
+      price:  '\u20ac2 600 / год',
       period: '4 события в год',
       for:    'Для: регулярные данные для отчётности и партнёров',
       li1: 'До 10 участников на событие',
@@ -146,7 +133,7 @@ const SPONSOR_I18N = {
       li3: 'Доп. протокол фиксации доказательств (по требованиям клиента)',
       li4: 'Брендинг/логистика/страхование (если нужно)',
       roi: 'Решение под ваши аудит-требования',
-      btn: 'Обсудить условия'
+      btn: 'Записаться на звонок'
     },
     proof: {
       label: 'Кейсы',
@@ -227,8 +214,9 @@ const SPONSOR_I18N = {
       btn: 'Стать бартер-партнёром'
     },
     faq: {
-      label:  'FAQ',
-      title:  'Частые вопросы',
+      label:        'FAQ',
+      title:        'Частые вопросы',
+      calendly_btn: 'Остались вопросы? Забронировать встречу',
       biz:    { label: 'Ответы на вопросы, которые задают ESG, HR и финансовые команды.' },
       people: { label: 'Вопросы об участии' },
       q1:  'Что входит в ESG Data Pack?',
@@ -258,15 +246,50 @@ const SPONSOR_I18N = {
       quote:     '\u00abМы лично отвечаем за качество каждого события и за то, чтобы вы получили доказательства: GPS, фото, вес и отчёт. rbingood \u2014 это наша репутация.\u00bb',
       title:     'Начните сегодня \u2014 пришлём план и смету',
       sub:       'Первый шаг \u2014 звонок 15 минут: цели, формат, сроки. Затем высылаем 1-страничный план и предварительную смету.',
-      btn1:      'Обсудить пример ESG Data Pack',
-      btn2:      'Забронировать корпоративную уборку'
+      btn1:      'Обсудить ESG Data Pack',
+      btn2:      'Записаться на звонок (15 мин)'
     },
     partners: {
       label: 'Партнёры и поддержка',
       ilgiz: { desc: 'Воркшопы, лекции, производство изделий из переработанного сырья.' }
     },
+    modal: {
+      lead_magnet:      { label: 'ESG Data Pack',       title: '\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043f\u0440\u0438\u043c\u0435\u0440 ESG Data Pack',                             submit: '\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043f\u0440\u0438\u043c\u0435\u0440',   success_title: 'ESG Data Pack \u0443\u0436\u0435 \u0432 \u043f\u0443\u0442\u0438!',         success_desc: '\u041c\u044b \u0441\u0432\u044f\u0436\u0435\u043c\u0441\u044f \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 1 \u0440\u0430\u0431\u043e\u0447\u0435\u0433\u043e \u0434\u043d\u044f.' },
+      hr_contact:       { label: 'HR & \u041a\u043e\u043c\u0430\u043d\u0434\u044b',       title: '\u0417\u0430\u0431\u0440\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u043a\u043e\u0440\u043f\u043e\u0440\u0430\u0442\u0438\u0432\u043d\u0443\u044e \u0443\u0431\u043e\u0440\u043a\u0443', submit: '\u0417\u0430\u0431\u0440\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0442\u044c', success_title: '\u0421\u0432\u044f\u0436\u0435\u043c\u0441\u044f \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 \u0447\u0430\u0441\u0430!',  success_desc: '\u0425\u043e\u0442\u0438\u0442\u0435 \u0441\u0440\u0430\u0437\u0443 \u0437\u0430\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f \u043d\u0430 \u0437\u0432\u043e\u043d\u043e\u043a?' },
+      esg_discussion:   { label: '\u041e\u0441\u043d\u043e\u0432\u0430\u0442\u0435\u043b\u0438',      title: '\u041e\u0431\u0441\u0443\u0434\u0438\u0442\u044c \u0432\u0430\u0448 ESG Data Pack',                             submit: '\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c',          success_title: '\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u043e!',        success_desc: '\u041d\u0430\u043f\u0438\u0448\u0435\u043c \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 \u0447\u0430\u0441\u0430.' },
+      pricing_standard: { label: '\u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439 \u043f\u0430\u043a\u0435\u0442', title: '\u0417\u0430\u043f\u0440\u043e\u0441\u0438\u0442\u044c \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u043f\u043e \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u043e\u043c\u0443 \u043f\u0430\u043a\u0435\u0442\u0443', submit: '\u0417\u0430\u043f\u0440\u043e\u0441\u0438\u0442\u044c \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435', success_title: '\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0433\u043e\u0442\u043e\u0432\u0438\u0442\u0441\u044f!',   success_desc: '\u041f\u0440\u0438\u0448\u043b\u0451\u043c \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u043e\u0435 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 1 \u0440\u0430\u0431\u043e\u0447\u0435\u0433\u043e \u0434\u043d\u044f.' },
+      field: {
+        name:                    '\u041f\u043e\u043b\u043d\u043e\u0435 \u0438\u043c\u044f',
+        email:                   '\u0420\u0430\u0431\u043e\u0447\u0438\u0439 email',
+        company:                 '\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f',
+        role_placeholder:        '\u0420\u043e\u043b\u044c (\u043d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e)',
+        role_cso:                'Chief Sustainability Officer',
+        role_coo:                'COO / \u041e\u043f\u0435\u0440\u0430\u0446\u0438\u0438',
+        role_marketing:          '\u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433 / \u041a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u0438',
+        role_founder:            '\u041e\u0441\u043d\u043e\u0432\u0430\u0442\u0435\u043b\u044c / CEO',
+        role_other:              '\u0414\u0440\u0443\u0433\u043e\u0435',
+        company_size_placeholder:'\u0420\u0430\u0437\u043c\u0435\u0440 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438',
+        company_size_1:          '1\u201310 \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u043e\u0432',
+        company_size_2:          '11\u201350 \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u043e\u0432',
+        company_size_3:          '51\u2013200 \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u043e\u0432',
+        company_size_4:          '201\u20131000 \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u043e\u0432',
+        company_size_5:          '1000+ \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u043e\u0432',
+        interest_placeholder:    '\u0418\u043d\u0442\u0435\u0440\u0435\u0441',
+        message:                 '\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 (\u043d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e)',
+        gdpr:                    '\u042f \u0441\u043e\u0433\u043b\u0430\u0448\u0430\u044e\u0441\u044c \u0441 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u043e\u0439 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u043e <a href="assets/info/privacy-EN.txt" target="_blank" style="color:inherit; text-decoration:underline;">\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0435 \u043a\u043e\u043d\u0444\u0438\u0434\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0438</a>.',
+        sending:                 '\u041e\u0442\u043f\u0440\u0430\u0432\u043a\u0430\u2026',
+        err_name:                '\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0432\u0430\u0448\u0435 \u0438\u043c\u044f.',
+        err_email:               '\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u044b\u0439 \u0440\u0430\u0431\u043e\u0447\u0438\u0439 email.',
+        err_gdpr:                '\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u0440\u0438\u043c\u0438\u0442\u0435 \u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0443 \u043a\u043e\u043d\u0444\u0438\u0434\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0438.',
+        err_generic:             '\u0427\u0442\u043e-\u0442\u043e \u043f\u043e\u0448\u043b\u043e \u043d\u0435 \u0442\u0430\u043a. \u041f\u043e\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u0435\u0449\u0451 \u0440\u0430\u0437.'
+      },
+      interest_hr:       ['\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0435 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u0435 (HR)', 'ESG + \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0435 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u0435', '\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442'],
+      interest_pricing:  ['4 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u044f / \u0433\u043e\u0434', 'ESG \u043e\u0442\u0447\u0451\u0442\u043d\u043e\u0441\u0442\u044c', 'HR \u0442\u0438\u043c\u0431\u0438\u043b\u0434\u0438\u043d\u0433', 'ESG + HR \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u043d\u043e'],
+      success: { calendly_btn: '\u0417\u0430\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f \u043d\u0430 \u0437\u0432\u043e\u043d\u043e\u043a (15 \u043c\u0438\u043d)', close_btn: '\u0417\u0430\u043a\u0440\u044b\u0442\u044c' }
+    },
     footer: {
-      meta: '\u00a9 2026 rbingood. Лиссабон.'
+      meta: '\u00a9 2026 rbingood. Лиссабон.',
+      calendly_btn: 'Вопросы? Запишитесь на звонок (15 мин)'
     }
   },
 
@@ -280,36 +303,22 @@ const SPONSOR_I18N = {
       cta:       'Close CSRD \u2192'
     },
     hero: {
-      title:    'rbingood \u2014 a platform where anyone sponsors or joins eco-initiatives and sees the impact immediately.',
-      subtitle: 'Sponsors, volunteers, organizers \u2014 cleaning cities, beaches, and forests together.'
+      title:    'rbingood \u2014 a platform where anyone sponsors or joins eco-initiatives, turning real actions into verified data',
+      subtitle: 'We help companies solve the problem of missing measurable sustainability data through organising real environmental actions (GPS. Photos. Weight)'
     },
     problem: {
-      title:    'Cities are getting polluted faster than they can be cleaned.',
       subtitle: 'Many environmental initiatives never turn into data',
       subExtra: 'Without evidence, initiatives don\u2019t make it into reports or communications.',
-      portugal: 'Portugal',
-      stat1: {
-        label: 'recycling below the EU average \u2014 additional impact is needed',
-        src:   'EU average \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251022-1" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
-      },
-      stat2: {
-        label: 'packaging is recycled, but company actions are rarely documented',
-        src:   'target \u2014 65% \u00b7 <a href="https://www.pontoverde.pt/" target="_blank" rel="noopener" style="color:inherit">Ponto Verde</a>'
-      },
-      stat3: {
-        label: 'of waste ends up in landfills \u2014 actions beyond the business perimeter matter',
-        src:   '<a href="https://theportugalpost.com/posts/unsorted-landfill-waste-could-land-portugal-with-huge-eu-finesand-raise-your-bin-fees" target="_blank" rel="noopener" style="color:inherit">The Portugal Post</a>'
-      },
       role: {
         biz: {
-          text: 'I\u2019m a business \u2014 I need provable environmental actions',
-          sub:  'For reporting, audits and team engagement.',
-          btn:  'For business'
+          text: 'I\u2019m a business \u2014 we need provable environmental actions',
+          sub:  'For ESG reporting, audit and communication.',
+          btn:  'ESG reporting solution'
         },
-        ind: {
-          text: 'I want to support real environmental actions',
-          sub:  'Even if I can\u2019t participate in person.',
-          btn:  'Support'
+        hr: {
+          text: 'Engage your team in real action',
+          sub:  'Corporate cleanups \u2014 an ESG asset that is visible and measurable.',
+          btn:  'Corporate cleanups for teams'
         }
       }
     },
@@ -382,7 +391,7 @@ const SPONSOR_I18N = {
     },
     pkg1: {
       name:   'Pilot',
-      price:  'from \u20ac350',
+      price:  'from \u20ac500',
       period: '1 event',
       for:    'For: quick start + evidence for internal reporting',
       li1: 'Up to 6 participants',
@@ -391,10 +400,11 @@ const SPONSOR_I18N = {
       li4: 'Contract and invoice',
       addon: 'Full ESG Data Pack (PDF + CSV) \u2014 \u20ac150',
       roi: 'Quick start: test the format without commitment',
-      btn: 'Get a sample report'
+      btn: 'Get sample ESG Data Pack'
     },
     pkg2: {
       badge:  'Most popular',
+      price:  '\u20ac2,600 / year',
       period: '4 events per year',
       for:    'For: regular data for reporting and partners',
       li1: 'Up to 10 participants per event',
@@ -415,7 +425,7 @@ const SPONSOR_I18N = {
       li3: 'Additional evidence capture protocol (per client requirements)',
       li4: 'Branding / logistics / insurance (if needed)',
       roi: 'A solution tailored to your audit requirements',
-      btn: 'Discuss terms'
+      btn: 'Book a call'
     },
     proof: {
       label: 'Cases',
@@ -496,8 +506,9 @@ const SPONSOR_I18N = {
       btn: 'Become a barter partner'
     },
     faq: {
-      label:  'FAQ',
-      title:  'Frequently asked questions',
+      label:        'FAQ',
+      title:        'Frequently asked questions',
+      calendly_btn: 'Still have questions? Book a meeting',
       biz:    { label: 'Questions from ESG, HR and finance teams.' },
       people: { label: 'Questions about participation' },
       q1:  'What is included in the ESG Data Pack?',
@@ -527,15 +538,50 @@ const SPONSOR_I18N = {
       quote:     '\u201cWe personally take responsibility for the quality of every event and for ensuring you receive the evidence: GPS, photos, weight and a report. rbingood is our reputation.\u201d',
       title:     'Start today \u2014 we\u2019ll send you a plan and quote',
       sub:       'First step \u2014 15-minute call: goals, format, timeline. Then we send a 1-page plan and a preliminary quote.',
-      btn1:      'Discuss a sample ESG Data Pack',
-      btn2:      'Book a corporate clean-up'
+      btn1:      'Discuss ESG Data Pack',
+      btn2:      'Book a 15-min call'
     },
     partners: {
       label: 'Partners & Support',
       ilgiz: { desc: 'Workshops, lectures, production of items from recycled materials.' }
     },
+    modal: {
+      lead_magnet:      { label: 'ESG Data Pack',      title: 'Get a sample ESG Data Pack',                    submit: 'Get sample',         success_title: 'Your ESG Data Pack is on its way!', success_desc: 'We\u2019ll follow up within 1 business day.' },
+      hr_contact:       { label: 'HR & People',        title: 'Book a corporate clean-up',                     submit: 'Book',               success_title: 'We\u2019ll be in touch within 1 hour!', success_desc: 'Want to jump on a quick call instead?' },
+      esg_discussion:   { label: 'Founders',           title: 'Discuss your ESG Data Pack',                    submit: 'Send message',       success_title: 'Message received!',                 success_desc: 'We\u2019ll reach out within 1 hour.' },
+      pricing_standard: { label: 'Standard Package',   title: 'Request a Standard package proposal',           submit: 'Request proposal',   success_title: 'Proposal incoming!',                success_desc: 'We\u2019ll send a tailored proposal within 1 business day.' },
+      field: {
+        name:                    'Full name',
+        email:                   'Work email',
+        company:                 'Company',
+        role_placeholder:        'Role (optional)',
+        role_cso:                'Chief Sustainability Officer',
+        role_coo:                'COO / Operations',
+        role_marketing:          'Marketing / Comms',
+        role_founder:            'Founder / CEO',
+        role_other:              'Other',
+        company_size_placeholder:'Company size',
+        company_size_1:          '1\u201310 employees',
+        company_size_2:          '11\u201350 employees',
+        company_size_3:          '51\u2013200 employees',
+        company_size_4:          '201\u20131000 employees',
+        company_size_5:          '1000+ employees',
+        interest_placeholder:    'Interest',
+        message:                 'Message (optional)',
+        gdpr:                    'I agree to the processing of my personal data in accordance with the <a href="assets/info/privacy-EN.txt" target="_blank" style="color:inherit; text-decoration:underline;">Privacy Policy</a>.',
+        sending:                 'Sending\u2026',
+        err_name:                'Please enter your name.',
+        err_email:               'Please enter a valid work email.',
+        err_gdpr:                'Please accept the Privacy Policy to continue.',
+        err_generic:             'Something went wrong. Please try again.'
+      },
+      interest_hr:       ['Team event (HR focus)', 'ESG + team event', 'Custom format'],
+      interest_pricing:  ['4 events / year', 'ESG reporting', 'HR teambuilding', 'Combined ESG + HR'],
+      success: { calendly_btn: 'Book a 15-min call', close_btn: 'Close' }
+    },
     footer: {
-      meta: '\u00a9 2026 rbingood. Lisbon.'
+      meta: '\u00a9 2026 rbingood. Lisbon.',
+      calendly_btn: 'Questions? Book a 15-min call'
     }
   },
 
@@ -549,36 +595,22 @@ const SPONSOR_I18N = {
       cta:       'Fechar CSRD \u2192'
     },
     hero: {
-      title:    'rbingood \u2014 uma plataforma onde qualquer pessoa patrocina ou participa em iniciativas eco e v\u00ea o resultado imediatamente.',
-      subtitle: 'Patrocinadores, volunt\u00e1rios, organizadores \u2014 juntos limpando cidades, praias e florestas.'
+      title:    'rbingood \u2014 uma plataforma onde qualquer pessoa patrocina ou participa em iniciativas eco, transformando a\u00e7\u00f5es reais em dados verificados',
+      subtitle: 'Ajudamos as empresas a resolver o problema da aus\u00eancia de dados mensur\u00e1veis de sustentabilidade atrav\u00e9s da organiza\u00e7\u00e3o de a\u00e7\u00f5es ambientais reais (GPS. Fotos. Peso)'
     },
     problem: {
-      title:    'As cidades est\u00e3o a poluir-se mais depressa do que conseguem ser limpas.',
       subtitle: 'Muitas iniciativas ambientais nunca se transformam em dados',
       subExtra: 'Sem provas, as iniciativas n\u00e3o chegam aos relat\u00f3rios nem \u00e0 comunica\u00e7\u00e3o.',
-      portugal: 'Portugal',
-      stat1: {
-        label: 'reciclagem abaixo da m\u00e9dia da UE \u2014 \u00e9 necess\u00e1rio impacto adicional',
-        src:   'm\u00e9dia EU \u2014 42.1% \u00b7 <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251022-1" target="_blank" rel="noopener" style="color:inherit">Eurostat</a>'
-      },
-      stat2: {
-        label: 'a embalagem \u00e9 reciclada, mas as a\u00e7\u00f5es das empresas raramente s\u00e3o registadas',
-        src:   'meta \u2014 65% \u00b7 <a href="https://www.pontoverde.pt/" target="_blank" rel="noopener" style="color:inherit">Ponto Verde</a>'
-      },
-      stat3: {
-        label: 'dos res\u00edduos vai para aterros \u2014 as a\u00e7\u00f5es fora do per\u00edmetro do neg\u00f3cio s\u00e3o importantes',
-        src:   '<a href="https://theportugalpost.com/posts/unsorted-landfill-waste-could-land-portugal-with-huge-eu-finesand-raise-your-bin-fees" target="_blank" rel="noopener" style="color:inherit">The Portugal Post</a>'
-      },
       role: {
         biz: {
-          text: 'Sou empresa \u2014 preciso de a\u00e7\u00f5es ambientais comprovat\u00edveis',
-          sub:  'Para relat\u00f3rios, auditorias e envolvimento da equipa.',
-          btn:  'Para empresas'
+          text: 'Somos uma empresa \u2014 precisamos de a\u00e7\u00f5es ambientais comprovat\u00edveis',
+          sub:  'Para reporting ESG, auditoria e comunica\u00e7\u00e3o.',
+          btn:  'Solu\u00e7\u00e3o de reporting ESG'
         },
-        ind: {
-          text: 'Quero apoiar a\u00e7\u00f5es ambientais reais',
-          sub:  'Mesmo que n\u00e3o possa participar pessoalmente.',
-          btn:  'Apoiar'
+        hr: {
+          text: 'Envolva a sua equipa numa a\u00e7\u00e3o real',
+          sub:  'Limpezas corporativas \u2014 um ativo ESG vis\u00edvel e mensur\u00e1vel.',
+          btn:  'Limpezas corporativas para equipas'
         }
       }
     },
@@ -651,7 +683,7 @@ const SPONSOR_I18N = {
     },
     pkg1: {
       name:   'Pilot',
-      price:  'a partir de \u20ac350',
+      price:  'a partir de \u20ac500',
       period: '1 evento',
       for:    'Para: arranque r\u00e1pido + evid\u00eancias para relat\u00f3rio interno',
       li1: 'At\u00e9 6 participantes',
@@ -660,10 +692,11 @@ const SPONSOR_I18N = {
       li4: 'Contrato e fatura',
       addon: 'Full ESG Data Pack (PDF + CSV) \u2014 \u20ac150',
       roi: 'Arranque r\u00e1pido: testar o formato sem compromisso',
-      btn: 'Obter relat\u00f3rio de exemplo'
+      btn: 'Obter exemplo de ESG Data Pack'
     },
     pkg2: {
       badge:  'Escolha popular',
+      price:  '\u20ac2 600 / ano',
       period: '4 eventos por ano',
       for:    'Para: dados regulares para relat\u00f3rios e parceiros',
       li1: 'At\u00e9 10 participantes por evento',
@@ -684,7 +717,7 @@ const SPONSOR_I18N = {
       li3: 'Protocolo adicional de registo de evid\u00eancias (conforme requisitos do cliente)',
       li4: 'Branding/log\u00edstica/seguro (se necess\u00e1rio)',
       roi: 'Solu\u00e7\u00e3o adaptada aos requisitos de auditoria',
-      btn: 'Discutir condi\u00e7\u00f5es'
+      btn: 'Agendar chamada'
     },
     proof: {
       label: 'Casos',
@@ -765,8 +798,9 @@ const SPONSOR_I18N = {
       btn: 'Tornar-se parceiro barter'
     },
     faq: {
-      label:  'FAQ',
-      title:  'Perguntas frequentes',
+      label:        'FAQ',
+      title:        'Perguntas frequentes',
+      calendly_btn: 'Ainda tem d\u00favidas? Agendar reuni\u00e3o',
       biz:    { label: 'Perguntas das equipas de ESG, RH e financeiras.' },
       people: { label: 'Perguntas sobre participa\u00e7\u00e3o' },
       q1:  'O que est\u00e1 inclu\u00eddo no ESG Data Pack?',
@@ -796,15 +830,50 @@ const SPONSOR_I18N = {
       quote:     '\u201cResponsabilizamo-nos pessoalmente pela qualidade de cada evento e por garantir que recebe as evid\u00eancias: GPS, fotos, peso e relat\u00f3rio. O rbingood \u00e9 a nossa reputa\u00e7\u00e3o.\u201d',
       title:     'Comece hoje \u2014 enviamos plano e or\u00e7amento',
       sub:       'Primeiro passo \u2014 chamada de 15 minutos: objetivos, formato, prazos. Depois enviamos um plano de 1 p\u00e1gina e or\u00e7amento preliminar.',
-      btn1:      'Discutir exemplo de ESG Data Pack',
-      btn2:      'Reservar limpeza corporativa'
+      btn1:      'Falar sobre ESG Data Pack',
+      btn2:      'Agendar chamada de 15 min'
     },
     partners: {
       label: 'Parceiros e Apoio',
       ilgiz: { desc: 'Workshops, palestras, produ\u00e7\u00e3o de artigos a partir de materiais reciclados.' }
     },
+    modal: {
+      lead_magnet:      { label: 'ESG Data Pack',      title: 'Obter exemplo de ESG Data Pack',                submit: 'Obter exemplo',      success_title: 'O seu ESG Data Pack est\u00e1 a caminho!', success_desc: 'Entraremos em contacto dentro de 1 dia \u00fatil.' },
+      hr_contact:       { label: 'HR & Pessoas',       title: 'Reservar limpeza corporativa',                  submit: 'Reservar',           success_title: 'Entraremos em contacto em 1 hora!',  success_desc: 'Quer saltar para uma chamada r\u00e1pida?' },
+      esg_discussion:   { label: 'Fundadores',         title: 'Falar sobre o seu ESG Data Pack',               submit: 'Enviar mensagem',    success_title: 'Mensagem recebida!',                  success_desc: 'Entraremos em contacto em 1 hora.' },
+      pricing_standard: { label: 'Pacote Standard',   title: 'Solicitar proposta de pacote Standard',         submit: 'Solicitar proposta', success_title: 'Proposta a caminho!',                 success_desc: 'Enviaremos uma proposta personalizada dentro de 1 dia \u00fatil.' },
+      field: {
+        name:                    'Nome completo',
+        email:                   'Email profissional',
+        company:                 'Empresa',
+        role_placeholder:        'Cargo (opcional)',
+        role_cso:                'Chief Sustainability Officer',
+        role_coo:                'COO / Opera\u00e7\u00f5es',
+        role_marketing:          'Marketing / Comunica\u00e7\u00e3o',
+        role_founder:            'Fundador / CEO',
+        role_other:              'Outro',
+        company_size_placeholder:'Dimens\u00e3o da empresa',
+        company_size_1:          '1\u201310 colaboradores',
+        company_size_2:          '11\u201350 colaboradores',
+        company_size_3:          '51\u2013200 colaboradores',
+        company_size_4:          '201\u20131000 colaboradores',
+        company_size_5:          '1000+ colaboradores',
+        interest_placeholder:    'Interesse',
+        message:                 'Mensagem (opcional)',
+        gdpr:                    'Concordo com o tratamento dos meus dados pessoais de acordo com a <a href="assets/info/privacy-EN.txt" target="_blank" style="color:inherit; text-decoration:underline;">Pol\u00edtica de Privacidade</a>.',
+        sending:                 'A enviar\u2026',
+        err_name:                'Por favor, introduza o seu nome.',
+        err_email:               'Introduza um email profissional v\u00e1lido.',
+        err_gdpr:                'Por favor, aceite a Pol\u00edtica de Privacidade para continuar.',
+        err_generic:             'Algo correu mal. Por favor, tente novamente.'
+      },
+      interest_hr:       ['Evento de equipa (HR)', 'ESG + evento de equipa', 'Formato personalizado'],
+      interest_pricing:  ['4 eventos / ano', 'Relat\u00f3rio ESG', 'HR teambuilding', 'ESG + HR combinado'],
+      success: { calendly_btn: 'Agendar chamada de 15 min', close_btn: 'Fechar' }
+    },
     footer: {
-      meta: '\u00a9 2026 rbingood. Lisboa.'
+      meta: '\u00a9 2026 rbingood. Lisboa.',
+      calendly_btn: 'D\u00favidas? Agende uma chamada de 15 min'
     }
   }
 };
@@ -831,6 +900,35 @@ function applyLang(lang) {
     if (val !== undefined) el.innerHTML = val;
   });
 
+  // placeholder attributes
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    var val = _getKey(t, el.dataset.i18nPlaceholder);
+    if (val !== undefined) el.placeholder = val;
+  });
+
+  // modal select options (role, company-size)
+  var m = t.modal && t.modal.field;
+  if (m) {
+    var roleEl = document.getElementById('cf-role');
+    if (roleEl && roleEl.options[0]) {
+      roleEl.options[0].textContent = m.role_placeholder;
+      if (roleEl.options[1]) roleEl.options[1].textContent = m.role_cso;
+      if (roleEl.options[2]) roleEl.options[2].textContent = m.role_coo;
+      if (roleEl.options[3]) roleEl.options[3].textContent = m.role_marketing;
+      if (roleEl.options[4]) roleEl.options[4].textContent = m.role_founder;
+      if (roleEl.options[5]) roleEl.options[5].textContent = m.role_other;
+    }
+    var sizeEl = document.getElementById('cf-company-size');
+    if (sizeEl && sizeEl.options[0]) {
+      sizeEl.options[0].textContent = m.company_size_placeholder;
+      if (sizeEl.options[1]) sizeEl.options[1].textContent = m.company_size_1;
+      if (sizeEl.options[2]) sizeEl.options[2].textContent = m.company_size_2;
+      if (sizeEl.options[3]) sizeEl.options[3].textContent = m.company_size_3;
+      if (sizeEl.options[4]) sizeEl.options[4].textContent = m.company_size_4;
+      if (sizeEl.options[5]) sizeEl.options[5].textContent = m.company_size_5;
+    }
+  }
+
   // lang attribute + active button
   document.documentElement.lang = lang;
   document.querySelectorAll('.lang-btn').forEach(function(btn) {
@@ -845,7 +943,7 @@ function applyLang(lang) {
 document.addEventListener('DOMContentLoaded', function() {
   var saved;
   try { saved = localStorage.getItem('rbi-lang'); } catch(e) {}
-  applyLang(saved && SPONSOR_I18N[saved] ? saved : 'ru');
+  applyLang(saved && SPONSOR_I18N[saved] ? saved : 'en');
 
   document.querySelectorAll('.lang-btn').forEach(function(btn) {
     btn.addEventListener('click', function() { applyLang(btn.dataset.lang); });

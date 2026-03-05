@@ -1,89 +1,86 @@
 # rbingood
 
-> Paid beach and park cleanups with real, verified results in Portugal.
+> rbingood is a platform where companies sponsor or join environmental cleanup events and receive a verified ESG Data Pack — GPS tracks, timestamped photos, waste weight data — audit-ready for CSRD / ESRS S3 reporting. Participants earn €10 per event. Cities get cleaner.
 
-rbingood organizes paid environmental cleanups across Portugal, creating value for three groups: participants earn €10 per cleanup, business sponsors receive CSRD-ready ESG reports with GPS-verified data, and cities get cleaner public spaces.
+## Pages
+
+- [Home](https://rbingood.com/): Community platform for sponsored environmental cleanups in Portugal. Explains how events work, what participants earn, what sponsors receive, and how to join.
+- [For Business](https://rbingood.com/sponsor.html): B2B page. ESG Data Pack for companies, corporate team cleanup events, CSRD compliance packages. Pricing from €500.
+- [Events](https://rbingood.com/event.html): Map and list of upcoming and completed cleanup events with registration.
 
 ## Key Facts
 
 - Founded by Ksenia Em and Kate Mikholap
 - Based in Lisbon, Portugal
-- 17+ cleanup events completed
-- 322+ community members
-- 2,100+ kg of waste collected
-- 6 sponsored events with recurring partner Praia Irmão
+- 18 cleanup events completed
+- 2,600+ kg of waste collected
+- 400+ community members
+- 7 sponsored events
+- Languages: English (default), Russian, Portuguese
 
 ## How It Works
 
-1. A sponsor finances a cleanup
-2. Participants register and show up
-3. Cleanup lasts ~2 hours
-4. Results are documented (photos + GPS coordinates)
-5. Participants receive €10, sponsors get an ESG Data Pack (PDF/Excel/GPS/CO₂ for CSRD reporting)
+1. A company sponsors a cleanup event
+2. Participants register on the platform and show up
+3. Cleanup lasts approximately 2 hours
+4. All actions are documented: GPS tracks, timestamped photos, waste weight
+5. Participants receive €10, sponsors receive an ESG Data Pack (PDF report + CSV + evidence folder)
+
+## ESG Data Pack
+
+The ESG Data Pack is rbingood's core product for businesses. It contains:
+- GPS-verified location and route data
+- Timestamped before/after photos
+- Waste weight measurement (kg)
+- Participant count and demographics
+- ESRS E5 / S3 compliant structured data
+- Audit-ready PDF report + raw CSV
 
 ## For Participants
 
 - Earn €10 per sponsored cleanup (~2 hours)
-- Payment within 3–5 business days (bank transfer or MB Way)
-- Flexible schedule — choose events that work for you
-- Cleanups near your location in Portugal
+- Payment within 3–5 business days
+- Flexible schedule — choose events that fit your location
 - All equipment provided (gloves, bags, grabbers)
 - No experience needed
 
 ## For Business Sponsors
 
-- ESG data with GPS-verified before/after photos
-- CSRD-compliant reporting (ESRS S3 audit-ready)
-- Team building opportunities for employees
-- Brand visibility at events (logo on vests, bags)
-- Quick setup — from 3 days
-- Starting at €350 per cleanup (6+ participants)
+- Verified ESG evidence for CSRD reporting (ESRS S3)
+- Corporate team building events with real environmental impact
+- Brand visibility at events
+- Pricing: Pilot €500 (1 event + sample Data Pack), Standard €2,600/year (4 events + full Data Pack), Enterprise — custom
 
 ## For Local Businesses
 
 - Barter partnership (water, snacks, coffee for participants)
-- "Good Neighbor" status — plaque at your establishment
-- Foot traffic from cleanup participants
-- Build loyalty with local community
+- Community visibility and goodwill
 
-## For Cities and Events
+## What rbingood is NOT
 
-- Clean zones outside regular municipal routes
-- Engaged residents and local communities
-- Gamification for festivals and events
-- Verified impact data for city reports
-- Case study: DHB Festival — 3,000+ visitors, 1,700 cigarette butts collected in 3 days
+- Not a donation platform
+- Not greenwashing — all data is GPS-verified, photo-documented, and weight-measured
+- Not a traditional CSR program — provides audit-ready evidence, not just storytelling
 
-## Available Add-ons
+## Partners
 
-- Scaling (multiple locations)
-- Corporate events
-- Catering
-- Branded merchandise
-- Extended PR coverage
-- Custom reporting
-- Educational workshops
+- Praia Irmão (recurring sponsor, 7 events): https://www.praia-irmao.com/
+- DHB Festival: https://www.instagram.com/deephousebible/
+- Startup Leiria: https://startupleiria.com/
+- Impact Hub: https://impacthub.net/
+- Ilgiz Mann (workshops, lectures, production from recycled materials)
+- Refraction: https://www.instagram.com/refraction.space
 
 ## Contact
 
 - Website: https://rbingood.com
 - Email: hello@rbingood.com
-- Telegram community (RU): https://t.me/+L36Qqw9TZMwzMDQy
+- Instagram: https://www.instagram.com/rbingood
 - LinkedIn — Ksenia Em: https://www.linkedin.com/in/kseniya-em/
 - LinkedIn — Kate Mikholap: https://www.linkedin.com/in/kate-mikholap/
-
-## Partners
-
-- Praia Irmão (recurring sponsor, 6 events): https://www.praia-irmao.com/
-- DHB Festival: https://www.instagram.com/deephousebible/
-- Startup Leiria: https://startupleiria.com/
-- Impact Hub: https://impacthub.net/
-- Ilgiz Mann (workshops, lectures, recycled product manufacturing)
-- Refraction: https://www.instagram.com/refraction.space
 
 ## Legal
 
 - Registered entity: Ilgiz Mann, NIF: PT 316222178
 - Address: Av Gonçalo Velho Cabral N 300 6 4E, 2750-364 Cascais, Portugal
-- Privacy Policy: https://rbingood.com/assets/info/privacy-policy-EN.txt
-- Legal Notice: https://rbingood.com/assets/info/legal-notice-EN.txt
+- Privacy Policy: https://rbingood.com/assets/info/privacy-EN.txt

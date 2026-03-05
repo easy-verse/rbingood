@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rbingood для бизнеса — верифицированный ESG Data Pack</title>
-    <meta name="description" content="rbingood — верифицированный ESG Data Pack в течение 2 недель после ивента. ESRS S3 compliant. Тимбилдинг. Брендинг.">
-    <meta name="robots" content="noindex">
+    <title>rbingood for Business — Verified ESG Data Pack</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="rbingood helps companies turn real environmental actions into verified ESG evidence: GPS, photos, waste weight — ESRS S3 / CSRD compliant. Corporate cleanups + ESG Data Pack from €500.">
+    <meta name="keywords" content="ESG Data Pack, CSRD compliance, ESRS S3, corporate cleanup, ESG reporting, sustainability evidence, team event ESG, rbingood">
+    <meta name="author" content="Ksenia Em, Kate Mikholap">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rbingood.com/sponsor.html">
+
+    <!-- hreflang — JS i18n: same URL for all languages -->
+    <link rel="alternate" hreflang="en" href="https://rbingood.com/sponsor.html">
+    <link rel="alternate" hreflang="ru" href="https://rbingood.com/sponsor.html">
+    <link rel="alternate" hreflang="pt" href="https://rbingood.com/sponsor.html">
+    <link rel="alternate" hreflang="x-default" href="https://rbingood.com/sponsor.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rbingood.com/sponsor.html">
+    <meta property="og:title" content="rbingood for Business — Verified ESG Data Pack">
+    <meta property="og:description" content="Corporate cleanups + ESG evidence in one package. GPS, photos, weight — audit-ready for CSRD / ESRS S3. From €500.">
+    <meta property="og:image" content="https://rbingood.com/assets/main/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_PT">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:site_name" content="rbingood">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="rbingood for Business — Verified ESG Data Pack">
+    <meta name="twitter:description" content="Corporate cleanups + ESG evidence in one package. GPS, photos, weight — audit-ready for CSRD / ESRS S3. From €500.">
+    <meta name="twitter:image" content="https://rbingood.com/assets/main/og-image.jpg">
+
+    <!-- Favicon -->
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/img/logo.svg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "rbingood ESG Data Pack",
+        "url": "https://rbingood.com/sponsor.html",
+        "description": "Verified ESG Data Pack for companies: GPS-tracked cleanups, photo reports, waste weight data — audit-ready evidence for ESRS S3 and CSRD compliance. Corporate team events included.",
+        "provider": {
+          "@type": "Organization",
+          "name": "rbingood",
+          "url": "https://rbingood.com",
+          "logo": "https://rbingood.com/assets/img/logo.svg",
+          "email": "hello@rbingood.com"
+        },
+        "areaServed": "EU",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Pilot",
+            "price": "499",
+            "priceCurrency": "EUR",
+            "description": "1 sponsored cleanup event + ESG Data Pack sample"
+          },
+          {
+            "@type": "Offer",
+            "name": "Standard",
+            "price": "2600",
+            "priceCurrency": "EUR",
+            "description": "4 cleanup events per year + full ESG Data Pack + PDF/CSV reports"
+          }
+        ]
+      }
+    ]
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <script src="sponsor-i18n.js" defer></script>
 
@@ -131,6 +202,87 @@
         }
         .nav-dropdown .lang-btn:hover:not(.active) { color: #0f0f0f; }
 
+        /* ── Expanded nav (inline links, default state) ────── */
+        .nav-inline-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex: 1;
+        }
+        .nav-inline-links .nav-link {
+            padding: 5px 9px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            color: var(--text-muted, #888);
+            white-space: nowrap;
+            transition: color 0.15s, background 0.15s;
+        }
+        .nav-inline-links .nav-link:hover { color: #0f0f0f; background: rgba(0,0,0,0.04); }
+        .nav-inline-lang {
+            display: flex;
+            gap: 1px;
+            margin-left: 6px;
+        }
+        .nav-inline-lang .lang-btn {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            border: none;
+            padding: 3px 7px;
+            border-radius: 8px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            font-family: inherit;
+            color: #aaa;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .nav-inline-lang .lang-btn.active { background: rgba(0,0,0,0.07); color: #0f0f0f; font-weight: 700; }
+        .nav-inline-lang .lang-btn:hover:not(.active) { color: #0f0f0f; }
+
+        /* Toggle: collapsed by default, slides in smoothly */
+        .nav-toggle {
+            max-width: 0;
+            overflow: hidden;
+            opacity: 0;
+            padding-left: 0;
+            padding-right: 0;
+            transition: max-width 0.38s cubic-bezier(0.4,0,0.2,1),
+                        opacity 0.28s ease 0.1s,
+                        padding-left 0.38s ease,
+                        padding-right 0.38s ease;
+            pointer-events: none;
+        }
+        /* Inline links: fade out on collapse */
+        .nav-inline-links { transition: opacity 0.25s ease; }
+        .nav-pill-wrap.nav-collapsing .nav-inline-links {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .nav-pill-wrap.nav-collapsed .nav-inline-links { display: none; }
+        /* Toggle visible during and after collapse */
+        .nav-pill-wrap.nav-collapsing .nav-toggle,
+        .nav-pill-wrap.nav-collapsed .nav-toggle {
+            max-width: 140px;
+            overflow: visible;
+            opacity: 1;
+            padding-left: 12px;
+            padding-right: 14px;
+            pointer-events: auto;
+        }
+        /* Mobile: always compact */
+        @media (max-width: 768px) {
+            .nav-inline-links { display: none !important; }
+            .nav-toggle {
+                max-width: 140px !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+                padding-left: 12px !important;
+                padding-right: 14px !important;
+                pointer-events: auto !important;
+            }
+        }
+
         /* ── Progress bar ────────────────────────────── */
         #read-progress {
             position: fixed;
@@ -145,16 +297,17 @@
 
         /* ── Sponsor-page specific ────────────────────── */
 
+        .hero-subtext {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-top: 10px;
+            letter-spacing: 0.03em;
+        }
+
         /* Problem: plain intro header */
         .prob-intro-dark {
             margin-bottom: 24px;
-        }
-        .prob-city-title {
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: #0f0f0f;
-            line-height: 1.2;
-            margin: 0 0 8px;
         }
         .prob-subtitle {
             font-size: 1.1rem;
@@ -187,8 +340,11 @@
         /* Role cards (right column) */
         .prob-roles {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 16px;
+        }
+        @media (max-width: 768px) {
+            .prob-roles { flex-direction: column; }
         }
         .role-card {
             flex: 1;
@@ -253,6 +409,35 @@
             .role-card--biz.in-view .btn-primary { background: #2ECC71; color: #0f0f0f; }
             .role-card--ind.in-view { border-color: #5B6BF9; background: rgba(91,107,249,0.04); }
             .role-card--ind.in-view .btn-outline { background: #5B6BF9; color: #fff; border-color: #5B6BF9; }
+        }
+
+        /* Role cards: full-width layout on desktop */
+        .prob-intro-grid {
+            grid-template-columns: 1fr;
+        }
+        .prob-roles {
+            flex-direction: row;
+            gap: 16px;
+        }
+        .role-card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 28px 24px;
+        }
+        .role-card .btn-primary,
+        .role-card .btn-outline {
+            min-width: 0;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Mobile: stack cards vertically */
+        @media (max-width: 768px) {
+            .prob-roles { flex-direction: column; gap: 12px; }
+            .role-card { padding: 20px 18px; gap: 12px; }
+            .role-card .role-desc { font-size: 0.92rem; }
         }
 
         /* Horizontal mini stat strip */
@@ -1205,6 +1390,17 @@
         <div class="nav-pill-wrap" id="nav-pill-wrap">
             <nav class="nav-pill">
                 <a href="index.html" class="nav-logo">rbingood</a>
+                <div class="nav-inline-links" id="nav-inline-links">
+                    <a href="#problem" class="nav-link" data-i18n="nav.business">Для бизнеса</a>
+                    <a href="#pricing" class="nav-link" data-i18n="nav.packages">Пакеты</a>
+                    <a href="#proof" class="nav-link" data-i18n="nav.cases">Кейсы</a>
+                    <a href="#individual" class="nav-link" data-i18n="nav.donate">Поддержать уборку</a>
+                    <div class="nav-inline-lang">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="pt">PT</button>
+                    </div>
+                </div>
                 <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
                     <span class="nav-toggle-icon"><span></span><span></span><span></span></span>
                     Menu
@@ -1217,8 +1413,8 @@
                 <a href="#individual" class="nav-link" data-i18n="nav.donate">Поддержать уборку</a>
                 <div class="nav-dropdown-sep"></div>
                 <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="ru">RU</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
                     <button class="lang-btn" data-lang="pt">PT</button>
                 </div>
             </div>
@@ -1229,12 +1425,12 @@
     <section class="hero hero-simple" id="hero">
         <div class="container hero-grid">
             <div class="hero-content reveal" style="--delay: 0s;">
-                <h1 data-i18n="hero.title">rbingood — платформа, где любой спонсирует или участвует в эко-инициативах и сразу видит результат.</h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">Спонсоры, волонтёры, организаторы — вместе чистят города, пляжи и леса.</p>
+                <h1 data-i18n="hero.title">rbingood — платформа, где любой спонсирует или участвует в эко-инициативах, превращая реальные действия в верифицированные данные</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Мы помогаем компаниям решить проблему отсутствия измеримых данных об устойчивом развитии с помощью организации реальных экологических действий (GPS. Фото. Вес)</p>
             </div>
             <div class="hero-visual reveal" style="--delay: 0.15s;">
                 <div class="section-image section-image--hero">
-                    <video src="assets/main/1.mov" autoplay muted loop playsinline></video>
+                    <video src="assets/main/13_sp.MOV" autoplay muted loop playsinline></video>
                 </div>
             </div>
         </div>
@@ -1246,7 +1442,6 @@
 
             <!-- Тёмный заголовок -->
             <div class="prob-intro-dark reveal" style="--delay: 0s;">
-                <p class="prob-city-title" data-i18n="problem.title">Города загрязняются быстрее, чем их успевают убирать.</p>
                 <p class="prob-subtitle" data-i18n="problem.subtitle">Многие экологические инициативы не превращаются в данные</p>
                 <p class="prob-sub" data-i18n="problem.subExtra">Без доказательств инициативы не попадают в отчёты и коммуникацию.</p>
             </div>
@@ -1254,50 +1449,28 @@
             <!-- Сетка: Португалия + Роли -->
             <div class="prob-intro-grid reveal" style="--delay: 0.1s;">
 
-                <!-- Левая: статистика Португалии -->
-                <div class="prob-portugal">
-                    <h3 class="prob-col-label" data-i18n="problem.portugal">Португалия</h3>
-                    <ul class="stat-list-v">
-                        <li>
-                            <strong class="stat-num">39.5%</strong>
-                            <span class="stat-label" data-i18n="problem.stat1.label">переработка пластика</span>
-                            <span class="stat-src" data-i18n-html="problem.stat1.src">среднее по EU — 42.1% · <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251022-1" target="_blank" rel="noopener" style="color:inherit">Eurostat</a></span>
-                        </li>
-                        <li>
-                            <strong class="stat-num">60.2%</strong>
-                            <span class="stat-label" data-i18n="problem.stat2.label">упаковки переработано</span>
-                            <span class="stat-src" data-i18n-html="problem.stat2.src">цель — 65% · <a href="https://www.pontoverde.pt/" target="_blank" rel="noopener" style="color:inherit">Ponto Verde</a></span>
-                        </li>
-                        <li>
-                            <strong class="stat-num">~54%</strong>
-                            <span class="stat-label" data-i18n="problem.stat3.label">домашних отходов на полигоны</span>
-                            <span class="stat-src" data-i18n-html="problem.stat3.src"><a href="https://theportugalpost.com/posts/unsorted-landfill-waste-could-land-portugal-with-huge-eu-finesand-raise-your-bin-fees" target="_blank" rel="noopener" style="color:inherit">The Portugal Post</a></span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Правая: выбор роли -->
+                <!-- Выбор роли -->
                 <div class="prob-roles">
                     <div class="role-card role-card--biz">
                         <div style="flex: 1;">
-                            <p class="role-desc" style="margin-bottom: 4px;" data-i18n="problem.role.biz.text">Я бизнес — нужны доказуемые экологические действия</p>
-                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;" data-i18n="problem.role.biz.sub">Для отчётности, аудита и вовлечения команды.</p>
+                            <p class="role-desc" style="margin-bottom: 4px;" data-i18n="problem.role.biz.text">I'm a business — we need provable environmental actions</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;" data-i18n="problem.role.biz.sub">For ESG reporting, audit and communication.</p>
                         </div>
-                        <a class="btn-primary" href="#b2b-problem" data-i18n="problem.role.biz.btn">Для бизнеса</a>
+                        <a class="btn-primary" href="#esg-reporting" data-i18n="problem.role.biz.btn">ESG reporting solution</a>
                     </div>
                     <div class="role-card role-card--ind">
                         <div style="flex: 1;">
-                            <p class="role-desc" style="margin-bottom: 4px;" data-i18n="problem.role.ind.text">Хочу поддержать реальные экологические действия</p>
-                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;" data-i18n="problem.role.ind.sub">Даже если не могу участвовать лично.</p>
+                            <p class="role-desc" style="margin-bottom: 4px;" data-i18n="problem.role.hr.text">Engage your team in real action</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;" data-i18n="problem.role.hr.sub">Corporate cleanups — an ESG asset that is visible and measurable.</p>
                         </div>
-                        <a class="btn-outline" href="#individual" data-i18n="problem.role.ind.btn">Поддержать</a>
+                        <a class="btn-outline" href="#team-events" data-i18n="problem.role.hr.btn">Corporate cleanups for teams</a>
                     </div>
                 </div>
             </div>
 
             <!-- Фото -->
             <div class="prob-photo reveal" style="--delay: 0.2s;">
-                <img src="assets/main/2.jpg" alt="Уборка пляжа" loading="lazy">
+                <img src="assets/main/14.jpg" alt="rbingood cleanup" loading="lazy" style="width:100%; height:100%; object-fit:cover; object-position: center 50%;">
             </div>
 
 
@@ -1305,7 +1478,7 @@
     </section>
 
     <!-- ══ B2B PROBLEM: CSRD ══════════════════════════════ -->
-    <section class="section section-simple" id="b2b-problem">
+    <section class="section section-simple" id="esg-reporting">
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
                 <p class="section-label" data-i18n="b2b.label">Для бизнеса</p>
@@ -1354,10 +1527,10 @@
                         <li data-i18n="smb.li6">Документы: договор и инвойс</li>
                     </ul>
                     <div class="roi-tag" style="margin-bottom:16px;" data-i18n="smb.roi">Не CSR-истории. Доказательства, которые выдерживают вопросы аудитора.</div>
-                    <button class="btn-primary open-modal" style="display:block; width:100%; text-align:center; cursor:pointer;" data-form-subject="Получить пример Data Pack" data-form-label="SMB / Enterprise" data-i18n="smb.btn">Получить пример Data Pack</button>
+                    <button class="btn-primary open-modal" style="display:block; width:100%; text-align:center; cursor:pointer;" data-form-type="lead_magnet" data-i18n="smb.btn">Get a sample Data Pack</button>
                 </div>
 
-                <div class="scenario-card">
+                <div class="scenario-card" id="team-events">
                     <span class="scenario-badge">HR &amp; People</span>
                     <h3 data-i18n="hr.title">Тимбилдинг, который сотрудники считают настоящим</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;" data-i18n="hr.subtitle">Для HR и фаундеров</p>
@@ -1379,7 +1552,7 @@
                         </div>
                     </div>
                     <div class="roi-tag" style="margin-top: 20px;" data-i18n-html="hr.roi">70% Gen Z и миллениалов считают экологическую устойчивость важной при выборе работодателя — <a href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/" target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a></div>
-                    <button class="btn-primary open-modal" style="display:block; width:100%; text-align:center; margin-top:16px; cursor:pointer;" data-form-subject="Забронировать корпоративную уборку" data-form-label="HR &amp; People" data-i18n="hr.btn">Забронировать корпоративную уборку</button>
+                    <button class="btn-primary open-modal" style="display:block; width:100%; text-align:center; margin-top:16px; cursor:pointer;" data-form-type="hr_contact" data-i18n="hr.btn">Book a corporate clean-up</button>
                 </div>
             </div>
 
@@ -1414,8 +1587,8 @@
                     <h2 data-i18n="cta.title">Начните сегодня — пришлём план и смету</h2>
                     <p data-i18n="cta.sub">Первый шаг — 15 минут: цели, формат, сроки. Затем высылаем 1-страничный план и предварительную смету.</p>
                     <div class="cta-two-btns">
-                        <button class="btn-primary open-modal" style="cursor:pointer;" data-form-subject="Обсудить пример ESG Data Pack" data-form-label="ESG Data Pack" data-i18n="cta.btn1">Обсудить пример ESG Data Pack</button>
-                        <button class="btn-outline open-modal" style="display:block; text-align:center; width:100%; cursor:pointer;" data-form-subject="Забронировать корпоративную уборку" data-form-label="HR & People" data-i18n="cta.btn2">Забронировать корпоративную уборку</button>
+                        <button class="btn-primary open-modal" style="cursor:pointer;" data-form-type="esg_discussion" data-i18n="cta.btn1">Discuss ESG Data Pack</button>
+                        <a class="btn-outline" href="https://calendly.com/k-em/new-meeting" target="_blank" rel="noopener" style="display:block; text-align:center; width:100%;" data-i18n="cta.btn2">Book a 15-min call</a>
                     </div>
                 </div>
             </div>
@@ -1468,7 +1641,7 @@
                 <!-- PILOT / PROOF -->
                 <div class="pricing-card">
                     <div class="pricing-name" data-i18n="pkg1.name">Pilot</div>
-                    <div class="pricing-price" data-i18n="pkg1.price">от €350</div>
+                    <div class="pricing-price" data-i18n="pkg1.price">from €500</div>
                     <div class="pricing-period" data-i18n="pkg1.period">1 событие</div>
                     <div class="pricing-for" data-i18n="pkg1.for">Для: быстрый старт + доказательства для внутреннего отчёта/тендера</div>
                     <ul class="pricing-list">
@@ -1479,14 +1652,14 @@
                     </ul>
                     <div class="pricing-addon" data-i18n="pkg1.addon">Full ESG Data Pack (PDF + CSV) — €150</div>
                     <div class="pricing-roi" data-i18n="pkg1.roi">Быстрый старт: проверить формат без риска</div>
-                    <button class="btn-outline open-modal" style="display:block; width:100%; text-align:center; cursor:pointer;" data-form-subject="Pilot" data-form-label="Pilot" data-i18n="pkg1.btn">Получить пример отчёта</button>
+                    <button class="btn-outline open-modal" style="display:block; width:100%; text-align:center; cursor:pointer;" data-form-type="lead_magnet" data-i18n="pkg1.btn">Get sample ESG Data Pack</button>
                 </div>
 
                 <!-- STANDARD (popular) -->
                 <div class="pricing-card pricing-card--popular">
                     <div class="popular-badge" data-i18n="pkg2.badge">Популярный выбор</div>
                     <div class="pricing-name">Standard</div>
-                    <div class="pricing-price">от €2 000</div>
+                    <div class="pricing-price" data-i18n="pkg2.price">€2,600 / year</div>
                     <div class="pricing-period" data-i18n="pkg2.period">4 события в год</div>
                     <div class="pricing-for" data-i18n="pkg2.for">Для: регулярные данные для отчётности и партнёров</div>
                     <ul class="pricing-list">
@@ -1497,7 +1670,7 @@
                         <li data-i18n="pkg2.li5">Приоритетная поддержка</li>
                     </ul>
                     <div class="pricing-roi" style="background: rgba(46,204,113,0.15); border-color: rgba(46,204,113,0.3);" data-i18n="pkg2.roi">Регулярные доказательства в течение года</div>
-                    <button class="btn-primary open-modal" style="display:block; width:100%; text-align:center; background:#2ECC71; color:#0f0f0f; cursor:pointer;" data-form-subject="Standard пакет от €2000" data-form-label="Standard" data-i18n="pkg2.btn">Запросить предложение</button>
+                    <button class="btn-primary open-modal" style="display:block; width:100%; text-align:center; background:#2ECC71; color:#0f0f0f; cursor:pointer;" data-form-type="pricing_standard" data-i18n="pkg2.btn">Request a proposal</button>
                 </div>
 
                 <!-- ENTERPRISE -->
@@ -1513,7 +1686,7 @@
                         <li data-i18n="pkg3.li4">Брендинг/логистика/страхование (если нужно)</li>
                     </ul>
                     <div class="pricing-roi" data-i18n="pkg3.roi">Решение под ваши аудит-требования</div>
-                    <button class="btn-outline open-modal" style="display:block; width:100%; text-align:center; cursor:pointer;" data-form-subject="Enterprise решение" data-form-label="Enterprise" data-i18n="pkg3.btn">Обсудить условия</button>
+                    <a class="btn-outline" href="https://calendly.com/k-em/new-meeting" target="_blank" rel="noopener" style="display:block; width:100%; text-align:center; box-sizing:border-box;" data-i18n="pkg3.btn">Book a call</a>
                 </div>
             </div>
 
@@ -1528,46 +1701,8 @@
                 <h2 data-i18n="proof.title">Мы уже работаем.</h2>
             </div>
 
-            <!-- Overall stats block -->
-            <div class="case-split reveal" style="--delay: 0.1s;">
-                <div class="case-split-left">
-                    <p class="case-split-name" data-i18n="proof.all.name">Все ивенты</p>
-                    <div class="case-split-metrics">
-                        <div class="case-split-metric">
-                            <strong>17</strong>
-                            <span data-i18n="proof.all.m1.label">ивентов проведено</span>
-                        </div>
-                        <div class="case-split-metric">
-                            <strong>2 100+ кг</strong>
-                            <span data-i18n="proof.all.m2.label">мусора собрано</span>
-                        </div>
-                        <div class="case-split-metric">
-                            <strong>400+</strong>
-                            <span data-i18n="proof.all.m3.label">участников сообщества</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-split-right">
-                    <div class="photo-scroll">
-                        <img src="assets/main/10.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.03.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.04.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.05.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.06.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.07.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.08.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.09.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.10.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.12.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.14.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.15.jpeg" alt="rbingood event" loading="lazy">
-                        <img src="assets/main/10.18.jpeg" alt="rbingood event" loading="lazy">
-                    </div>
-                </div>
-            </div>
-
             <!-- Praia Irmão -->
-            <div class="case-split reveal" style="--delay: 0.15s;">
+            <div class="case-split reveal" style="--delay: 0.1s;">
                 <div class="case-split-left">
                     <p class="case-badge" data-i18n="proof.praia.badge">Спонсорские ивенты</p>
                     <p class="case-split-name">Praia Irmão</p>
@@ -1600,7 +1735,7 @@
             </div>
 
             <!-- DHB Festival -->
-            <div class="case-split reveal" style="--delay: 0.2s;">
+            <div class="case-split reveal" style="--delay: 0.15s;">
                 <div class="case-split-left">
                     <p class="case-badge" data-i18n="proof.dhb.badge">Фестиваль</p>
                     <p class="case-split-name">DHB Festival</p>
@@ -1685,87 +1820,6 @@
         </div>
     </section>
 
-    <!-- ══ ROADMAP / ПЛАН НА 2026 ════════════════════════ -->
-    <section class="section section-simple" id="roadmap">
-        <div class="container">
-            <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label" data-i18n="roadmap.label">План на 2026</p>
-                <h2 data-i18n="roadmap.title">2026: App + Расширение</h2>
-                <p style="font-size:0.95rem; color:var(--text-muted); margin: 8px 0 0;" data-i18n="roadmap.subtitle">Мы строим инфраструктуру доказуемых экологических действий.</p>
-            </div>
-
-            <div class="roadmap-grid reveal" style="--delay: 0.1s;">
-                <div class="roadmap-item roadmap-item--active">
-                    <div class="roadmap-city" data-i18n="roadmap.r1.city">Expansion</div>
-                    <div class="roadmap-status" data-i18n="roadmap.r1.status">Больше событий</div>
-                    <p style="font-size:0.82rem; margin-top:10px; color:rgba(255,255,255,0.6); line-height:1.5;" data-i18n="roadmap.r1.text">Больше событий → больше данных. Расширяем локации, партнёров и регулярность.</p>
-                </div>
-                <div class="roadmap-item roadmap-item--app">
-                    <div class="roadmap-city" data-i18n="roadmap.r2.city">Platform</div>
-                    <div class="roadmap-status" data-i18n="roadmap.r2.status">Платформа действий</div>
-                    <p style="font-size:0.82rem; margin-top:10px; color:rgba(255,255,255,0.7); line-height:1.5;" data-i18n="roadmap.r2.text">Загрязнения можно отметить, профинансировать и убрать — с прозрачным результатом.</p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-city" data-i18n="roadmap.r3.city">Scale</div>
-                    <div class="roadmap-status" data-i18n="roadmap.r3.status">Интеграция в крупные события</div>
-                    <p style="font-size:0.82rem; margin-top:10px; color:var(--text-muted); line-height:1.5;" data-i18n="roadmap.r3.text">Фестивали, бренды и партнёрства увеличивают объём доказуемого импакта.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ══ FOR INDIVIDUALS ════════════════════════════════ -->
-    <section class="section section-simple" id="individual">
-        <div class="container">
-            <div class="section-head reveal" style="--delay: 0s;">
-                <p class="section-label" data-i18n="ind.label">Для неравнодушных людей</p>
-                <h2 data-i18n="ind.title">Каждый вклад важен</h2>
-            </div>
-            <p class="emphasis reveal" style="--delay: 0.05s;" data-i18n="ind.emphasis">Любой может отметить загрязнение, участвовать в событии или поддержать уборку.</p>
-
-            <div class="individual-grid reveal" style="--delay: 0.1s;">
-                <!-- Donate card with Stripe -->
-                <div class="donate-card-sp">
-                    <div class="individual-type" data-i18n="donate.type">Поддержать уборку</div>
-                    <h3 data-i18n="donate.title">Ты можешь внести персональный вклад</h3>
-                    <p data-i18n="donate.text">Не можете прийти лично? Любая сумма покрывает реальные расходы — инвентарь, логистику, утилизацию.</p>
-                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:16px; font-size:0.82rem; color:var(--text-muted); background:#f5f6f7; border-radius:10px; padding:10px 14px;">
-                        <span style="font-size:1rem;">&#10003;</span>
-                        <span data-i18n="donate.transparency">Прозрачная отчётность — после каждого ивента мы публикуем отчёт о том, как потрачены средства.</span>
-                    </div>
-                    <div class="donate-amounts-sp">
-                        <button type="button" class="donate-amt-btn selected" data-amount="2">€2</button>
-                        <button type="button" class="donate-amt-btn" data-amount="5">€5</button>
-                        <button type="button" class="donate-amt-btn" data-amount="10">€10</button>
-                        <button type="button" class="donate-amt-btn" data-amount="25">€25</button>
-                    </div>
-                    <div style="margin-top:auto;">
-                        <p style="font-size: 0.75rem; color: rgba(0,0,0,0.6); margin-bottom: 12px; line-height: 1.4;" data-i18n-html="donate.disclaimer">
-                            Нажимая «Поддержать уборку», вы соглашаетесь с нашим <a href="assets/info/terms-and-conditions-RU.txt" target="_blank" style="color: #0f0f0f; text-decoration: underline;">Пользовательским соглашением</a> и тем, что платёж является безвозвратным.
-                        </p>
-                        <a class="donate-submit-sp" href="https://buy.stripe.com/bJefZibdHbec2F4bog3ks00" target="_blank" rel="noopener" data-i18n="donate.btn">Поддержать уборку</a>
-                        <p class="donate-note-sp" data-i18n="donate.note">Оплата картой — Visa, Mastercard, Apple Pay</p>
-                    </div>
-                </div>
-
-                <!-- Community card -->
-                <div class="individual-card">
-                    <div class="individual-type" data-i18n="comm.type">Хочешь посетить мероприятие?</div>
-                    <div class="individual-price" style="font-size:1.5rem;" data-i18n="comm.price">Вступить в сообщество</div>
-                    <p data-i18n-html="comm.text">Приходите на уборку в Лиссабоне. Нетворкинг, реальный результат, живые люди.<br><strong>400+ активных участников.</strong></p>
-                    <div style="margin-top:auto;">
-                        <a class="btn-primary" href="event.html" style="text-decoration:none; display:block; text-align:center; width:100%; margin-bottom:12px; box-sizing:border-box; background:#2ECC71; color:#0f0f0f;" data-i18n="comm.event">Ближайший ивент</a>
-                        <div style="display:flex; gap:12px; flex-wrap:wrap;">
-                            <a class="btn-outline" href="https://t.me/+L36Qqw9TZMwzMDQy" target="_blank" rel="noopener">Telegram (RU)</a>
-                            <a class="btn-outline" href="https://chat.whatsapp.com/LpqXHh5mIYF2QfIm7WZrLL" target="_blank" rel="noopener">WhatsApp (EN)</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ══ FAQ ════════════════════════════════════════════ -->
     <section class="section section-simple" id="faq">
         <div class="container">
@@ -1806,45 +1860,36 @@
                         <p data-i18n="faq.a9">Мы проводим инструктаж, предоставляем инвентарь и соблюдаем базовые требования безопасности. Дополнительные требования можно согласовать.</p>
                     </details>
                 </div>
-                <div class="faq-column">
-                    <p style="font-size:0.85rem; font-weight:600; color:var(--text-muted); margin-bottom:16px;" data-i18n="faq.people.label">Вопросы об участии</p>
-                    <details>
-                        <summary data-i18n="faq.q10">Нужен ли опыт?</summary>
-                        <p data-i18n="faq.a10">Нет. Мы проводим инструктаж перед началом.</p>
-                    </details>
-                    <details>
-                        <summary data-i18n="faq.q11">Что если плохая погода?</summary>
-                        <p data-i18n="faq.a11">Событие переносится или адаптируется.</p>
-                    </details>
-                    <details>
-                        <summary data-i18n="faq.q12">Что даёт поддержка €2?</summary>
-                        <p data-i18n="faq.a12">Поддержка покрывает реальные расходы события: инвентарь, логистику и утилизацию.</p>
-                    </details>
-                    <details>
-                        <summary data-i18n="faq.q13">Как присоединиться?</summary>
-                        <p data-i18n="faq.a13">Выберите ближайшее событие или подпишитесь на обновления.</p>
-                    </details>
-                </div>
+            </div>
+            <div class="reveal" style="--delay: 0.2s; margin-top: 24px; text-align: center;">
+                <a href="https://calendly.com/k-em/new-meeting" target="_blank" rel="noopener" class="btn-outline" data-i18n="faq.calendly_btn">Остались вопросы? Забронировать встречу</a>
             </div>
         </div>
     </section>
 
-    <!-- ══ PARTNERS ═══════════════════════════════════════ -->
+    <!-- ══ PARTNERS ══════════════════════════════════════════ -->
     <section class="section section-simple" id="partners">
         <div class="container">
             <div class="partners-section reveal" style="--delay: 0.1s;">
                 <p class="partners-label" data-i18n="partners.label">Партнёры и поддержка</p>
-
                 <div class="partners-list">
                     <a class="partner-tag" href="https://www.praia-irmao.com/" target="_blank" rel="noopener">Praia Irmão</a>
                     <a class="partner-tag" href="https://www.instagram.com/deephousebible/" target="_blank" rel="noopener">DHB Festival</a>
                     <a class="partner-tag" href="https://startupleiria.com/" target="_blank" rel="noopener">Startup Leiria</a>
                     <a class="partner-tag" href="https://impacthub.net/" target="_blank" rel="noopener">Impact Hub</a>
                     <a class="partner-tag" href="https://www.instagram.com/refraction.space" target="_blank" rel="noopener">Refraction</a>
+                    <a class="partner-tag" href="http://www.brigadadomar.org/" target="_blank" rel="noopener">Brigada do Mar</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Closing photo -->
+    <div style="max-width: 860px; margin: 0 auto; padding: 40px 24px 0;">
+        <div style="border-radius: 20px; overflow: hidden; aspect-ratio: 16/7;">
+            <img src="assets/main/og-image.jpg" alt="" loading="lazy" style="width:100%; height:100%; object-fit:cover; object-position: center 45%;">
+        </div>
+    </div>
 
     <!-- ══ FOOTER ══════════════════════════════════════════ -->
     <footer class="section section-simple footer-simple">
@@ -1880,22 +1925,68 @@
     <div id="contact-modal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.55); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:20px;">
         <div style="background:#fff; border-radius:24px; padding:40px; max-width:480px; width:100%; position:relative; max-height:90vh; overflow-y:auto;">
             <button id="modal-close" style="position:absolute; top:16px; right:16px; background:none; border:none; cursor:pointer; font-size:1.4rem; color:#aaa; line-height:1;">&#215;</button>
-            <p id="modal-label" style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:6px;"></p>
-            <h3 id="modal-title" style="font-size:1.3rem; font-weight:800; margin-bottom:24px; color:#0f0f0f;"></h3>
-            <form id="contact-form" novalidate>
-                <div style="margin-bottom:14px;">
-                    <input id="cf-name" type="text" required placeholder="Имя Фамилия" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; box-sizing:border-box;">
+
+            <!-- Form view -->
+            <div id="modal-form-view">
+                <p id="modal-label" style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:6px;"></p>
+                <h3 id="modal-title" style="font-size:1.3rem; font-weight:800; margin-bottom:24px; color:#0f0f0f;"></h3>
+                <form id="contact-form" novalidate>
+                    <div style="margin-bottom:14px;">
+                        <input id="cf-name" type="text" required placeholder="Full name" data-i18n-placeholder="modal.field.name" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; box-sizing:border-box;">
+                    </div>
+                    <div style="margin-bottom:14px;">
+                        <input id="cf-email" type="email" required placeholder="Work email" data-i18n-placeholder="modal.field.email" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; box-sizing:border-box;">
+                    </div>
+                    <div id="field-company" style="margin-bottom:14px; display:none;">
+                        <input id="cf-company" type="text" placeholder="Company" data-i18n-placeholder="modal.field.company" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; box-sizing:border-box;">
+                    </div>
+                    <div id="field-role" style="margin-bottom:14px; display:none;">
+                        <select id="cf-role" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; box-sizing:border-box; color:#888; appearance:none;">
+                            <option value="">Role (optional)</option>
+                            <option>Chief Sustainability Officer</option>
+                            <option>COO / Operations</option>
+                            <option>Marketing / Comms</option>
+                            <option>Founder / CEO</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div id="field-interest" style="margin-bottom:14px; display:none;">
+                        <select id="cf-interest" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; box-sizing:border-box; color:#888; appearance:none;">
+                            <option value="">Interest</option>
+                        </select>
+                    </div>
+                    <div id="field-company-size" style="margin-bottom:14px; display:none;">
+                        <select id="cf-company-size" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; box-sizing:border-box; color:#888; appearance:none;">
+                            <option value="">Company size</option>
+                            <option>1&#x2013;10 employees</option>
+                            <option>11&#x2013;50 employees</option>
+                            <option>51&#x2013;200 employees</option>
+                            <option>201&#x2013;1000 employees</option>
+                            <option>1000+ employees</option>
+                        </select>
+                    </div>
+                    <div id="field-message" style="margin-bottom:14px; display:none;">
+                        <textarea id="cf-message" rows="3" placeholder="Message (optional)" data-i18n-placeholder="modal.field.message" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; resize:vertical; box-sizing:border-box;"></textarea>
+                    </div>
+                    <div style="margin-bottom:18px; display:flex; align-items:flex-start; gap:10px;">
+                        <input type="checkbox" id="cf-gdpr" required style="margin-top:3px; flex-shrink:0; cursor:pointer; width:16px; height:16px; accent-color:#2ECC71;">
+                        <label for="cf-gdpr" data-i18n-html="modal.field.gdpr" style="font-size:0.8rem; color:var(--text-muted); line-height:1.5; cursor:pointer;">I agree to the processing of my personal data in accordance with the <a href="assets/info/privacy-EN.txt" target="_blank" style="color:inherit; text-decoration:underline;">Privacy Policy</a>.</label>
+                    </div>
+                    <p id="cf-error" style="color:#e55; font-size:0.82rem; margin-bottom:10px; display:none;"></p>
+                    <button type="submit" id="cf-submit" style="width:100%; padding:14px; border-radius:999px; background:#0f0f0f; color:#fff; font-weight:800; font-size:1rem; border:none; cursor:pointer; transition:background 0.2s;">Send</button>
+                </form>
+            </div>
+
+            <!-- Success view -->
+            <div id="modal-success-view" style="display:none; text-align:center; padding:20px 0;">
+                <div style="width:52px; height:52px; border-radius:50%; background:rgba(46,204,113,0.12); border:2px solid #2ECC71; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 11l5 5L18 6" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
-                <div style="margin-bottom:14px;">
-                    <input id="cf-email" type="email" required placeholder="Email" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; box-sizing:border-box;">
-                </div>
-                <div style="margin-bottom:14px;">
-                    <textarea id="cf-message" rows="4" placeholder="Сообщение" style="width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(0,0,0,0.12); font-size:0.95rem; font-family:inherit; outline:none; background:#fafafa; resize:vertical; box-sizing:border-box;"></textarea>
-                </div>
-                <p id="cf-error" style="color:#e55; font-size:0.82rem; margin-bottom:10px; display:none;"></p>
-                <button type="submit" id="cf-submit" style="width:100%; padding:14px; border-radius:999px; background:#0f0f0f; color:#fff; font-weight:800; font-size:1rem; border:none; cursor:pointer; transition:background 0.2s;">Отправить заявку</button>
-                <p id="cf-success" style="display:none; margin-top:14px; font-size:0.9rem; color:#1a9e50; text-align:center; font-weight:600;">Заявка отправлена! Ответим в течение 1 часа.</p>
-            </form>
+                <h3 id="success-title" style="font-size:1.3rem; font-weight:800; color:#0f0f0f; margin-bottom:10px;"></h3>
+                <p id="success-desc" style="font-size:0.95rem; color:var(--text-muted); margin-bottom:24px; line-height:1.6;"></p>
+                <a id="success-calendly" href="https://calendly.com/k-em/new-meeting" target="_blank" rel="noopener" class="btn-primary" style="display:none; margin-bottom:12px; text-align:center; width:100%; box-sizing:border-box;">Book a 15-min call</a>
+                <button id="success-close" class="btn-outline" style="width:100%; text-align:center;">Close</button>
+            </div>
         </div>
     </div>
 
@@ -1961,116 +2052,195 @@
     }
 
     // ── Contact form modal ─────────────────────────────────
-    const modal = document.getElementById('contact-modal');
-    const modalTitle = document.getElementById('modal-title');
-    const modalLabel = document.getElementById('modal-label');
-    const cfError = document.getElementById('cf-error');
-    const cfSuccess = document.getElementById('cf-success');
-    const cfSubmit = document.getElementById('cf-submit');
+    (function() {
+        var CALENDLY = 'https://calendly.com/k-em/new-meeting';
 
-    let currentSubject = '';
-    let currentAddonsList = '';
-
-    function openModal(subject, label, prefillMessage) {
-        currentSubject = subject;
-        modalLabel.textContent = label || '';
-        modalTitle.textContent = subject || 'Оставить заявку';
-        document.getElementById('cf-message').value = prefillMessage || '';
-        cfError.style.display = 'none';
-        cfSuccess.style.display = 'none';
-        cfSubmit.disabled = false;
-        cfSubmit.textContent = 'Отправить заявку';
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-        modal.style.display = 'none';
-        document.body.style.overflow = '';
-    }
-
-    document.getElementById('modal-close').addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
-
-    // Open modal on business buttons
-    document.querySelectorAll('.open-modal').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const subject = btn.getAttribute('data-form-subject') || 'Заявка';
-            const label = btn.getAttribute('data-form-label') || '';
-            // Collect selected addon tags + custom input (always)
-            const selected = [...document.querySelectorAll('.addon-tag.selected')]
-                .map(t => t.getAttribute('data-addon'));
-            const custom = (document.getElementById('addon-custom-input')?.value || '').trim();
-            if (custom) selected.push(custom);
-            const prefill = selected.length ? 'Дополнения: ' + selected.join(', ') : '';
-            openModal(subject, label, prefill);
-        });
-    });
-
-    // Form submit — Firebase + mailto fallback
-    document.getElementById('contact-form').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const name = document.getElementById('cf-name').value.trim();
-        const email = document.getElementById('cf-email').value.trim();
-        const message = document.getElementById('cf-message').value.trim();
-        if (!name || !email) {
-            cfError.textContent = 'Пожалуйста, заполните имя и email.';
-            cfError.style.display = 'block';
-            return;
-        }
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            cfError.textContent = 'Введите корректный email.';
-            cfError.style.display = 'block';
-            return;
-        }
-        cfError.style.display = 'none';
-        cfSubmit.disabled = true;
-        cfSubmit.textContent = 'Отправляем...';
-
-        const payload = {
-            subject: currentSubject,
-            name, email, message,
-            lang: document.documentElement.lang || 'ru',
-            ts: new Date().toISOString(),
-            page: 'sponsor'
+        // Form type config: only structural info (fields, source, showCalendly). Strings come from i18n.
+        var FORM_CONFIGS = {
+            lead_magnet:      { fields: ['company', 'role'],                        source: 'esg_data_pack',      showCalendly: true  },
+            hr_contact:       { fields: ['company', 'interest_hr', 'message'],      source: 'hr_contact',         showCalendly: true  },
+            esg_discussion:   { fields: ['company', 'company_size', 'message'],     source: 'esg_discussion',     showCalendly: false },
+            pricing_standard: { fields: ['company', 'company_size', 'interest_pricing'], source: 'pricing_standard', showCalendly: false }
         };
 
-        // Try Firebase Firestore
-        let firebaseSent = false;
-        try {
-            if (window._fbDb) {
-                const { collection, addDoc } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js');
-                await addDoc(collection(window._fbDb, 'leads'), payload);
-                firebaseSent = true;
-            }
-        } catch (err) {
-            console.warn('Firebase write failed, falling back to mailto:', err);
+        function modalT(key) {
+            var lang = document.documentElement.lang || 'en';
+            var t = (typeof SPONSOR_I18N !== 'undefined' && SPONSOR_I18N[lang]) ? SPONSOR_I18N[lang] : {};
+            return key.split('.').reduce(function(o, k) { return o && o[k]; }, t) || key;
         }
 
-        // Mailto fallback (always as backup)
-        const mailBody = `Имя: ${name}\nEmail: ${email}\n\n${message}`;
-        const mailHref = 'mailto:hello@rbingood.com'
-            + '?subject=' + encodeURIComponent('[rbingood] ' + currentSubject)
-            + '&body=' + encodeURIComponent(mailBody);
-        if (!firebaseSent) window.open(mailHref);
+        var modal            = document.getElementById('contact-modal');
+        var modalFormView    = document.getElementById('modal-form-view');
+        var modalSuccessView = document.getElementById('modal-success-view');
+        var modalLabel       = document.getElementById('modal-label');
+        var modalTitle       = document.getElementById('modal-title');
+        var cfError          = document.getElementById('cf-error');
+        var cfSubmit         = document.getElementById('cf-submit');
+        var successTitle     = document.getElementById('success-title');
+        var successDesc      = document.getElementById('success-desc');
+        var successCalendly  = document.getElementById('success-calendly');
+        var currentConfig    = null;
 
-        cfSubmit.textContent = 'Отправить заявку';
-        cfSubmit.disabled = false;
-        cfSuccess.style.display = 'block';
-        document.getElementById('cf-name').value = '';
-        document.getElementById('cf-email').value = '';
-        document.getElementById('cf-message').value = '';
-        setTimeout(closeModal, 3000);
-    });
+        function showFields(fields) {
+            ['company', 'role', 'interest', 'company-size', 'message'].forEach(function(f) {
+                var el = document.getElementById('field-' + f);
+                if (el) el.style.display = 'none';
+            });
+            fields.forEach(function(f) {
+                var key = f.replace('interest_hr', 'interest').replace('interest_pricing', 'interest').replace('_', '-');
+                var el = document.getElementById('field-' + key);
+                if (el) el.style.display = 'block';
+            });
+        }
 
-    // Nav dropdown toggle
+        function setInterestOptions(typeKey) {
+            var sel = document.getElementById('cf-interest');
+            var opts = modalT('modal.' + typeKey);
+            var placeholder = modalT('modal.field.interest_placeholder');
+            sel.innerHTML = '<option value="">' + placeholder + '</option>';
+            if (Array.isArray(opts)) {
+                opts.forEach(function(opt) {
+                    var o = document.createElement('option');
+                    o.value = opt;
+                    o.textContent = opt;
+                    sel.appendChild(o);
+                });
+            }
+        }
+
+        function openModal(formType) {
+            var config = FORM_CONFIGS[formType] || FORM_CONFIGS['lead_magnet'];
+            currentConfig = config;
+            currentConfig._type     = formType;
+            modalLabel.textContent  = modalT('modal.' + formType + '.label');
+            modalTitle.textContent  = modalT('modal.' + formType + '.title');
+            cfSubmit.textContent    = modalT('modal.' + formType + '.submit');
+            showFields(config.fields);
+            if (config.fields.indexOf('interest_hr') !== -1) {
+                setInterestOptions('interest_hr');
+            } else if (config.fields.indexOf('interest_pricing') !== -1) {
+                setInterestOptions('interest_pricing');
+            }
+            document.getElementById('contact-form').reset();
+            cfError.style.display = 'none';
+            cfSubmit.disabled = false;
+            modalFormView.style.display    = 'block';
+            modalSuccessView.style.display = 'none';
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        function showSuccess(config) {
+            var ftype = config._type || 'lead_magnet';
+            modalFormView.style.display    = 'none';
+            successTitle.textContent       = modalT('modal.' + ftype + '.success_title');
+            successDesc.textContent        = modalT('modal.' + ftype + '.success_desc');
+            successCalendly.textContent    = modalT('modal.success.calendly_btn');
+            successCalendly.style.display  = config.showCalendly ? 'block' : 'none';
+            successCalendly.href           = CALENDLY;
+            document.getElementById('success-close').textContent = modalT('modal.success.close_btn');
+            modalSuccessView.style.display = 'block';
+        }
+
+        document.getElementById('modal-close').addEventListener('click', closeModal);
+        document.getElementById('success-close').addEventListener('click', closeModal);
+        modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+        document.querySelectorAll('.open-modal').forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                openModal(btn.getAttribute('data-form-type') || 'lead_magnet');
+            });
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name  = document.getElementById('cf-name').value.trim();
+            var email = document.getElementById('cf-email').value.trim();
+            var gdpr  = document.getElementById('cf-gdpr').checked;
+
+            if (!name) {
+                cfError.textContent = modalT('modal.field.err_name');
+                cfError.style.display = 'block';
+                return;
+            }
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                cfError.textContent = modalT('modal.field.err_email');
+                cfError.style.display = 'block';
+                return;
+            }
+            if (!gdpr) {
+                cfError.textContent = modalT('modal.field.err_gdpr');
+                cfError.style.display = 'block';
+                return;
+            }
+
+            cfError.style.display = 'none';
+            cfSubmit.disabled = true;
+            cfSubmit.textContent = modalT('modal.field.sending');
+
+                    var payload = {
+                source:       currentConfig ? currentConfig.source : 'unknown',
+                name:         name,
+                email:        email,
+                company:      (document.getElementById('cf-company') ? document.getElementById('cf-company').value : '').trim(),
+                role:         (document.getElementById('cf-role') ? document.getElementById('cf-role').value : '').trim(),
+                interest:     (document.getElementById('cf-interest') ? document.getElementById('cf-interest').value : '').trim(),
+                company_size: (document.getElementById('cf-company-size') ? document.getElementById('cf-company-size').value : '').trim(),
+                message:      (document.getElementById('cf-message') ? document.getElementById('cf-message').value : '').trim(),
+                lang:         document.documentElement.lang || 'en',
+                page:         'sponsor',
+                ts:           new Date().toISOString()
+            };
+
+            var capturedConfig = currentConfig;
+            if (typeof window.addSubmission === 'function') {
+                window.addSubmission(payload)
+                    .then(function() { showSuccess(capturedConfig); })
+                    .catch(function(err) {
+                        console.error('Firestore error:', err);
+                        cfError.textContent = modalT('modal.field.err_generic');
+                        cfError.style.display = 'block';
+                        cfSubmit.disabled = false;
+                        cfSubmit.textContent = modalT('modal.' + (capturedConfig._type || 'lead_magnet') + '.submit');
+                    });
+            } else {
+                console.error('Firebase not initialized — check firebase-config.js');
+                cfError.textContent = modalT('modal.field.err_generic');
+                cfError.style.display = 'block';
+                cfSubmit.disabled = false;
+                cfSubmit.textContent = modalT('modal.' + (currentConfig && currentConfig._type ? currentConfig._type : 'lead_magnet') + '.submit');
+            }
+        });
+    })();
+
+    // Nav dropdown toggle + open on load, collapse on scroll
     (function() {
         const wrap     = document.getElementById('nav-pill-wrap');
         const toggle   = document.getElementById('nav-toggle');
         const dropdown = document.getElementById('nav-dropdown');
         if (!wrap || !toggle || !dropdown) return;
+
+        // Collapse inline nav once after first scroll — never re-expands
+        let navCollapsed = false;
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 80 && !navCollapsed) {
+                navCollapsed = true;
+                wrap.classList.add('nav-collapsing');
+                wrap.classList.remove('nav-open');
+                toggle.setAttribute('aria-expanded', 'false');
+                setTimeout(function() {
+                    wrap.classList.remove('nav-collapsing');
+                    wrap.classList.add('nav-collapsed');
+                }, 380);
+            }
+        }, { passive: true });
 
         toggle.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -2094,22 +2264,24 @@
     })();
     </script>
 
-    <!-- Firebase (init in rbingood-firebase.js — create this file with your config) -->
+    <!-- Firebase — same config as event.html (firebase-config.js is gitignored) -->
+    <script src="firebase-config.js"></script>
     <script type="module">
-    // rbingood-firebase.js — add your Firebase project config here
-    // Example config — replace with real values from Firebase Console:
-    // import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
-    // import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
-    // const firebaseConfig = {
-    //     apiKey: "YOUR_API_KEY",
-    //     authDomain: "YOUR_PROJECT.firebaseapp.com",
-    //     projectId: "YOUR_PROJECT_ID",
-    //     storageBucket: "YOUR_PROJECT.appspot.com",
-    //     messagingSenderId: "YOUR_SENDER_ID",
-    //     appId: "YOUR_APP_ID"
-    // };
-    // const app = initializeApp(firebaseConfig);
-    // window._fbDb = getFirestore(app);
+        import { initializeApp }                          from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js';
+        import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js';
+
+        if (!window.FIREBASE_CONFIG) {
+            console.error('firebase-config.js not loaded. Copy firebase-config.example.js → firebase-config.js and fill in your values.');
+        }
+
+        const app = initializeApp(window.FIREBASE_CONFIG || {});
+        const db  = getFirestore(app);
+
+        window.addSubmission = function(data) {
+            return addDoc(collection(db, 'submissions'), Object.assign({}, data, {
+                createdAt: serverTimestamp()
+            }));
+        };
     </script>
 
 </body>
