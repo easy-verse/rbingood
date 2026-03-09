@@ -1715,7 +1715,8 @@ details p {
 .price {
     font-size: 2.5rem;
     color: var(--text-main);
-    font-weight: 600;
+    font-weight: 800;
+    margin-bottom: 4px;
 }
 
 .price-period {
@@ -1729,8 +1730,50 @@ details p {
     margin-top: 5px;
 }
 
-.pricing-features {
+/* Pricing Subs and Separators */
+.pricing-sub {
+    font-size: 0.75rem;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.pricing-sub:first-of-type {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
+.pricing-sub:last-of-type {
+    padding-bottom: 8px;
+}
+
+.pricing-sub--discount {
+    color: var(--text-muted);
+}
+
+.pricing-sub--discount b {
+    color: #2ECC71;
+    font-weight: 700;
+}
+
+.pricing-list-header {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f0f0f;
+    margin-top: 0;
+    margin-bottom: 6px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: none;
+    padding-top: 12px;
+}
+
+ul.pricing-list {
+    border: none;
+    margin-top: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 .pricing-features li {
@@ -1777,7 +1820,7 @@ details p {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .addon-tag {
@@ -1937,8 +1980,8 @@ details p {
     }
 
     .hero-simple {
-        padding-top: 100px;
-        padding-bottom: 40px;
+        padding-top: 80px;
+        padding-bottom: 24px;
     }
 
     .hero-grid {
@@ -2015,15 +2058,15 @@ details p {
 
     /* Sections */
     .section {
-        padding: 35px 0;
+        padding: 28px 0;
     }
 
     .section-simple {
-        padding: 30px 0;
+        padding: 24px 0;
     }
 
     .section-head {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
 
     /* Addon block */
