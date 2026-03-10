@@ -539,6 +539,8 @@
         .role-card .btn-outline {
             min-width: 0;
             width: 100%;
+            display: block;
+            white-space: normal;
             text-align: center;
             box-sizing: border-box;
         }
@@ -633,7 +635,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
-            align-items: center;
+            align-items: start;
             margin-top: 32px;
         }
 
@@ -663,9 +665,10 @@
         }
 
         .urgency-right blockquote {
-            font-size: 1.05rem;
-            font-style: italic;
-            color: #222;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            color: #333;
             margin: 0 0 12px;
             line-height: 1.6;
         }
@@ -689,6 +692,8 @@
             border-radius: 20px;
             border: 1px solid var(--border-subtle);
             background: #fff;
+            display: flex;
+            flex-direction: column;
         }
 
         .scenario-card--highlight {
@@ -714,8 +719,12 @@
         }
 
         .scenario-card:not(.scenario-card--highlight) .scenario-badge {
-            background: #f0f0f0;
-            color: #555;
+            background: none;
+            color: #0f0f0f;
+            padding: 0;
+            border-radius: 0;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
         }
 
         .scenario-card h3 {
@@ -766,14 +775,25 @@
         }
 
         .roi-tag {
-            display: inline-block;
-            padding: 8px 16px;
-            border-radius: 12px;
-            font-size: 0.9rem;
+            display: block;
+            padding: 8px 0 8px 16px;
+            font-size: 0.88rem;
             font-weight: 600;
-            background: rgba(46, 204, 113, 0.12);
-            color: #1a9e50;
-            border: 1px solid rgba(46, 204, 113, 0.25);
+            color: #0f0f0f;
+            border-left: 3px solid #2ECC71;
+            margin-top: 8px;
+        }
+
+        .btn-green-outline {
+            background: transparent;
+            color: #2ECC71;
+            border: 2px solid #2ECC71;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .btn-green-outline:hover {
+            background: #2ECC71;
+            color: #0f0f0f;
         }
 
         /* Process: numbered steps */
@@ -843,11 +863,13 @@
             border: 1px solid var(--border-subtle);
             background: #fff;
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
         .pricing-card--popular {
-            background: #fff;
-            border-color: #0f0f0f;
+            background: rgba(46, 204, 113, 0.1);
+            border-color: #2ECC71;
             border-width: 2px;
             color: #0f0f0f;
         }
@@ -878,7 +900,7 @@
         }
 
         .pricing-card--popular .pricing-name {
-            color: var(--text-muted);
+            color: rgba(0, 0, 0, 0.6);
         }
 
         .pricing-price {
@@ -944,6 +966,12 @@
             flex-shrink: 0;
         }
 
+        .pricing-card--popular .pricing-list li::before {
+            color: #2ECC71;
+        }
+
+
+
         .pricing-addon {
             font-size: 0.82rem;
             color: var(--text-muted);
@@ -954,13 +982,11 @@
         }
 
         .pricing-roi {
-            font-size: 0.85rem;
+            font-size: 0.88rem;
             font-weight: 600;
-            color: #1a9e50;
-            background: rgba(46, 204, 113, 0.08);
-            border: 1px solid rgba(46, 204, 113, 0.2);
-            border-radius: 10px;
-            padding: 8px 12px;
+            color: #0f0f0f;
+            border-left: 3px solid #2ECC71;
+            padding: 8px 0 8px 16px;
             margin-bottom: 20px;
         }
 
@@ -1046,6 +1072,11 @@
         .case-metric span {
             font-size: 0.85rem;
             color: var(--text-muted);
+        }
+
+        /* Partners section: remove global margin-top override */
+        .partners-section {
+            margin-top: 0;
         }
 
         /* Partners logos row */
@@ -1835,12 +1866,13 @@
             color: #0f0f0f;
         }
 
-        /* ── Solution section: buttons turn green on hover ── */
-        .scenarios-grid .btn-primary:hover,
-        .scenarios-grid .btn-outline:hover {
+        /* ── Green outlined buttons: hover fill ── */
+        .btn-primary[style*="color:#2ECC71"]:hover,
+        .btn-outline[style*="color:#2ECC71"]:hover {
             background: #2ECC71 !important;
             color: #0f0f0f !important;
             border-color: #2ECC71 !important;
+            transform: translateY(-1px);
         }
 
         /* ── Link hover: underline + darken ─────────────── */
@@ -1894,9 +1926,9 @@
                     <a href="#proof" class="nav-link" data-i18n="nav.cases">Кейсы</a>
                     <a href="#individual" class="nav-link" data-i18n="nav.donate">Поддержать уборку</a>
                     <div class="nav-inline-lang">
+                        <button class="lang-btn" data-lang="pt">PT</button>
                         <button class="lang-btn active" data-lang="en">EN</button>
                         <button class="lang-btn" data-lang="ru">RU</button>
-                        <button class="lang-btn" data-lang="pt">PT</button>
                     </div>
                 </div>
                 <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
@@ -1911,9 +1943,9 @@
                 <a href="#individual" class="nav-link" data-i18n="nav.donate">Поддержать уборку</a>
                 <div class="nav-dropdown-sep"></div>
                 <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="pt">PT</button>
                     <button class="lang-btn active" data-lang="en">EN</button>
                     <button class="lang-btn" data-lang="ru">RU</button>
-                    <button class="lang-btn" data-lang="pt">PT</button>
                 </div>
             </div>
         </div>
@@ -1999,7 +2031,7 @@
                 <div class="urgency-left">
                     <div class="urgency-stat" style="font-size:1.5rem; line-height:1.3;" data-i18n="b2b.stat1.desc">ESG
                         без доказательств больше не принимается</div>
-                    <div class="urgency-source" data-i18n="b2b.stat1.src">CSRD расширяет требования к ESG-отчётности на
+                    <div class="urgency-source" style="font-size:1rem; color:#333;" data-i18n="b2b.stat1.src">CSRD расширяет требования к ESG-отчётности на
                         десятки тысяч компаний в Европе. Даже компании вне прямого scope уже получают запросы на
                         ESG-данные от клиентов, банков и партнёров.</div>
                     <br>
@@ -2013,21 +2045,18 @@
                             Commission — CSRD</a></div>
                 </div>
                 <div class="urgency-right">
-                    <blockquote data-i18n-html="b2b.quote">Новые EU Green Claims правила требуют подтверждать
-                        экологические заявления доказательствами.<br><br>Около половины экологических заявлений в ЕС
-                        признаны неподтверждёнными.</blockquote>
+                    <blockquote data-i18n-html="b2b.quote">Новые EU Green Claims правила требуют подтверждать экологические заявления доказательствами.<br>Около половины экологических заявлений в ЕС признаны неподтверждёнными.</blockquote>
                     <div class="urgency-source" data-i18n-html="b2b.quoteSrc"><a
                             href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank"
                             rel="noopener"
                             style="color:#555; text-decoration:underline; text-underline-offset:2px;">European
                             Commission</a></div>
-                    <br>
-                    <div class="urgency-cta-text" data-i18n-html="b2b.cta">Если действие нельзя подтвердить — оно не
+                    <div class="urgency-cta-text" style="margin-top:12px;" data-i18n-html="b2b.cta">Если действие нельзя подтвердить — оно не
                         учитывается в отчётности, аудитах.<br>Доказательства нельзя собрать задним числом.</div>
                 </div>
                 <p style="grid-column: 1 / -1; font-size: 0.78rem; color: #555; margin: 0; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.15);"
                     data-i18n="b2b.disclaimer">rbingood превращает реальные действия в audit-ready ESG evidence: GPS,
-                    фото, вес и raw data (ESRS E5 / S3).</p>
+                    фото, вес и raw data (ESRS S3-4 / GRI 413-1).</p>
             </div>
         </div>
     </section>
@@ -2040,13 +2069,10 @@
                 <h2 data-i18n="solution.title">rbingood — инфраструктура верифицированных ESG-действий и meaningful
                     HR-активностей</h2>
             </div>
-            <p class="emphasis reveal" style="--delay: 0.05s;" data-i18n="solution.emphasis">Два сценария — один
-                принцип: событие → доказательства → Data Pack / контент</p>
-
             <div class="scenarios-grid reveal" style="--delay: 0.1s;">
                 <div class="scenario-card">
                     <span class="scenario-badge">SMB / Enterprise</span>
-                    <h3 data-i18n="smb.title">Отчётность, которую можно использовать — не объяснять</h3>
+                    <h3 data-i18n="smb.title">Real impact, verified — from event to report</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;"
                         data-i18n="smb.subtitle">Для Sustainability-менеджеров и CFO</p>
                     <ul class="scenario-list">
@@ -2057,15 +2083,17 @@
                         <li data-i18n="smb.li5">Raw data для аудита: CSV-экспорт GPS-треков и метрик</li>
                         <li data-i18n="smb.li6">Готовый ESG Impact Report: в течение 2 недель после события</li>
                     </ul>
-                    <div class="roi-tag" style="margin-bottom:16px;" data-i18n="smb.roi">Не CSR-истории. Доказательства реальных действий с evidence trail для аудитора.</div>
-                    <button class="btn-primary open-modal"
-                        style="display:block; width:100%; text-align:center; cursor:pointer;"
-                        data-form-type="lead_magnet" data-i18n="smb.btn">Скачать пример ESG Impact Report</button>
+                    <div style="margin-top:auto;">
+                        <div class="roi-tag" style="margin-bottom:16px;" data-i18n="smb.roi">Не CSR-истории. Доказательства реальных действий с evidence trail для аудитора.</div>
+                        <button class="btn-primary open-modal"
+                            style="display:block; width:100%; text-align:center; cursor:pointer; background:transparent; color:#2ECC71; border:2px solid #2ECC71; font-weight:700; font-size:1rem; padding:14px 24px;"
+                            data-form-type="lead_magnet" data-i18n="smb.btn">Скачать пример ESG Impact Report</button>
+                    </div>
                 </div>
 
                 <div class="scenario-card" id="team-events">
                     <span class="scenario-badge">HR &amp; People</span>
-                    <h3 data-i18n="hr.title">Тимбилдинг, который сотрудники считают настоящим</h3>
+                    <h3 data-i18n="hr.title">Teambuilding with real value for your team and your business</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;"
                         data-i18n="hr.subtitle">Для HR и фаундеров</p>
                     <ul class="scenario-list">
@@ -2093,26 +2121,28 @@
                                 style="flex:1;min-width:140px;padding:7px 16px;border-radius:20px;border:1px solid var(--border-subtle);font-size:0.85rem;font-family:inherit;outline:none;background:transparent;color:var(--text-muted);">
                         </div>
                     </div>
-                    <div class="roi-tag" style="margin-top: 20px;" data-i18n-html="hr.roi">70% Gen Z и миллениалов
-                        считают экологическую устойчивость важной при выборе работодателя — <a
-                            href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/"
-                            target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a></div>
-                    <button class="btn-primary open-modal"
-                        style="display:block; width:100%; text-align:center; margin-top:16px; cursor:pointer;"
-                        data-form-type="hr_contact" data-i18n="hr.btn">Забронировать корпоративную уборку</button>
+                    <div style="margin-top:auto;">
+                        <div class="roi-tag" style="margin-top: 20px;" data-i18n-html="hr.roi">70% Gen Z и миллениалов
+                            считают экологическую устойчивость важной при выборе работодателя — <a
+                                href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/"
+                                target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a></div>
+                        <button class="btn-primary open-modal"
+                            style="display:block; width:100%; text-align:center; margin-top:16px; cursor:pointer; background:transparent; color:#2ECC71; border:2px solid #2ECC71; font-weight:700; font-size:1rem; padding:14px 24px;"
+                            data-form-type="hr_contact" data-i18n="hr.btn">Book a corporate clean-up</button>
+                    </div>
                 </div>
             </div>
 
             <!-- CTA with founders -->
             <div class="founders-block founders-block--light reveal" style="--delay: 0.3s; margin-top: 40px;">
                 <div>
-                    <div class="team-cofounders" style="margin-bottom: 24px; margin-top: 0;">
+                    <div class="team-cofounders" style="margin-bottom: 0; margin-top: 0;">
                         <div class="team-card">
                             <div class="team-photo">
                                 <img src="assets/main/Ksenia Em.jpeg" alt="Ksenia Em" loading="lazy">
                             </div>
                             <h3>Ksenia Em</h3>
-                            <p class="team-role">Co-founder</p>
+                            <p class="team-role">Co-Founder &middot; CEO &amp; CPO</p>
                             <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
                                 <a class="team-link" href="https://www.linkedin.com/in/kseniya-em/" target="_blank"
                                     rel="noopener">LinkedIn</a>
@@ -2123,28 +2153,17 @@
                                 <img src="assets/main/Kate Mikholap.jpeg" alt="Kate Mikholap" loading="lazy">
                             </div>
                             <h3>Kate Mikholap</h3>
-                            <p class="team-role">Co-founder</p>
+                            <p class="team-role">Co-Founder &middot; COO &amp; Sales</p>
                             <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
                                 <a class="team-link" href="https://www.linkedin.com/in/kate-mikholap/" target="_blank"
                                     rel="noopener">LinkedIn</a>
                             </div>
                         </div>
                     </div>
-                    <blockquote class="founders-quote" style="font-size: 0.9rem;" data-i18n="cta.quote">«Мы лично
-                        отвечаем за качество каждого события и за то, чтобы вы получили доказательства: GPS, фото, вес и
-                        отчёт. rbingood — это наша репутация.»</blockquote>
                 </div>
                 <div class="founders-cta">
                     <h2 data-i18n="cta.title">Начните сегодня — пришлём план и смету</h2>
-                    <p data-i18n="cta.sub">Первый шаг — 15 минут: цели, формат, сроки. Затем высылаем 1-страничный план
-                        и предварительную смету.</p>
-                    <div class="cta-two-btns">
-                        <button class="btn-primary open-modal" style="cursor:pointer;" data-form-type="esg_discussion"
-                            data-i18n="cta.btn1">Discuss ESG Data Pack</button>
-                        <a class="btn-outline" href="https://calendly.com/k-em/new-meeting" target="_blank"
-                            rel="noopener" style="display:block; text-align:center; width:100%;"
-                            data-i18n="cta.btn2">Book a 15-min call</a>
-                    </div>
+                    <p style="font-size:1rem; line-height:1.7; color:#333; font-style:italic; border-left:3px solid #2ECC71; padding-left:20px; margin-top:16px;" data-i18n="cta.quote">«Мы лично отвечаем за качество каждого события и за то, чтобы вы получили доказательства: GPS, фото, вес и отчёт. rbingood — это наша репутация.»</p>
                 </div>
             </div>
         </div>
@@ -2184,6 +2203,12 @@
                         (фото/логи).</p>
                 </div>
             </div>
+            <div class="reveal" style="--delay: 0.2s; margin-top: 32px; text-align: center;">
+                <a href="https://calendly.com/k-em/new-meeting" target="_blank" rel="noopener"
+                    class="btn-outline"
+                    style="color:#2ECC71; border:2px solid #2ECC71; padding:14px 36px; font-size:1rem; font-weight:700; display:inline-block;"
+                    data-i18n="cta.btn2">Записаться на звонок (15 мин)</a>
+            </div>
         </div>
     </section>
 
@@ -2210,10 +2235,10 @@
                         <li data-i18n="pkg1.li3">ESG Evidence Report (PDF) + Raw CSV</li>
                         <li data-i18n="pkg1.li4">PR-контент для LinkedIn</li>
                     </ul>
-                    <div class="pricing-roi" data-i18n="pkg1.roi">Быстрый старт: проверить формат без риска</div>
+                    <div class="pricing-roi" style="margin-top:auto;" data-i18n="pkg1.roi">Быстрый старт: проверить формат</div>
                     <button class="btn-outline open-modal"
-                        style="display:block; width:100%; text-align:center; cursor:pointer;"
-                        data-form-type="lead_magnet" data-i18n="pkg1.btn">Get sample ESG Data Pack</button>
+                        style="display:block; width:100%; text-align:center; cursor:pointer; color:#2ECC71; border:2px solid #2ECC71; font-weight:700; font-size:1rem; padding:14px 24px;"
+                        data-form-type="lead_magnet" data-i18n="pkg1.btn">Request a proposal</button>
                 </div>
 
                 <!-- STANDARD (popular) -->
@@ -2232,11 +2257,10 @@
                         <li data-i18n="pkg2.li4">Годовое резюме импакта для отчёта</li>
                         <li data-i18n="pkg2.li5">Брендинг + фото/видео + приоритет дат</li>
                     </ul>
-                    <div class="pricing-roi"
-                        style="background: rgba(46,204,113,0.15); border-color: rgba(46,204,113,0.3);"
+                    <div class="pricing-roi" style="margin-top:auto;"
                         data-i18n="pkg2.roi">Регулярные доказательства в течение года</div>
-                    <button class="btn-primary open-modal"
-                        style="display:block; width:100%; text-align:center; background:#2ECC71; color:#0f0f0f; cursor:pointer;"
+                    <button class="btn-outline open-modal"
+                        style="display:block; width:100%; text-align:center; cursor:pointer; background:transparent; color:#2ECC71; border:2px solid #2ECC71; font-weight:700; font-size:1rem; padding:14px 24px;"
                         data-form-type="pricing_standard" data-i18n="pkg2.btn">Request a proposal</button>
                 </div>
 
@@ -2255,10 +2279,10 @@
                         <li data-i18n="pkg3.li4">Персональный impact-менеджер</li>
                         <li data-i18n="pkg3.li5">Расширенный PR-пакет: видео + LinkedIn</li>
                     </ul>
-                    <div class="pricing-roi" data-i18n="pkg3.roi">Решение под ваши аудит-требования</div>
-                    <a class="btn-outline" href="https://calendly.com/k-em/new-meeting" target="_blank" rel="noopener"
-                        style="display:block; width:100%; text-align:center; box-sizing:border-box;"
-                        data-i18n="pkg3.btn">Book a call</a>
+                    <div class="pricing-roi" style="margin-top:auto;" data-i18n="pkg3.roi">Решение под ваши аудит-требования</div>
+                    <button class="btn-outline open-modal"
+                        style="display:block; width:100%; text-align:center; cursor:pointer; color:#2ECC71; border:2px solid #2ECC71; font-weight:700; font-size:1rem; padding:14px 24px; box-sizing:border-box;"
+                        data-form-type="pricing_standard" data-i18n="pkg3.btn">Request a proposal</button>
                 </div>
             </div>
 
@@ -2270,7 +2294,7 @@
         <div class="container">
             <div class="section-head reveal" style="--delay: 0s;">
                 <p class="section-label" data-i18n="proof.label">Кейсы</p>
-                <h2 data-i18n="proof.title">Мы уже работаем.</h2>
+                <h2 data-i18n="proof.title">We're already working</h2>
             </div>
 
             <!-- Praia Irmão -->
@@ -2285,12 +2309,12 @@
                             <span data-i18n="proof.praia.m1.label">мусора убрано</span>
                         </div>
                         <div class="case-split-metric">
-                            <strong>6</strong>
-                            <span data-i18n="proof.praia.m2.label">ивентов подряд</span>
+                            <strong>7</strong>
+                            <span data-i18n="proof.praia.m2.label">events</span>
                         </div>
                         <div class="case-split-metric">
-                            <strong>8 мес.</strong>
-                            <span data-i18n="proof.praia.m3.label">партнёрство</span>
+                            <strong>10 мес.</strong>
+                            <span data-i18n="proof.praia.m3.label">partnership</span>
                         </div>
                     </div>
                 </div>
@@ -2382,15 +2406,30 @@
                 </div>
                 <div class="mechanic-card" style="border: 2px solid #3b82f6;">
                     <div class="mechanic-num">07</div>
-                    <h3 data-i18n="mech.m7.title">Результат.</h3>
+                    <h3 data-i18n="mech.m7.title">Result</h3>
                     <p data-i18n="mech.m7.text">Бизнес получает отчёт с данными. Участники получают вознаграждение*</p>
                 </div>
             </div>
 
-            <p class="emphasis reveal" style="--delay: 0.15s;" data-i18n="mech.closing">Каждый шаг фиксируется — поэтому
-                результат можно использовать в отчётности, коммуникации и партнёрствах.</p>
             <p class="mechanic-footnote reveal" style="--delay: 0.2s;" data-i18n="mech.footnote">* Если уборка
                 спонсируемая — участники получают разовое вознаграждение или напитки и снеки от партнёров.</p>
+        </div>
+    </section>
+
+    <!-- ══ PARTNERS ══════════════════════════════════════════ -->
+    <section class="section section-simple" id="partners">
+        <div class="container">
+            <div class="partners-section reveal" style="--delay: 0.1s;">
+                <p class="section-label" style="text-align:left;" data-i18n="partners.label">Партнёры и поддержка</p>
+                <div class="partners-list">
+                    <a class="partner-logo-link" href="https://www.praia-irmao.com/" target="_blank" rel="noopener"><img src="assets/main/logo partners/irmao logo.jpg" alt="Praia Irmão" class="partner-logo-img"></a>
+                    <a class="partner-logo-link" href="https://www.instagram.com/deephousebible/" target="_blank" rel="noopener"><img src="assets/main/logo partners/dhb logo.jpg" alt="DHB Festival" class="partner-logo-img"></a>
+                    <a class="partner-logo-link" href="https://startupleiria.com/" target="_blank" rel="noopener"><img src="assets/main/logo partners/startup leiria logo .jpg" alt="Startup Leiria" class="partner-logo-img"></a>
+                    <a class="partner-logo-link" href="https://impacthub.net/" target="_blank" rel="noopener"><img src="assets/main/logo partners/impact hub logo.jpg" alt="Impact Hub" class="partner-logo-img"></a>
+                    <a class="partner-logo-link" href="https://www.instagram.com/refraction.space" target="_blank" rel="noopener"><img src="assets/main/logo partners/refraction logo.jpg" alt="Refraction" class="partner-logo-img"></a>
+                    <a class="partner-logo-link" href="http://www.brigadadomar.org/" target="_blank" rel="noopener"><img src="assets/main/logo partners/brigada do mar logo.jpg" alt="Brigada do Mar" class="partner-logo-img"></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -2444,29 +2483,8 @@
             </div>
             <div class="reveal" style="--delay: 0.2s; margin-top: 24px; text-align: center;">
                 <a href="https://calendly.com/k-em/new-meeting" target="_blank" rel="noopener" class="btn-outline"
+                    style="color:#2ECC71; border:2px solid #2ECC71; padding:12px 28px; font-size:0.95rem; font-weight:700;"
                     data-i18n="faq.calendly_btn">Остались вопросы? Забронировать встречу</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ══ PARTNERS ══════════════════════════════════════════ -->
-    <section class="section section-simple" id="partners">
-        <div class="container">
-            <div class="partners-section reveal" style="--delay: 0.1s;">
-                <p class="partners-label" data-i18n="partners.label">Партнёры и поддержка</p>
-                <div class="partners-list">
-                    <a class="partner-tag" href="https://www.praia-irmao.com/" target="_blank" rel="noopener">Praia
-                        Irmão</a>
-                    <a class="partner-tag" href="https://www.instagram.com/deephousebible/" target="_blank"
-                        rel="noopener">DHB Festival</a>
-                    <a class="partner-tag" href="https://startupleiria.com/" target="_blank" rel="noopener">Startup
-                        Leiria</a>
-                    <a class="partner-tag" href="https://impacthub.net/" target="_blank" rel="noopener">Impact Hub</a>
-                    <a class="partner-tag" href="https://www.instagram.com/refraction.space" target="_blank"
-                        rel="noopener">Refraction</a>
-                    <a class="partner-tag" href="http://www.brigadadomar.org/" target="_blank" rel="noopener">Brigada do
-                        Mar</a>
-                </div>
             </div>
         </div>
     </section>

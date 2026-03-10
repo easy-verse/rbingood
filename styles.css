@@ -747,7 +747,7 @@ p {
 }
 
 .problem-claim-strong {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-main);
     margin-bottom: 6px;
@@ -755,11 +755,11 @@ p {
 }
 
 .problem-claim-muted {
-    font-size: 1.6rem;
+    font-size: 1.05rem;
     font-weight: 400;
     color: var(--text-main);
     margin-bottom: 6px;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 .problem-claims p {
@@ -1003,6 +1003,33 @@ p {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
+}
+
+.partner-logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.partner-logo-link:hover {
+    border-color: #2ECC71;
+    box-shadow: 0 2px 12px rgba(46, 204, 113, 0.2);
+}
+
+.partner-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .partner-tag {

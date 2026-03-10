@@ -11,7 +11,7 @@ const SPONSOR_I18N = {
     },
     hero: {
       title: 'rbingood \u2014 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430, \u0433\u0434\u0435 \u043b\u044e\u0431\u043e\u0439 \u0441\u043f\u043e\u043d\u0441\u0438\u0440\u0443\u0435\u0442 \u0438\u043b\u0438 \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u0435\u0442 \u0432 \u044d\u043a\u043e-\u0438\u043d\u0438\u0446\u0438\u0430\u0442\u0438\u0432\u0430\u0445, \u043f\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u044f \u0440\u0435\u0430\u043b\u044c\u043d\u044b\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0432 \u0432\u0435\u0440\u0438\u0444\u0438\u0446\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435',
-      subtitle: '\u041c\u044b \u043f\u043e\u043c\u043e\u0433\u0430\u0435\u043c \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f\u043c \u0440\u0435\u0448\u0438\u0442\u044c \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0443 \u043e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u044f \u0438\u0437\u043c\u0435\u0440\u0438\u043c\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 \u043e\u0431 \u0443\u0441\u0442\u043e\u0439\u0447\u0438\u0432\u043e\u043c \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0438 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u0438 \u0440\u0435\u0430\u043b\u044c\u043d\u044b\u0445 \u044d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 (GPS. \u0424\u043e\u0442\u043e. \u0412\u0435\u0441)'
+      subtitle: '\u041c\u044b \u043f\u043e\u043c\u043e\u0433\u0430\u0435\u043c \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f\u043c \u0440\u0435\u0448\u0438\u0442\u044c \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0443 \u043e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u044f \u0438\u0437\u043c\u0435\u0440\u0438\u043c\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 \u043e\u0431 \u0443\u0441\u0442\u043e\u0439\u0447\u0438\u0432\u043e\u043c \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0438 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u0438 \u0440\u0435\u0430\u043b\u044c\u043d\u044b\u0445 \u044d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0439 (GPS. \u0424\u043e\u0442\u043e. \u0412\u0435\u0441. Raw data)'
     },
     problem: {
       subtitle: 'Многие экологические инициативы не превращаются в данные',
@@ -40,18 +40,18 @@ const SPONSOR_I18N = {
         desc: 'До ~50\u00a0000 компаний в Европе будут раскрывать sustainability-данные по мере расширения CSRD.',
         src: '<a href="https://www.europarl.europa.eu/news/en/press-room/20221107IPR49611/sustainable-economy-parliament-adopts-new-reporting-rules-for-multinationals" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission \u2014 CSRD</a>'
       },
-      quote: 'Новые EU Green Claims правила требуют подтверждать экологические заявления доказательствами.<br><br>Около половины экологических заявлений в ЕС признаны неподтверждёнными.',
+      quote: 'Новые EU Green Claims правила требуют подтверждать экологические заявления доказательствами.<br>Около половины экологических заявлений в ЕС признаны неподтверждёнными.',
       quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
       cta: 'Если действие нельзя подтвердить \u2014 оно не учитывается в отчётности, аудитах.<br>Доказательства нельзя собрать задним числом.',
-      disclaimer: 'rbingood превращает реальные действия в audit-ready ESG evidence: GPS, фото, вес и raw data (ESRS E5\u00a0/\u00a0S3).'
+      disclaimer: 'rbingood превращает реальные действия в audit-ready ESG evidence: GPS, фото, вес и raw data (ESRS S3-4 / GRI 413-1).'
     },
     solution: {
       label: 'Решение',
       title: 'rbingood \u2014 инфраструктура верифицированных ESG-действий и meaningful HR-активностей',
-      emphasis: 'Два сценария \u2014 один принцип: событие \u2192 доказательства \u2192 Data Pack / контент'
+      emphasis: ''
     },
     smb: {
-      title: 'Отчётность, которую можно использовать \u2014 не объяснять',
+      title: 'Реальный вклад, который подтверждён \u2014 от события до отчёта',
       subtitle: 'Для Sustainability-менеджеров и CFO',
       li1: 'Audit-ready evidence: GPS-координаты, фото \u00abдо/после\u00bb, записи взвешивания',
       li2: 'Evidence trail для аудитора: GPS-логи, фотоархив, журнал отходов, транзакции выплат',
@@ -63,7 +63,7 @@ const SPONSOR_I18N = {
       btn: 'Скачать пример ESG Impact Report'
     },
     hr: {
-      title: 'Тимбилдинг, который сотрудники считают настоящим',
+      title: 'Тимбилдинг c реальной ценностью для команды и для компаний',
       subtitle: 'Для HR, People teams и основателей',
       li1: 'Экологическое событие под ключ',
       li2: 'Измеримый результат события: люди / часы / вес отходов / фото \u00abдо-после\u00bb',
@@ -96,7 +96,7 @@ const SPONSOR_I18N = {
     },
     pricing: {
       label: 'Пакеты',
-      title: 'Выберите программу ESG-данных — Все цены без НДС (IVA)'
+      title: 'Выберите программу ESG-данных — Все цены без НДС'
     },
     pkg1: {
       name: 'Audit Zero (Pilot)',
@@ -108,8 +108,8 @@ const SPONSOR_I18N = {
       li2: 'GPS-трек + фото + взвешивание отходов',
       li3: 'ESG Evidence Report (PDF) + Raw CSV',
       li4: 'PR-контент для LinkedIn',
-      roi: 'Быстрый старт: проверить формат без риска',
-      btn: 'Получить пример ESG Data Pack'
+      roi: 'Быстрый старт: проверить формат',
+      btn: 'Запросить предложение'
     },
     pkg2: {
       badge: 'Популярный выбор',
@@ -138,11 +138,11 @@ const SPONSOR_I18N = {
       li4: 'Персональный impact-менеджер',
       li5: 'Расширенный PR-пакет: видео + LinkedIn',
       roi: 'Решение под ваши аудит-требования',
-      btn: 'Записаться на звонок'
+      btn: 'Запросить предложение'
     },
     proof: {
       label: 'Кейсы',
-      title: 'Мы уже работаем.',
+      title: 'Мы уже работаем',
       all: {
         name: 'Все ивенты',
         m1: { label: 'ивентов проведено' },
@@ -175,8 +175,8 @@ const SPONSOR_I18N = {
       m4: { title: 'Фиксируем доказательства', text: 'Фото до/после, GPS, сортировка и взвешивание по фракциям \u2014 основа Data Pack.' },
       m5: { title: 'Контролируем утилизацию', text: 'Отходы отправляются в правильные потоки переработки \u2014 пластик, стекло, смешанные.' },
       m6: { title: 'Создаём вовлечение команды', text: 'Нетворкинг, коммуникация или HR-эффект события.' },
-      m7: { title: 'Результат.', text: 'Бизнес получает отчёт с данными. Участники получают вознаграждение*' },
-      closing: 'Каждый шаг фиксируется \u2014 поэтому результат можно использовать в отчётности и коммуникации.',
+      m7: { title: 'Результат', text: 'Бизнес получает отчёт с данными. Участники получают вознаграждение*' },
+      closing: '',
       footnote: '* Если уборка спонсируемая \u2014 участники получают разовое вознаграждение или напитки и снеки от партнёров.'
     },
     ind: {
@@ -249,9 +249,9 @@ const SPONSOR_I18N = {
     },
     cta: {
       quote: '\u00abМы лично отвечаем за качество каждого события и за то, чтобы вы получили доказательства: GPS, фото, вес и отчёт. rbingood \u2014 это наша репутация.\u00bb',
-      title: 'Начните сегодня \u2014 пришлём план и смету',
+      title: 'Начните сегодня — пришлём план и смету',
       sub: 'Первый шаг \u2014 звонок 15 минут: цели, формат, сроки. Затем высылаем 1-страничный план и предварительную смету.',
-      btn1: 'Обсудить ESG Data Pack',
+      btn1: '',
       btn2: 'Записаться на звонок (15 мин)'
     },
     partners: {
@@ -309,7 +309,7 @@ const SPONSOR_I18N = {
     },
     hero: {
       title: 'rbingood \u2014 a platform where anyone sponsors or joins eco-initiatives, turning real actions into verified data',
-      subtitle: 'We help companies solve the problem of missing measurable sustainability data through organising real environmental actions (GPS. Photos. Weight)'
+      subtitle: 'We help companies solve the problem of missing measurable sustainability data through organising real environmental actions (GPS. Photos. Weight. Raw data)'
     },
     problem: {
       subtitle: 'Many environmental initiatives never turn into data',
@@ -338,18 +338,18 @@ const SPONSOR_I18N = {
         desc: 'Up to ~50\u00a0000 companies in Europe will disclose sustainability data as CSRD expands.',
         src: '<a href="https://www.europarl.europa.eu/news/en/press-room/20221107IPR49611/sustainable-economy-parliament-adopts-new-reporting-rules-for-multinationals" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission \u2014 CSRD</a>'
       },
-      quote: 'New EU Green Claims rules require environmental claims to be substantiated with evidence.<br><br>Around half of environmental claims in the EU have been found to be unsubstantiated.',
+      quote: 'New EU Green Claims rules require environmental claims to be substantiated with evidence.<br>Around half of environmental claims in the EU have been found to be unsubstantiated.',
       quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
       cta: 'If an action can\u2019t be verified \u2014 it doesn\u2019t count in reporting or audits.<br>Evidence can\u2019t be collected retroactively.',
-      disclaimer: 'rbingood turns real actions into audit-ready ESG evidence: GPS, photos, weight and raw data (ESRS E5\u00a0/\u00a0S3).'
+      disclaimer: 'rbingood turns real actions into audit-ready ESG evidence: GPS, photos, weight and raw data (ESRS S3-4 / GRI 413-1).'
     },
     solution: {
       label: 'Solution',
       title: 'rbingood \u2014 infrastructure for verified ESG actions and meaningful HR activities',
-      emphasis: 'Two scenarios \u2014 one principle: event \u2192 evidence \u2192 Data Pack / content'
+      emphasis: ''
     },
     smb: {
-      title: 'Reporting you can use \u2014 not explain',
+      title: 'Real impact, verified \u2014 from event to report',
       subtitle: 'For Sustainability managers and CFOs',
       li1: 'Audit-ready evidence: GPS + timestamp, before/after photos, weight',
       li2: 'Social proof with money: participant payments with confirmation (Stripe)',
@@ -361,7 +361,7 @@ const SPONSOR_I18N = {
       btn: 'Get a sample Data Pack'
     },
     hr: {
-      title: 'Teambuilding employees consider real',
+      title: 'Teambuilding with real value for your team and your business',
       subtitle: 'For HR and founders',
       li1: 'Meaningful activity end-to-end (no extra load on HR)',
       li2: 'Measurable outcome: people / hours / weight / before-after',
@@ -392,7 +392,7 @@ const SPONSOR_I18N = {
     },
     pricing: {
       label: 'Packages',
-      title: 'Choose a sponsorship package for eco-events'
+      title: 'Choose an ESG data program \u2014 All prices ex. IVA'
     },
     pkg1: {
       name: 'Audit Zero (Pilot)',
@@ -404,8 +404,8 @@ const SPONSOR_I18N = {
       li2: 'GPS track + photo + waste weight',
       li3: 'ESG Evidence Report (PDF) + Raw CSV',
       li4: 'PR content for LinkedIn',
-      roi: 'Quick start: test the format without risk',
-      btn: 'Get sample ESG Data Pack'
+      roi: 'Quick start: test the format',
+      btn: 'Request a proposal'
     },
     pkg2: {
       badge: 'Most popular',
@@ -434,11 +434,11 @@ const SPONSOR_I18N = {
       li4: 'Personal impact manager',
       li5: 'Extended PR package: video + LinkedIn',
       roi: 'A solution tailored to your audit requirements',
-      btn: 'Book a call'
+      btn: 'Request a proposal'
     },
     proof: {
       label: 'Cases',
-      title: 'We\u2019re already working.',
+      title: 'We\u2019re already working',
       all: {
         name: 'All events',
         m1: { label: 'events completed' },
@@ -471,8 +471,8 @@ const SPONSOR_I18N = {
       m4: { title: 'We capture evidence', text: 'Before/after photos, GPS, sorting and weighing by fraction \u2014 the basis of the Data Pack.' },
       m5: { title: 'We oversee disposal', text: 'Waste goes to the right recycling streams \u2014 plastic, glass, mixed.' },
       m6: { title: 'We create team engagement', text: 'Networking, communication or the HR effect of the event.' },
-      m7: { title: 'Result.', text: 'The business receives a report with data. Participants receive a reward*' },
-      closing: 'Every step is recorded \u2014 so the result can be used in reporting and communication.',
+      m7: { title: 'Result', text: 'The business receives a report with data. Participants receive a reward*' },
+      closing: '',
       footnote: '* If the cleanup is sponsored \u2014 participants receive a one-time reward or drinks and snacks from partners.'
     },
     ind: {
@@ -545,10 +545,10 @@ const SPONSOR_I18N = {
     },
     cta: {
       quote: '\u201cWe personally take responsibility for the quality of every event and for ensuring you receive the evidence: GPS, photos, weight and a report. rbingood is our reputation.\u201d',
-      title: 'Start today \u2014 we\u2019ll send you a plan and quote',
+      title: 'Start today — we’ll send you a plan and quote',
       sub: 'First step \u2014 15-minute call: goals, format, timeline. Then we send a 1-page plan and a preliminary quote.',
-      btn1: 'Discuss ESG Data Pack',
-      btn2: 'Book a 15-min call'
+      btn1: '',
+      btn2: 'Book a call (15 min)'
     },
     partners: {
       label: 'Partners & Support',
@@ -605,7 +605,7 @@ const SPONSOR_I18N = {
     },
     hero: {
       title: 'rbingood \u2014 uma plataforma onde qualquer pessoa patrocina ou participa em iniciativas eco, transformando a\u00e7\u00f5es reais em dados verificados',
-      subtitle: 'Ajudamos as empresas a resolver o problema da aus\u00eancia de dados mensur\u00e1veis de sustentabilidade atrav\u00e9s da organiza\u00e7\u00e3o de a\u00e7\u00f5es ambientais reais (GPS. Fotos. Peso)'
+      subtitle: 'Ajudamos as empresas a resolver o problema da aus\u00eancia de dados mensur\u00e1veis de sustentabilidade atrav\u00e9s da organiza\u00e7\u00e3o de a\u00e7\u00f5es ambientais reais (GPS. Fotos. Peso. Raw data)'
     },
     problem: {
       subtitle: 'Muitas iniciativas ambientais nunca se transformam em dados',
@@ -634,18 +634,18 @@ const SPONSOR_I18N = {
         desc: 'At\u00e9 ~50\u00a0000 empresas na Europa v\u00e3o divulgar dados de sustentabilidade \u00e0 medida que a CSRD se expande.',
         src: '<a href="https://www.europarl.europa.eu/news/en/press-room/20221107IPR49611/sustainable-economy-parliament-adopts-new-reporting-rules-for-multinationals" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission \u2014 CSRD</a>'
       },
-      quote: 'As novas regras de Green Claims da UE exigem que as afirma\u00e7\u00f5es ambientais sejam comprovadas com evid\u00eancias.<br><br>Cerca de metade das afirma\u00e7\u00f5es ambientais na UE foram consideradas n\u00e3o comprovadas.',
+      quote: 'As novas regras de Green Claims da UE exigem que as afirma\u00e7\u00f5es ambientais sejam comprovadas com evid\u00eancias.<br>Cerca de metade das afirma\u00e7\u00f5es ambientais na UE foram consideradas n\u00e3o comprovadas.',
       quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
       cta: 'Se uma a\u00e7\u00e3o n\u00e3o pode ser verificada \u2014 n\u00e3o conta nos relat\u00f3rios ou auditorias.<br>As provas n\u00e3o podem ser recolhidas retroativamente.',
-      disclaimer: 'O rbingood transforma a\u00e7\u00f5es reais em ESG evidence audit-ready: GPS, fotos, peso e raw data (ESRS E5\u00a0/\u00a0S3).'
+      disclaimer: 'O rbingood transforma a\u00e7\u00f5es reais em ESG evidence audit-ready: GPS, fotos, peso e raw data (ESRS S3-4 / GRI 413-1).'
     },
     solution: {
       label: 'Solu\u00e7\u00e3o',
       title: 'rbingood \u2014 infraestrutura de a\u00e7\u00f5es ESG verificadas e atividades de RH meaningful',
-      emphasis: 'Dois cen\u00e1rios \u2014 um princ\u00edpio: evento \u2192 provas \u2192 Data Pack / conte\u00fado'
+      emphasis: ''
     },
     smb: {
-      title: 'Relat\u00f3rio que se usa \u2014 n\u00e3o se explica',
+      title: 'Impacto real, verificado \u2014 do evento ao relat\u00f3rio',
       subtitle: 'Para gestores de Sustentabilidade e CFOs',
       li1: 'Audit-ready evidence: GPS + timestamp, fotos antes/depois, peso',
       li2: 'Social proof com dinheiro: pagamentos a participantes com confirmação (Stripe)',
@@ -657,7 +657,7 @@ const SPONSOR_I18N = {
       btn: 'Obter exemplo de Data Pack'
     },
     hr: {
-      title: 'Team building que os colaboradores consideram real',
+      title: 'Team building com valor real para a equipa e para as empresas',
       subtitle: 'Para RH e fundadores',
       li1: 'Atividade meaningful \u201cchave na m\u00e3o\u201d (sem sobrecarga para o RH)',
       li2: 'Resultado mensur\u00e1vel: pessoas / horas / peso / antes-depois',
@@ -688,7 +688,7 @@ const SPONSOR_I18N = {
     },
     pricing: {
       label: 'Pacotes',
-      title: 'Escolha um pacote de patrocínio para eco eventos'
+      title: 'Escolha um programa de dados ESG \u2014 Todos os preços sem IVA'
     },
     pkg1: {
       name: 'Audit Zero (Pilot)',
@@ -701,7 +701,7 @@ const SPONSOR_I18N = {
       li3: 'ESG Evidence Report (PDF) + Raw CSV',
       li4: 'Conteúdo PR para LinkedIn',
       roi: 'Arranque rápido: testar o formato sem compromisso',
-      btn: 'Obter exemplo de ESG Data Pack'
+      btn: 'Solicitar proposta'
     },
     pkg2: {
       badge: 'Escolha popular',
@@ -730,11 +730,11 @@ const SPONSOR_I18N = {
       li4: 'Gestor de impacto pessoal',
       li5: 'Pacote PR expandido: vídeo + LinkedIn',
       roi: 'Solução adaptada aos requisitos de auditoria',
-      btn: 'Agendar chamada'
+      btn: 'Solicitar proposta'
     },
     proof: {
       label: 'Casos',
-      title: 'J\u00e1 estamos a trabalhar.',
+      title: 'J\u00e1 estamos a trabalhar',
       all: {
         name: 'Todos os eventos',
         m1: { label: 'eventos realizados' },
@@ -767,8 +767,8 @@ const SPONSOR_I18N = {
       m4: { title: 'Registamos as provas', text: 'Fotos antes/depois, GPS, triagem e pesagem por fra\u00e7\u00e3o \u2014 a base do Data Pack.' },
       m5: { title: 'Controlamos a elimina\u00e7\u00e3o', text: 'Os res\u00edduos v\u00e3o para os fluxos de reciclagem certos \u2014 pl\u00e1stico, vidro, mistos.' },
       m6: { title: 'Criamos envolvimento da equipa', text: 'Networking, comunica\u00e7\u00e3o ou o efeito RH do evento.' },
-      m7: { title: 'Resultado.', text: 'A empresa recebe um relat\u00f3rio com dados. Os participantes recebem uma recompensa*' },
-      closing: 'Cada passo \u00e9 registado \u2014 por isso o resultado pode ser usado em relat\u00f3rios e comunica\u00e7\u00e3o.',
+      m7: { title: 'Resultado', text: 'A empresa recebe um relat\u00f3rio com dados. Os participantes recebem uma recompensa*' },
+      closing: '',
       footnote: '* Se a limpeza for patrocinada \u2014 os participantes recebem uma recompensa pontual ou bebidas e snacks dos parceiros.'
     },
     ind: {
@@ -841,10 +841,10 @@ const SPONSOR_I18N = {
     },
     cta: {
       quote: '\u201cResponsabilizamo-nos pessoalmente pela qualidade de cada evento e por garantir que recebe as evid\u00eancias: GPS, fotos, peso e relat\u00f3rio. O rbingood \u00e9 a nossa reputa\u00e7\u00e3o.\u201d',
-      title: 'Comece hoje \u2014 enviamos plano e or\u00e7amento',
+      title: 'Comece hoje — enviamos plano e orçamento',
       sub: 'Primeiro passo \u2014 chamada de 15 minutos: objetivos, formato, prazos. Depois enviamos um plano de 1 p\u00e1gina e or\u00e7amento preliminar.',
-      btn1: 'Falar sobre ESG Data Pack',
-      btn2: 'Agendar chamada de 15 min'
+      btn1: '',
+      btn2: 'Agendar chamada (15 min)'
     },
     partners: {
       label: 'Parceiros e Apoio',
