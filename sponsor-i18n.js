@@ -83,7 +83,7 @@ const SPONSOR_I18N = {
       merch: 'Брендинг мероприятия',
       pr: 'Расширенный PR',
       master: 'Мастер-класс',
-      custom: 'Свой формат',
+      custom: 'Свой вариант...',
       barter: 'Бартер'
     },
     process: {
@@ -153,16 +153,16 @@ const SPONSOR_I18N = {
       },
       praia: {
         badge: 'Спонсорские ивенты',
-        m1: { label: 'мусора убрано' },
+        m1: { value: '710 кг', label: 'мусора убрано' },
         m2: { label: 'ивентов' },
-        m3: { label: 'партнёрство' },
+        m3: { value: '10 мес.', label: 'партнёрство' },
         quote: '\u00abЛучшая ESG-инициатива года. Продлили контракт на 2026.\u00bb'
       },
       dhb: {
         badge: 'Фестиваль',
         m1: { label: 'посетителей' },
         m2: { label: 'окурков собрано' },
-        m3: { label: 'мастер-классов' },
+        m3: { value: '2 дня', label: 'мастер-классов' },
         desc: 'Механика \u00ab20 окурков = бесплатный напиток\u00bb \u2014 стойка rbingood стала точкой вовлечения аудитории.'
       }
     },
@@ -317,7 +317,7 @@ const SPONSOR_I18N = {
       role: {
         biz: {
           text: 'I\u2019m a business \u2014 we need provable environmental actions',
-          sub: 'For ESG reporting, audit and communication.',
+          sub: 'For ESG reporting, audit, and communication.',
           btn: 'ESG reporting solution'
         },
         hr: {
@@ -332,16 +332,16 @@ const SPONSOR_I18N = {
       title: 'Businesses face a 5% revenue fine for CSRD non-compliance',
       stat1: {
         desc: 'ESG without evidence is no longer accepted',
-        src: 'CSRD is expanding ESG reporting requirements to tens of thousands of companies across Europe. Even companies outside the direct scope already receive ESG data requests from clients, banks and partners.'
+        src: 'CSRD is expanding ESG reporting requirements to tens of thousands of companies across Europe. Even companies outside the direct scope already receive ESG data requests from clients, banks, and partners.'
       },
       stat2: {
         desc: 'Up to ~50\u00a0000 companies in Europe will disclose sustainability data as CSRD expands.',
         src: '<a href="https://www.europarl.europa.eu/news/en/press-room/20221107IPR49611/sustainable-economy-parliament-adopts-new-reporting-rules-for-multinationals" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission \u2014 CSRD</a>'
       },
-      quote: 'New EU Green Claims rules require environmental claims to be substantiated with evidence.<br>Around half of environmental claims in the EU have been found to be unsubstantiated.',
+      quote: 'New EU Green Claims rules require environmental claims to be substantiated with evidence.<br>Around half of environmental claims in the EU are unsubstantiated.',
       quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
       cta: 'If an action can\u2019t be verified \u2014 it doesn\u2019t count in reporting or audits.<br>Evidence can\u2019t be collected retroactively.',
-      disclaimer: 'rbingood turns real actions into audit-ready ESG evidence: GPS, photos, weight and raw data (ESRS S3-4 / GRI 413-1).'
+      disclaimer: 'rbingood turns real actions into audit-ready ESG evidence: GPS, photos, weight, and raw data (ESRS S3-4 / GRI 413-1).'
     },
     solution: {
       label: 'Solution',
@@ -367,6 +367,7 @@ const SPONSOR_I18N = {
       li2: 'Measurable outcome: people / hours / weight / before-after',
       li3: 'PR content: photos/video for LinkedIn and internal channels',
       li4: 'Final report within 2 weeks',
+      li5: 'ESG Impact Report after the event',
       roi: '70% of Gen Z and millennials consider environmental sustainability important when choosing an employer \u2014 <a href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/" target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a>',
       btn: 'Book a corporate clean-up'
     },
@@ -380,14 +381,15 @@ const SPONSOR_I18N = {
       merch: 'Event branding',
       pr: 'Extended PR',
       master: 'Masterclass',
+      custom: 'Custom format...',
       barter: 'Barter'
     },
     process: {
       label: 'Process',
       title: '4 steps to get started',
-      s1: { num: 'Step 1 (15 min)', title: 'Jump on a call', text: 'We choose the format: ESG (data) or HR (teambuilding). Agree on location, date and participant count.' },
+      s1: { num: 'Step 1 (15 min)', title: 'Jump on a call', text: 'We choose the format: ESG (data) or HR (teambuilding). Agree on location, date, and participant count.' },
       s2: { num: 'Step 2 (1\u20132 days)', title: 'Contract & preparation', text: 'We draft the contract and invoice. We send participants a checklist and event plan.' },
-      s3: { num: 'Step 3 (2 hours)', title: 'We run the event', text: 'Briefing, equipment, facilitation. We record GPS + before/after photos + weight.' },
+      s3: { num: 'Step 3 (2 hours)', title: 'We run the event', text: 'Briefing, equipment, facilitation. We record GPS coordinates, before/after photos, and weight.' },
       s4: { num: 'Step 4 (within 2 weeks)', title: 'We deliver results', text: 'You receive: PDF report + CSV (ESG Data Pack) + evidence folder (photos/logs).' }
     },
     pricing: {
@@ -449,28 +451,28 @@ const SPONSOR_I18N = {
       },
       praia: {
         badge: 'Sponsored Events',
-        m1: { label: 'kg of waste removed' },
+        m1: { value: '710 kg', label: 'kg of waste removed' },
         m2: { label: 'events' },
-        m3: { label: 'partnership' },
+        m3: { value: '10 mo.', label: 'partnership' },
         quote: '\u201cBest ESG initiative of the year. Extended the contract to 2026.\u201d'
       },
       dhb: {
         badge: 'Festival',
         m1: { label: 'visitors' },
         m2: { label: 'cigarette butts collected' },
-        m3: { label: 'days of workshops' },
+        m3: { value: '2 days', label: 'days of workshops' },
         desc: 'The \u201c20 butts = a drink\u201d mechanic engaged thousands of guests in an eco-initiative right at the festival.'
       }
     },
     mech: {
       label: 'Mechanics',
       title: 'How we run events',
-      m1: { title: 'We run the briefing', text: 'Briefing on safety, sorting and the data we collect. 10\u201315 minutes before the start.' },
-      m2: { title: 'We prepare participants and kit', text: 'We hand out everything needed: gloves, bags, grabbers. Fully provided by us.' },
-      m3: { title: 'Active cleanup', text: 'The team works by zones, we moderate the process. Up to 2 hours in sprint format.' },
-      m4: { title: 'We capture evidence', text: 'Before/after photos, GPS, sorting and weighing by fraction \u2014 the basis of the Data Pack.' },
+      m1: { title: 'We run the briefing', text: 'Briefing on safety, sorting, and the data we collect. 10\u201315 minutes before the start.' },
+      m2: { title: 'We prepare participants and the kit', text: 'We hand out everything needed: gloves, bags, grabbers. Fully provided by us.' },
+      m3: { title: 'Active cleanup', text: 'The team works by zones; we moderate the process, up to 2 hours in a sprint format.' },
+      m4: { title: 'We capture evidence', text: 'Before/after photos, GPS, sorting, and weighing by fraction \u2014 the basis of the Data Pack.' },
       m5: { title: 'We oversee disposal', text: 'Waste goes to the right recycling streams \u2014 plastic, glass, mixed.' },
-      m6: { title: 'We create team engagement', text: 'Networking, communication or the HR effect of the event.' },
+      m6: { title: 'We create team engagement', text: 'Networking, communication, or the HR effect of the event.' },
       m7: { title: 'Result', text: 'The business receives a report with data. Participants receive a reward*' },
       closing: '',
       footnote: '* If the cleanup is sponsored \u2014 participants receive a one-time reward or drinks and snacks from partners.'
@@ -478,13 +480,13 @@ const SPONSOR_I18N = {
     ind: {
       label: 'For the caring',
       title: 'Every contribution matters',
-      emphasis: 'Anyone can flag pollution, join an event or support a cleanup.'
+      emphasis: 'Anyone can flag pollution, join an event, or support a cleanup.'
     },
     donate: {
       type: 'Support',
       title: 'You can make a personal contribution',
-      text: 'Fund real actions and get a transparent result.',
-      transparency: 'Report published after every event.',
+      text: 'Fund real actions and achieve transparent results.',
+      transparency: 'A report is published after every event.',
       disclaimer: 'By clicking \u201cSupport\u201d, you agree to our <a href="assets/info/terms-and-conditions-EN.txt" target="_blank" style="color:#0f0f0f;text-decoration:underline;">Terms and Conditions</a> and acknowledge that payments are non-refundable.',
       btn: 'Support',
       note: 'Pay by card \u2014 Visa, Mastercard, Apple Pay'
@@ -492,22 +494,22 @@ const SPONSOR_I18N = {
     comm: {
       type: 'Want to attend an event?',
       price: 'Join an event',
-      text: 'Join cleanups, meet people and see the result.<br><strong>400+ active members.</strong>',
+      text: 'Join cleanups, meet people, and see the result.<br><strong>400+ active members.</strong>',
       event: 'Next event'
     },
     roadmap: {
       label: '2026 Plan',
       title: '2026: App + Expansion',
       subtitle: 'We are building infrastructure for provable environmental action.',
-      r1: { city: 'Expansion', status: 'More events', text: 'More events \u2192 more data. Expanding locations, partners and frequency.' },
-      r2: { city: 'Platform', status: 'Action platform', text: 'Pollution can be flagged, funded and cleaned \u2014 with a transparent result.' },
-      r3: { city: 'Scale', status: 'Integration at scale', text: 'Festivals, brands and partnerships increase the volume of provable impact.' }
+      r1: { city: 'Expansion', status: 'More events', text: 'More events \u2192 more data. Expanding locations, partners, and frequency.' },
+      r2: { city: 'Platform', status: 'Action platform', text: 'Pollution can be flagged, funded, and cleaned \u2014 with a transparent result.' },
+      r3: { city: 'Scale', status: 'Integration at scale', text: 'Festivals, brands, and partnerships increase the volume of provable impact.' }
     },
     barter: {
       label: 'Local Business',
       title: 'Become the hero of your neighborhood',
       subtitle: 'Barter \u2014 no budget needed',
-      text: 'Are you a caf\u00e9, restaurant or shop near the cleanup zone? You can support the event. Water, food, discounts for participants \u2014 we\u2019ll make you part of the event.',
+      text: 'Are you a caf\u00e9, restaurant, or shop near the cleanup zone? You can support the event. Water, food, discounts for participants \u2014 we\u2019ll make you part of the event.',
       b1: { title: 'Customer traffic', text: 'Participants stop by after the cleanup.' },
       b2: { title: '\u201cGood Neighbor\u201d status', text: 'A sign \u201cSponsored by your caf\u00e9\u201d.' },
       b3: { title: 'No budget required', text: 'Barter (water, drinks, snacks).' },
@@ -518,7 +520,7 @@ const SPONSOR_I18N = {
       label: 'FAQ',
       title: 'Frequently asked questions',
       calendly_btn: 'Still have questions? Book a meeting',
-      biz: { label: 'Questions from ESG, HR and finance teams.' },
+      biz: { label: 'Questions from ESG, HR, and finance teams.' },
       people: { label: 'Questions about participation' },
       q1: 'What is included in the ESG Data Pack?',
       a1: 'The ESG Data Pack includes:<ul><li>GPS coordinates of events</li><li>Before/after photos</li><li>Waste weight log</li><li>Participation metrics</li><li>Executive summary</li></ul>Data is delivered in PDF and CSV format.',
@@ -539,12 +541,12 @@ const SPONSOR_I18N = {
       q11: 'What if the weather is bad?',
       a11: 'The event is rescheduled or adapted.',
       q12: 'What does \u20ac2 of support do?',
-      a12: 'Your support covers real event costs: equipment, logistics and waste disposal.',
+      a12: 'Your support covers real event costs: equipment, logistics, and waste disposal.',
       q13: 'How do I join?',
       a13: 'Choose the nearest event or subscribe for updates.'
     },
     cta: {
-      quote: '\u201cWe personally take responsibility for the quality of every event and for ensuring you receive the evidence: GPS, photos, weight and a report. rbingood is our reputation.\u201d',
+      quote: '\u201cWe personally take responsibility for the quality of every event and for ensuring you receive the evidence: GPS, photos, weight, and a report. rbingood is our reputation.\u201d',
       title: 'Start today — we’ll send you a plan and quote',
       sub: 'First step \u2014 15-minute call: goals, format, timeline. Then we send a 1-page plan and a preliminary quote.',
       btn1: '',
@@ -628,16 +630,16 @@ const SPONSOR_I18N = {
       title: 'As empresas enfrentam multas de 5% do volume de neg\u00f3cios por incumprimento da CSRD',
       stat1: {
         desc: 'ESG sem provas j\u00e1 n\u00e3o \u00e9 aceite',
-        src: 'A CSRD est\u00e1 a expandir os requisitos de relat\u00f3rio ESG para dezenas de milhares de empresas em toda a Europa. Mesmo empresas fora do \u00e2mbito direto j\u00e1 recebem pedidos de dados ESG de clientes, bancos e parceiros.'
+        src: 'A CSRD est\u00e1 a expandir os requisitos de relat\u00f3rio ESG para dezenas de milhares de empresas em toda a Europa. Mesmo as empresas fora do \u00e2mbito direto j\u00e1 recebem pedidos de dados ESG de clientes, bancos e parceiros.'
       },
       stat2: {
         desc: 'At\u00e9 ~50\u00a0000 empresas na Europa v\u00e3o divulgar dados de sustentabilidade \u00e0 medida que a CSRD se expande.',
         src: '<a href="https://www.europarl.europa.eu/news/en/press-room/20221107IPR49611/sustainable-economy-parliament-adopts-new-reporting-rules-for-multinationals" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission \u2014 CSRD</a>'
       },
-      quote: 'As novas regras de Green Claims da UE exigem que as afirma\u00e7\u00f5es ambientais sejam comprovadas com evid\u00eancias.<br>Cerca de metade das afirma\u00e7\u00f5es ambientais na UE foram consideradas n\u00e3o comprovadas.',
+      quote: 'As novas regras de Green Claims da UE exigem que as afirma\u00e7\u00f5es ambientais sejam comprovadas por evid\u00eancias.<br>Cerca de metade das afirma\u00e7\u00f5es ambientais na UE foi considerada n\u00e3o comprovada.',
       quoteSrc: '<a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_269" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-underline-offset:2px;">European Commission</a>',
       cta: 'Se uma a\u00e7\u00e3o n\u00e3o pode ser verificada \u2014 n\u00e3o conta nos relat\u00f3rios ou auditorias.<br>As provas n\u00e3o podem ser recolhidas retroativamente.',
-      disclaimer: 'O rbingood transforma a\u00e7\u00f5es reais em ESG evidence audit-ready: GPS, fotos, peso e raw data (ESRS S3-4 / GRI 413-1).'
+      disclaimer: 'O rbingood transforma a\u00e7\u00f5es reais em ESG evidence audit-ready: GPS, fotos, peso e dados brutos (ESRS S3-4 / GRI 413-1).'
     },
     solution: {
       label: 'Solu\u00e7\u00e3o',
@@ -663,7 +665,8 @@ const SPONSOR_I18N = {
       li2: 'Resultado mensur\u00e1vel: pessoas / horas / peso / antes-depois',
       li3: 'Conte\u00fado de PR: fotos/v\u00eddeo para LinkedIn e canais internos',
       li4: 'Relat\u00f3rio final em 2 semanas',
-      roi: '70% da Gera\u00e7\u00e3o Z e millenials consideram a sustentabilidade ambiental importante na escolha do empregador \u2014 <a href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/" target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a>',
+      li5: 'ESG Impact Report ap\u00f3s o evento',
+      roi: '70% da Gera\u00e7\u00e3o Z e millennials consideram a sustentabilidade ambiental importante na escolha do empregador \u2014 <a href="https://www.esgtoday.com/70-of-gen-z-millennials-consider-environmental-sustainability-important-in-choosing-employers-deloitte-survey/" target="_blank" rel="noopener" style="color:inherit">Deloitte (2025)</a>',
       btn: 'Reservar limpeza corporativa'
     },
     addon: {
@@ -676,6 +679,7 @@ const SPONSOR_I18N = {
       merch: 'Branding do evento',
       pr: 'PR Alargado',
       master: 'Masterclass',
+      custom: 'Formato personalizado...',
       barter: 'Barter'
     },
     process: {
@@ -745,16 +749,16 @@ const SPONSOR_I18N = {
       },
       praia: {
         badge: 'Eventos Patrocinados',
-        m1: { label: 'kg de res\u00edduos removidos' },
+        m1: { value: '710 kg', label: 'kg de res\u00edduos removidos' },
         m2: { label: 'eventos' },
-        m3: { label: 'parceria' },
+        m3: { value: '10 meses', label: 'parceria' },
         quote: '\u201cMelhor iniciativa ESG do ano. Renovaram o contrato para 2026.\u201d'
       },
       dhb: {
         badge: 'Festival',
         m1: { label: 'visitantes' },
         m2: { label: 'beatas recolhidas' },
-        m3: { label: 'dias de workshops' },
+        m3: { value: '2 dias', label: 'dias de workshops' },
         desc: 'A mec\u00e2nica \u201c20 beatas = uma bebida\u201d envolveu milhares de convidados numa iniciativa eco mesmo no festival.'
       }
     },
@@ -762,14 +766,14 @@ const SPONSOR_I18N = {
       label: 'Mec\u00e2nica',
       title: 'Como realizamos os eventos',
       m1: { title: 'Fazemos o briefing', text: 'Briefing sobre seguran\u00e7a, triagem e os dados que recolhemos. 10\u201315 minutos antes do in\u00edcio.' },
-      m2: { title: 'Preparamos participantes e material', text: 'Distribu\u00edmos tudo o necess\u00e1rio: luvas, sacos, apanhadores. Completamente por nossa conta.' },
-      m3: { title: 'Limpeza ativa', text: 'A equipa trabalha por zonas, n\u00f3s moderamos o processo. At\u00e9 2 horas em formato sprint.' },
+      m2: { title: 'Preparamos participantes e material', text: 'Distribu\u00edmos tudo o necess\u00e1rio: luvas, sacos e apanhadores. Completamente por nossa conta.' },
+      m3: { title: 'Limpeza ativa', text: 'A equipa trabalha por zonas; n\u00f3s moderamos o processo. At\u00e9 2 horas em formato sprint.' },
       m4: { title: 'Registamos as provas', text: 'Fotos antes/depois, GPS, triagem e pesagem por fra\u00e7\u00e3o \u2014 a base do Data Pack.' },
       m5: { title: 'Controlamos a elimina\u00e7\u00e3o', text: 'Os res\u00edduos v\u00e3o para os fluxos de reciclagem certos \u2014 pl\u00e1stico, vidro, mistos.' },
       m6: { title: 'Criamos envolvimento da equipa', text: 'Networking, comunica\u00e7\u00e3o ou o efeito RH do evento.' },
       m7: { title: 'Resultado', text: 'A empresa recebe um relat\u00f3rio com dados. Os participantes recebem uma recompensa*' },
       closing: '',
-      footnote: '* Se a limpeza for patrocinada \u2014 os participantes recebem uma recompensa pontual ou bebidas e snacks dos parceiros.'
+      footnote: '* Se a limpeza for patrocinada, os participantes recebem uma recompensa pontual, como bebidas e snacks dos parceiros.'
     },
     ind: {
       label: 'Para quem se importa',
@@ -778,15 +782,15 @@ const SPONSOR_I18N = {
     },
     donate: {
       type: 'Apoiar',
-      title: 'Podes fazer uma contribui\u00e7\u00e3o pessoal',
-      text: 'Financia a\u00e7\u00f5es reais e obt\u00e9m um resultado transparente.',
+      title: 'Pode fazer uma contribui\u00e7\u00e3o pessoal',
+      text: 'Financia a\u00e7\u00f5es concretas e obt\u00e9m resultados transparentes.',
       transparency: 'Relat\u00f3rio publicado ap\u00f3s cada evento.',
       disclaimer: 'Ao clicar em \u201cApoiar\u201d, concorda com os nossos <a href="assets/info/terms-and-conditions-EN.txt" target="_blank" style="color:#0f0f0f;text-decoration:underline;">Termos e Condi\u00e7\u00f5es</a> e reconhece que os pagamentos s\u00e3o n\u00e3o reembols\u00e1veis.',
       btn: 'Apoiar',
       note: 'Pagamento por cart\u00e3o \u2014 Visa, Mastercard, Apple Pay'
     },
     comm: {
-      type: 'Queres participar num evento?',
+      type: 'Quer participar num evento?',
       price: 'Participar num evento',
       text: 'Participe nas limpezas, conhe\u00e7a pessoas e veja o resultado.<br><strong>400+ membros ativos.</strong>',
       event: 'Pr\u00f3ximo evento'
@@ -796,8 +800,8 @@ const SPONSOR_I18N = {
       title: '2026: App + Expans\u00e3o',
       subtitle: 'Estamos a construir infraestrutura para a\u00e7\u00f5es ambientais comprovat\u00edveis.',
       r1: { city: 'Expansion', status: 'Mais eventos', text: 'Mais eventos \u2192 mais dados. Expandimos locais, parceiros e regularidade.' },
-      r2: { city: 'Platform', status: 'Plataforma de a\u00e7\u00e3o', text: 'A polui\u00e7\u00e3o pode ser assinalada, financiada e removida \u2014 com resultado transparente.' },
-      r3: { city: 'Scale', status: 'Integra\u00e7\u00e3o em grande escala', text: 'Festivais, marcas e parcerias aumentam o volume de impacto comprovat\u00edvel.' }
+      r2: { city: 'Platform', status: 'Plataforma de a\u00e7\u00e3o', text: 'A polui\u00e7\u00e3o pode ser assinalada, financiada e removida \u2014 com resultados transparentes.' },
+      r3: { city: 'Scale', status: 'Integra\u00e7\u00e3o em grande escala', text: 'Festivais, marcas e parcerias ampliam o volume de impacto comprovat\u00edvel.' }
     },
     barter: {
       label: 'Neg\u00f3cio Local',
