@@ -308,7 +308,7 @@ const SPONSOR_I18N = {
       cta: 'Close CSRD \u2192'
     },
     hero: {
-      title: 'rbingood \u2014 a platform where anyone sponsors or joins eco-initiatives, turning real actions into verified data',
+      title: 'rbingood \u2014 a platform where anyone can support or join eco-initiatives and turn real actions into measurable impact',
       subtitle: 'We help companies solve the problem of missing measurable sustainability data through organising real environmental actions (GPS. Photos. Weight. Raw data)'
     },
     problem: {
@@ -606,7 +606,7 @@ const SPONSOR_I18N = {
       cta: 'Fechar CSRD \u2192'
     },
     hero: {
-      title: 'rbingood \u2014 uma plataforma onde qualquer pessoa patrocina ou participa em iniciativas eco, transformando a\u00e7\u00f5es reais em dados verificados',
+      title: 'rbingood \u2014 uma plataforma onde qualquer pessoa pode apoiar ou participar em iniciativas eco e transformar a\u00e7\u00f5es reais em impacto mensur\u00e1vel',
       subtitle: 'Ajudamos as empresas a resolver o problema da aus\u00eancia de dados mensur\u00e1veis de sustentabilidade atrav\u00e9s da organiza\u00e7\u00e3o de a\u00e7\u00f5es ambientais reais (GPS. Fotos. Peso. Raw data)'
     },
     problem: {

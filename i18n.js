@@ -9,7 +9,7 @@ var I18N = {
       "nav.participate": "participate",
 
       // Hero
-      "hero.title": "rbingood — a platform where anyone sponsors or joins eco-initiatives, turning real actions into verified data",
+      "hero.title": "rbingood — a platform where anyone can support or join eco-initiatives and turn real actions into measurable impact",
       "hero.subtitle": "Sponsors, volunteers, organizers — together cleaning cities, beaches, and forests.",
       "hero.btn_participate": "participate",
       "hero.btn_sponsor": "I want to sponsor",
@@ -543,7 +543,7 @@ var I18N = {
       "nav.donate": "apoiar",
       "nav.participate": "participar",
 
-      "hero.title": "rbingood \u2014 uma plataforma onde qualquer pessoa patrocina ou participa em iniciativas eco, transformando a\u00e7\u00f5es reais em dados verificados",
+      "hero.title": "rbingood \u2014 uma plataforma onde qualquer pessoa pode apoiar ou participar em iniciativas eco e transformar a\u00e7\u00f5es reais em impacto mensur\u00e1vel",
       "hero.subtitle": "Patrocinadores, volunt\u00e1rios, organizadores \u2014 juntos a limpar cidades, praias e florestas.",
       "hero.btn_participate": "participar",
 
